@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Archive — Speeches</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=Frank+Ruhl+Libre:wght@300;400;700&family=JetBrains+Mono:wght@300;400&family=Noto+Serif+Hebrew:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="app-header">
+    <div class="app-title">
+      <span class="title-label">Patterns of Peace</span>
+      <span class="title-sub">A visual archive of Netanyahu's UN speeches</span>
+    </div>
+    <div class="controls">
+      <div class="keyword-input-group">
+        <input
+          type="text"
+          id="keywordInput"
+          placeholder="חיפוש מילה..."
+          autocomplete="off"
+          spellcheck="false"
+          dir="auto"
+        >
+        <button id="clearKeyword" class="clear-btn" aria-label="נקה">×</button>
+        <span id="keywordCount" class="keyword-count"></span>
+      </div>
+      <div class="topic-presets" id="topicPresets"></div>
+    </div>
+  </header>
+
+  <!-- CONTENT AREA -->
+  <div class="content-area" id="contentArea">
+
+    <!-- ARCHIVE COLUMN (grid + timeline) -->
+    <div class="archive-column">
+
+      <!-- ARCHIVE GRID -->
+      <main class="archive-stage" id="archiveStage">
+        <div class="grid-container" id="gridContainer"></div>
+        <div class="empty-state" id="emptyState" hidden></div>
+      </main>
+
+      <!-- YEAR SELECTOR (aligned with grid columns) -->
+      <div class="year-selector" id="yearSelector"></div>
+
+    </div>
+
+    <!-- SPEECH PANE -->
+    <aside class="speech-pane" id="speechPane">
+      <div class="pane-header">
+        <button class="pane-toggle" id="paneToggle" aria-label="Toggle reading pane">›</button>
+        <span class="pane-label">קריאה</span>
+        <div class="pane-nav" id="paneNav">
+          <button class="nav-btn" id="prevSeg" title="קטע קודם">↑</button>
+          <span class="seg-counter" id="segCounter"></span>
+          <button class="nav-btn" id="nextSeg" title="קטע הבא">↓</button>
+        </div>
+        <span class="pane-speech-title" id="paneSpeechTitle"></span>
+      </div>
+      <div class="pane-body" id="paneBody">
+        <div class="pane-text" id="paneText" dir="rtl"></div>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- TOOLTIP -->
+  <div class="tooltip" id="tooltip" dir="rtl" aria-hidden="true"></div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
