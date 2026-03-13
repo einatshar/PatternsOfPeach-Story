@@ -42,6 +42,24 @@ html, body {
   color: var(--text-primary);
   font-family: var(--font-mono);
   overflow: hidden;
+  cursor: none;
+}
+
+* { cursor: none !important; }
+
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease, width 0.15s ease, height 0.15s ease, opacity 0.2s ease;
+  z-index: 9999;
+  mix-blend-mode: difference;
 }
 
 /* ── Layout ──────────────────────────────────────────── */
@@ -61,7 +79,31 @@ body {
   justify-content: space-between;
   padding: 14px 24px;
   border-bottom: 1px solid var(--column-border);
-  gap: 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.back-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.05);
 }
 
 .app-title {
@@ -72,19 +114,19 @@ body {
 }
 
 .title-label {
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: 'Newsreader', Georgia, serif;
   font-size: 16px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.01em;
   color: var(--text-primary);
 }
 
 .title-sub {
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: 'Newsreader', Georgia, serif;
   font-size: 14px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.01em;
   color: var(--text-muted);
   text-transform: none;
@@ -118,12 +160,13 @@ body {
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  justify-content: space-between;
+  width: fit-content;
 }
 
 .topic-btn:hover {
   border-color: #383838;
-  color: #666;
+  color: #ffffff;
 }
 
 .topic-btn.active {
@@ -132,10 +175,11 @@ body {
 
 .btn-count {
   display: inline-block;
-  width: 3ch;
-  text-align: left;
+  min-width: 3ch;
+  text-align: right;
   font-size: 8px;
   opacity: 0.5;
+  flex-shrink: 0;
 }
 
 .topic-btn.active .btn-count {
@@ -425,6 +469,10 @@ body {
   gap: 6px;
 }
 
+body.view-all .column-cells {
+  flex-direction: column-reverse;
+}
+
 /* ── Cells ────────────────────────────────────────────── */
 
 .cell {
@@ -511,7 +559,7 @@ body {
   letter-spacing: 0.1em;
   padding: 5px 2px;
   background: transparent;
-  color: var(--text-muted);
+  color: #f0ece4;
   border: 1px solid transparent;
   border-radius: 2px;
   cursor: pointer;
@@ -523,12 +571,20 @@ body {
 }
 
 .year-btn:hover {
-  color: #aaa;
+  color: #ffffff;
+  opacity: 1;
 }
 
 .year-btn.active {
-  color: var(--glow-color);
-  border-color: rgba(200, 169, 110, 0.35);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+
+body.explorer-mode:not(.view-all) .year-btn:not(.active) {
+  color: var(--text-muted);
+  opacity: 0.35;
 }
 
 /* ── Tooltip ──────────────────────────────────────────── */
@@ -571,6 +627,27 @@ body {
   color: #b8b4ae;
 }
 
+/* Story-mode: highlight the demonstrated cell with a soft white ring */
+.cell--story-focus {
+  outline: 1.5px solid rgba(255,255,255,0.55) !important;
+  outline-offset: 2px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Annotation line at the bottom of the story tooltip */
+.tooltip-story-note {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #222;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: #555;
+  direction: ltr;
+  text-align: left;
+}
+
 /* ── Scrollbar styling ────────────────────────────────── */
 
 ::-webkit-scrollbar {
@@ -589,4 +666,585 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #2e2e2e;
+}
+
+/* ══════════════════════════════════════════════════════════
+   SCROLLYTELLING — STORY MODE (default)
+   ══════════════════════════════════════════════════════════ */
+
+/* Override base layout for scrollable story */
+html {
+  height: auto;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+}
+
+/* Each full-height step snaps into view */
+.step {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+body {
+  display: block;
+  height: auto;
+  overflow: visible;
+}
+
+/* Hide app chrome until explorer mode */
+#appHeader  { display: none; }
+#speechPane { display: none; }
+
+/* ── Cover screen ───────────────────────────────────────── */
+
+#coverScreen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10vw;
+  background: var(--bg);
+}
+
+.cover-inner {
+  max-width: 560px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Cover data visualization ───────────────────────────── */
+
+#coverViz {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 65%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  /* Fade in from left so text stays readable */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 18%, black 42%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 18%, black 42%);
+}
+
+#coverGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 0 20px 0 0;
+  height: 100%;
+  align-items: stretch;
+  opacity: 0;
+  animation: coverGridReveal 1.8s ease 2.2s forwards;
+}
+
+@keyframes coverGridReveal {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.cover-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+}
+
+.cover-col-year {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  color: #f0ece4;
+  opacity: 0.8;
+  text-align: center;
+  flex-shrink: 0;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding-top: 6px;
+}
+
+.cover-cell {
+  flex: 1;
+  min-height: 0;
+  border-radius: 8px;
+  background: var(--cell-dark);
+  border: 1px solid var(--cell-border);
+  transition: opacity 0.4s ease;
+}
+
+.cover-cell.lit {
+  animation: coverCellPulse var(--pulse-dur, 4s) ease-in-out var(--pulse-delay, 0s) infinite;
+}
+
+@keyframes coverCellPulse {
+  0%, 100% { opacity: 0.65; }
+  50%       { opacity: 1; }
+}
+
+.cover-title {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(52px, 7vw, 88px);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.05;
+  color: #f0ece4;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+
+.cover-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: storyWordReveal 0.9s ease forwards;
+}
+
+.cover-title span:nth-child(2) {
+  animation-delay: 0.45s;
+}
+
+@keyframes storyWordReveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cover-sub {
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 52px;
+  opacity: 0;
+  animation: storyWordReveal 0.8s ease 1.0s forwards;
+}
+
+.scroll-hint {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: #333;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: storyWordReveal 0.6s ease 1.9s forwards;
+}
+
+/* ── Content row wrapper ────────────────────────────────── */
+
+#contentRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: var(--bg);
+}
+
+/* ── Story section (two-column) ─────────────────────────── */
+
+#story {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  min-width: 0;
+}
+
+/* ── Sticky visualization panel ─────────────────────────── */
+
+#story-vis {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  width: 62%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  /* NO overflow: hidden here — breaks sticky on iOS */
+}
+
+#story-vis .archive-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* Year selector: visible but non-interactive during story */
+#story-vis .year-selector {
+  pointer-events: none;
+  opacity: 0.35;
+  transition: opacity 0.3s ease;
+}
+
+/* ── Scroll steps panel ─────────────────────────────────── */
+
+#story-steps {
+  width: 38%;
+  flex-shrink: 0;
+  padding-bottom: 35vh;
+}
+
+/* ── Individual scroll steps ────────────────────────────── */
+
+.step {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 60px 48px;
+}
+
+.step-content {
+  max-width: 300px;
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.45;
+  color: #c8c4be;
+  transition: opacity 0.35s ease;
+}
+
+.step:not(.step-active) .step-content {
+  opacity: 0.25;
+}
+
+.step-content p {
+  margin-bottom: 16px;
+}
+
+.step-content p:last-child {
+  margin-bottom: 0;
+}
+
+.step-content strong {
+  color: var(--text-primary);
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Step 8: paragraph stays centered; legend pins to bottom-left */
+[data-step="8"] {
+  position: relative;
+}
+
+[data-step="8"] .story-legend {
+  position: absolute;
+  bottom: 60px;
+  left: 48px;
+  margin-top: 0;
+}
+
+.story-legend {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.story-legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #7a7774;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.step-note {
+  font-family: 'EB Garamond', Georgia, serif !important;
+  font-size: 15px !important;
+  color: #555 !important;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.step-stat {
+  font-family: var(--font-mono) !important;
+  font-size: 12px !important;
+  color: #504e4b !important;
+  margin-top: 14px;
+  letter-spacing: 0.06em;
+}
+
+/* Topic keyword colors in narrative */
+em.kw-peace  { font-style: italic; color: #5868c0; }
+em.kw-war    { font-style: italic; color: #e07830; }
+em.kw-terror { font-style: italic; color: #e04020; }
+em.kw-iran   { font-style: italic; color: #c42820; }
+
+/* ── CTA (step 9) ───────────────────────────────────────── */
+
+.step-cta {
+  font-size: 24px;
+}
+
+.seg-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.seg-nav-btn {
+  background: transparent;
+  border: 1px solid #333;
+  color: #666;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  line-height: 1.4;
+}
+
+.seg-nav-btn:hover {
+  color: #aaa;
+  border-color: #555;
+}
+
+.explorer-btn {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 12px 22px;
+  background: transparent;
+  border: 1px solid #383838;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  text-transform: uppercase;
+}
+
+.explorer-btn:hover {
+  border-color: #888;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* ── Dense speech text overlay (step 1) ─────────────────── */
+
+#speechTextOverlay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 5;
+  padding: 0;
+  background: var(--bg);
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+}
+
+#speechTextOverlay.visible {
+  opacity: 1;
+}
+
+#speechTextOverlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, var(--bg));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.overlay-text {
+  font-family: var(--font-hebrew);
+  font-size: 6.5px;
+  line-height: 1.45;
+  color: #5a5855;
+  direction: rtl;
+  text-align: right;
+  word-spacing: 1px;
+  letter-spacing: 0.01em;
+  animation: overlayTextScroll 55s linear infinite;
+}
+
+@keyframes overlayTextScroll {
+  from { transform: translateY(0);    }
+  to   { transform: translateY(-50%); }
+}
+
+/* ── Cell build animation (step 2) ─────────────────────── */
+
+@keyframes cellBuildReveal {
+  from { opacity: 0; transform: scaleY(0.15); }
+  to   { opacity: 1; transform: scaleY(1);    }
+}
+
+/* ══════════════════════════════════════════════════════════
+   EXPLORER MODE
+   ══════════════════════════════════════════════════════════ */
+
+body.explorer-mode {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body.explorer-mode #appHeader {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+body.explorer-mode #coverScreen {
+  display: none;
+}
+
+body.explorer-mode #contentRow {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+body.explorer-mode #story {
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* ── Story → Explorer entering animation ─────────────────── */
+body.explorer-entering #story-steps {
+  transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+  width: 0 !important;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+body.explorer-entering #story-vis {
+  transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100% !important;
+}
+
+body.explorer-entering #story-vis .year-selector {
+  transition: opacity 0.45s ease;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+body.explorer-mode #story-vis {
+  position: static;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body.explorer-mode #story-vis .archive-stage {
+  flex: 1;
+  min-height: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  /* Stretch so #gridContainer's height:100% resolves correctly */
+  align-self: stretch;
+}
+
+/* Remove align-items override — let columns stretch to fill full height */
+
+body.explorer-mode #story-vis .year-selector {
+  flex-shrink: 0;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+body.explorer-mode #story-steps {
+  display: none;
+}
+
+/* Single-year: show reading pane */
+body.explorer-mode:not(.view-all) #speechPane {
+  display: flex;
+}
+
+/* All-years: hide reading pane */
+body.explorer-mode.view-all #speechPane {
+  display: none;
+}
+
+/* ══════════════════════════════════════════════════════════
+   MOBILE — stacked layout below 800px
+   ══════════════════════════════════════════════════════════ */
+
+@media (max-width: 800px) {
+  #story {
+    flex-direction: column;
+  }
+
+  #story-vis {
+    position: static;
+    width: 100%;
+    height: 50svh;
+    flex-shrink: 0;
+    /* Repeat at top of each step via JS class toggle */
+  }
+
+  #story-steps {
+    width: 100%;
+    padding-bottom: 20vh;
+  }
+
+  .step {
+    padding: 40px 24px;
+    min-height: 60svh;
+  }
+
+  .step-content {
+    max-width: 100%;
+    font-size: 20px;
+  }
+
+  #coverScreen {
+    padding: 0 8vw;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   REDUCED MOTION
+   ══════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .cover-title span,
+  .cover-sub,
+  .scroll-hint {
+    opacity: 1;
+    transform: none;
+  }
 }

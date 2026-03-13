@@ -1909,10 +1909,10 @@ const SPEECHES = [
 ];
 
 const ALL_TOPICS = [
-  { label: "שלום",   terms: ["שלום"],                                    color: "#5868c0" },
-  { label: "תקווה",  terms: ["תקווה"],                                    color: "#b0aaee" },
-  { label: "ביטחון", terms: ["ביטחון", "הגנה", "בטחון"],                 color: "#f9bc29" },
-  { label: "מלחמה", terms: ["מלחמה", "לחימה", "אויב", "מחבל"],          color: "#e07830" },
-  { label: "טרור",   terms: ["טרור", "טרוריסט", "פיגוע"],                color: "#e04020" },
-  { label: "איראן",  terms: ["איראן"],                                    color: "#c42820" },
+  { label: "Peace",    terms: ["שלום"],                                    color: "#5868c0" },
+  { label: "Hope",     terms: ["תקווה"],                                    color: "#b0aaee" },
+  { label: "Security", terms: ["ביטחון", "הגנה", "בטחון"],                 color: "#f9bc29" },
+  { label: "War",      terms: ["מלחמה", "לחימה", "אויב", "מחבל"],          color: "#e07830" },
+  { label: "Terror",   terms: ["טרור", "טרוריסט", "פיגוע"],                color: "#e04020" },
+  { label: "Iran",     terms: ["איראן"],                                    color: "#c42820" },
 ];

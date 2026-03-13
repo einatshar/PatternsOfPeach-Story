@@ -1,3 +1,11 @@
+// ── Custom Cursor ──────────────────────────────────────────────────────────
+
+const _cursor = document.getElementById('custom-cursor');
+document.addEventListener('mousemove', e => {
+  _cursor.style.left = e.clientX + 'px';
+  _cursor.style.top  = e.clientY + 'px';
+});
+
 // ── Constants ──────────────────────────────────────────────────────────────
 
 const CHUNK_SIZE        = 3;
@@ -124,11 +132,12 @@ function setPaneCollapsed(collapsed) {
 }
 
 function selectAllYears() {
-  state.lastSpeechId   = state.selectedSpeechId;
-  state.allYears       = true;
+  state.lastSpeechId     = state.selectedSpeechId;
+  state.allYears         = true;
   state.selectedSpeechId = null;
-  activeSegmentIndex   = null;
+  activeSegmentIndex     = null;
 
+  document.body.classList.add('view-all');
   document.querySelectorAll('.year-btn').forEach(btn => btn.classList.remove('active'));
   setPaneCollapsed(true);
 
@@ -136,10 +145,11 @@ function selectAllYears() {
 }
 
 function selectYear(speechId) {
-  state.allYears       = false;
+  state.allYears         = false;
   state.selectedSpeechId = speechId;
-  activeSegmentIndex   = null;
+  activeSegmentIndex     = null;
 
+  document.body.classList.remove('view-all');
   document.querySelectorAll('.year-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.id === speechId);
   });
@@ -454,7 +464,7 @@ function renderTopicPresets() {
     const btn = document.createElement('button');
     btn.className     = 'topic-btn';
     btn.dataset.topic = topic.label;
-    btn.innerHTML     = `<span class="btn-count">○</span><span class="btn-label">${topic.label}</span>`;
+    btn.innerHTML     = `<span class="btn-label">${topic.label}</span><span class="btn-count">○</span>`;
     btn.addEventListener('click', () => {
       if (state.activeTopics.has(topic.label)) {
         state.activeTopics.delete(topic.label);
@@ -814,10 +824,431 @@ function setupPaneNav() {
   if (nextBtn) nextBtn.addEventListener('click', () => navigateSegment('next'));
 }
 
+// ── Scrollytelling ─────────────────────────────────────────────────────────
+
+let currentStoryStep  = -1;
+let cellBuildTimer    = null;
+let explorerRevealing = false; // blocks observer during reveal transition
+
+const SPEECH_ID = 'netanyahu-unga-2023';
+
+function setStoryYearActive(id) {
+  document.querySelectorAll('.year-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.id === id);
+  });
+}
+
+const STORY_STEPS = [
+  // 0: Cover — grid empty, just the title screen
+  () => {
+    cancelCellBuild();
+    hideStoryTooltip();
+    hideSpeechTextOverlay();
+    state.activeTopics.clear();
+    state.allYears         = false;
+    state.selectedSpeechId = null;
+    document.getElementById('gridContainer').innerHTML = '';
+    document.getElementById('emptyState').hidden = true;
+    setStoryYearActive(null);
+  },
+
+  // 1: Dense scrolling text — the raw speech words
+  () => {
+    cancelCellBuild();
+    hideStoryTooltip();
+    state.activeTopics.clear();
+    document.getElementById('gridContainer').innerHTML = '';
+    showSpeechTextOverlay(SPEECH_ID);
+    setStoryYearActive(SPEECH_ID);
+  },
+
+  // 2: Words transform into cells — crossfade text → barcode
+  () => {
+    hideStoryTooltip();
+    state.activeTopics.clear();
+    state.selectedSpeechId = SPEECH_ID;
+    state.allYears = false;
+    setStoryYearActive(SPEECH_ID);
+    const container = document.getElementById('gridContainer');
+    buildSingleYearGrid(container);
+    applyIllumination();
+    container.style.opacity = '1';
+    // Start all cells invisible
+    container.querySelectorAll('.cell:not(.cell--blank)').forEach(cell => {
+      cell.style.animation = 'none';
+      cell.style.opacity   = '0';
+    });
+    // Fade out text, then animate cells in; show story tooltip once complete
+    hideSpeechTextOverlay();
+    setTimeout(() => animateCellBuild(container, () => showStoryTooltip(container)), 350);
+  },
+
+  // 3: Illuminate שלום
+  () => {
+    hideStoryTooltip();
+    demoSegCursor = 0;
+    cancelCellBuild();
+    resetCellAnimations();
+    setStoryYearActive(SPEECH_ID);
+    state.activeTopics.clear();
+    activateTopic('Peace');
+  },
+
+  // 4: Add conflict topics
+  () => {
+    setStoryYearActive(SPEECH_ID);
+    activateTopic('War');
+    activateTopic('Terror');
+    activateTopic('Iran');
+  },
+
+  // 5: All topics on one speech (2023)
+  () => {
+    setStoryYearActive(SPEECH_ID);
+    const container = document.getElementById('gridContainer');
+
+    if (state.selectedSpeechId !== SPEECH_ID) {
+      // Scrolling back from step 6 (2025) — rebuild 2023 grid with animation
+      state.activeTopics.clear();
+      state.selectedSpeechId = SPEECH_ID;
+      state.allYears = false;
+      buildSingleYearGrid(container);
+      container.querySelectorAll('.cell:not(.cell--blank)').forEach(cell => {
+        cell.style.animation = 'none';
+        cell.style.opacity   = '0';
+      });
+      ALL_TOPICS.forEach(t => activateTopic(t.label));
+      animateCellBuild(container);
+    } else {
+      // Scrolling forward from step 4 — just activate remaining topics
+      ALL_TOPICS.forEach(t => activateTopic(t.label));
+    }
+  },
+
+  // 6: Switch to 2025 speech — peace + conflict topics, build animation
+  () => {
+    const SPEECH_2025 = 'netanyahu-unga-2025';
+    setStoryYearActive(SPEECH_2025);
+    state.activeTopics.clear();
+    state.selectedSpeechId = SPEECH_2025;
+    state.allYears = false;
+    const container = document.getElementById('gridContainer');
+    buildSingleYearGrid(container);
+    // Freeze cells invisible, apply topic colors, then animate columns in
+    container.querySelectorAll('.cell:not(.cell--blank)').forEach(cell => {
+      cell.style.animation = 'none';
+      cell.style.opacity   = '0';
+    });
+    ['Peace', 'War', 'Iran', 'Terror'].forEach(label => activateTopic(label));
+    animateCellBuild(container);
+  },
+
+  // 7: Transition to all-years, clear topics
+  () => {
+    setStoryYearActive(null);
+    state.activeTopics.clear();
+    selectAllYears();
+  },
+
+  // 8: All years, all topics
+  () => {
+    ALL_TOPICS.forEach(t => activateTopic(t.label));
+  },
+
+  // 9: CTA — no vis change, just the button
+  () => {},
+];
+
+function showSpeechTextOverlay(speechId) {
+  const overlay = document.getElementById('speechTextOverlay');
+  const speech  = SPEECHES.find(s => s.id === speechId);
+  if (!overlay || !speech) return;
+  // Repeat text 4× for density + seamless infinite scroll loop
+  const escaped = escapeHtml(speech.text);
+  const block   = `${escaped}<br><br>`;
+  overlay.innerHTML = `<div class="overlay-text">${block.repeat(4)}</div>`;
+  requestAnimationFrame(() => overlay.classList.add('visible'));
+}
+
+function hideSpeechTextOverlay() {
+  const overlay = document.getElementById('speechTextOverlay');
+  if (!overlay) return;
+  overlay.classList.remove('visible');
+  setTimeout(() => { overlay.innerHTML = ''; }, 750);
+}
+
+function goToStep(n) {
+  if (n === currentStoryStep) return;
+  currentStoryStep = n;
+  document.body.dataset.storyStep = n;
+  if (STORY_STEPS[n]) STORY_STEPS[n]();
+}
+
+function cancelCellBuild() {
+  if (cellBuildTimer) { clearTimeout(cellBuildTimer); cellBuildTimer = null; }
+}
+
+function resetCellAnimations() {
+  document.querySelectorAll('.cell').forEach(cell => {
+    cell.style.animation = '';
+    cell.style.opacity   = '';
+  });
+}
+
+function animateCellBuild(container, onComplete) {
+  cancelCellBuild();
+  const cols = Array.from(container.querySelectorAll('.speech-column'));
+
+  // Reset all cells to invisible
+  cols.forEach(col => {
+    col.querySelectorAll('.cell:not(.cell--blank)').forEach(cell => {
+      cell.style.animation = 'none';
+      cell.style.opacity   = '0';
+    });
+  });
+
+  // Force reflow
+  container.offsetHeight; // eslint-disable-line
+
+  // Stagger reveal by column (barcode scanner effect)
+  const COL_DELAY = 38; // ms between columns
+  cols.forEach((col, ci) => {
+    const cells  = Array.from(col.querySelectorAll('.cell:not(.cell--blank)'));
+    const delay  = ci * COL_DELAY;
+    const isLast = ci === cols.length - 1;
+    cellBuildTimer = setTimeout(() => {
+      cells.forEach(cell => {
+        cell.style.animation  = '';
+        cell.style.opacity    = '';
+        cell.style.animationName          = 'cellBuildReveal';
+        cell.style.animationDuration      = '0.35s';
+        cell.style.animationDelay         = '0ms';
+        cell.style.animationFillMode      = 'both';
+        cell.style.animationTimingFunction = 'ease';
+      });
+      // Fire callback after the last column's cells have finished animating
+      if (isLast && onComplete) setTimeout(onComplete, 400);
+    }, delay);
+  });
+}
+
+let storyFocusCell  = null;
+let demoSegCursor   = 0;
+let demoContainer   = null;
+
+// Four evenly-spread positions across the speech
+const DEMO_SEG_PCTS = [0.15, 0.38, 0.58, 0.78];
+
+function showStoryTooltipAt(container, segments, segIdx) {
+  if (!tooltip.el) return;
+
+  const seg = segments[segIdx];
+  if (!seg) return;
+
+  const cell = container.querySelector(
+    `.cell[data-speech-id="${SPEECH_ID}"][data-index="${seg.index}"]`
+  );
+  if (!cell) return;
+
+  // Clear previous focus ring
+  if (storyFocusCell) storyFocusCell.classList.remove('cell--story-focus');
+  storyFocusCell = cell;
+  cell.classList.add('cell--story-focus');
+
+  // Build tooltip: context words + annotation
+  tooltip.el.innerHTML =
+    buildTooltipHtml(seg, segments) +
+    `<div class="tooltip-story-note">3 words → 1 cell</div>`;
+  tooltip.el.style.borderColor = '';
+
+  // Measure then position
+  tooltip.el.style.visibility = 'hidden';
+  tooltip.el.classList.add('visible');
+  const th = tooltip.el.offsetHeight;
+  const tw = tooltip.el.offsetWidth;
+  tooltip.el.style.visibility = '';
+
+  const rect   = cell.getBoundingClientRect();
+  const margin = 10;
+  const vw     = window.innerWidth;
+
+  let top  = rect.top - th - margin;
+  if (top < 8) top = rect.bottom + margin;
+  let left = rect.left + rect.width / 2 - tw / 2;
+  left = Math.max(8, Math.min(left, vw - tw - 8));
+
+  tooltip.el.style.top  = top  + 'px';
+  tooltip.el.style.left = left + 'px';
+}
+
+function showStoryTooltip(container) {
+  const segments = segmentsCache.get(SPEECH_ID);
+  if (!segments || segments.length === 0) return;
+  demoContainer = container;
+  const segIdx = Math.floor(segments.length * DEMO_SEG_PCTS[demoSegCursor]);
+  showStoryTooltipAt(container, segments, segIdx);
+}
+
+function navigateDemoSeg(dir) {
+  const segments = segmentsCache.get(SPEECH_ID);
+  if (!segments || !demoContainer) return;
+  demoSegCursor = (demoSegCursor + dir + DEMO_SEG_PCTS.length) % DEMO_SEG_PCTS.length;
+  const segIdx = Math.floor(segments.length * DEMO_SEG_PCTS[demoSegCursor]);
+  showStoryTooltipAt(demoContainer, segments, segIdx);
+}
+
+function hideStoryTooltip() {
+  if (tooltip.el) {
+    tooltip.el.classList.remove('visible');
+    tooltip.el.style.borderColor = '';
+  }
+  if (storyFocusCell) {
+    storyFocusCell.classList.remove('cell--story-focus');
+    storyFocusCell = null;
+  }
+}
+
+function initScrollytelling() {
+  const steps = document.querySelectorAll('[data-step]');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Track each step's current intersection ratio so we can always activate
+  // the most-visible step — works correctly in both scroll directions.
+  const ratios = new Map();
+  steps.forEach(step => ratios.set(step, 0));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      ratios.set(entry.target, entry.intersectionRatio);
+      entry.target.classList.toggle('step-active', entry.isIntersecting);
+    });
+
+    // Find the step with the highest visibility
+    let bestEl = null, bestRatio = 0;
+    ratios.forEach((ratio, el) => {
+      if (ratio > bestRatio) { bestRatio = ratio; bestEl = el; }
+    });
+
+    if (bestEl && bestRatio > 0 && !explorerRevealing) {
+      const n = parseInt(bestEl.dataset.step, 10);
+      goToStep(prefersReduced && n === 2 ? 3 : n);
+    }
+  }, { threshold: [0, 0.25, 0.5, 0.75, 1.0] });
+
+  steps.forEach(step => observer.observe(step));
+
+  // Segment demo nav (step 2)
+  const segNavPrev = document.getElementById('segNavPrev');
+  const segNavNext = document.getElementById('segNavNext');
+  if (segNavPrev) segNavPrev.addEventListener('click', () => navigateDemoSeg(-1));
+  if (segNavNext) segNavNext.addEventListener('click', () => navigateDemoSeg(1));
+
+  // Explorer button
+  const btn = document.getElementById('enterExplorer');
+  if (btn) btn.addEventListener('click', revealExplorer);
+
+  // Back to story button
+  const backBtn = document.getElementById('backToStory');
+  if (backBtn) backBtn.addEventListener('click', () => {
+    if (!state.allYears) {
+      // Specific year → go to All view
+      selectAllYears();
+    } else {
+      // All view → go back to cover
+      document.body.classList.remove('explorer-mode');
+      document.body.classList.remove('view-all');
+      currentStoryStep = -1;
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
+  });
+}
+
+function revealExplorer() {
+  explorerRevealing = true;
+
+  // Phase 1: animate text column out, chart panel expands
+  document.body.classList.add('explorer-entering');
+
+  // Phase 2: after animation settles, switch to static explorer layout
+  setTimeout(() => {
+    document.body.classList.remove('explorer-entering');
+    document.body.classList.add('explorer-mode');
+
+    // Now safe to scroll — explorer-mode has overflow:hidden so no observer fires
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
+    state.activeTopics.clear();
+    selectAllYears();
+    ALL_TOPICS.forEach(t => activateTopic(t.label));
+    setPaneCollapsed(true);
+
+    explorerRevealing = false;
+    setTimeout(() => renderGrid(), 80);
+  }, 480);
+}
+
+// ── Cover decoration ────────────────────────────────────────────────────────
+
+function buildCoverDecoration() {
+  const container = document.getElementById('coverGrid');
+  if (!container) return;
+
+  const sortedSpeeches = [...SPEECHES].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  sortedSpeeches.forEach(speech => {
+    const segments = segmentsCache.get(speech.id);
+    if (!segments || segments.length === 0) return;
+
+    const col = document.createElement('div');
+    col.className = 'cover-col';
+
+    // Group segments into ~90 cells per column for dense texture
+    const TARGET_CELLS = 90;
+    const segsPerCell  = Math.max(1, Math.ceil(segments.length / TARGET_CELLS));
+
+    for (let i = 0; i < segments.length; i += segsPerCell) {
+      const group = segments.slice(i, i + segsPerCell);
+      const cell  = document.createElement('div');
+      cell.className = 'cover-cell';
+
+      // Collect all topic colors matching this cell group
+      const matchedColors = [];
+      const seenTopics    = new Set();
+      group.forEach(seg => {
+        ALL_TOPICS.forEach(topic => {
+          if (!seenTopics.has(topic.label) && topic.terms.some(term => seg.keywords.includes(term))) {
+            seenTopics.add(topic.label);
+            matchedColors.push(topic.color);
+          }
+        });
+      });
+
+      if (matchedColors.length > 0) {
+        const [r, g, b] = matchedColors.length === 1
+          ? hexToRgb(matchedColors[0])
+          : blendColors(matchedColors);
+        cell.classList.add('lit');
+        cell.style.background = buildBackground(matchedColors, 0.72);
+        cell.style.boxShadow  = `0 0 5px rgba(${r},${g},${b},0.35)`;
+        // Randomise pulse timing per cell for organic feel
+        cell.style.setProperty('--pulse-dur',   `${3 + Math.random() * 3}s`);
+        cell.style.setProperty('--pulse-delay', `${Math.random() * 4}s`);
+      }
+
+      col.appendChild(cell);
+    }
+
+    container.appendChild(col);
+  });
+}
+
 // ── Init ───────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
   buildAllSegments();
+  buildCoverDecoration();
   renderTopicPresets();
   renderYearSelector();
   setupKeywordInput();
@@ -825,15 +1256,13 @@ document.addEventListener('DOMContentLoaded', () => {
   setupSpeechPane();
   setupPaneNav();
 
-  // Default: all-years view
-  selectAllYears();
+  // Start in scrollytelling story mode
+  initScrollytelling();
 
-  // Default: activate שלום
-  activateTopic('שלום');
-
-  // Keyboard navigation
+  // Keyboard navigation (explorer mode only)
   const sortedSpeeches = [...SPEECHES].sort((a, b) => new Date(a.date) - new Date(b.date));
   document.addEventListener('keydown', (e) => {
+    if (!document.body.classList.contains('explorer-mode')) return;
     const inInput = document.activeElement === document.getElementById('keywordInput');
 
     if ((e.key === 'a' || e.key === 'A') && !inInput) {
@@ -865,4 +1294,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, 120);
   });
+
+  // ── Session restore ───────────────────────────────────────────────────────
+
+  // Save position before leaving
+  window.addEventListener('beforeunload', () => {
+    if (document.body.classList.contains('explorer-mode')) {
+      sessionStorage.setItem('storyPosition', 'explorer');
+    } else if (currentStoryStep > 0) {
+      sessionStorage.setItem('storyPosition', String(currentStoryStep));
+    } else {
+      sessionStorage.removeItem('storyPosition');
+    }
+  });
+
+  // Restore position on load
+  const savedPosition = sessionStorage.getItem('storyPosition');
+  if (savedPosition === 'explorer') {
+    revealExplorer();
+  } else if (savedPosition) {
+    const step = parseInt(savedPosition, 10);
+    const target = document.querySelector(`[data-step="${step}"]`);
+    if (target) target.scrollIntoView({ behavior: 'instant' });
+  }
 });

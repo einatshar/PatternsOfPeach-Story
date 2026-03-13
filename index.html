@@ -3,26 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signal Archive — Speeches</title>
+  <title>Patterns of Peace</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=Frank+Ruhl+Libre:wght@300;400;700&family=JetBrains+Mono:wght@300;400&family=Noto+Serif+Hebrew:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=Frank+Ruhl+Libre:wght@300;400;700&family=JetBrains+Mono:wght@300;400&family=Newsreader:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+Hebrew:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="custom-cursor"></div>
 
-  <!-- HEADER -->
-  <header class="app-header">
-    <div class="app-title">
-      <span class="title-label">Patterns of Peace</span>
-      <span class="title-sub">A visual archive of Netanyahu's UN speeches</span>
+  <!-- ═══════════════════════════════════════════
+       COVER (full viewport, step 0)
+       ═══════════════════════════════════════════ -->
+  <div id="coverScreen" class="step" data-step="0">
+    <div class="cover-inner">
+      <h1 class="cover-title">
+        <span>Patterns</span><br><span>of Peace</span>
+      </h1>
+      <p class="cover-sub">A visual analysis of what Netanyahu says<br>at the United Nations — year after year.</p>
+      <div class="scroll-hint">scroll ↓</div>
+    </div>
+    <!-- Decorative data visualization built from actual speech data -->
+    <div id="coverViz" aria-hidden="true">
+      <div id="coverGrid"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       APP HEADER (explorer mode only)
+       ═══════════════════════════════════════════ -->
+  <header class="app-header" id="appHeader">
+    <div class="header-left">
+      <button class="back-btn" id="backToStory" aria-label="Back to story">←</button>
+      <div class="app-title">
+        <span class="title-label">Patterns of Peace</span>
+        <span class="title-sub">A visual archive of Netanyahu's UN speeches</span>
+      </div>
     </div>
     <div class="controls">
       <div class="keyword-input-group">
         <input
           type="text"
           id="keywordInput"
-          placeholder="חיפוש מילה..."
+          placeholder="Search word..."
           autocomplete="off"
           spellcheck="false"
           dir="auto"
@@ -32,26 +55,108 @@
       </div>
       <div class="topic-presets" id="topicPresets"></div>
     </div>
+    </div>
   </header>
 
-  <!-- CONTENT AREA -->
-  <div class="content-area" id="contentArea">
+  <!-- ═══════════════════════════════════════════
+       CONTENT ROW (grid + speech pane)
+       ═══════════════════════════════════════════ -->
+  <div id="contentRow">
 
-    <!-- ARCHIVE COLUMN (grid + timeline) -->
-    <div class="archive-column">
+    <!-- ─── STORY SECTION (two-column sticky scroll) ─── -->
+    <section id="story">
 
-      <!-- ARCHIVE GRID -->
-      <main class="archive-stage" id="archiveStage">
-        <div class="grid-container" id="gridContainer"></div>
-        <div class="empty-state" id="emptyState" hidden></div>
-      </main>
+      <!-- Sticky visualization panel (right) -->
+      <div id="story-vis">
+        <main class="archive-stage" id="archiveStage">
+          <div class="grid-container" id="gridContainer"></div>
+          <div class="empty-state" id="emptyState" hidden></div>
+          <!-- Dense text overlay for step 1 -->
+          <div id="speechTextOverlay"></div>
+        </main>
+        <div class="year-selector" id="yearSelector"></div>
+      </div>
 
-      <!-- YEAR SELECTOR (aligned with grid columns) -->
-      <div class="year-selector" id="yearSelector"></div>
+      <!-- Scrolling narrative steps (left) -->
+      <div id="story-steps">
 
-    </div>
+        <div class="step" data-step="1">
+          <div class="step-content">
+            <p>This is Netanyahu's 2023 address to the United Nations — every word, rendered at once.</p>
+            <p>Thousands of words. But what's actually being said?</p>
+          </div>
+        </div>
 
-    <!-- SPEECH PANE -->
+        <div class="step" data-step="2">
+          <div class="step-content">
+            <p>We compressed each speech into fragments — <strong>three words at a time</strong>. Every fragment becomes a single cell.</p>
+            <p class="step-note">
+              Watch the words become the barcode.
+              <span class="seg-nav" id="segNav">
+                <button class="seg-nav-btn" id="segNavPrev" aria-label="Previous segment">←</button>
+                <button class="seg-nav-btn" id="segNavNext" aria-label="Next segment">→</button>
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="step" data-step="3">
+          <div class="step-content">
+            <p>Every time Netanyahu says the word <em class="kw-peace">peace</em> —<br>these cells light up.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="4">
+          <div class="step-content">
+            <p>And these are the moments he speaks of <em class="kw-war">war</em>, <em class="kw-terror">terror</em>, and <em class="kw-iran">Iran</em>.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="5">
+          <div class="step-content">
+            <p>This is the speech from 2023, right before Oct 7th. <em class="kw-peace">Peace</em> was present.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="6">
+          <div class="step-content">
+            <p>Two years later, deep into the <em class="kw-war" style="color:#c8c4be;font-style:normal">war</em>, <em class="kw-peace">Peace</em> was barely there.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="7">
+          <div class="step-content">
+            <p>But this is just two years. Let's look at all of them.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="8">
+          <div class="step-content">
+            <p>Each column is a year. The pattern of light reveals what Netanyahu chose to emphasize — year after year, speech after speech.</p>
+            <ul class="story-legend">
+              <li><span class="legend-dot" style="background:#5868c0"></span>Peace</li>
+              <li><span class="legend-dot" style="background:#b0aaee"></span>Hope</li>
+              <li><span class="legend-dot" style="background:#f9bc29"></span>Security</li>
+              <li><span class="legend-dot" style="background:#e07830"></span>War</li>
+              <li><span class="legend-dot" style="background:#e04020"></span>Terror</li>
+              <li><span class="legend-dot" style="background:#c42820"></span>Iran</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step" data-step="9">
+          <div class="step-content step-cta">
+            <p>Now it's your turn.</p>
+            <p>Click any year. Search for any word. Find your own patterns.</p>
+            <button id="enterExplorer" class="explorer-btn">Explore the Archive →</button>
+          </div>
+        </div>
+
+      </div><!-- #story-steps -->
+
+    </section><!-- #story -->
+
+    <!-- ─── SPEECH PANE (explorer mode only) ─── -->
     <aside class="speech-pane" id="speechPane">
       <div class="pane-header">
         <button class="pane-toggle" id="paneToggle" aria-label="Toggle reading pane">›</button>
@@ -68,7 +173,7 @@
       </div>
     </aside>
 
-  </div>
+  </div><!-- #contentRow -->
 
   <!-- TOOLTIP -->
   <div class="tooltip" id="tooltip" dir="rtl" aria-hidden="true"></div>
