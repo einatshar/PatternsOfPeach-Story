@@ -161,6 +161,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  gap: 4px;
   width: fit-content;
 }
 
@@ -261,6 +262,7 @@ body {
   position: relative;
   min-width: 0;
   padding: 16px;
+  box-sizing: border-box;
 }
 
 /* ── Speech Pane ──────────────────────────────────────── */
@@ -792,7 +794,7 @@ body {
   font-size: clamp(52px, 7vw, 88px);
   font-weight: 500;
   font-style: italic;
-  line-height: 1.05;
+  line-height: 0.95;
   color: #f0ece4;
   margin-bottom: 28px;
   letter-spacing: -0.01em;

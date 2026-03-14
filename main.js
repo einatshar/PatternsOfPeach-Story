@@ -132,6 +132,13 @@ function setPaneCollapsed(collapsed) {
 }
 
 function selectAllYears() {
+  // Hide container first so the flex-direction flip from .view-all isn't visible
+  const container = document.getElementById('gridContainer');
+  if (container && container.children.length > 0) {
+    container.style.transition = 'none';
+    container.style.opacity = '0';
+  }
+
   state.lastSpeechId     = state.selectedSpeechId;
   state.allYears         = true;
   state.selectedSpeechId = null;
@@ -188,6 +195,7 @@ function renderGrid() {
     if (state.allYears) buildAllYearsGrid(container);
     else buildSingleYearGrid(container);
     applyIllumination();
+    container.style.transition = '';
     requestAnimationFrame(() => { container.style.opacity = '1'; });
   };
 
@@ -358,8 +366,8 @@ function applyIllumination() {
         const termHits     = bucket.topics.size + (bucket.customHits > 0 ? 1 : 0);
         const bgAlpha      = termHits === 1 ? 0.52 : termHits <= 3 ? 0.80 : 1.0;
         const borderAlpha  = termHits === 1 ? 0.70 : termHits <= 3 ? 0.90 : 1.0;
-        const glowAlpha    = termHits === 1 ? 0.20 : termHits <= 3 ? 0.38 : 0.58;
-        const glowSize     = termHits === 1 ? 5    : termHits <= 3 ? 10   : 18;
+        const glowAlpha    = termHits === 1 ? 0.45 : termHits <= 3 ? 0.38 : 0.58;
+        const glowSize     = termHits === 1 ? 12   : termHits <= 3 ? 10   : 18;
 
         cell.style.background  = buildBackground(colors, bgAlpha);
         cell.style.borderColor = `rgba(${r},${g},${b},${borderAlpha})`;
@@ -827,7 +835,7 @@ function setupPaneNav() {
 // ── Scrollytelling ─────────────────────────────────────────────────────────
 
 let currentStoryStep  = -1;
-let cellBuildTimer    = null;
+let cellBuildTimers   = [];
 let explorerRevealing = false; // blocks observer during reveal transition
 
 const SPEECH_ID = 'netanyahu-unga-2023';
@@ -945,6 +953,7 @@ const STORY_STEPS = [
 
   // 7: Transition to all-years, clear topics
   () => {
+    cancelCellBuild();
     setStoryYearActive(null);
     state.activeTopics.clear();
     selectAllYears();
@@ -985,7 +994,8 @@ function goToStep(n) {
 }
 
 function cancelCellBuild() {
-  if (cellBuildTimer) { clearTimeout(cellBuildTimer); cellBuildTimer = null; }
+  cellBuildTimers.forEach(id => clearTimeout(id));
+  cellBuildTimers = [];
 }
 
 function resetCellAnimations() {
@@ -1016,7 +1026,7 @@ function animateCellBuild(container, onComplete) {
     const cells  = Array.from(col.querySelectorAll('.cell:not(.cell--blank)'));
     const delay  = ci * COL_DELAY;
     const isLast = ci === cols.length - 1;
-    cellBuildTimer = setTimeout(() => {
+    cellBuildTimers.push(setTimeout(() => {
       cells.forEach(cell => {
         cell.style.animation  = '';
         cell.style.opacity    = '';
@@ -1028,7 +1038,7 @@ function animateCellBuild(container, onComplete) {
       });
       // Fire callback after the last column's cells have finished animating
       if (isLast && onComplete) setTimeout(onComplete, 400);
-    }, delay);
+    }, delay));
   });
 }
 
@@ -1167,6 +1177,10 @@ function initScrollytelling() {
 function revealExplorer() {
   explorerRevealing = true;
 
+  // Disable scroll-snap so the browser doesn't snap back to step 0
+  // when the layout shifts during the animation
+  document.documentElement.style.scrollSnapType = 'none';
+
   // Phase 1: animate text column out, chart panel expands
   document.body.classList.add('explorer-entering');
 
@@ -1174,8 +1188,8 @@ function revealExplorer() {
   setTimeout(() => {
     document.body.classList.remove('explorer-entering');
     document.body.classList.add('explorer-mode');
+    document.documentElement.style.scrollSnapType = '';
 
-    // Now safe to scroll — explorer-mode has overflow:hidden so no observer fires
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
 
