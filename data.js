@@ -1,1918 +1,2621 @@
-const PLACEHOLDER_TEXT = `אדוני הנשיא, גבירותיי ורבותיי,
-לא התכוונתי להגיע לכאן השנה. המדינה של במלחמה, נלחמת על חייה. אבל לאחר ששמעתי את השקרים שהוטחו במדינה שלי על ידי רבים מהנואמים מעל במה זו, החלטתי להגיע לכאן כדי להציג את הדברים לאשורם. החלטתי להגיע לכאן כדי לדבר עבור עמי, לדבר עבור ארצי, לדבר את האמת.
-
-והנה האמת: ישראל מעוניינת בשלום. ישראל כמהה לשלום. ישראל עשתה שלום ותעשה שלום שוב. יחד עם זאת, אנו עומדים בפני אויבים אכזריים אשר רוצים להשמיד אותנו ועלינו להגן על עצמנו מפניהם.
-
-הרוצחים הפראיים האלה, האויבים שלנו, רוצים לא רק להשמיד אותנו – הם רוצים להשמיד את הציוויליזציה שלנו ולהחזיר את כולנו לעידן חשוך של רודנות וטרור.
-
-כשנאמתי כאן בשנה שעברה, אמרתי שאנו עומדים בפני אותה בחירה על זמנית שמשה הציב בפני עם ישראל לפני אלפי שנים לפני הכניסה לארץ המובטחת. משה אמר שהפעולות שלנו יקבעו אם אנחנו נשאיר לדורות שאחרינו ברכה או קללה. זו הבחירה שעומדת בפנינו היום – הקללה של התוקפנות הנמשכת של איראן או הברכה של פיוס היסטורי בין ערבים ויהודים.
-
-בימים שלאחר נאום זה, הברכה עליה דיברתי קיבלה משנה תוקף. היה נראה שהסכם נורמליזציה בין ישראל וערב הסעודית קרוב מתמיד.
-
-אבל אז הגיעה הקללה של ה-7 באוקטובר. אלפי מחבלי טרור, בתמיכת איראן, חדרו לישראל במשאיות ועל גבי אופנועים וביצעו זוועות שאינן ניתנות לתיאור. הם רצחו בברוטליות 1,200 איש. אנסו והשחיתו נשים. ערפו ראשים של גברים. הם שרפו תינוקות בעודם בחיים, שרפו משפחות שלמות בעודם בחיים – תינוקות, ילדים, הורים, סבים. הדבר הזכיר את השואה הנאצית.
-
-חמאס חטף 251 איש מעשרות מדינות וסחב אותם למנהרות של עזה. ישראל החזירה 154 מהחטופים הללו, לרבות 117 שחזרו בחיים.
-
-אני רוצה להבטיח לכם, אנחנו לא נשקוט עד שהחטופים הנותרים גם יחזרו הביתה.
-
-חלק מבני משפחותיהם נמצאים איתנו כאן היום – אני מבקש שתעמדו. איתנו נמצא אלי שטיבי, שבנו עידן נחטף מפסטיבל המוסיקה נובה, זה היה הפשע שלו – פסטיבל מוזיקה, והרוצחים האל לקחו אותו. קובי סמרנו, שבנו יונתן נרצח וגופתו נחטפה למנהרות של עזה – גופה שמוחזקת כבת ערובה. סלים אלאטרש, שאחיו מוחמד, חייל ערבי-ישראלי נרצח. גם גופתו נלקחה לעזה וכך גם גופתה של הבת של יפעת היימן, ענבר, שנרצחה באכזריות בפסטיבל המוזיקה הזה. נמצא איתנו שרון שרעבי, שאחיו יוסי נרצח ושמתפלל על אחיו הבכור אלי שעדיין מוחזק בעזה. איתנו גם יזהר ליפשיץ מקיבוץ ניר עוז, קיבוץ שנמחק על ידי המחבלים. תודה לאל, הצלחנו לשחרר את אימו, יוכבד, אבל אביו עודד עדיין נמצא בגיהינום התת קרקעי של חמאס.
-
-שוב, אני מבטיח לכם, אנחנו נחזיר את האהובים שלכם הביתה, אנחנו לא נפסיק עד להשגת המשימה הקדושה הזו.
-
-גבירותי ורבותיי, קללת ה-7 באוקטובר החלה כשחמאס פלש לישראל מעזה, אבל היא לא הסתיימה שם. ישראל עד מהרה נאלצה להגן על עצמה בשש חזיתות נוספות שאורגנו על ידי איראן. ב-8 באוקטובר, חיזבאללה תקף אותנו מלבנון. מאז הם ירו יותר מ-8,000 טילים לעבר הערים שלנו, האזרחים שלנו, הילדים שלנו. אחרי שבועיים, החות'ים הנתמכים על ידי איראן בתימן, שיגרו כטב"מים וטילים לישראל – התקיפה הראשונה מתוך 250, כולל אחת אתמול שכוונה לתל אביב. גם המיליציות השיעיות בסוריה ועיראק ניסו לפגוע בישראל עשרות פעמים בשנה האחרונה. בתמיכת איראן, מחבלים פלסטינים ביהודה ושומרון ביצעו עשרות תקיפות שם וברחבי המדינה, ובאפריל האחרון, בפעם הראשונה אי פעם, איראן תקפה את ישראל באופן ישיר משטחה. הם ירו עלינו 300 כטב"מים, טילי שיוט וטילים בליסטיים.
-
-יש לי מסר לרודנים של טהראן: אם תכו בנו, אנו נכה בכם. אין מקום – אין מקום באיראן – אליה לא תגיע הזרוע הארוכה של ישראל. וזה נכון לגבי כל המזרח התיכון.
-
-איננו כבשים המובלים לטבח. חיילי ישראל נלחמה חזרה באומץ מדהים והקרבה הרואית.
-
-יש לי מסר נוסף למועצה זו ולעולם שמחוץ לאולם זה: אנחנו מנצחים!
-
-גבירותי ורבותיי, כשישראל מגנה על עצמה בפני איראן ובמלחמת שבע חזיתות זו, הקווים המפרידים בין הברכה לקללה לא יכולים להיות ברורים יותר.
-
-זוהי המפה שהצגתי כאן בשעה שעברה. זוהי מפה של ברכה. היא מציגה את ישראל ואת שותפיה הערבים יוצרים גשר יבשתי שמחבר בין אסיה ואירופה, בין האוקיינוס ההודי והים התיכון. לאורך הגשר, אנחנו נניח מסילות ברזל, צינורות אנרגיה וכבלי סיבים אופטיים. הדבר יאפשר לנו לשפר את החיים של שני מיליארד איש.
-
-עכשיו, הסתכלו במפה השנייה זו מפה של קללה. זו מפה של ציר הרשע שאיראן יצרה והחילה מהאוקיינוס ההודי ועד הים התיכון. ציר הרשע הממאיר של איראן סגר מסלולים ימיים בינלאומיים. הוא הורס מסחר, הורס מדינות מבפנים וגורם סבל למיליונים.
-
-מצד אחד, ברכה חיובית – עתיד של תקווה. מצד שני, עתיד חשוך של ייאוש.
-
-אם אתם חושבים שמפה חשוכה זו היא קללה רק לישראל – כדאי שתחשבו שוב. כי התוקפנות של איראן, אם לא מגבילים אותה, תסכן כל מדינה במזרח התיכון ומדינות רבות אחרות ברחבי העולם. כי איראן רוצה להטיל את הקיצוניות שלה מעבר למזרח התיכון.
-
-זו הסיבה שהיא מממנת רשתות טרור בחמש יבשות. זו הסיבה שהיא בונה טילים בליסטיים לראשי נפץ גרעיניים כדי לאיים על העולם כולו.
-
-במשך זמן רב מדי, העולם פייס את איראן. הוא העלים עין מהדיכוי הפנימי שלה. הוא העלים עין מהתוקפנות החיצונית שלה.
-
-ובכן, על הפיוס הזה להיפסק עכשיו. אומות העולם צריכות לתמוך באנשים האמיצים באיראן שרוצים להיפטר מהמשטר הרשע הזה.
-
-ממשלות אחראיות נדרשות לא רק לתמוך בישראל בהקטנת התוקפנות של איראן, עליהן להצטרף לישראל. עליהן להצטרף לישראל בעצירת תכנית הגרעין האיראנית.
-
-בגוף זה ובמועצת הביטחון יתקיים דיון בעוד מספר חודשים, ואני קורא למועצת הביטחון להחזיר את הסנקציות של מועצת הביטחון נגד איראן כי עלינו לעשות כל שביכולתנו כדי להבטיח שלאיראן לעולם לא יהיה נשק גרעיני.
-
-במשך עשורים, אני מזהיר את העולם מפני תכנית הגרעין האיראנית. הפעולות שלנו עיכבו את התהליך בעשור, אך לא עצרנו אותו. עיכבנו אותו אבל לא עצרנו אותו. איראן כעת רוצה לחמש את תכנית הגרעין שלה.
-
-לטובת השלום והביטחון של כל המדינות שלכם, לטובת השלום והביטחון של העולם כולו, אסור לנו לאפשר לזה לקרות - ואני מבטיח לכם, ישראל תעשה כל שביכולתה כדי לוודא שהדבר לא יקרה.
-
-אז גבירותיי ורבותיי, השאלה בפנינו היא פשוטה: איזו משתי המפות שהצגתי בפניכם תעצב את העתיד שלנו. האם הברכה של שלום ושגשגו עבור ישראל, שותפינו הערבים ושאר העולם? או האם תהיה זו הקללה שבה איראן ושלוחיה מפיצים רצח וכאוס בכל מקום?
-
-ישראל כבר קיבלה את ההחלטה שלה. אנחנו החלטנו להתקדם עם הברכה. אנו בונים שותפות לשלום עם השכנים הערבים שלנו, תוך שאנו נלחמים נגד כוחות הטרור שמאיימים על אותו שלום.
-
-במשך כמעט שנה, הנשים והגברים האמיצים בצה"ל פגעו באופן שיטתי בצבא הטרור של חמאס שפעם שלט בעזה. ב-7 באוקטובר, יום הפלישה לישראל, הצבא הזה כלל כמעט 40,000 מחבלים. הוא היה חמוש ביותר מ-15,000 טילים. היו לו 350 מייל של מנהרות טרור – רשת תת קרקעית גדולה מזו של הרכבת התחתית בניו יורק – והוא השתמש בכל אלה כדי לזרות הרס מעל ומתחת לפני הקרקע. שנה מאוחר יותר, צה"ל הרג או שבה יותר ממחצית המחבלים הללו, השמיד יותר מ-90% מארסנל הטילים שלו והרס חלקים משמעותיים מרשת מנהרות הטרור שלו.
-
-במבצעים צבאיים מדודים, הרסנו כמעט את כל גדודי הטרור של חמאס – 23 מתוך 24. כעת, כדי להשלים את הניצחון שלנו, אנו מתמקדים בחיסול יתרת יכולות הלחימה של חמאס. אנחנו מחסלים מפקדי טרור בכירים ומשמידים את תשתית הטרור שנותרה. אך בתוך כך, אנו ממשיכים להתמקד במשימה הקדושה שלנו: להחזיר את החטופים הביתה ולא נעצור עד שהמשימה הזו תושלם.
-
-כעת, גבירותי ורבותי, על אף היכולת הצבאית המצומצמת של חמאס, המחבלים עדיין מפעילים משילות בעזה על ידי גניבת מזון שאנו אפשרנו לסוכנויות הסיוע להכניס לעזה. חמאס גונב את המזון ומעלה את המחירים. הם ממלאים את ביטנם ואז את הקופה שלהם בכסף אותו הם סוחטים מהעם שלהם. הם מוכרים את המזון הגנוב במחירים מופקעים וככה הם נשארים בשלטון.
-
-ובכן, גם זה חייב להסתיים, והסיבה פשוטה: כי אם חמאס יישאר בשלטון, הוא יתחמש מחדש ויתקוף את ישראל שוב ושבו ושוב כפי שהוא נשבע לעשות. לכן, חמאס צריך ללכת.
-
-רק תארו לעצמכן, לאלה שאומרים שחמאס צריך להישאר, חמאס צריך להיות חלק מעזה שלאחר המלחמה – תארו לעצמכן במצב שאחרי מלחמת העולם השנייה היה מתאפשר לנאצים לבנות מחדש את גרמניה ב-1945 אחרי שהפסידו במלחמה. הדבר בלתי נתפס. זה בלתי אפשרי. זה לא קרה אז וזה לא יקרה עכשיו.
-
-זו הסיבה שישראל תדחה כל תפקיד של חמאס בעזה שלאחר המלחמה. איננו רוצים ליישב את עזה מחדש. אנו רוצים עזה מפורזת ולא קיצונית. רק אז נוכל להבטיח שסבב הלחימה הזה יהיה האחרון. אנו מוכנים לעבוד עם שותפים אזוריים ואחרים כדי לתמוך במינהל אזרחי בעזה שמחויב לדו קיום שלו.
-
-בעניין החטופים, יש לי מסר לחוטפים מהחמאס: שחררו אותם, שחררו אותם. את כולם. אלא שבחיים היום יש להחזיר בחיים ואת הגופות של אלו שרצחתם באכזריות, יש להחזיר למשפחותיהם. למשפחות שאיתנו היום ולאחרות בישראל מגיע שיהיה להן מקום מנוחה לאהוביהם, מקום בו יוכלו להתאבל ולזכור אותם.
-
-גבירותיי ורבותיי, המלחמה הזו יכולה להסתיים עכשיו. כל שצריך לקרות זה שחמאס ייכנע, יניח את נשקו וישחרר את כל החטופים. אבל אם הוא לא יעשה זאת, אנו נילחם עד שנשיג ניצחון. ניצחון מוחלט. אין לכך תחליף.
-
-ישראל צריכה גם להשמיד את חיזבאללה בלבנון. חיזבאללה הוא ארגון הטרור הגודל בעולם היום. יש לו זרועות בכל היבשות. הוא רצח יותר אמריקנים ויותר צרפתים מכל ארגון אחר מלבד בין לאדן. הוא רצח אזרחים של מדינות רבות המיוצגות באולם הזה והוא תקף את ישראל באכזריות לאורך 20 השנים האחרונות.
-
-בשנה האחרונה, ללא כל פרובוקציה, ביום שלאחר טבח ה-7 באוקטובר של חמאס, חיזבאללה החל לתקוף את ישראל ואילץ יותר מ-60,000 ישראלים בגבול הצפון לעזוב את ביתם ולהפוך לפליטים בארצם. חיזבאללה הפך ערים שוקקות בצפון ישראל לערי רפאים.
-
-אני רוצה שתחשבו על זה במונחים אמריקנים. תארו לעצמכם אם מחבלים היו הופכים את אל פאסו או סן דייגו לעיר רפאים. ואז שאלו את עצמכם: כמה זמן הממשל האמריקני היה מוכן לסבול את זה? יום, שבוע, חודש? אני בספק אם היו סובלים את זה אפילו ליום אחד.
-
-עם זאת, ישראל סובלת את המצב הבלתי נסבל הזה כבר קרוב לשנה. ובכן, הגעתי לכאן היום כדי להגיד שמספיק ודי.
-
-לא ננוח עד שהאזרחים שלנו יוכלו לחזור בביטחה לבתיהם. לא נסכים לצבא טרור שמוצב על הגבול הצפוני שלנו ושיכול לבצע עוד טבח של ה-7 באוקטובר.
-
-במשך 18 שנה, חיזבאללה סירב באופן בוטה ליישם את הוראת מועצת הביטחון 1701 המחייב אותו להסיג את כוחותיו מהגבולות שלנו. במקום זאת, חיזבאללה התקרבו לגבול שלנו. הם חפרו מנהרות כדי לחדור לקהילות שלנו וירו אלפי רקטות לתוך היישובים והכפרים שלנו.
-
-הם יורים את הטילים והרקטות מאתרים צבאיים – הם עושים את זה גם – אבל הם יורים את הטילים והרקטות אחרי שהם מציבים אותם בבתי ספר, בבתי חולים, בבתי מגורים ובבתים פרטיים של אזרחי לבנון. הם מסכנים את העם שלהם. הם מכניסים טיל לכל מטבח, רקטה בכל מוסך.
-
-אמרתי לעם הלבנוני בשבוע שעבר: צאו ממלכודת המוות שחיזבאללה הכניס אתכם אליו. אל תתנו לנסראללה לסחוב את לבנון לתהום. איננו במלחמה איתכם, אנו במלחמה עם חיזבאללה, אשר חטף את המדינה שלכם ומאיים להרוס את שלנו.
-
-כל עוד חיזבאללה בוחר את מסלול המלחמה, לישראל אין ברירה ויש לה את כל הזכות להסיר את האיום הזה ולהחזיר את האזרחים שלנו לבתיהם בביטחה – וזה בדיוק מה שאנחנו עושים.
-
-רק השבוע, צה"ל השמיד אחוז גבוה של רקטות חיזבאללה אשר נבנו במימון איראן במשך שלושה עשורים. חיסלנו מפקדים צבאיים בכירים אם דם על הידיים, לא רק של ישראלים, אלא גם של אמריקנים וצרפתים. ואז חיסלנו את המחליפים שלהם, ואת המחליפים של המחליפים. ואנחנו נמשיך להשפיל את חיזבאללה עד להשגת המטרות שלנו.
-
-גבירותיי ורבותיי, אנו מחוייבים להסרת קללת הטרור שמאיים על חברות מתורבתות. אך כדי להבין את הברכה של מזרח תיכון חדש, עלינו להמשיך בדרך שסללנו עם הסכמי אברהם לפני ארבע שנים. מעל לכל, המשמעות היא השגת הסכם שלום היסטורי בין ישראל וערב הסעודית.
-
-אחרי שראיתי את הברכות שכבר השגנו עם הסכמי אברהם, מיליוני הישראלים שכבר טסו הלוך ושוב בחצי האי בשמי ערב הסעודית ומדינות מפרץ אחרות, המסחר, התיירות, המיזמים המשותפים, השלום – הרי שאני אומר לכם – אילו ברכות יכול שלום עם ערב הסעודית להביא. הדבר יחזק את הביטחון והכלכלה בשתי המדינות שלנו. הדבר יחזק את המסחר והתיירות באזור. הוא יסייע להפוך את המזרח התיכון לכוח גלובלי. שתי המדינות שלנו יכולות לשתף פעולה באנרגיה, מים, חקלאות, בינה מלאכותית ועוד הרבה תחומים רבים.
-
-שלום כזה, אני בטוח, יהווה נקודת מפנה אמיתית בהיסטוריה. הוא יביא לפיוס היסטורי בין העולם הערבי וישראל, בין איסלאם ויהדות, בין מכה לירושלים.
-
-בעוד ישראל מחויבת להשגת שלום כזה, איראן ושלוחות הטרור שלהן מחוייבים להרוס אותה. זוה הסיבה שאחת הדרכים הטובות ביותר לפגוע במטרות הזדוניות של איראן היא להשיג שלום.
-
-שלום כזה יהווה את הבסיס לברית אברהם רחבה עוד יותר ואותה ברית תכלול את ארה"ב, שותפי השלום הערביים של ישראל בהווה, ערב הסעודית ואחרות שבוחרות בברכת השלום.
-
-הדבר יקדם את הביטחון והשגשוג במזרח התיכון ויביא תועלת רבה לכל העולם. בתמיכה והובלה אמריקנית, אני מאמין שחזון זה יכול להתממש הרבה יותר מוקדם ממה שחושבים, וכראש ממשלת ישראל אעשה כל שבכוחי כדי לגרום לזה לקרות. זוהי הזדמנות שאסור לנו ולעולם לפספס.
-
-גבירותיי ורבותיי, ישראל עשתה את הבחירה שלה. אנו רוצים להתקדם לעתיד מואר של שגשוג ושלום. איראן ושלוחיה גם עשו את הבחירה שלהן. הן רוצות לחזור אחורה לעידן חשוב של טרור ומלחמה. כעת יש לי שאלה ואני מציב אותה בפניכם: מה תבחרו אתם? האם האומה שלכם תעמוד לצד ישראל? האם תעמדו לצד דמוקרטיה ושלום? או האם תעמוד לצד איראן, דיקטטורה אכזרית שמשעבדת את עמה ומייצאת טרור ברחבי העולם?
-
-בקרב הזה, בין טוב ורע, אסור שיהיה ספק. כשאתם עומדים לצד ישראל, אתם עומדים על הערכים והאינטרסים שלכם. כן, אנו מגינים על עצמנו, אבל אנחנו גם מגינים עליכם מפני האויב המשותף אשר באמצעות אלימות וטרור מעוניין להרוס את אורח חיינו.
-
-לא צריך להיות בלבול בעניין הזה, אך לצערי, יש בלבול רב במדינות רבות וגם באולם הזה, כפי ששמעתי עכשיו. הטוב מוצג כרוע והרוע מוצג כטוב.
-
-אנו רואים את הבלבול המוסרי הזה כשמאשימים את ישראל לשווה ברצח עם כאשר אנו מגנים על עצמנו מפני אויבים שמנסים לבצע בנו רצח עם. אנו גם רואים זאת כשהתובע בהאג מאשים אותנו בהרעבת פלסטינים בעזה. איזה אבסורד. אנו עוזרים להכניס 700,000 טון מזון לעזה. זה יותר מ-3,000 קלוריות ליום לכל גבר, אישה וילד בעזה. אנו רואים את הבלבול המוסרי הזה כשמאשימים את ישראל שהיא מנסה לפגוע באזרחים באופן מכוון. אנו לא רוצים לראות מוות של אף חף מפשע. זו תמיד טרגדיה וזו הסיבה שאנחנו עושים כל כך הרבה כדי להקטין את הפגיעה באזרחים, גם כאשר האויבים שלנו משתמשים באזרחים כבמיגינים אנושיים.
-
-אף צבא לא עשה את מה שישראל עושה כדי לצמצם פגיעה באזרחים. אנו מפזרים כרוזים. אנחנו שולחים הודעות סמס. אנו מתקשרים למיליונים כדי לוודא שהאזרחים הפלסטינים יוצאים מאזור הסכנה. איננו בוחלים במאמצים במטרה זו.
-
-אנחנו רואים בלבול מוסרי עמוק כאשר אלה המכנים עצמם פרוגרסיביים צועדים נגד הדמוקרטיה בישראל. הם לא מבינים שהם תומכים בבריונים במימון איראן בטהראן ועזה, הבריונים שירו במפגינים, רוצחים נשים על שאינן מכסות את ראשן ותולים הומוסקסואלים בכיכר העיר – מאוד פרוגרסיבי.
-
-על פי מנהל המודיעין הלאומי של ארה"ב, איראן מממנת ומעודדת רבים מהמפגינים נגד ישראל. מי יודע, אולי חלק מהמפגינים או אפילו את רוב המפגינים שמחוץ לבניין הזה עכשיו.
-
-גבירותיי ורבותיי, שלמה המלך, שמלך בבירה הנצחית שלנו ירושלים לפני 3,000 שנה, אמר משפט שמוכר לכולכם: "אין חדש תחת השמש". ובכן, בעידן של נסיעה בחלל, פיזיקה קוונטית ובינה מלאכותית, יש שיטענו שהדבר נתון לוויכוח. אבל דבר אחד אינו נתון לוויכוח: בהחלט אין חדש באומות המאוחדות.
-
-תאמינו לי. אני נאמתי מעל במה זו כשגריר ישראל לאו"ם ב-1984. בדיוק לפני 40 שנה. ובנואם הבכורה שלי כאן, דיברתי נגד ההצעה להוציא את ישראל מהגוף הזה. ארבעה עשורים מאוחר יותר, אני מוצא את עצמי כאן, מגן על ישראל נגד אותה הצעה אבסורדית. ומי מוביל את המתקפה הפעם? לא חמאס, אלא עבאס.
-
-נשיא הרשות הפלסטינית מחמוד עבאס – זהו האיש שטוען שהוא רוצה שלום, אך הוא מסרב לגנות את הטבח הנורא של ה-7 באוקטובר. הוא עדיין משלם מאות מיליונים למחבלים שרצחו ישראלים ואמריקנים. הדבר נקרא תשלום לרצח. ככל שתרצח יותר, כך תרוויח יותר. הוא עדיין מקיים מלחמה דיפלומטית נגד הזכות של ישראל להתקיים והזכות של ישראל להגן על עצמה. ודרך אגב, מדובר באותו הדבר כי אם אינך יכול להגן על עצמך, אינך קיים, בוודאי לא בשכונה שלנו, ואולי גם לא בשלכם.
-
-בעומדי על במה זו לפני 40 שנה, אמרתי למובילי החלטה זו לגרש את ישראל: רבותיי, השאירו את הפנטיות שלכם בדלת. היום, אני אומר לנשיא עבאס ולכל מי שיתמוך בהחלטה זו ללא בושה: השאירו את הפנטיות שלכם בדלת.
-
-הבידוד של המדינה היהודית האחת והיחידה ממשיכה להיות כתם מוסרי באו"ם. הוא הפך את המוסד שפעם היה מכובד למוסד שנוא בעיני אנשים ישרים בכל העולם. אך לפלסטינים, בית החושך הזה הוא המגרש הביתי. הם יודעים שבביצה זו של אנטישמיות, קיים רוב אוטומטי שמוכן לבצע דמוניזציה במדינה היהודית מכל סיבה שהיא. בחברה אנטי ישראלית זו, כל האשמה כוזבת יכולה לעורר רוב.
-
-בעשור האחרון התקבלו יותר החלטות נגד ישראל, באולם הזה בעצרת הכללית של האו"ם, מאשר נגד העולם כולו גם יחד. למעשה, יותר מפי שניים. מאז 2014 גינה גוף זה את ישראל 174 פעמים. היא גינתה את כל שאר מדינות העולם 73 פעמים. זה יותר מ-100 גינויים נוספים למדינה היהודית. איזו צביעות. איזה מוסר כפול. איזו בדיחה.
-
-לכן, כל הנאומים ששמעתם היום, כל העוינות שהופנתה כלפי ישראל השנה – זה לא קשור לעזה; זה על ישראל. זה תמיד היה על ישראל. על עצם קיומה של ישראל. ואני אומר לכם, עד שישראל, עד שהמדינה היהודית, לא התייחסו אליה כמו אומות אחרות, עד שהביצה האנטישמית הזאת לא תתייבש, האו"ם ייתפס על ידי אנשים הוגנים בכל מקום כלא יותר מאשר פארסה בזויה.
-
-ובהתחשב באנטישמיות באו"ם, לא צריך להפתיע אף אחד שהתובע בבית הדין הפלילי הבינלאומי, אחד הגופים המסונפים לאו"ם, שוקל להוציא צווי מעצר נגדי ונגד שר הביטחון הישראלי, המנהיגים שנבחרו באופן דמוקרטי של מדינת ישראל הדמוקרטית.
-
-את החיפזון של התובע של בית הדין הפלילי הבינלאומי לשפוט, את סירובו להתייחס לישראל בבתי המשפט העצמאיים שלה כפי שמתייחסים לדמוקרטיות אחרות, קשה להסביר בשום דבר אחר מלבד אנטישמיות טהורה.
-
-גבירותיי ורבותיי, פושעי המלחמה האמיתיים אינם נמצאים בישראל. הם באיראן. הם בעזה, בסוריה, בלבנון, בתימן. אלה מכם שעומדים לצד פושעי המלחמה האלה, אלה מכם שעומדים עם הרע נגד הטוב, עם הקללה נגד הברכה, אלה מכם שעושים זאת צריכים להתבייש בעצמכם.
-
-אבל יש לי מסר בשבילכם: ישראל תנצח בקרב הזה. אנחנו ננצח בקרב הזה כי אין לנו ברירה. אחרי דורות שבהם עמנו נטבח, נטבח ללא חרטה ואף אחד לא נקף אצבע להגנתנו, יש לנו עכשיו מדינה. יש לנו עכשיו צבא אמיץ, צבא של אומץ שאין דומה לו, ואנחנו מגנים על עצמנו. כפי שכתוב בספר שמואל בתנ"ך: "נֵ֣צַח יִשְׂרָאֵ֔ל לֹ֥א יְשַׁקֵּ֖ר".
-
-במסעו האפי של העם היהודי מהעת העתיקה, באודיסיאה שלנו דרך הסערות והתהפוכות של העת החדשה, הבטחה עתיקה זו נשמרה מאז ומתמיד והיא תחזיק מעמד לנצח. אם לשאול משפט של משורר גדול: ישראל לא תיכנס בעדינות אל תוך הלילה הטוב הזה. לעולם לא נצטרך לזעום על מות האור, כי לפיד ישראל יזרח לנצח.
-
-לעם ישראל ולחיילי ישראל אני אומר: תהיו חזקים ובעלי אומץ טוב. "חִזְק֣וּ וְאִמְצ֔וּ אַל־תִּֽירְא֥וּ וְאַל־תַּעַרְצ֖וּ מִפְּנֵיהֶ֑ם כִּ֣י ה' אֱלֹקיךָ ה֚וּא הַהֹלֵ֣ךְ עִמָּ֔ךְ לֹ֥א יַרְפְּךָ֖ וְלֹ֥א יַעַזְבֶֽךּ". עם ישראל חי עכשיו, מחר, לנצח.`;
+const PLACEHOLDER_TEXT = `Mr. President, Ladies and gentlemen, I didn’t intend to come here this year. My country is
+at war, ﬁghting for its life.
+But after I heard the lies and slanders leveled at my country by many of the speakers at this
+podium, I decided to come here and set the record straight. I decided to come here to
+speak for my people.
+To speak for my country, to speak for the truth. And here’s the truth: Israel seeks peace.
+Israel yearns for peace. Israel has made peace and will make peace again. Yet we face
+savage enemies who seek our annihilation, and we must defend ourselves against them.
+These savage murderers, our enemies, seek not only to destroy us, but they seek to destroy
+our common civilization and return all of us to a dark age of tyranny and terror. When I
+spoke here last year, I said we face the same timeless choice that Moses put before the
+people of Israel thousands of years ago, as we were about to enter the Promised Land.
+Moses told us that our actions would determine whether we bequeath to future
+generations a blessing or a curse.
+And that is the choice we face today: the curse of Iran’s unremitting aggression or the
+blessing of a historic reconciliation between Arab and Jew. In the days that followed that
+speech, the blessing I spoke of came into sharper focus.
+A normalization deal between Saudi Arabia and Israel seemed closer than ever. But then
+came the curse of October 7th. Thousands of Iranian-backed Hamas terrorists from Gaza
+burst into Israel in pickup trucks and on motorcycles, and they committed unimaginable
+atrocities.
+They savagely murdered 1,200 people. They raped and mutilated women. They beheaded
+men. They burned babies alive. They burned entire families alive—babies, children,
+parents, grandparents. It seems reminiscent of the Nazi Holocaust.
+Hamas kidnapped 251 people from dozens of different countries, dragging them into the
+dungeons of Gaza. Israel has brought home 154 of these hostages, including 117 who
+returned alive. I want to assure you, we will not rest until the remaining hostages are
+brought home too, and some of their family members are here with us today. I ask you to
+stand up.
+
+With us is Eli Shtivi, whose son Idan was abducted from the Nova music festival. That was
+his crime— a music festival. And these murderous monsters took him. Koby Samerano,
+whose son Jonathan was murdered, and his corpse was taken into the dungeons, into the
+terror tunnels of Gaza—a corpse held hostage.
+Salem Alatrash, whose brother Mohammad, a brave Arab Israeli soldier, was murdered. His
+body, too, was taken to Gaza. And so was the body of Ifat Haiman’s daughter, Inbar, who
+was brutally murdered at that same music festival.
+With us is Sharon Sharabi, whose brother Yossi was murdered, and who prays for his older
+brother Eli, who is still held hostage in Gaza. And with us too is Yizhar Lifshitz from Kibbutz
+Nir Oz, a kibbutz that was wiped out by the terrorists.
+Thankfully, we achieved the release of his mother, Yocheved, but his father, Oded, is still
+languishing in the underground terrorist hell of Hamas. I again promise you, we will return
+your loved ones home. We will not spare that effort until this holy mission is accomplished.
+Ladies and gentlemen, the curse of October 7th began when Hamas invaded Israel from
+Gaza, but it didn’t end there. Israel was soon forced to defend itself on six more war fronts
+organized by Iran. On October 8th, Hezbollah attacked us from Lebanon. Since then, they
+have ﬁred over 8,000 rockets at our towns and cities, at our civilians, at our children. Two
+weeks later, the Iran-backed Houthis in Yemen launched drones and missiles at Israel, the
+ﬁrst of 250 such attacks, including one yesterday aimed at Tel Aviv. Iran’s Shiite militias in
+Syria and Iraq have targeted Israel dozens of times over the past year as well.
+Fueled by Iran, Palestinian terrorists in Judea and Samaria perpetrated scores of attacks
+there and throughout Israel. And last April, for the ﬁrst time ever, Iran directly attacked
+Israel from its own territory.
+Firing 300 drones, cruise missiles, and ballistic missiles at us. I have a message for the
+tyrants of Tehran: If you strike us, we will strike you. There is no place—there is no place in
+Iran—that the long arm of Israel cannot reach. And that’s true of the  entire Middle East.
+Far from being lambs led to the slaughter, Israel’s soldiers have fought back with incredible
+courage and with heroic sacriﬁce. And I have another message for this assembly and for
+the world outside this hall: We are winning.
+Ladies and gentlemen, as Israel defends itself against Iran in this seven-front war, the lines
+separating the blessing and the curse could not be more clear. This is the map I presented
+here last year. It’s a map of a blessing.
+It shows Israel and its Arab partners forming a land bridge connecting Asia and Europe.
+Between the Indian Ocean and the Mediterranean Sea, across this bridge, we will lay rail
+
+lines, energy pipelines, and ﬁber optic cables, and this will serve the betterment of 2 billion
+people.
+Now look at this second map. It’s a map of a curse. It’s a map of an arc of terror that Iran
+has created and imposed from the Indian Ocean to the Mediterranean. Iran’s malignant arc
+has shut down international waterways.
+It cuts off trade, it destroys nations from within, and inﬂicts misery on millions. On the one
+hand, a bright blessing—a future of hope. On the other hand, a dark future of despair. And if
+you think this dark map is only a curse for Israel, then you should think again.
+Because Iran’s aggression, if it’s not checked, will endanger every single country in the
+Middle East, and many, many countries in the rest of the world, because Iran seeks to
+impose its radicalism well beyond the Middle East.
+That’s why it funds terror networks on ﬁve continents. That’s why it builds ballistic missiles
+for nuclear warheads to threaten the entire world. For too long, the world has appeased
+Iran. It turned a blind eye to its internal repression. It turned a blind eye to its external
+aggression. Well, that appeasement must end. And that appeasement must end now.
+Nations of the world should support the brave people of Iran who want to rid themselves of
+this evil regime. Responsible governments should not only support Israel in rolling back
+Iran’s aggression, but they should join Israel. They should join Israel in stopping Iran’s
+nuclear weapons program.
+In this body and the Security Council, we’re going to have a deliberation in a few months.
+And I call on the Security Council to snap back UN Security Council sanctions against Iran
+because we must all do everything in our power to ensure that Iran never gets nuclear
+weapons. For decades, I’ve been warning the world against Iran’s nuclear program. Our
+actions delayed this program by perhaps a decade, but we haven’t stopped it. We’ve
+delayed it, but we haven’t stopped it. Iran now seeks to weaponize its nuclear program. For
+the sake of the peace and security of all your countries.
+For the sake of the peace and security of the entire world, we must not let that happen. And
+I assure you, Israel will do everything in its power to make sure it doesn’t happen.
+So, ladies and gentlemen, the question before us is simple: Which of these two maps that I
+showed you will shape our future? Will it be the blessings of peace and prosperity for Israel,
+our Arab partners, and the rest of the world?
+Or will it be the curse in which Iran and its proxies spread carnage and chaos everywhere?
+Israel has already made its choice. We’ve decided to advance the blessing. We’re building
+
+a partnership for peace with our Arab neighbors while ﬁghting the forces of terror that
+threaten that peace.
+For nearly a year, the brave men and women of the IDF have been systematically crushing
+Hamas’s terror army that once ruled Gaza. On October 7th, the day of that invasion into
+Israel, that terror army numbered nearly 40,000 terrorists. It was armed with more than
+15,000 rockets. It had 350 miles of terror tunnels—an underground network bigger than the
+New York subway system—which they used to wreak havoc above and below ground.
+A year later, the IDF has killed or captured more than half of these terrorists, destroyed over
+90% of their rocket arsenal, and eliminated the key segments of their terror tunnel network.
+In measured military operations, we destroyed nearly all of Hamas’s terror battalions—23
+out of 24 battalions. Now, to complete our victory, we are focused on mopping up Hamas’s
+remaining ﬁghting capabilities.
+We are taking out senior terrorist commanders and destroying remaining terrorist
+infrastructure. But all the while, we remain focused on our sacred mission: bringing our
+hostages home, and we will not stop until that mission is complete.
+Now, ladies and gentlemen, even with Hamas’s greatly diminished military capability, the
+terrorists still exercise some governing power in Gaza by stealing the food that we enable
+aid agencies to bring into Gaza.
+Hamas steals the food, and then they hike the prices. They feed their bellies, and then they
+ﬁll their coffers with money they extort from their own people. They sell the stolen food at
+exorbitant prices, and that’s how they stay in power. Well, this too has to end, and we’re
+working to bring it to an end.
+And the reason is simple: because if Hamas stays in power, it will regroup, rearm, and
+attack Israel again and again and again, as it has vowed to do. So, Hamas has got to go.
+Just imagine, for those who say Hamas has to stay, it has to be part of a post-war Gaza—
+imagine, in a post-war situation after World War II, allowing the defeated Nazis in 1945 to
+rebuild Germany? It’s inconceivable. It’s ridiculous. It didn’t happen then, and it’s not going
+to happen now.
+This is why Israel will reject any role for Hamas in a post-war Gaza. We don’t seek to
+resettle Gaza. What we seek is a demilitarized and de-radicalized Gaza. Only then can we
+ensure that this round of ﬁghting will be the last round of ﬁghting.
+We are ready to work with regional and other partners to support a local civilian
+administration in Gaza, committed to peaceful coexistence.
+
+As for the hostages, I have a message for the Hamas captors: Let them go. Let them go. All
+of them. Those alive today must be returned alive, and the remains of those whom you
+brutally killed must be returned to their families. Those families here with us today and
+others in Israel deserve to have a resting place for their loved ones. A place where they can
+grieve and remember them.
+Ladies and gentlemen, this war can come to an end now. All that has to happen is for
+Hamas to surrender, lay down its arms, and release all the hostages. But if they don’t, we
+will ﬁght until we achieve victory. Total victory. There is no substitute for it.
+Israel must also defeat Hezbollah in Lebanon. Hezbollah is the quintessential terror
+organization in the world today.
+It has tentacles that span all continents. It has murdered more Americans and more
+Frenchmen than any group except Bin Laden. It’s murdered the citizens of many countries
+represented in this room. And it has attacked Israel viciously over the last 20 years.
+In the last year, completely unprovoked, a day after the Hamas massacre on October 7th,
+Hezbollah began attacks against Israel, which forced more than 60,000 Israelis on our
+northern border to leave their homes, becoming refugees in their own land.
+Hezbollah turned vibrant towns in the north of Israel into ghost towns. So I want you to
+think about this in equivalent American terms. Just imagine if terrorists turned El Paso and
+San Diego into ghost towns.
+Then ask yourself: How long would the American government tolerate that? A day, a week,
+a month? I doubt they would tolerate it even for a single day.
+Yet Israel has been tolerating this intolerable situation for nearly a year. Well, I’ve come
+here today to say enough is enough.
+We won’t rest until our citizens can return safely to their homes. We will not accept a terror
+army perched on our northern border, able to perpetrate another October 7th-style
+massacre.
+For 18 years, Hezbollah brazenly refused to implement UN Security Council Resolution
+1701, which requires it to move its forces away from our borders. Instead, Hezbollah
+moved right up to our border. They secretly dug terror tunnels to inﬁltrate our communities
+and indiscriminately ﬁred thousands of rockets into our towns and villages.
+They ﬁre these rockets and missiles not from military sites—they do that too —but they ﬁre
+those rockets and missiles after they place them in schools, in hospitals, in apartment
+
+buildings, and in the private homes of the citizens of Lebanon. They endanger their own
+people. They put a missile in every kitchen.
+A rocket in every garage. I said to the people of Lebanon this week: Get out of the death trap
+that Hezbollah has put you in. Don’t let Nasrallah drag Lebanon into the abyss. We’re not at
+war with you. We’re at war with Hezbollah, which has hijacked your country and threatens
+to destroy ours.
+As long as Hezbollah chooses the path of war, Israel has no choice. And Israel has every
+right to remove this threat and return our citizens to their homes safely, and that’s exactly
+what we’re doing.
+Just this week, the IDF destroyed large percentages of Hezbollah’s rockets, which were
+built with Iran’s funding for three decades. We took out senior military commanders who
+not only shed Israeli blood but American and French blood as well.
+And then we took out their replacements. And then the replacements of their
+replacements. And we’ll continue degrading Hezbollah until all our objectives are met.
+Ladies and gentlemen, we’re committed to removing the curse of terrorism that threatens
+all civilized societies. But to truly realize the blessing of a new Middle East, we must
+continue the path we paved with the Abraham Accords four years ago. Above all, this
+means achieving a historic peace agreement between Israel and Saudi Arabia.
+And having seen the blessings that we’ve already brought with the Abraham Accords, the
+millions of Israelis who have already ﬂown back and forth across the Arabian Peninsula
+over the skies of Saudi Arabia to the Gulf countries, the trade, the tourism, the joint
+ventures, the peace—I say to you, what blessings such a peace with Saudi Arabia would
+bring.
+It would be a boon to the security and economy of our two countries. It would boost trade
+and tourism across the region. It would help transform the Middle East into a global
+juggernaut.
+Our two countries could cooperate on energy, water, agriculture, artiﬁcial intelligence, and
+many, many other ﬁelds. Such a peace, I am sure, would be a true pivot of history. It would
+usher in a historic reconciliation between the Arab world and Israel, between Islam and
+Judaism, between Mecca and Jerusalem.
+While Israel is committed to achieving such a peace, Iran and its terror proxies are
+committed to scuttling it. That’s why one of the best ways to foil Iran’s nefarious designs is
+to achieve the peace.
+
+Such a peace would be the foundation for an even broader Abrahamic alliance, and that
+alliance would include the United States, Israel’s current Arab peace partners, Saudi
+Arabia, and others who choose the blessing of peace.
+It would advance security and prosperity across the Middle East and bring enormous
+beneﬁts to the rest of the world. With American support and leadership, I believe this vision
+can materialize much sooner than people think. And as the Prime Minister of Israel, I will do
+everything in my power to make it happen. This is an opportunity that we and the world
+should not let go by.
+Ladies and gentlemen, Israel has made its choice. We seek to move forward to a bright age
+of prosperity and peace. Iran and its proxies have also made their choice. They want to
+move back to a dark age of terror and war.
+And now I have a question, and I pose that question to you: What choice will you make?
+Will your nation stand with Israel? Will you stand with democracy and peace? Or will you
+stand with Iran, a brutal dictatorship that subjugates its own people and exports terrorism
+across the globe?
+In this battle between good and evil, there must be no equivocation. When you stand with
+Israel, you stand for your own values and your own interests. Yes, we’re defending
+ourselves, but we’re also defending you against a common enemy that, through violence
+and terror, seeks to destroy our way of life. So there should be no confusion about this, but
+unfortunately, there is a lot of it in many countries and in this very hall, as I’ve just heard.
+Good is portrayed as evil, and evil is portrayed as good.
+We see this moral confusion when Israel is falsely accused of genocide when we defend
+ourselves against enemies who try to commit genocide against us. We see this too when
+Israel is absurdly accused by the ICC Prosecutor of deliberately starving Palestinians in
+Gaza.
+What an absurdity. We help bring in 700,000 tons of food into Gaza. That’s more than 3,000
+calories a day for every man, woman, and child in Gaza. We see this moral confusion when
+Israel is falsely accused of deliberately targeting civilians.
+We don’t want to see a single innocent person die. That’s always a tragedy. And that’s why
+we do so much to minimize civilian casualties, even as our enemies use civilians as human
+shields.
+And no army has done what Israel is doing to minimize civilian casualties. We drop ﬂyers.
+We send text messages. We make phone calls by the millions to ensure that Palestinian
+civilians get out of harm’s way. We spare no effort in this noble pursuit.
+
+We see yet another profound moral confusion when self-described progressives march
+against the democracy of Israel. Don’t they realize they support the Iranian-backed goons
+in Tehran and in Gaza, the goons who shot down protesters, murder women for not
+covering their hair, and hang gays in public squares? Some progressives.
+According to the U.S. Director of National Intelligence, Iran funds and fuels many of the
+protesters against Israel. Who knows, maybe some of the protesters or even many of the
+protesters outside this building now?
+Ladies and gentlemen, King Solomon, who reigned in our eternal capital, Jerusalem, 3,000
+years ago, proclaimed something that is familiar to all of you. He said: There is nothing new
+under the sun.
+Well, in an age of space travel, quantum physics, and artiﬁcial intelligence, some would
+argue that’s a debatable statement. But one thing is undeniable: there is deﬁnitely nothing
+new at the United Nations.
+Take it from me. I ﬁrst spoke from this podium as Israel’s ambassador to the UN in 1984.
+That’s exactly 40 years ago. And in my maiden speech here, I spoke against a proposal to
+expel Israel from this body. Four decades later, I ﬁnd myself defending Israel against that
+same preposterous proposal.
+And who’s leading the charge this time? Not Hamas, but Abbas.
+Palestinian Authority President Mahmoud Abbas. This is the man who claims he wants
+peace with Israel, yet he still refuses to condemn the horriﬁc massacre of October 7th.
+He’s still paying hundreds of millions to terrorists who murdered Israelis and Americans.
+It’s called Pay for Slay. The more you murder, the more you get paid.
+And he still wages unremitting diplomatic warfare against Israel’s right to exist and against
+Israel’s right to defend itself. And by the way, they amount to the same thing, because if you
+can’t defend yourself, you can’t exist. Not in our neighborhood, certainly. And maybe not in
+yours.
+Standing at this podium 40 years ago, I told the sponsors of that outrageous resolution to
+expel Israel: Gentlemen, check your fanaticism at the door. Today, I tell President Abbas
+and all of you who would shamefully support that resolution: Check your fanaticism at the
+door.
+The singling out of the one and only Jewish state continues to be a moral stain on the
+United Nations. It has made this once-respected institution contemptible in the eyes of
+decent people everywhere. But for the Palestinians, this UN house of darkness is home
+
+court. They know that in this swamp of antisemitic bile, there’s an automatic majority
+willing to demonize the Jewish state for anything. In this anti-Israel ﬂat-earth society, any
+false charge, any outlandish allegation can muster a majority.
+In the last decade, there have been more resolutions passed against Israel in this hall, in
+the UN General Assembly, than against the entire world combined. Actually, more than
+twice as many. Since 2014, this body condemned Israel 174 times.
+It condemned all the other countries in the world 73 times. That’s more than 100 extra
+condemnations for the Jewish state. What hypocrisy. What a double standard. What a joke.
+So, all the speeches you heard today, all the hostility directed at Israel this year—it’s not
+about Gaza; it’s about Israel. It’s always been about Israel. About Israel’s very existence.
+And I say to you, until Israel, until the Jewish state, is treated like other nations, until this
+antisemitic swamp is drained, the UN will be viewed by fair-minded people everywhere as
+nothing more than a contemptuous farce.
+And given the antisemitism at the UN, it should surprise no one that the prosecutor at the
+ICC, one of the UN’s affiliated organs, is considering issuing arrest warrants against me and
+Israel’s defense minister, the democratically elected leaders of the democratic state of
+Israel.
+The ICC prosecutor’s rush to judgment, his refusal to treat Israel with its independent
+courts the way other democracies are treated, is hard to explain by anything other than
+pure antisemitism.
+Ladies and gentlemen, the real war criminals are not in Israel. They’re in Iran. They’re in
+Gaza, in Syria, in Lebanon, in Yemen. Those of you who stand with these war criminals,
+those of you who stand with evil against good, with the curse against the blessing, those of
+you who do so should be ashamed of yourselves.
+But I have a message for you: Israel will win this battle. We will win this battle because we
+don’t have a choice.
+After generations in which our people were slaughtered, remorselessly butchered, and no
+one raised a ﬁnger in our defense, we now have a state. We now have a brave army, an army
+of incomparable courage, and we are defending ourselves.
+As the book of Samuel says in the Bible:
+ "
+The eternity of Israel will not falter" .
+10
+
+In the Jewish people’s epic journey from antiquity, in our odyssey through the tempest and
+upheavals of modern times, that ancient promise has always been kept and it will hold true
+for all time.
+To borrow a great poet’s phrase: Israel will not go gently into that good night. We will never
+need to rage against the dying of the light because the torch of Israel will forever shine
+bright.
+To the people of Israel and to the soldiers of Israel, I say:Be strong and of good courage.
+The people of Israel live now, tomorrow, forever" .
+
+
+Source: Official Facebook of the Prime Minister of Israel
+https://fb.watch/uSL1ykUIpY/`;
 
 const SPEECHES = [
   {
     id: "netanyahu-unga-2009",
-    title: 'נאום האו"ם 2009',
+    title: 'UN Speech 2009',
     speaker: "בנימין נתניהו",
     date: "2009-09-24",
-    dir: "rtl",
-    text: `לפני כמעט 62 שנה, הכירו האומות המאוחדות בזכותם של היהודים, עם עתיק בן 3,500 שנה, למדינה משלהם במולדת אבותיהם.
+    dir: "ltr",
+    text: `Nearly 62 years ago, the United Nations recognized the rights of the Jews, an ancient people 3,500 years-old, to a state of their own in their ancestral homeland.
 
-אני עומד כאן היום כראש ממשלת ישראל, המדינה היהודית, ואני מדבר אליכם בשם מדינתי ובשם עמי.
+I stand here today as the Prime Minister of Israel, the Jewish state, and I speak to you on behalf of my country and my people.
 
-האומות המאוחדות נוסדו לאחר מרחץ הדמים של מלחמת העולם השנייה ואימי השואה. הוטלה עליהן המשימה למנוע את הישנותם של אירועים מחרידים כאלה.
+The United Nations was founded after the carnage of World War II and the horrors of the Holocaust.  It was charged with preventing the reoccurrence of such horrendous events.
 
-שום דבר לא ערער את המשימה הזאת, שום דבר לא פגע בה יותר מן ההתקפה השיטתית על האמת. אתמול עמד נשיא איראן על הדוכן הזה ממש, ופלט את נאצותיו האנטישמיות האחרונות. ימים ספורים קודם לכן, הוא שב וטען שהשואה היא שקר.
+Nothing has undermined that mission, nothing has impeded it more, than the systematic assault on the truth.  Yesterday the President of Iran stood at this very podium, spewing his latest anti-Semitic rants.  Just a few days earlier, he again claimed that the Holocaust is a lie.
 
-בחודש שעבר נסעתי לווילה בפרבר של ברלין בשם ואנזה. שם, ב-20 בינואר 1942, לאחר ארוחה דשנה, נפגשו בכירים נאצים והחליטו להשמיד את עמי. הם הותירו פרוטוקול מפורט של אותה פגישה, והפרוטוקול הזה נשמר לדורות על ידי ממשלות גרמניה לדורותיהן. הנה עותק של הפרוטוקול מאותה פגישה של בכירי המשטר הנאצי, המורה לממשלת גרמניה הנאצית כיצד לבצע את השמדת העם היהודי. האם גם הפרוטוקול הזה הוא שקר? האם ממשלת גרמניה, האם כל ממשלות גרמניה, משקרות?
+Last month, I went to a villa in a suburb of Berlin called Wannsee.  There, on January 20, 1942, after a hearty meal, senior Nazi officials met and decided to exterminate my People.  They left detailed minutes of that meeting and these minutes have been preserved for posterity by successive German governments.   Here is a copy of the minutes of the meeting of senior Nazi officials instructing the Nazi government exactly how to how to carry out the extermination of the Jewish people.   Is this protocol a lie? Is the German government, are all German governments, lying?
 
-יום לפני שהייתי בואנזה, קיבלתי בברלין את תוכניות הבנייה המקוריות של מחנה הריכוז אושוויץ-בירקנאו. את התוכניות הללו אני מחזיק כעת בידי. הן נושאות את חתימתו של היינריך הימלר, סגנו של היטלר בכבודו ובעצמו. האם גם התוכניות של מחנה אושוויץ-בירקנאו, שבו נרצחו מיליון יהודים, הן שקר?
+A day before I was in Wannsee, I was given in Berlin the original construction plans for the Auschwitz-Birkenau concentration camp.  These plans I now hold in my hand.  They contain the signature of Heinrich Himmler,  Hitler’s deputy himself.  Are these plans of the Auschwitz-Birkenau concentration camp where one million Jews were murdered a lie too?
 
-ביוני האחרון ביקר הנשיא אובמה במחנה ריכוז אחר, אחד מרבים, מחנה הריכוז בוכנוואלד. האם הנשיא אובמה חלק כבוד לשקר?
+This June, President Obama visited another concentration camp, one of many, the Buchenwald concentration camp.  Did President Obama pay tribute to a lie?
 
-ומה באשר לניצולי אושוויץ שעדיין נושאים על זרועותיהם את המספרים המקועקעים שצרבו בהם הנאצים? האם גם הקעקועים האלה הם שקר?
+And what of the Auschwitz survivors whose arms still bear the tattooed numbers branded on them by the Nazis? Are those tattoos a lie too?
 
-שליש מכלל היהודים נספו בתופת הגדולה של השואה. כמעט כל משפחה יהודית נפגעה, כולל משפחתי שלי. סביה וסבתותיה של אשתי, שתי אחיותיו של אביה ושלושת אחיו, וכל הדודים, הדודות ובני הדודים שנרצחו בידי הנאצים — האם גם זה שקר?
+One-third of all Jews perished in the great conflagration of the Holocaust.  Nearly every Jewish family was affected, including my own.  My wife's grandparents, her father’s two sisters and his three brothers, and all the aunts, uncles and cousins murdered by the Nazis: Is this a lie?
 
-אתמול דיבר מן הדוכן הזה אדם הקורא לשואה שקר. לאלה שסירבו להגיע ולאלה שיצאו במחאה, אני מצדיע. עמדתם למען בהירות מוסרית והבאתם כבוד למדינותיכם.
+Yesterday, the man who calls the Holocaust a lie spoke from this podium.  To those who refused to come and to those who left in protest, I commend you.  You stood up for moral clarity and you brought honor to your countries.
 
-אבל לאלה שנתנו למכחיש השואה הזה במה, אני אומר בשם עמי, העם היהודי, ובשם כל אדם הגון באשר הוא: האם אין לכם בושה? האם אין לכם שמץ של הגינות?
+But to those who gave this Holocaust-denier a hearing, I say on behalf of my people, the Jewish people, and decent people everywhere: Have you no shame?  Have you no decency?
 
-שישה עשורים בלבד אחרי השואה, אתם נותנים לגיטימציה לאדם המכחיש את רצח ששת מיליון היהודים, ובו בזמן מבטיח למחוק את מדינת ישראל, מדינת היהודים. איזו חרפה. איזה לעג למגילת היסוד של האומות המאוחדות.
+A mere six decades after the Holocaust, you give legitimacy to a man who denies the murder of six million Jews while promising to wipe out the State of Israel, the state of the Jews.  What a disgrace!  What a mockery of the charter of the United Nations!
 
-הסכנות שבאיראן גרעינית
+The Dangers of a Nuclear-Armed Iran
 
-אולי חלק מכם חושבים שהאיש הזה והמשטר המתועב שלו מאיימים רק על היהודים. אם אתם חושבים כך, אתם טועים — טועים טעות איומה. ההיסטוריה הראתה לנו שוב ושוב שמה שמתחיל בהתקפות על יהודים, סופו שהוא בולע רבים רבים אחרים.
+ Perhaps some of you think that this man and his odious regime, perhaps they threaten only the Jews.  If you think that, you're wrong – dead wrong.  History has shown us time and time again that what starts with attacks on the Jews eventually ends up engulfing many, many others.
 
-המשטר האיראני הזה מונע בידי פונדמנטליזם קיצוני שהתפרץ אל הבמה העולמית לפני שלושה עשורים, לאחר ששכב רדום במשך מאות שנים. בשלושים השנים האחרונות, הקנאות הזאת שטפה את העולם באלימות רצחנית שאין לה גבולות, ובאדישות קרת דם בבחירת קורבנותיה. היא טבחה באכזריות במוסלמים ובנוצרים, ביהודים ובהינדים, וברבים אחרים.
+This Iranian regime is fueled by an extreme fundamentalism that burst onto the world scene three decades ago after lying dormant for centuries.  In the past thirty years, this fanaticism has swept across the globe with a murderous violence that knows no bounds and with a cold-blooded impartiality in its choice of victims.   It has callously slaughtered Moslems and Christians, Jews and Hindus, and many others.
 
-אף שהיא מורכבת מענפים שונים, מאמיניה של האמונה האכזרית הזאת מבקשים להחזיר את האנושות לימי הביניים. בכל מקום שבו הם יכולים, הם כופים חברה נוקשה ונחשלת שבה נשים, מיעוטים, הומואים או כל מי שאינו נחשב בעיניהם למאמין אמיתי, מדוכאים באכזריות.
+Though it is comprised of different offshoots, the adherents of this unforgiving creed seek to return humanity to medieval times. Wherever they can, they impose a backward regimented society where women, minorities, gays or anyone else deemed not to be a true believer is brutally subjugated.
 
-המאבק נגד הקנאות הזאת אינו מעמיד אמונה מול אמונה ואינו מעמיד ציוויליזציה מול ציוויליזציה. הוא מעמיד ציוויליזציה מול ברבריות, את המאה ה-21 מול המאה ה-9, את אלה המקדשים את החיים מול אלה המפארים את המוות.
+The struggle against this fanaticism does not pit faith against faith nor civilization against civilization.  It pits civilization against barbarism, the 21st century against the 9th century, those who sanctify life against those who glorify death.
 
-הפרימיטיביות של המאה ה-9 אינה אמורה לעמוד מול הקדמה של המאה ה-21. הקסם של החירות, העוצמה של הטכנולוגיה והטווח של התקשורת אמורים בוודאי להכריע. בסופו של דבר, העבר אינו יכול לנצח את העתיד.
+The primitivism of the 9th century ought to be no match for the progress of the 21st century.  The allure of freedom, the power of technology and the reach of communications should surely win the day.  Ultimately, the past cannot triumph over the future.
 
-והעתיד שלנו מציע לכל האומות שפע אדיר של תקווה. קצב ההתקדמות גובר, והוא גובר באופן מעריכי. נדרשו לנו מאות שנים כדי לעבור ממכונת הדפוס לטלפון, עשרות שנים כדי לעבור מהטלפון למחשב האישי, ורק שנים ספורות כדי לעבור מהמחשב האישי לאינטרנט.
+And our future offers all nations magnificent bounties of hope.  The pace of progress is growing, and it is growing exponentially.  It took us centuries to get from the printing press to the telephone, decades to get from the telephone to the personal computer, and only a few years to get from the personal computer to the internet.
 
-מה שנראה בלתי אפשרי לפני שנים ספורות כבר הפך למיושן, ואיננו יכולים כמעט לשער אילו שינויים עוד צפויים לבוא. נפצח את הקוד הגנטי. נרפא את מה שכיום אינו ניתן לריפוי. נאריך את חיינו. נמצא חלופה זולה לדלקים פוסיליים, וכן — ננקה את כדור הארץ.
+What seemed impossible a few years ago is already outdated, and we can scarcely fathom the changes that are yet to come.  We will crack the genetic code.  We will cure the incurable.  We will lengthen our lives.  We will find a cheap alternative to fossil fuel, and yes, we will clean up the planet.
 
-אני גאה בכך שמדינתי, ישראל, נמצאת בחזית רבים מן ההישגים הללו — במדע ובטכנולוגיה, ברפואה ובביולוגיה, בחקלאות ובמים, באנרגיה ובסביבה. החדשנות הזאת במדינתי וברבות ממדינותיכם מציעה לאנושות עתיד מואר של הבטחה שלא תיאמן.
+I am proud that my country Israel is at the forefront of many of these advances – in science and technology, in medicine and biology, in agriculture and water, in energy and the environment.  These innovations in my country and many of your countries offer humanity a sunlit future of unimagined promise.
 
-אבל אם הקנאות הפרימיטיבית ביותר תוכל להשיג את כלי הנשק הקטלניים ביותר, מהלך ההיסטוריה עלול להתהפך לזמן מה. וכמו הניצחון המאוחר על הנאצים, גם כוחות הקִדמה והחירות ינצחו רק לאחר שמחיר דמים ועושר נורא ייגבה מן האנושות.
+But if the most primitive fanaticism can acquire the most deadly weapons, the march of history could be reversed for a time.   And like the belated victory over the Nazis, the forces of progress and freedom will prevail only after a horrific toll of blood and fortune has been exacted from mankind.
 
-לכן האיום הגדול ביותר העומד כיום בפני העולם הוא הנישואין בין פונדמנטליזם דתי ובין נשק להשמדה המונית. האתגר הדחוף ביותר העומד בפני הגוף הזה היום הוא למנוע מעריצי טהראן להשיג נשק גרעיני.
+This is why the greatest threat facing the world today is the marriage between religious fundamentalism and the weapons of mass destruction.  The most urgent challenge facing this body today is to prevent the tyrants of Tehran from acquiring nuclear weapons.
 
-האם חברות האומות המאוחדות ערוכות לאתגר הזה? האם הקהילה הבינלאומית תתעמת עם עריצות המטילה אימה על עמה שלה, בזמן שאזרחיה האמיצים עומדים על נפשם למען החירות?
+Are the members of the United Nations up to that challenge?  Will the international community confront a despotism that terrorizes its own people as they bravely stand up for freedom?
 
-האם היא תפעל נגד הדיקטטורים שגנבו בחירות לאור יום ואז ירו במפגינים איראנים, שנפלו על המדרכות וברחובות כשהם נחנקים בדמם שלהם? האם הקהילה הבינלאומית תסכל את נותנת החסות והמפעילה הזדונית ביותר בעולם של הטרור?
+Will it take action against the dictators who stole an election in broad daylight and then gunned down Iranian protesters who died on the sidewalks and on the streets choking in their own blood?  Will the international community thwart the world's most pernicious sponsor and practitioner of terrorism?
 
-ומעל הכול, האם הקהילה הבינלאומית תעצור את משטר הטרור של איראן מלפתח נשק אטומי, ובכך מלסכן את שלום העולם כולו?
+Above all, will the international community stop the terrorist regime of Iran from developing atomic weapons, thereby endangering the peace of the entire world?
 
-העם האיראני מתקומם באומץ נגד המשטר הזה. אנשים טובים ברחבי העולם עומדים לצידו, וכך גם אלפי המפגינים שהפגינו מחוץ לאולם הזה במשך כל השבוע. האם האומות המאוחדות יעמדו לצידם?
+The people of Iran are courageously standing up to this regime.  People of goodwill around the world stand with them, as do thousands of people who have been protesting and demonstrating outside this hall all this week.     Will the United Nations stand by their side?
+A Perversion of Truth and Justice
 
-עיוות של אמת ושל צדק
+The jury is still out on the United Nations, and recent signs are not encouraging.
 
-עדיין לא הוכרע הדין לגבי האומות המאוחדות, והסימנים האחרונים אינם מעודדים.
+Rather than condemn the terrorists and their Iranian patrons, some here in the United Nations have condemned their victims.  This is exactly what a recent UN report on Gaza did, falsely equating terrorists with those they targeted.
 
-במקום לגנות את הטרוריסטים ואת פטרוניהם האיראנים, יש מי שכאן באומות המאוחדות גינו את קורבנותיהם. זה בדיוק מה שעשה הדו"ח האחרון של האו"ם על עזה, כאשר השווה באופן שקרי בין טרוריסטים ובין האנשים שעליהם כיוונו.
+For eight long years, Hamas fired rockets from Gaza on nearby Israeli cities and citizens - thousands of missiles, mortars hurtling down from the sky on schools, homes, shopping centers, bus stops.   Year after year, as these missiles were deliberately fired on our civilians, not a single UN resolution – not one! – was passed condemning those criminal attacks.  We heard nothing, absolutely nothing, from the UN Human Rights Council, a misnamed institution if there ever was one.
 
-במשך שמונה שנים ארוכות, חמאס ירה רקטות מעזה על ערים ואזרחים ישראלים סמוכים — אלפי טילים ופצצות מרגמה שנחתו מן השמיים על בתי ספר, בתים, מרכזי קניות ותחנות אוטובוס. שנה אחר שנה, בזמן שהטילים הללו נורו במכוון על אזרחינו, לא התקבלה אפילו החלטה אחת של האו"ם — אף לא אחת — שגינתה את ההתקפות הפליליות הללו. לא שמענו דבר, שום דבר, ממועצת זכויות האדם של האו"ם, מוסד ששמו מטעה אם אי פעם היה כזה.
+In 2005, hoping to advance peace, Israel unilaterally withdrew from every inch of Gaza.  It was very painful. We dismantled 21 settlements, really bedroom communities and farms.  We uprooted over 8,000 Israelis.  We just yanked them out of their homes.  We did this because many in Israel believed that this would get peace.
 
-ב-2005, בתקווה לקדם את השלום, נסוגה ישראל באופן חד-צדדי מכל סנטימטר של עזה. זה היה כואב מאוד. פירקנו 21 יישובים, למעשה קהילות מגורים וחוות. עקרנו יותר מ-8,000 ישראלים. פשוט תלשנו אותם מבתיהם. עשינו זאת משום שרבים בישראל האמינו שזה יביא שלום.
+Well, we didn't get peace.  Instead we got an Iranian backed terror base fifty miles from Tel Aviv.  Life in the Israeli towns and cities next to Gaza became a nightmare.  The Hamas rocket attacks not only continued after we left; they increased tenfold. Again, the UN was silent – absolutely silent.
 
-אבל לא קיבלנו שלום. במקום זאת קיבלנו בסיס טרור הנתמך בידי איראן במרחק חמישים מייל מתל אביב. החיים בעיירות ובערים הישראליות שליד עזה הפכו לסיוט. מתקפות הרקטות של חמאס לא רק נמשכו לאחר שעזבנו — הן גדלו פי עשרה. ושוב, האו"ם שתק — שתק לחלוטין.
+Finally, after eight years of this unremitting assault, Israel was forced to respond.  But how should we have responded?  There is only one example in history of thousands of rockets being fired on a country's civilian population.  This happened when the Nazis rocketed British cities during World War II.  During that war, the allies leveled German cities, causing hundreds of thousands of casualties.
 
-לבסוף, לאחר שמונה שנים של מתקפה בלתי פוסקת זו, נאלצה ישראל להגיב. אבל כיצד היינו צריכים להגיב? יש רק דוגמה אחת בהיסטוריה לירי של אלפי רקטות על אוכלוסייה אזרחית של מדינה. זה קרה כאשר הנאצים ירו רקטות על ערי בריטניה במהלך מלחמת העולם השנייה. במלחמה ההיא, בעלות הברית החריבו ערים גרמניות וגרמו למאות אלפי נפגעים.
+I’m not passing judgment.  I’m stating a fact – a fact that is the product of the decision of great and honorable men, the leaders of Britain and the United States fighting an evil force in World War II.
 
-אינני שופט. אני מציין עובדה — עובדה שהיא תוצאה של החלטתם של אנשים גדולים ומכובדים, מנהיגי בריטניה וארצות הברית, שנלחמו בכוח הרשע במלחמת העולם השנייה.
+It is also a fact that Israel chose to respond differently.  Faced with an enemy committing a double war crime of firing on civilians while hiding behind civilians, Israel sought to conduct surgical strikes directed against the rocket launchers themselves.  That was no easy task because the terrorists were firing their missiles from homes and schools.  They were using mosques as weapons depots and as missile caches, and they were ferreting explosives in ambulances.
 
-וזו גם עובדה שישראל בחרה להגיב אחרת. מול אויב המבצע פשע מלחמה כפול — יורה על אזרחים ומסתתר מאחורי אזרחים — ישראל ביקשה לבצע תקיפות כירורגיות המכוונות אל משגרי הרקטות עצמם. זו לא הייתה משימה קלה, משום שהטרוריסטים ירו את טיליהם מתוך בתים ובתי ספר. הם השתמשו במסגדים כמחסני נשק וכמחסני רקטות, והסתירו חומרי נפץ באמבולנסים.
+Israel, by contrast, tried to minimize casualties by urging Palestinian civilians to vacate the targeted areas.  We dropped two million flyers over their homes.  We sent thousands of text messages to the Palestinian residents.  We made countless cellular phone calls urging them to vacate. Never has a country gone to such extraordinary lengths to remove the enemy’s civilian population from harm's way.
 
-ישראל, לעומת זאת, ניסתה לצמצם נפגעים באמצעות קריאה לאזרחים פלסטינים לפנות את האזורים שיועדו לתקיפה. הפצנו שני מיליון כרוזים מעל בתיהם. שלחנו אלפי הודעות טקסט לתושבים הפלסטינים. ביצענו אינספור שיחות טלפון סלולריות והפצרנו בהם להתפנות. מעולם לא עשתה מדינה מאמצים כה יוצאי דופן כדי להרחיק את האוכלוסייה האזרחית של האויב מאזור הסכנה.
+Yet faced with a clear-cut case of aggressor and victim, whom did the United Nations Human Rights Council decided to condemn? Israel.  A democracy legitimately defending itself against terror is morally hanged, drawn and quartered, and given an unfair trial to boot.
 
-ובכל זאת, מול מקרה ברור של תוקפן וקורבן, את מי החליטה מועצת זכויות האדם של האו"ם לגנות? את ישראל. דמוקרטיה המגינה על עצמה באופן לגיטימי מפני טרור נתלית, נמשכת ומרובעת מוסרית, וגם זוכה למשפט לא הוגן.
+By these twisted standards, the UN Human Rights Council would have dragged Roosevelt and Churchill to the dock as war criminals.  What a perversion of truth!  What a perversion of justice!
 
-לפי אמות המידה המעוותות הללו, מועצת זכויות האדם של האו"ם הייתה גוררת גם את רוזוולט ואת צ'רצ'יל אל ספסל הנאשמים כפושעי מלחמה. איזה עיוות של אמת. איזה עיוות של צדק.
+Delegates of the United Nations and the Governments whom you represent, you have a decision to make.  Will you accept this farce?    Because if you do, the United Nations would revert to its darkest days, when the worst violators of human rights sat in judgment against the law-abiding democracies, when Zionism was equated with racism and when an automatic majority could be mustered to declare that the earth is flat.
 
-נציגי האומות המאוחדות והממשלות שאתם מייצגים, עליכם לקבל החלטה. האם תקבלו את הפארסה הזאת? משום שאם תעשו זאת, האומות המאוחדות ישובו לימים האפלים ביותר שלהן, כאשר המפרים הגרועים ביותר של זכויות אדם ישבו לשפוט דמוקרטיות שומרות חוק, כאשר הציונות הושוותה לגזענות, וכאשר ניתן היה לגייס רוב אוטומטי כדי להכריז שכדור הארץ שטוח.
+If you had to choose a date when the United Nations began its descent, almost a free fall, and lost the respect of many thoughtful people in the international community, it was that decision in 1975 to equate Zionism with racism.  Now this body has a choice to make.  If it does not reject this biased report, it would once again start a process of vitiating itself from any relevance and importance.
 
-אם הייתם צריכים לבחור תאריך שבו החלה נפילתו של האו"ם, כמעט כמו צניחה חופשית, ואיבד את כבודם של רבים מן האנשים החושבים בקהילה הבינלאומית, זה היה אותו רגע ב-1975 שבו הושוותה הציונות לגזענות. כעת עומדת בפני הגוף הזה בחירה. אם לא ידחה את הדו"ח המוטה הזה, הוא יפתח שוב תהליך שבו הוא ירוקן את עצמו מכל רלוונטיות וחשיבות.
+And it would do something else.  It would send a message to terrorists everywhere, that terrorism pays: All the terrorists have to do is launch their attacks from densely populated areas, and they will win immunity.
 
-והוא גם יעשה דבר נוסף. הוא ישדר מסר לטרוריסטים בכל מקום, שלפיו הטרור משתלם: כל שעליהם לעשות הוא לשגר את מתקפותיהם מאזורים צפופי אוכלוסין, וכך יזכו בחסינות.
+And a third thing: In condemning Israel, this body would also deal a mortal blow to peace.  Let me explain why.  When Israel left Gaza, many hoped that the missile attacks would stop.  Others believed that even if they didn’t stop, at the very least Israel would have made this extraordinary gesture, for peace, earning it international legitimacy to exercise its right of self-defense if peace failed.  What legitimacy?  What self-defense?
 
-ודבר שלישי: בגינוי ישראל, הגוף הזה ינחית גם מכת מוות על השלום. הרשו לי להסביר מדוע. כאשר ישראל יצאה מעזה, רבים קיוו שמתקפות הטילים ייפסקו. אחרים סברו שגם אם לא ייפסקו, לפחות ישראל עשתה את המחווה יוצאת הדופן הזאת למען השלום, ובכך הרוויחה לעצמה לגיטימציה בינלאומית לממש את זכותה להגנה עצמית אם השלום ייכשל. איזו לגיטימציה? איזו הגנה עצמית?
+The same UN that cheered Israel as we left Gaza, the same UN that promised to back our right of self-defense, now accuses us – my people, my country - of being war criminals!  And for what?  For acting responsibly in self-defense, for acting in a way that any country would act with a restraint unmatched by many.  What a travesty!
 
-אותו או"ם שעודד את ישראל כאשר יצאנו מעזה, אותו או"ם שהבטיח לתמוך בזכותנו להגנה עצמית, מאשים כעת אותנו — את עמי, את ארצי — בפשעי מלחמה. ועל מה? על כך שפעלנו באחריות להגנה עצמית, על כך שפעלנו כפי שכל מדינה הייתה פועלת, ואף באיפוק שאין דומה לו אצל רבות אחרות. איזו שערורייה.
 
-ישראל הגנה על עצמה בצדק מפני טרור. הדו"ח המוטה והבלתי צודק הזה מציב מבחן ברור לכל הממשלות: האם תעמדו לצד ישראל או שתעמדו לצד הטרוריסטים?
+Israel justly defended itself against terror.  This biased and unjust report provides a clear-cut test for all governments.   Will you stand with Israel or will you stand with the terrorists?
 
-עלינו לדעת את התשובה לשאלה הזאת עכשיו. עכשיו — לא אחר כך. משום שאם תתבקש ישראל שוב לקחת סיכונים נוספים למען השלום, עלינו לדעת כבר היום שתעמדו לצידנו מחר. רק אם נהיה בטוחים שנוכל להגן על עצמנו נוכל לקחת סיכונים נוספים למען השלום.
+We must know the answer to that question now.   Now - not later.  Because if Israel is again asked to take more risks for peace, we must know today that you will stand with us tomorrow.  Only if we have the confidence that we can defend ourselves can we take further risks for peace.
 
-שלום קבוע
+A Permanent Peace
 
-אל תטעו בעניין הזה. כל ישראל רוצה שלום. בכל פעם שמנהיג ערבי באמת רצה שלום איתנו, עשינו שלום. עשינו שלום עם מצרים בהנהגת אנואר סאדאת. עשינו שלום עם ירדן בהנהגת המלך חוסיין.
+Make no mistake about it.  All of Israel wants peace.  Any time an Arab leader genuinely wanted peace with us, we made peace.  We made peace with Egypt led by Anwar Sadat.  We made peace with Jordan led by King Hussein.
 
-ואם הפלסטינים באמת רוצים שלום, אני וממשלתי ועמי נעשה שלום. אבל אנחנו רוצים שלום אמיתי, שלום בר הגנה, שלום קבוע.
+And if the Palestinians truly want peace, I and my government, and my people, will make peace.  But we want a genuine peace, a defensible peace, a permanent peace.
 
-ב-1947 הצביע הגוף הזה על הקמת שתי מדינות לשני עמים — מדינה יהודית ומדינה ערבית. היהודים קיבלו את ההחלטה הזאת. הערבים דחו אותה ופלשו למדינה היהודית שבקעה זה עתה, בתקווה להשמידה. אנו מבקשים מן הפלסטינים לעשות סוף סוף את מה שסירבו לעשות במשך 62 שנה: לומר כן למדינה יהודית. פשוט כך, ברור כך, בסיסי כך. כשם שמבקשים מאיתנו להכיר במדינת הלאום של העם הפלסטיני, כך יש לבקש מן הפלסטינים להכיר במדינת הלאום של העם היהודי.
+In 1947, this body voted to establish two states for two peoples – a Jewish state and an Arab state.  The Jews accepted this resolution.  The Arabs rejected it and invaded the embryonic Jewish state with hopes to annihilate it.  We ask the Palestinians to finally do what they refused to do for 62 years:  Say yes to a Jewish state!  As simple, as clear, as elementary as that.  Just as we are asked to recognize a nation-state for the Palestinian people, the Palestinians must be asked to recognize the nation-state of the Jewish people.
 
-העם היהודי איננו כובש זר בארץ ישראל. זו ארץ אבותינו. חקוקה על הקירות שמחוץ לבניין הזה חזון השלום המקראי הגדול: "לא יישא גוי אל גוי חרב ולא ילמדו עוד מלחמה." את המילים הללו אמר נביא ישראל הגדול ישעיהו לפני 2,800 שנה, כאשר הלך בארצי, בעירי — בהרי יהודה וברחובות ירושלים. איננו זרים לארץ הזאת. זו מולדתנו.
+The Jewish people are not foreign conquerors in the Land of Israel.  It is the land of our forefathers.  Inscribed on the walls outside this building is the great Biblical vision of peace: "Nation shall not lift up sword against nation.  They shall learn war no more."   These words were spoken by the great Jewish prophet Isaiah 2,800 years ago as he walked in my country, in my city - in the hills of Judea and in the streets of Jerusalem.   We are not strangers to this land.  This is our homeland.
 
-אבל עמוק ככל שאנו קשורים למולדתנו, אנו מכירים גם בכך שהפלסטינים חיים בה גם הם, וגם הם רוצים בית משלהם. אנו רוצים לחיות לצידם, שני עמים חופשיים החיים בשלום, בשגשוג ובכבוד.
+But as deeply connected as we are to our homeland, we also recognize that the Palestinians live there too and that they also want a home of their own.   We want to live side by side with them, two free peoples living in peace, prosperity and dignity.
 
-שלום, שגשוג וכבוד מחייבים גם יסוד נוסף — ביטחון. לפלסטינים צריכים להיות כל הסמכויות לנהל את עצמם, למעט קומץ סמכויות שעלולות לסכן את ישראל.
+Peace, prosperity and dignity require one other element – security.  The Palestinians should have all the powers to govern themselves except a handful of powers that could endanger Israel.
 
-לכן המדינה הפלסטינית חייבת להיות מפורזת בפועל. אני אומר בפועל, משום שאיננו רוצים עוד עזה או עוד דרום לבנון, עוד בסיס טרור הנתמך בידי איראן הצמוד לירושלים וניצב על הגבעות במרחק קילומטרים ספורים מתל אביב. אנו רוצים שלום.
+This is why the Palestinian state must be effectively demilitarized.  I say effectively, because we don't want another Gaza or another South Lebanon, another Iranian backed terror base abutting Jerusalem and perched on the hills a few kilometers from Tel Aviv.  We want peace.
 
-אני מאמין שברצון טוב ובעבודה קשה ניתן להשיג שלום כזה. אבל הוא מחייב מכולנו להדוף את כוחות הטרור שמובילה איראן, המבקשים להשמיד את השלום, לחסל את ישראל ולהפיל את הסדר העולמי. השאלה הניצבת בפני הקהילה הבינלאומית היא האם היא מוכנה להתעמת עם הכוחות הללו או להסתגל אליהם.
+I believe that with goodwill and with hard work, such a peace can be achieved.  But it requires from all of us to roll back the forces of terror led by Iran that seek to destroy peace, eliminate Israel and overthrow the world order.  The question facing the international community is whether it is prepared to confront those forces or to accommodate them.
 
-לפני יותר משבעים שנה, וינסטון צ'רצ'יל קונן על מה שכינה "חוסר היכולת המושרש של האנושות ללמוד". בכך התכוון להרגל המצער של חברות מתורבתות להירדם ולהשתהות עד שהסכנה כמעט משיגה אותן.
+Over seventy years ago, Winston Churchill lamented what he called the "confirmed unteachability of mankind." By that he meant the unfortunate habit of civilized societies to sleep and slumber until danger nearly overtakes them.
 
-צ'רצ'יל קונן על מה שכינה "היעדר ראיית הנולד, חוסר הנכונות לפעול כאשר הפעולה תהיה פשוטה ויעילה, היעדר חשיבה בהירה, בלבול העצה עד שהחירום מגיע, עד שיצר ההישרדות מכה בגונג הצורם שלו."
+Churchill bemoaned what he called the "want of foresight, the unwillingness to act when action will be simple and effective, the lack of clear thinking, the confusion of counsel until the emergency comes, until self-preservation strikes its jarring gong.”
 
-אני מדבר כאן היום בתקווה שלהערכתו של צ'רצ'יל על "חוסר היכולת של האנושות ללמוד" יוכח, ולו פעם אחת, שהיא שגויה. אני מדבר כאן היום בתקווה שנוכל ללמוד מן ההיסטוריה — שנוכל למנוע סכנה בזמן.
 
-ברוח המילים הנצחיות שנאמרו ליהושע לפני יותר מ-3,000 שנה, הבה נהיה חזקים ואמיצי לב. הבה נתעמת עם הסכנה הזאת, נבטיח את עתידנו, ובעזרת השם נעצב שלום בר קיימא לדורות הבאים.
+I speak here today in the hope that Churchill's assessment of the "unteachability of mankind" is for once proven wrong.  I speak here today in the hope that we can learn from history -- that we can prevent danger in time.
 
-"ה' עוז לעמו ייתן, ה' יברך את עמו בשלום." `
+In the spirit of the timeless words spoken to Joshua over 3,000 years ago, let us be strong and of good courage.  Let us confront this peril, secure our future and, God willing, forge an enduring peace for generations to come.
+
+ “The Lord will give strength to His people, the Lord will bless His people with peace.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PAGE`
   },
   {
     id: "netanyahu-unga-2011",
-    title: 'נאום האו"ם 2011',
+    title: 'UN Speech 2011',
     speaker: "בנימין נתניהו",
     date: "2011-09-23",
-    dir: "rtl",
-    text: `גבירותיי ורבותיי,
-
-מרגע הקמתה, לפני 63 שנה, ישראל הושיטה את ידה לשלום. בשם מדינת ישראל והעם היהודי, אני מושיט יד זו שוב היום.
-
-אני מושיט יד זו לאזרחי מצרים וירדן, עם ברכת חברות מחודשת לעמים איתם עשינו שלום.
-אני מושיט אותה לעם התורכי, ברחשי כבוד ורצון טוב.
-אני מושיט אותה לעמים בלוב ובתוניס, בהערכה לאלה המנסים לבנות עתיד דמוקרטי.
-אני מושיט אותה לשאר העמים בצפון אפריקה וחצי האי ערב,עימם אנו מקווים ליצור עתיד חדש.
-אני מושיט אותה לאזרחי סוריה, לבנון ואיראן, בהתפעמות מאומץ ליבם של אלה הנלחמים בדיכוי אכזרי.
-
-אך במיוחד אני מושיט אותה לעם הפלסטיני, עימו אנו מבקשים לכונן שלום אמיתי ובר קיימא.
-
-גבירותיי ורבותיי,
-
-תקוותנו לשלום בישראל לעולם לא דועכת. המדענים שלנו, רופאים ויזמים מנצלים את חוכמתם לטובת יצירת מחר טוב יותר בכל העולם. האומנים והסופרים שלנו מעשירים את המורשת האנושית. אני יודע שזאת לא הדרך בה מדינתי מוצגת בדרך כלל באולם זה.
-
-במקום זה בשנת 1975, השאיפה של עמי לשוב לקיום הלאומי שלנו במולדת התנכ"ית שלנו הוגדרה באופן מביש כגזענות.
-
-אני הייתי כאן בשנת 1980 כאשר הסכם השלום ההיסטורי בין ישראל ומצרים זכה לגינוי במקום לשבחים.
-
-ובמקום זה, שנה אחרי שנה, ישראל מבודלת וזוכה לגינויים לא מוצדקים יותר מכל מדינות העולם יחדיו. 21 מתוך 27 החלטות העצרת הכללית מגנות את ישראל, הדמוקרטיה האמיתית היחידה במזרח התיכון. זהו תיאטרון האבסורד. הוא לא רק מציג את ישראל כמרשעת, אלא מלהק את הרשעים בתפקידים מרכזיים.
-
-לוב של קדאפי עמדה בראש מועצת זכויות האדם של האו"ם.
-
-עיראק של סדאם עמדה בראש ועדה של האו"ם שעסקה בפירוק החימוש.
-
-לבנון, הנשלטת על ידי חיזבאללה, יושבת בראש מועצת הביטחון של האו"ם. זה אומר בפועל, שארגון טרור שולט בגוף האמון על ביטחון העולם.
-
-אי אפשר אפילו להמציא דבר כזה.
-
-באו"ם, רוב אוטומטי יכול להחליט כל דבר. הוא יכול להחליט שהשמש זורחת במערב, בדיוק כפי שהוא החליט שהכותל המערבי בירושלים, האתר הקדוש ביותר ליהדות, הוא שטח פלסטיני כבוש.
-
-ועדיין, אפילו כאן, בעצרת הכללית, האמת יכולה לצאת לאור מדי פעם.
-
-בשנת 1984, כאשר מוניתי לתפקיד שגריר ישראל באו"ם, ביקרתי את הרבי מילובביץ'. הוא אמר לי: "אתה תשרת בבית של שקרים רבים, אבל זכור שאפילו במקום החשוך ביותר, אורו של נר בודד יכול להראות למרחק".
-
-היום אני מקווה שאורה של האמת יזרח, גם אם לדקות ספורות בלבד, באולם שזמן רב מדי היה מקום חשוך עבור מדינתי.
-
-כראש ממשלת ישראל, לא באתי לכאן על מנת לזכות לתשואות.
-
-באתי לכאן כדי לומר את האמת. האמת היא שישראל רוצה שלום. האמת היא שאני רוצה שלום. האמת היא, שבמזרח התיכון שלום חייב להתבסס על ביטחון. האמת היא, שאנו יכולים להשיג שלום לא באמצעות החלטות אומ אלא רק באמצעות משא ומתן ישיר בין הצדדים.
-
-האמת היא, שעד כה הפלסטינים סירבו לדבר.
-
-האמת היא שישראל רוצה שלום עם המדינה הפלסטינית, אך הפלסטינים רוצים מדינה פלסטינית ללא שלום. האמת היא, שאסור לכם לאפשר זאת.
-
-גבירותיי ורבותיי,
-
-כשהגעתי לכאן לראשונה, לפני 27 שנים, העולם היה מחולק בין מזרח למערב. מאז, המלחמה הקרה הסתיימה. חברות גדולות קמו מתוך מאות שנים של תרדמת. מאות מיליוני אנשים קמו מעוני ורבים מספור צפויים לעשות זאת. למרבה הפלא, שינוי היסטורי זה התרחש לרוב בצורה שלווה.
-
-עם זאת, יש גידול שצומח בין מזרח למערב שמאיים על שלום כולנו. הוא לא מבקש לשחרר אלא לשעבד. לא לבנות אלא להרוס. הגידול הזה הוא האסלאם המיליטנטי. הוא מסווה עצמו בכסות של אמונה גדולה. הוא רוצח יהודים, נוצרים ומוסלמים כאחד. באחד עשר בספטמבר, הוא הרג אלפי אמריקנים והותיר את מגדלי התאומים כעיי חורבות.
-
-אמש הנחתי זר באנדרטה לזכר קרבנות האחד עשר בספטמבר. זה היה מאד מרגש. אך כשהלכתי לשם, דבר אחד הדהד בראשי. המילים השערורייתיות של נשיא איראן מעל במה זאת אתמול. הוא רמז שפיגועי הטרור הללו היו מזימה אמריקאית. כמה מכם עזבו את האולם כשדיבר. כולכם הייתם צריכים לעשות זאת.
-
-מאז 11 בספטמבר האסלאם המיליטנטי טבח באלפי חפים מפשע אחרים - בלונדון ומדריד, בגדד ומומבאי, תל אביב וירושלים - למען האמת בכל מקום ברחבי ישראל. הסכנה הגדולה ביותר הניצבת בפני העולם היא קיצוניות זאת, כאשר תהיה חמושה בנשק גרעיני.
-
-וזה בדיוק מה שאיראן מנסה לעשות. האם אתם מסוגלים לדמיין אדם, אשר רק אתמול ליהג כאן, חמוש בנשק גרעיני? הקהילה הבינלאומית חייבת לעצור את איראן לפני שיהיה מאוחר מדי. שכן אם איראן לא תיעצר, אנו נעמוד בפני עתיד של טרור גרעיני והאביב הערבי עלול להפוך במהרה לחורף איראני. זאת תהיה טרגדיה.
-
-מיליוני ערבים יצאו לרחובות על מנת להחליף עריצות בחירות. איש לא ירוויח יותר מישראל אם אלה המחויבים לחופש ולשלום ינצחו.
-
-זוהי תקוותי החזקה.
-
-כראש ממשלת ישראל, איני יכול לסכן את עתיד המדינה היהודית על סמך תקוות בלבד.
-
-מנהיגים חייבים לראות את המצוי ולא את הרצוי. אנו חייבים לעשות כל שביכולתנו על מנת לעצב עתיד טוב יותר.
-
-אך אנו לא יכולים להעלים את סכנות ההווה בתקוות בלבד. והעולם הסובב את ישראל בהחלט הופך מסוכן יותר ויותר.
-
-האסלאם המיליטנטי כבר השתלט על לבנון ועזה. הוא נחוש לקרוע את הסכמי השלום עם מצרים וירדן. הוא הרעיל מוחות ערביים רבים כנגד היהודים וישראל, אמריקה והמערב. הוא מתנגד לא למדיניותה של ישראל, אלא לקיומה של ישראל.
-
-יש כאלה שטוענים שעל מנת להאט את ההתפשטות של האסלאם המיליטנטי, בייחוד בתקופות לא יציבות אלה, על ישראל למהר ולעשות ויתורים. התיאוריה שלהם נשמעת פשוטה: תעזבו את השטח, הם אומרים, והשלום יקודם. המתונים יתחזקו. הקיצוניים יישארו מרוסנים. ואל תדאגו לגבי הפרטים הקטנים של הדרך בה ישראל תגן על עצמה. כוחות בינלאומיים יעשו את העבודה. אנשים אלה אומרים לי פעם אחר פעם, רק תציע הצעה גורפת, והכול יסתדר.
-
-יש רק בעיה אחת עם התיאוריה הזאת. ניסינו אותה והיא לא עבדה. בשנת 2000, ישראל הציעה הצעה גורפת, שענתה כמעט לכל הדרישות הפלסטיניות. ערפאת דחה אותה. הפלסטינים פתחו במתקפת טרור שגבתה את חייהם של למעלה מאלף ישראלים. ב-2008, ראש הממשלה אולמרט הציע הצעה אפילו גורפת יותר. הנשיא עבאס אפילו לא ענה. אך ישראל עשתה יותר מלהציע הצעות גורפות. עזבנו שטחים. נסוגנו מלבנון בשנת 2000 ומכל סנטימטר רבוע בעזה ב-2005. זה לא הרגיע את הסערה האסלאמית המיליטנטית. היא רק קירבה אותה וחיזקה אותה.
-
-חיזבאללה וחמאס ירו אלפי טילים על ערי ישראל מאותם שטחים שפינינו. כשישראל עזבה את לבנון ועזה המתונים לא ניצחו את הקיצוניים. המתונים חוסלו על ידי הקיצוניים. למרבה הצער, כוחות בינלאומיים, כמו יוניפיל בלבנון ו-EUBAM בעזה לא מנעו מהקיצוניים לתקוף את ישראל.
-
-עזבנו את עזה בתקווה לשלום. לא הקפאנו את ההתיישבויות בעזה, עקרנו אותן. עשינו בדיוק מה שאומרת התיאוריה: קומו וחזרו לגבולות 67, ופרקו את ההתיישבויות. עקרנו אלפי תושבים מבתיהם, הוצאנו ילדים מבתי הספר והגנים שלהם, הרסנו בתי כנסת ואפילו הזזנו את אהובינו מקבריהם. נתנו את המפתחות לנשיא עבאס ולרשות הפלסטינית.
-
-התיאוריה אומרת שזה היה צריך לעבוד. אך לא קיבלנו שלום. להיפך - קיבלנו מלחמה. קיבלנו את איראן ואת השלוחה של החמאס אשר גירש את הרשות הפלסטינית, אשר קרסה ביום אחד. הנשיא עבאס אמר מעל במה זאת שהעם הפלסטיני חמוש רק בתקוותיהם וחלומותיהם. כן, תקוות, חלומות ועשרת אלפים טילים ורקטות בעזה שסופקו על ידי איראן. אלפי טילים כבר שטפו את ערינו.
-
-ישראלים שואלים בצדק: מה ימנע מכך לקרות שוב בגדה המערבית? מרבית ערינו המרכזיות בדרום מרוחקות עשרות קילומטרים מעזה, אך במרכז ישראל, ערינו מרוחקות מאות מטרים בלבד מהגדה המערבית. האם מישהו מכם ייקח סיכון ויקרב סכנה כזאת לעריכם, למשפחותיכם?
-
-ישראל מוכנה לקיומה של מדינה פלסטינית בגדה המערבית, אך לא מוכנה לאיראן נוספת. ולצורך כך, אנו זקוקים לסידורי ביטחון אמיתיים, עליהם הפלסטינים פשוט מסרבים לדבר.
-
-שעה שהישראלים זוכרים את הלקחים הקשים של עזה, רבים מהמבקרים של ישראל מתעלמים מהם. ובחוסר אחריות הם מייעצים לישראל ללכת באותו נתיב מסוכן פעם נוספת.
-
-ישראל זקוקה לעומק אסטרטגי גדול יותר. ישראל זקוקה לנוכחות צבאית ארוכת טווח באזורים אסטרטגיים בגדה המערבית. הסברתי זאת לנשיא עבאס. הוא ענה שאם המדינה הפלסטינית תהיה ריבונית, הוא לעולם לא יקבל הסדרים אלה.
-
-מדוע לא? לארצות הברית כוחות ביפן, גרמניה ודרום קוריאה במשך למעלה מחצי מאה. לבריטניה יש בסיס אווירי בקפריסין. צרפת מחזיקה כוחות בשלוש מדינות אפריקאיות עצמאיות. אף אחת ממדינות אלה לא טוענת שהיא לא ריבונית.
-
-ללא יהודה ושומרון, הגדה המערבית, רוחבה של ישראל הוא תשעה מייל בלבד. מדובר בשני שלישים בלבד מאורכה של מנהטן. ואל תשכחו שהאנשים שגרים בברוקלין וניו ג'רזי נחמדים בהרבה מכמה משכניה של ישראל.
-
-כל הסדרים הפוטנציאליים הנוגעים לביטחונה של ישראל חייבים להיות חתומים בהסכם שלום לפני הכרזה על מדינה פלסטינית, ולא לאחר מכן. הפלסטינים צריכים ראשית לעשות שלום עם ישראל ורק לאחר מכן לקבל את המדינה שלהם. לאחר חתימה על הסכם שלום כזה, ישראל לא תהיה האחרונה לקבל בברכה את המדינה הפלסטינית כחברה חדשה באומות המאוחדות. אנו נהיה הראשונים לעשות זאת.
-
-גלעד שליט מוחזק בשבי על ידי החמאס במשך חמש שנים ללא ביקור של הצלב האדום. הוא מוחזק בצינוק חשוך, בניגוד לכל הנורמות הבינלאומיות. גלעד שליט הוא הבן של כל משפחה ישראלית. כל אומה המיוצגת כאן חייבת לתבוע את שחרורו המיידי.
-
-גבירותיי ורבותיי,
-
-הצגתי את החזון שלי לשלום, ובו מדינה פלסטינית מפורזת המכירה במדינה היהודית. כן, המדינה היהודית. אחרי הכול, גוף זה הכיר במדינה היהודית לפני 64 שנה. אינכם חושבים שהגיע הזמן שהפלסטינים יעשו זאת גם?
-
-ישראל, המדינה היהודית, תמיד תגן על זכויות כל המיעוטים הגרים בה, כולל מיליון אזרחיה הערבים. הלוואי והייתי יכול לומר זאת גם על המדינה הפלסטינית העתידית. אך כפי שגורמים פלסטיניים רשמיים הבהירו, המדינה הפלסטינית לא תאפשר נוכחות יהודית. הם יהיו נטולי יהודים. זה טיהור אתני.
-
-לישראל אין כל כוונה לשנות את האופי הדמוקרטי שלה. אנו פשוט לא רוצים שהפלסטינים ינסו לשנות את האופי היהודי שלה. אנו רוצים שהם יוותרו על הפנטזיה להציף את ישראל במיליוני פלסטינים.
-
-הנשיא עבאס הצהיר שלב הסכסוך הישראלי-פלסטיני הוא ההתיישבויות. זה קצת מוזר. הסכסוך נמשך כמעט חצי מאה לפני שהוקמה אפילו התיישבות אחת בגדה המערבית. לכן, אם מה שאומר הנשיא עבאס הוא נכון, אז ההתיישבויות עליהן הוא מדבר הן תל אביב, חיפה, יפו, באר שבע.
-
-ההתיישבויות הן נושא שצריך לזכות להתייחסות ופתרון במהלך משא ומתן. אך לב הסכסוך תמיד היה, ולצערי עודנו, הסירוב הפלסטיני להכיר במדינה יהודית, בכל גבול.
-
-ישראל היא מדינה יהודית. הנשיא עבאס: תפסיק להתחמק מהנושא. הכר במדינה היהודית ועשה איתנו שלום. בשלום אמיתי שכזה, ישראל מוכנה לפשרות כואבות.
-
-אני שומע אותם לעיתים קרובות מאשימים את ישראל בייהוד ירושלים. זה כמו להאשים את אמריקה באמריקניזציה של וושינגטון. אתם יודעים מדוע אנו נקראים יהודים - מכיוון שאנחנו מיהודה. שמי הפרטי, בנימין, הוא בן אלף שנה יותר מחותם עתיק שנמצא ליד הכותל. בנימין היה בנו של יעקב, שנקרא גם ישראל. יעקב ושניים עשר בניו שוטטו בגבעות של יהודה ושומרון לפני 4,000 שנה ומאז קיימת נוכחות יהודית בארץ.
-
-באשר לאותם יהודים שהוגלו מארצנו, החלום לחזור אליה מעולם לא פסק. יהודים בספרד ערב הגירוש, יהודים באוקראינה שנמלטו מהפוגרום, יהודים שנלחמו בגטו ורשה כשהנאצים סגרו עליהם - מעולם לא חדלו להתפלל, מעולם לא חדלו להשתוקק, הם לחשו לשנה הבאה בירושלים.
-
-כראש ממשלת ישראל, אני מדבר בשם מאה דורות של יהודים אשר חיו בפזורה, אשר סבלו, אך מעולם לא ויתרו על התקווה לחזור לקיומם הלאומי במדינה היהודית האחת והיחידה.
-
-גבירותיי ורבותיי,
-
-אני ממשיך לקוות שהנשיא עבאס יהיה שותפי לשלום. עבדתי קשה כדי לקדם את השלום. ביום שנכנסתי לתפקיד, קראתי לשיחות ישירות ללא תנאים מוקדמים. הנשיא עבאס לא הגיב. הצגתי חזון שלום עבור שתי מדינות לשני עמים. הוא עדיין לא הגיב. הסרתי מאות מחסומים על מנת להקל על התנועה באזורים פלסטינים. עשיתי צעד חסר תקדים של הקפאת בנייה חדשה בהתיישבויות למשך עשרה חודשים.
-
-הנשיא עבאס, אני מושיט את ידי, את ידה של ישראל, לשלום. אני מקווה שתתפוס את היד. שנינו בני אברהם. העם שלי קורא לו אברהם, העם שלך איברהים. יש לנו אב משותף. אנו חולקים את אותה הארץ. הגורלות שלנו שזורים זה בזה. בוא נגשים את חזון ישעיהו: העם ההולכים בחשך, ראו אור גדול.
-
-מי ייתן ואור זה יהיה אורו של השלום.`
+    dir: "ltr",
+    text: `Thank you, Mr. President. Ladies and gentlemen:
+Israel has extended its hand in peace from the moment it was established 63 years ago.
+On behalf of Israel and the Jewish people, I extend that hand again today.
+I extend it to the people of Egypt and Jordan, with renewed friendship for neighbors with whom we have made peace. I extend it to the people of Turkey, with respect and good will. I extend it to the people of Libya and Tunisia, with admiration for those trying to build a democratic future. I extend it to the other peoples of North Africa and the Arabian Peninsula, with whom we want to forge a new beginning. I extend it to the people of Syria, Lebanon and Iran, with awe at the courage of those fighting brutal repression.
+But most especially, I extend my hand to the Palestinian people, with whom we seek a just and lasting peace.
+Ladies and gentlemen, in Israel our hope for peace never wanes. Our scientists, doctors, innovator apply their genius to improve the world of tomorrow. Our artists, our writers, enrich the heritage of humanity. Now, I know that this is not exactly the image of Israel that is often portrayed in this hall. After all, it was here in 1975 that the age-old yearning of my people to restore our national life in our ancient biblical homeland -- it was then that this was branded shamefully, as racism. And it was here in 1980, right here, that the historic peace agreement between Israel and Egypt wasn't praised; it was denounced! And it's here, year after year that Israel is unjustly singled out for condemnation. It's singled out for condemnation more often than all the nations of the world combined. Twenty-one out of the 27 General Assembly resolutions condemn Israel -- the one true democracy in the Middle East.
+Well, this is an unfortunate part of the U.N. institution. It's the theater of the absurd. It doesn't only cast Israel as the villain; it often casts real villains in leading roles: Gadhafi's Libya chaired the U.N. Commission on Human Rights; Saddam's Iraq headed the U.N. Committee on Disarmament. You might say: That's the past. Well, here's what's happening now -- right now, today, Hizbullah-controlled Lebanon now presides over the U.N. Security Council. This means, in effect, that a terror organization presides over the body entrusted with guaranteeing the world's security.
+You couldn't make this thing up.
+So here in the U.N., automatic majorities can decide anything. They can decide that the sun sets in the west or rises in the west. I think the first has already been preordained. But they can also decide -- they have decided -- that the Western Wall in Jerusalem, Judaism's holiest place, is occupied Palestinian territory.
+And yet even here in the GeneralAssembly, the truth can sometimes break through. In 1984 when I was appointed Israel's ambassador to the United Nations, I visited the great rabbi of Lubavich. He said to me -- and ladies and gentlemen, I don't want any of you to be offended because from personal experience of serving here, I know there are many honorable men and women, many capable and decent people, serving their nations here. But here's what the rebbe said to me. He said to me, you'll be serving in a house of many lies. And then he said, remember that even in the darkest place, the light of a single candle can be seen far and wide.
+Today I hope that the light of truth will shine, if only for a few minutes, in a hall that for too long has been a place of darkness for my country. So as Israel's prime minister, I didn't come here to win applause. I came here to speak the truth.  The truth is that Israel wants peace. The truth is that I want peace. The truth is that in the Middle East at all times, but especially during these turbulent days, peace must be anchored in security. The truth is that we cannot achieve peace through U.N. resolutions, but only through direct negotiations between the parties. The truth is that so far the Palestinians have refused to negotiate. The truth is that Israel wants peace with a Palestinian state, but the Palestinians want a state without peace. And the truth is you shouldn't let that happen.
+Ladies and gentlemen, when I first came here 27 years ago, the world was divided between East and West. Since then the Cold War ended, great civilizations have risen from centuries of slumber, hundreds of millions have been lifted out of poverty, countless more are poised to follow, and the remarkable thing is that so far this monumental historic shift has largely occurred peacefully. Yet a malignancy is now growing between East and West that threatens the peace of all. It seeks not to liberate, but to enslave, not to build, but to destroy.
+That malignancy is militant Islam. It cloaks itself in the mantle of a great faith, yet it murders Jews, Christians and Muslims alike with unforgiving impartiality. On September 11th it killed thousands of Americans, and it left the twin towers in smoldering ruins. Last night I laid a wreath on the 9/11 memorial. It was deeply moving. But as I was going there, one thing echoed in my mind: the outrageous words of the president of Iran on this podium yesterday. He implied that 9/11 was an American conspiracy. Some of you left this hall. All of you should have.
+Since 9/11, militant Islamists slaughtered countless other innocents -- in London and Madrid, in Baghdad and Mumbai, in Tel Aviv and Jerusalem, in every part of Israel. I believe that the greatest danger facing our world is that this fanaticism will arm itself with nuclear weapons. And this is precisely what Iran is trying to do.
+Can you imagine that man who ranted here yesterday -- can you imagine him armed with nuclear weapons? The international community must stop Iran before it's too late. If Iran is not stopped, we will all face the specter of nuclear terrorism, and the Arab Spring could soon become an Iranian winter.
+That would be a tragedy. Millions of Arabs have taken to the streets to replace tyranny with liberty, and no one would benefit more than Israel if those committed to freedom and peace would prevail.
+This is my fervent hope. But as the prime minister of Israel, I cannot risk the future of the Jewish state on wishful thinking. Leaders must see reality as it is, not as it ought to be. We must do our best to shape the future, but we cannot wish away the dangers of the present.
+And the world around Israelis definitely becoming more dangerous. Militant Islam has already taken over Lebanon and Gaza. It's determined to tear apart the peace treaties between Israel and Egypt and between Israel and Jordan. It's poisoned many Arab minds against Jews and Israel, against America and the West. It opposes not the policies of Israel but the existence of Israel.
+Now, some argue that the spread of militant Islam, especially in these turbulent times -- if you want to slow it down, they argue, Israel must hurry to make concessions, to make territorial compromises. And this theory sounds simple. Basically it goes like this: Leave the territory, and peace will be advanced. The moderates will be strengthened, the radicals will be kept at bay. And don't worry about the pesky details of how Israel will actually defend itself; international troops will do the job.
+These people say to me constantly: Just make a sweeping offer, and everything will work out. You know, there's only one problem with that theory. We've tried it and it hasn't worked. In 2000 Israel made a sweeping peace offer that met virtually all of the Palestinian demands. Arafat rejected it. The Palestinians then launched a terror attack that claimed a thousand Israeli lives.
+Prime Minister Olmert afterwards made an even more sweeping offer, in 2008. President Abbas didn't even respond to it.
+But Israel did more than just make sweeping offers. We actually left territory. We withdrew from Lebanon in2000 and from every square inch of Gaza in 2005. That didn't calm the Islamic storm, the militant Islamic storm that threatens us. It only brought the storm closer and made it stronger.
+Hizbullah and Hamas fired thousands of rockets against our cities from the very territories we vacated. See, when Israel left Lebanon and Gaza, the moderates didn't defeat the radicals, the moderates were devoured by the radicals. And I regret to say that international troops like UNIFIL in Lebanon and EUBAM in Gaza didn't stopthe radicals from attacking Israel.
+We left Gaza hoping for peace.
+We didn't freeze the settlements in Gaza, we uprooted them. We did exactly what the theory says: Get out, go back to the 1967 borders, dismantle the settlements.
+And I don't think people remember how far we went to achieve this. We uprooted thousands of people from their homes. We pulled children out of their schools and their kindergartens. We bulldozed synagogues. We even moved loved ones from their graves. And then, having done all that, we gave the keys of Gaza to President Abbas.
+Now the theory says it should all work out, and President Abbas and the Palestinian Authority now could build a peaceful state in Gaza. You can remember that the entire world applauded. They applauded our withdrawal as an act of great statesmanship. It was a bold act of peace.
+But ladies and gentlemen, we didn't get peace. We got war. We got Iran, which through its proxy Hamas promptly kicked out the Palestinian Authority. The Palestinian Authority collapsed in a day -- in one day.
+President Abbas just said on this podium that the Palestinians are armed only with their hopes and dreams. Yeah, hopes, dreams and 10,000 missiles and Grad rockets supplied by Iran, not to mention the river of lethal weapons now flowing into Gaza from the Sinai, from Libya, and from elsewhere.
+Thousands of missiles have already rained down on our cities. So you might understand that, given all this, Israelis rightly ask: What's to prevent this from happening again in the West Bank? See, most of our major cities in the south of the country are within a few dozen kilometers from Gaza. But in the center of the country, opposite the West Bank, our cities are a few hundred meters or at most a few kilometers away from the edge of the West Bank.
+So I want to ask you. Would any of you bring danger so close to your cities, to your families? Would you act so recklessly with the lives of your citizens? Israelis prepared to have a Palestinian state in the West Bank, but we're not prepared to have another Gaza there. And that's why we need to have real security arrangements, which the Palestinians simply refuse to negotiate with us.
+Israelis remember the bitter lessons of Gaza. Many of Israel's critics ignore them. They irresponsibly advise Israel to go down this same perilous path again. Your read what these people say and it's as if nothing happened -- just repeating the same advice, the same formulas as though none of this happened.
+And these critics continue to press Israel to make far-reaching concessions without first assuring Israel's security. They praise those who unwittingly feed the insatiable crocodile of militant Islam as bold statesmen. They cast as enemies of peace those of us who insist that we must first erect a sturdy barrier to keep the crocodile out, or at the very least jam an iron bar between its gaping jaws.
+So in the face of the labels and the libels, Israel must heed better advice. Better a bad press than a good eulogy, and better still would be a fair press whose sense of history extends beyond breakfast, and which recognizes Israel's legitimate security concerns.
+I believe that in serious peace negotiations, these needs and concerns can be properly addressed, but they will not be addressed without negotiations. And the needs are many, because Israel is such a tiny country. Without Judea and Samaria, the West Bank, Israel is all of 9 miles wide.
+I want to put it for you in perspective, because you're all in the city. That's about two-thirds the length of Manhattan. It's the distance between Battery Park and Columbia University. And don't forget that the people who live in Brooklyn and New Jersey are considerably nicer than some of Israel's neighbors.
+So how do you protect such a tiny country, surrounded by people sworn to its destruction and armed to the teeth by Iran? Obviously you can't defend it from within that narrow space alone. Israel needs greater strategic depth, and that's exactly why Security Council Resolution 242 didn't require Israel to leave all the territories it captured in the Six-Day War. It talked about withdrawal from territories, to secure and defensible boundaries. And to defend itself, Israel must therefore maintain a long-term Israeli military presence in critical strategic areas in the West Bank.
+I explained this to President Abbas. He answered that if a Palestinian state was to be a sovereign country, it could never accept such arrangements. Why not? America has had troops in Japan, Germany and South Korea for more than a half a century. Britain has had an an air base in Cyprus. France has forces in three independent African nations. None of these states claim that they're not sovereign countries.
+And there are many other vital security issues that also must be addressed. Take the issue of airspace. Again, Israel's small dimensions create huge security problems. America can be crossed by jet airplane in six hours. To fly across Israel, it takes three minutes. So is Israel's tiny airspace to be chopped in half and given to a Palestinian state not at peace with Israel?
+Our major international airport is a few kilometers away from the West Bank. Without peace, will our planes become targets for antiaircraft missiles placed in the adjacent Palestinian state? And how will we stop the smuggling into the West Bank? It's not merely the West Bank, it's the West Bank mountains. It just dominates the coastal plain where most of Israel's population sits below. How could we prevent the smuggling into these mountains of those missiles that could be fired on our cities?
+I bring up these problems because they're not theoretical problems. They're very real. And for Israelis, they're life-and-death matters. All these potential cracks in Israel's security have to be sealed in a peace agreement before a Palestinian state is declared, not afterwards, because if you leave it afterwards, they won't be sealed. And these problems will explode in our face and explode the peace.
+The Palestinians should first make peace with Israel and then get their state. But I also want to tell you this. After such a peace agreement is signed, Israel will not be the last country to welcome a Palestinian state as a new member of the United Nations. We will be the first.
+And there's one more thing. Hamas has been violating international law by holding our soldier Gilad Shalit captive for five years.
+They haven't given even one Red Cross visit. He's held in a dungeon, in darkness, against all international norms. Gilad Shalit is the son of Aviva and Noam Shalit. He is the grandson of Zvi Shalit, who escaped the Holocaust by coming in the 1930s as a boy to the land of Israel. Gilad Shalit is the son of every Israeli family. Every nation represented here should demand his immediate release. If you want to pass a resolution about the Middle East today, that's the resolution you should pass.
+Ladies and gentlemen, last year in Israel in Bar-Ilan University, this year in the Knesset and in the U.S. Congress, I laid out my vision for peace in which a demilitarized Palestinian state recognizes the Jewish state. Yes, the Jewish state. After all, this is the body that recognized the Jewish state 64 years ago. Now, don't you think it's about time that Palestinians did the same?
+The Jewish state of Israel will always protect the rights of all its minorities, including the more than onw million Arab citizens of Israel. I wish I could say the same thing about a future Palestinian state, for as Palestinian officials made clear the other day -- in fact, I think they made it right here in New York -- they said the Palestinian state won't allow any Jews in it. They'll be Jew-free -- "Judenrein." That's ethnic cleansing. There are laws today in Ramallah that make the selling of land to Jews punishable by death. That's racism. And you know which laws this evokes.
+Israel has no intention whatsoever to change the democratic character of our state. We just don't want the Palestinians to try to change the Jewish character of our state. We want to give up the fantasy of flooding Israel with millions of Palestinians.
+President Abbas just stood here, and he said that the core of the Israeli-Palestinian conflict is the settlements. Well, that's odd. Our conflict was raging for nearly half a century before there was a single Israeli settlement in the West Bank. So if what President Abbas is saying was true, then the -- I guess that the settlements he's talking about are Tel Aviv, Haifa, Jaffa, Be'er Sheva. Maybe that's what he meant the other day when he said that Israel has been occupying Palestinian land for 63 years. He didn't say from 1967; he said from1948. I hope somebody will bother to ask him this question because it illustrates a simple truth: The core of the conflict is not the settlements. The settlements are a result of the conflict.
+The settlements have to be -- it's an issue that has to be addressed and resolved in the course of negotiations. But the core of the conflict has always been and unfortunately remains the refusal of the Palestinians to recognize a Jewish state in any border.
+I think it's time that the Palestinian leadership recognizes what every serious international leader has recognized, from Lord Balfour and Lloyd George in 1917, to President Truman in1948, to President Obama just two days ago right here: Israel is the Jewish state.
+President Abbas, stop walking around this issue. Recognize the Jewish state, and make peace with us. In such a genuine peace, Israel is prepared to make painful compromises. We believe that the Palestinians should be neither the citizens of Israel nor its subjects. They should live in a free state of their own. But they should be ready, like us, for compromise. And we will know that they're ready for compromise and for peace when they start taking Israel's security requirements seriously and when they stop denying our historical connection to our ancient homeland.
+I often hear them accuse Israel of Judaizing Jerusalem. That's like accusing America of Americanizing Washington, or the British of Anglicizing London. You know why we're called "Jews"? Because we come from Judea.
+In my office in Jerusalem, there's an ancient seal. It's a signet ring of a Jewish official from the time of the Bible. The seal was found right next to the Western Wall, and it dates back 2,700 years, to the time of King Hezekiah. Now, there's a name of the Jewish official inscribed on the ring in Hebrew. His name was Netanyahu. That's my last name. My first name, Benjamin, dates back a thousand years earlier to Benjamin -- Binyamin -- the son of Jacob, who was also known as Israel. Jacob and his 12 sons roamed these same hills of Judea and Samaria 4,000 years ago, and there's been a continuous Jewish presence in the land ever since.
+And for those Jews who were exiled from our land, they never stopped dreaming of coming back: Jews in Spain, on the eve of their expulsion; Jews in the Ukraine, fleeing the pogroms; Jews fighting the Warsaw Ghetto, as the Nazis were circling around it. They never stopped praying, they never stopped yearning. They whispered: Next year in Jerusalem. Next year in the promised land.
+As the prime minister of Israel, I speak for a hundred generations of Jews who were dispersed throughout the lands, who suffered every evil under the Sun, but who never gave up hope of restoring their national life in the one and only Jewish state.
+Ladies and gentlemen, I continue to hope that President Abbas will be my partner in peace. I've worked hard to advance that peace. The day I came into office, I called for direct negotiations without preconditions. President Abbas didn't respond. I outlined a vision of peace of two states for two peoples. He still didn't respond. I removed hundreds of roadblocks and checkpoints, to ease freedom of movement in the Palestinian areas; this facilitated a fantastic growth in the Palestinian economy. But again -- no response. I took the unprecedented step of freezing new buildings in the settlements for 10 months. No prime minister did that before, ever. Once again -- you applaud, but there was no response. No response.
+In the last few weeks, American officials have put forward ideas to restart peace talks. There were things in those ideas about borders that I didn't like. There were things thereabout the Jewish state that I'm sure the Palestinians didn't like.
+But with all my reservations, I was willing to move forward on these American ideas.
+President Abbas, why don't you join me? We have to stop negotiating about the negotiations. Let's just get on with it. Let's negotiate peace.
+I spent years defending Israel on the battlefield. I spent decades defending Israel in the court of public opinion. President Abbas, you've dedicated your life to advancing the Palestinian cause. Must this conflict continue for generations, or will we be able our children and our grandchildren to speak in years ahead of how we found a way to end it? That's what we should aim for, and that's what I believe we can achieve.
+In two and a half years, we met in Jerusalem only once, even though my door has always been open to you. If you wish, I'll come to Ramallah. Actually, I have a better suggestion. We've both just flown thousands of miles to New York. Now we're in the same city. We're in the same building. So let's meet here today in the United Nations. Who's there to stop us? What is there to stop us? If we genuinely want peace, what is there to stop us from meeting today and beginning peace negotiations?
+And I suggest we talk openly and honestly. Let's listen to one another. Let's do as we say in the Middle East: Let's talk "doogri". That means straightforward. I'll tell you my needs and concerns. You'll tell me yours. And with God's help, we'll find the common ground of peace.
+There's an old Arab saying that you cannot applaud with one hand. Well, the same is true of peace. I cannot make peace alone. I cannot make peace without you. President Abbas, I extend my hand -- the hand of Israel -- in peace. I hope that you will grasp that hand. We are both the sons of Abraham. My people call him Avraham. Your people call him Ibrahim. We share the same patriarch. We dwell in the same land. Our destinies are intertwined.
+Let us realize the vision of Isaiah:
+The people who walk in darkness will see a great light.
+Let that light be the light of peace.`
   },
   {
     id: "netanyahu-unga-2012",
-    title: 'נאום האו"ם 2012',
+    title: 'UN Speech 2012',
     speaker: "בנימין נתניהו",
     date: "2012-09-27",
-    dir: "rtl",
-    text: `תודה רבה, אדוני הנשיא.
+    dir: "ltr",
+    text: `Thank you very much Mr. President.
+It's a pleasure to see the General Assembly presided by the Ambassador from Israel, and it's
+good to see all of you, distinguished delegates.
 
-זה תענוג לראות את השגריר מישראל יושב בראש העצרת הכללית, וטוב לראות את כולכם, אורחים יקרים.
+Ladies and Gentlemen ,
+Three thousand years ago, King David reigned over the Jewish state in our eternal capital,
+Jerusalem. I say that to all those who proclaim that the Jewish state has no roots in our region
+and that it will soon disappear.
+ Throughout our history, the Jewish people have overcome all the tyrants who have sought our
+destruction. It's their ideologies that have been discarded by history.
+ The people of Israel live on. We say in Hebrew Am Yisrael Chai, and the Jewish state will live
+forever.
+The Jewish people have lived in the land of Israel for thousands of years. Even after most of
+our people were exiled from it, Jews continued to live in the land of Israel throughout the ages.
+The masses of our people never gave up the dreamed of returning to our ancient homeland .
+Defying the laws of history, we did just that. We ingathered the exiles, restored our
+independence and rebuilt our national life. The Jewish people have come home.
+We will never be uprooted again  .
 
-גבירותיי ורבותיי,
+Yesterday was Yom Kippur, the holiest day of the Jewish year.
+ Every year, for over three millennia, we have come together on this day of reflection and
+atonement. We take stock of our past. We pray for our future. We remember the sorrows of
+our persecution; we remember the great travails of our dispersion; we mourn the extermination
+of a third of our people, six million, in the Holocaust.
+But at the end of Yom Kippur, we celebrate.
+We celebrate the rebirth of Israel. We celebrate the heroism of our young men and women who
+have defended our people with the indomitable courage of Joshua, David, and the Maccabees
+of old. We celebrate the marvel of the flourishing modern Jewish state .
 
-לפני שלושת אלפים שנה, מלך המלך דוד בבירתנו הנצחית, ירושלים. אני מציין זאת לאלה שטוענים שלמדינה היהודית אין שורשים באזור ושהיא תיעלם בקרוב.
-במשך כל שנות ההיסטוריה, העם היהודי התגבר על כל הרודנים שרצו להשמידנו. את האידיאולוגיות שלהם השכיחה ההיסטוריה.
-עם ישראל חי, והמדינה היהודית תתקיים לעד.
-העם היהודי חי בארץ ישראל כבר אלפי שנים. אפילו לאחר שרוב העם הוגלה, יהודים המשיכו תמיד לחיות בישראל. רוב העם היהודי לא ויתר על החלום לשוב למולדתנו הקדומה.
-בניגוד לחוקי ההיסטוריה, קיבצנו את הגלויות, שיחזרנו את עצמאותנו ובנינו מחדש את החיים הלאומיים שלנו. העם היהודי שב לביתו.
-לעולם לא יעקרו אותנו שוב.
 
 
-אתמול ציינו את יום הכיפורים, היום הקדוש ביותר בלוח השנה היהודי. בכל שנה, כבר שלושת אלפים שנים, אנו מתכנסים ליום של הרהור וכפרה. אנו מהרהרים בעבר. אנו מתפללים לקראת העתיד. אנו נזכרים בצער הרדיפה; אנו נזכרים בקשיי הגלות; אנו מתאבלים על השמדתו של שליש מעמנו, ששה מיליון, בשואה.
-אך בסופו של יום הכיפורים, אנו חוגגים.
-אנו חוגגים את הולדתה המחודשת של ישראל. אנו חוגגים את הגבורה של גברים ונשים צעירים שהגנו על עמנו בעוז, ללא חת, כמו יהושע, דוד והמכבים. אנו חוגגים את הפלא שהיא המדינה היהודית המודרנית המשגשגת.
 
-בישראל, אנו הולכים באותם הדרכים שבהם הלכו אבותינו אברהם, יצחק ויעקב. אך אנו כובשים שבילים חדשים במדע, בטכנולוגיה, ברפואה, בחקלאות.
-בישראל, העבר והעתיד הם בעלי מכנה משותף.
-למרבה הצער, זה אינו המקרה במדינות רבות אחרות. היום, מתחוללת מלחמה בין המודרני לימי-ביניימי.
-כוחות המודרניות שואפים לעתיד מזהיר, שבהם נשמרים זכויותיהם של הכול, שבו לכף ידו של כל ילד נגישה ספריה דיגיטלית שמתרחבת והולכת, שבו כל החיים מקודשים.
-כוחות ימי הביניים רוצים עולם שבו נשים ומיעוטים משועבדים, שבו מדכאים ידע, שבו מהללים לא את החיים אלא את המוות.
-כוחות אלה מתנגשים ברחבי העולם, אך התנגשות זו חריפה ביותר במזרח התיכון.
-ישראל נמנית בגאון עם כוחות המודרניות. אנו מגנים על זכויותיהם של כל אזרחינו: נשים וגברים, יהודים וערבים, מוסלמים ונוצרים – כולם שווים בעיני החוק.
 
-ישראל גם הופכת את העולם למקום טוב יותר. מדענינו זוכים בפרסי נובל. ידע ישראלי נמצא בתוך כל טלפון סלולארי ובכל מחשב. אנו מונעים רעב על ידי השקיית אדמות צחיחות באפריקה ובאסיה.
-לאחרונה, התרגשתי מאוד בביקור בטכניון בחיפה. ראיתי שם אדם שמשותק ממותניו ומטה מטפס במדרגות, בקלות למדי, בעזרת המצאה ישראלית.
-והיצירתיות הישראלית הנהדרת הזאת מתחרה רק בחמלה יוצאת הדופן של אנשינו. כאשר מתרחש אסון בכל מקום בעולם – האיטי, יפן, הודו, טורקיה, אינדונזיה או כל מקום אחר – רופאים ישראלים הם בין הראשונים שמגיעים למקום ההתרחשות ומבצעים ניתוחים מצילי חיים.
 
-בשנה האחרונה איבדתי הן את אבי והן את חמי. במחלקות בבתי-החולים ששם טופלו, טיפלו רופאים ישראלים בחולים פלסטינים. למעשה, בכל שנה, אלפי ערבים משטחי הרשות הפלסטינית וערבים מכל רחבי המזרח התיכון באים לישראל כדי לקבל טיפול בבתי-חולים ישראלים, בידי רופאים ישראלים.
-מכיוון שישראל מקדשת את החיים, היא מקדשת את השלום ושואפת אליו.
-אנו שואפים לשמר את היחסים ההיסטוריים שלנו ואת הסכמי השלום ההיסטוריים שלנו עם מצרים ועם ירדן. אנו שואפים ליצור שלום בר-קיימא עם הפלסטינים.
+ In Israel, we walk the same paths tread by our patriarchs Abraham, Isaac and Jacob. But we
+blaze new trails in science, technology, medicine, agriculture.
+ In Israel, the past and the future find common ground  .
 
-הנשיא עבאס דיבר אליכם מוקדם יותר.
-אני אומר לו, ואני אומר לכם:
-לא נפתור את הסכסוך בינינו בעזרת נאומים מסיתים באו"ם. לא זאת הדרך לפתרון. לא נפתור את הסכסוך בינינו על ידי הכרזת מדינה חד-צדדית.
-עלינו לשבת יחדיו, לשאת ולתת, ולהגיע לפשרה הדדית, שבה מדינה פלסטינית מפורזת מכירה במדינה היהודית היחידה.
+Unfortunately, that is not the case in many other countries. For today, a great battle is being
+waged between the modern and the medieval .
+The forces of modernity seek a bright future in which the rights of all are protected, in which
+an ever-expanding digital library is available in the palm of every child, in which every life is
+sacred        .
+The forces of medievalism seek a world in which women and minorities are subjugated, in
+which knowledge is suppressed, in which not life but death is glorified  .
+These forces clash around the globe, but nowhere more starkly than in the Middle East   .
+Israel stands proudly with the forces of modernity. We protect the rights of all our citizens:
+men and women, Jews and Arabs, Muslims and Christians – all are equal before the law .
 
-ישראל רוצה לראות מזרח תיכון של קדמה ושלום. אנו רוצים לראות את שלוש הדתות שצמחו באזור זה – היהדות, הנצרות והאיסלאם – מתקיימים יחד בשלום ובכבוד הדדי.
-אך כוחות ימי הביניים של האיסלאם הרדיקלי, הכוחות שאותם ראיתם מסתערים עכשיו על שגרירויות ארה"ב במזרח התיכון, הם מתנגדים לכך.
-הם שואפים לעליונות על כל המוסלמים. הם נחושים לכבוש את העולם. הם רוצים להרוס את ישראל, אירופה ואת אמריקה. הם רוצים לחסל את החרות. הם רוצים להביא לקיצו של העולם המודרני.
-לאיסלאם המיליטנטי יש ענפים רבים – משליטי איראן ומשמרות המהפכה, עד מחבלי אל-קעידה, ועד לתאים הקיצוניים שאורבים בכל מקום בעולם.
-אך למרות ההבדלים ביניהם, הם כולם מושרשים באדמה המרה של אי-סובלנות. אי-הסובלנות הזאת מכוונת קודם כל כנגד אחיהם המוסלמים ואז כנגד נוצרים, יהודים, בודהיסטים, הינדים, חילוניים, כל מי שאינו נכנע לאמונה הבלתי סולחת שלהם.
-הם רוצים לגרור את האנושות חזרה אל עידן של דוגמה בלתי מעורערת וסכסוך שלא ניתן ליישב.
-אני בטוח בדבר אחד: בסופו של דבר, הם ייכשלו. בסופו של דבר, האור יגבר על החושך.
-ראינו את זה קורה בעבר.
-לפני כחמש מאות שנים, מכונת הדפוס עזרה לחלץ את אירופה המסוגרת מתקופה חשוכה. בסוף, נבערות פינתה את מקומה לנאורות.
-כך גם המזרח התיכון המסוגר ייכנע בסוף לכוח של חופש וטכנולוגיה, כוח שאי אפשר לעמוד בפניו. כאשר זה יקרה, האזור שלנו יונחה לא על ידי קיצוניות ומזימות, אלא על ידי הגיון וסקרנות.
+Israel is also making the world a better place: our scientists win Nobel Prizes. Our know-how is
+in every cell-phone and computer that you're using. We prevent hunger by irrigating arid lands
+in Africa and Asia  .
+Recently, I was deeply moved when I visited Technion, one of our technological institutes in
+Haifa, and I saw a man paralyzed from the waist down climb up a flight of stairs, quite easily,
+with the aid of an Israeli invention .
+And Israel's exceptional creativity is matched by our people's remarkable compassion. When
+disaster strikes anywhere in the world – in Haiti, Japan, India, Turkey Indonesia and elsewhere
+– Israeli doctors are among the first on the scene, performing life-saving surgeries.
 
-לדעתי, השאלה האמיתית היא לא האם הקיצוניות תובס. היא כמה חיים יאבדו לפני שתובס.
-גם את זה ראינו בעבר.
-לפני כ-70 שנים, העולם חזה באידיאולוגיה פנאטית אחת שהייתה נחושה להשתלט על העולם. היא ירדה בלהבות, אך לא לפני שגבתה את חייהם של מיליונים. אלה שהתנגדו לפנאטיות המתינו זמן רב מדי עד שפעלו. הם ניצחו בסוף, אך במחיר נוראי.
-ידידיי, אסור לנו לתת לזה לקרות שוב.
-על הכף עומד לא רק העתיד של המדינה שלי. על הכף עומד עתידו של העולם. אין סכנה גדולה יותר לעתידנו המשותף מאשר איראן חמושה בנשק גרעיני.
-כדי להבין כיצד יראה עולם שבו איראן חמושה בנשק גרעיני, דמיינו לכם עולם שבו אל-קעידה חמושה בנשק גרעיני.
-אין זה משנה אם הנשק הקטלני הזה נמצא בידיו של משטר הטרור המסוכן בעולם, או ארגון הטרור המסוכן בעולם. את שניהם מציתה אותה שנאה; שניהם ניזונים מאותה תאווה לאלימות.
+In the past year, I lost both my father and my father-in-law. In the same hospital wards where
+they were treated, Israeli doctors were treating Palestinian Arabs. In fact, every year, thousands
+of Arabs from the Palestinian territories and Arabs from throughout the Middle East come to
+Israel to be treated in Israeli hospitals by Israeli doctors.
+I know you're not going to hear that from speakers around this podium, but that's the truth. It's
+important that you are aware of this truth .
+ It’s because Israel cherishes life, that Israel cherishes peace and seeks peace.
 
-תראו את מה שהמשטר האירני עשה עד היום, ללא נשק גרעיני.
-ב-2009, הוא דיכא באכזריות את מחאות ההמוניות לדמוקרטיה במדינתו שלו. היום, שליחיו משתתפים בטבח של עשרות אלפי אזרחים סוריים, מהם אלפי ילדים. הם לוקחים חלק ישירות ברצח.
-הם סייעו בהרג של חיילים אמריקניים בעיראק, והם ממשיכים לעשות כך באפגניסטן. לפני כן, שלוחות איראניות הרגו מאות חיילים אמריקניים בביירות ובערב הסעודית. הם הפכו את לבנון ואת עזה למעוזי טרור, והטמיעו קרוב ל-100,000 רקטות וטילים באזורים אזרחיים. אלפים מהרקטות והטילים האלה כבר נורו לעבר ערים ישראליות בידי שלוחות הטרור שלהם.
-בשנה האחרונה, הם פרסו את רשתות הטרור הבין-לאומיות בתוך כ-25 מדינות בחמש יבשות – מהודו ותאילנד לקניה ובולגריה. הם אפילו תכננו לפוצץ מסעדה לא רחוק מהבית הלבן כדי להרוג דיפלומט.
-וכמובן, שליטי איראן מכחישים שוב ושוב את השואה, וקוראת להשמדתה של ישראל על בסיס כמעט יומיומי, כפי שעשו רק השבוע מתוך האו"ם.
-אז אני מפציר בכם, לאור התוקפנות האיראנית ללא נשק גרעיני, נסו לדמיין את התוקפנות האיראנית עם נשק גרעיני. דמיינו את הטילים ארוכי הטווח שלהם, עם ראשי-חץ גרעיניים, את רשתות הטרור שלהם חמושות בפצצות אטום.
-מי מכם יחוש בטוח במזרח התיכון? מי יהיה מוגן באירופה? מי יהיה מוגן באמריקה? מי יהיה בטוח בכל מקום?
-יש אנשים שמאמינים שניתן להרתיע איראן חמושה בנשק גרעיני כפי שהורתעה ברית המועצות.
-זוהי הנחה מסוכנת ביותר.
-לוחמי ג'יהאד מתנהגים באופן שונה מאוד ממרקסיסטים חילונים. לא היו מחבלים מתאבדים סובייטים, אך איראן מפיקה אותם בהמוניהם.
-ההרתעה הצליחה עם הסובייטים, כיוון שבכל פעם שהם ניצבו בפני בחירה בין האידיאולוגיה שלהם להישרדות שלהם, הם בחרו בהישרדות.
-אך ההרתעה לא תעבוד על האיראנים לאחר שיהיה בידיהם נשק גרעיני.
-חוקר דגול של המזרח התיכון, פרופ' ברנרד לואיס, הוא שניסח את זה טוב ביותר. הוא אמר שהבטחה להרס הדדי אינה מרתיעה את האייתולות של איראן, אלא מהווה תמריץ.
-מנהיגיה האפוקליפטיים של איראן מאמינים שהאיש הקדוש מימי הביניים יופיע שוב לאחר מלחמת קודש הרסנית, ובכך יבטיח שהאיסלם הרדיקלי מהסוג שלהם ישלוט בעולם.
-זו אינה רק אמונה. המדיניות שלהם ומעשיהם מכוונים על פי זה.
-הקשיבו למה שאמר האייתולה רפסנג'ני: "השימוש בפצצה גרעינית אחת בתוך ישראל תשמיד הכול, אך היא רק תגרום לנזק לעולם האיסלם".
-הוא אמר: "אין זה משולל הגיון לשקול תרחיש כזה".
-לא משולל הגיון...
-וזה מאחד שנחשב בין המתונים יותר באיראן.
+We seek to preserve our historic ties and our historic peace treaties with Egypt and Jordan. We
+seek to forge a durable peace with the Palestinians.
 
-באופן מחריד, יש אנשים שהתחילו להתעסק ברעיון המגוחך שאיראן חמושה בנשק גרעיני עשויה להביא ליציבות במזרח התיכון.
-זה כמו לומר שאל-קעידה חמושה בנשק גרעיני תוביל תקופה של שלום אוניברסאלי.
-גבירותיי ורבותיי,
-אני מתריע על הצורך למנוע מאיראן לפתח נשק גרעיני כבר מעל ל-15 שנים.
-דיברתי על כך בתקופת כהונתי הראשונה כראש ממשלה, ואז דיברתי על כך כשעזבתי את התפקיד. דיברתי על כך כשזה היה אופנתי ודיברתי על כך כשזה לא היה אופנתי.
-אני מדבר על כך עכשיו כיוון שהשעה כבר מאוחרת, מאוחרת מאוד. אני מדבר על כך עכשיו, כיוון שהלו"ז הגרעיני של איראן אינו ממתין לאף אחד או לשום דבר. אני מדבר על כך עכשיו, כיוון שכשמדובר בהישרדות של המדינה שלי, אין זו רק זכותי לדבר, זאת חובתי לדבר. ואני מאמין שזאת חובתו של כל מנהיג אחראי שמעוניין בשימור שלום עולמי.
 
-כבר עשור כמעט שהקהילה הבינלאומית מנסה לעצור את תוכנית הגרעין האיראנית בעזרת דיפלומטיה.
-זה לא עובד.
-איראן מנצלת את המגעים הדיפלומטיים כאמצעי להרוויח עוד זמן כדי לקדם את תוכנית הגרעין שלה.
 
-מעל לשבע שנים שהקהילה הבין-לאומית ניסתה להפעיל סנקציות על איראן. תחת הנהגתו של הנשיא אובמה, הקהילה הבינלאומית הפעילה את הסנקציות החריפות ביותר עד היום.
-אני מבקש להודות לכל הממשלות שמיוצגות כאן שלקחו חלק במאמצים. והייתה להם השפעה. יצוא הנפט פחת והכלכלה האיראנית חטפה מכה חזקה.
-זה השפיע על הכלכלה, אך עלינו להכיר באמת. הסנקציות לא בלמו את תוכנית הגרעין האיראנית.
 
-על פי הסוכנות הבין-לאומית לאנרגיה אטומית, רק בשנה האחרונה איראן הכפילה את מספר הצנטריפוגות במתקן הגרעיני התת-קרקעי בקום.
-בשעה מאוחרת כל כך, יש רק דרך אחת של שלום למנוע מאיראן להשיג פצצות אטומיות והיא על ידי הצבת קו אדום ברור לתוכנית הנשק הגרעיני של איראן.
-קווים אדומים אינם מחוללים מלחמה; קווים אדומים מונעים מלחמה.
-הביטו באמנת נאט"ו: נאט"ו הבהירה שהתקפה על מדינה אחת בברית, כמוה כהתקפה על כולן. הקו האדום של נאט"ו הצליח לשמר את השלום באירופה במשך כמעט חמישים שנה.
-הנשיא קנדי מתח קו אדום בזמן משבר הטילים בקובה. גם קו אדום זה מנע מלחמה וסייע בשימור השלום במשך עשרות שנים.
-למעשה, הימנעות מהצבת קווים אדומים היא שמובילה לעיתים קרובות למתקפה.
-אם מדינות המערב היו מציבות קווים אדומים ברורים בשנות ה-30 של המאה הקודמת, אני מאמין שהתוקפנות הנאצית הייתה שוכחת וייתכן שניתן היה למנוע את מלחמת העולם השנייה.
-בשנת 1990, אם לסדאם חוסיין היה נאמר במפורש שהפלישה לכוויית היא חציית קו אדום, יתכן שמלחמת המפרץ הראשונה הייתה נמנעת.
-קווים אדומים כבר הצליחו גם עם איראן.
-מוקדם יותר השנה, איראן איימה שתסגור את מיצרי הורמוז. ארצות הברית הציבה קו אדום ברור, ואיראן נסוגה.
 
-ניתן לצייר קווים אדומים במקומות שונים בתוכנית החימוש הגרעיני של איראן. אך כדי שזה יהיה אמין, יש למתוח בראש ובראשונה קו אדום על חלק מהותי של התכנית: על מאמציה של איראן להעשיר אורניום. ואני אסביר מדוע:
-כל פצצה מורכבת מחומר נפץ ומנגנון שמפעיל אותו. הדוגמה הפשוטה ביותר לכך היא אבק שריפה ומרעום.
-במקרה של התוכנית האיראנית לבנות נשק גרעיני, אבק השריפה היא אורניום מועשר והמרעום הוא ראש נפץ גרעיני.
-עבור איראן, איסוף אורניום מועשר מספיק הוא משימה הרבה יותר מאתגרת מהכנת ראש נפץ גרעיני.
-במדינה כמו איראן, נדרשות שנים רבות כדי להעשיר אורניום בכמות שתספיק לפצצה. זה דורש אלפי צנטריפוגות שמסתובבות יחדיו במתקנים תעשייתיים ענקיים. את המתקנים האלה ניתן לראות ולכן הם פגיעים.
-לעומת זאת, איראן תוכל להפיק ראש נפץ גרעיני, המרעום, בזמן קצר בהרבה, אולי בפחות משנה, אולי אפילו חודשים מספר.
 
-את ראש הנפץ ניתן להכין בסדנה בגודל של כיתה בבית-ספר. יתכן שיהיה קשה מאוד לאתר ולפגוע בסדנה כזאת, במיוחד במדינה כמו איראן, שגודלה כגודל צרפת, גרמניה, איטליה ובריטניה יחד.
-הדבר נכון גם למתקן שבו ירכיבו את ראש הנפץ או הרכיב הגרעיני, שאפשר יהיה להקים על ספינת משא. הסיכויים למצוא את המתקן קלושים ביותר.
-כך שלמעשה, הדרך האמיתית היחידה שבה ניתן יהיה למנוע מאיראן לפתח נשק גרעיני, היא למנוע ממנה לאסוף אורניום מועשר שיספיק לפצצה.
-איזו כמות של אורניום מועשר נדרשת לפצצה? וכמה קרובה איראן אל יעד זה?
-אני אראה לכם. הבאתי שרטוט:
-זוהי פצצה וזהו המרעום. במקרה של התוכנית הגרעינית של איראן לבנות פצצה, יש למלא את הפצצה בכמות מספיקה של אורניום מועשר. על איראן לעבור שלושה שלבים.
-בשלב הראשון עליהם להפיק כמות מספיקה של אורניום מועשר בדרגה נמוכה.
-בשלב השני עליהם להפיק כמות מספיקה של אורניום מועשר בדרגה בינונית.
-ובשלב השלישי והאחרון, עליהם להפיק כמות מספיקה של אורניום מועשר בדרגה גבוהה בשביל הפצצה הראשונה.
-היכן נמצאת איראן? איראן סיימה את השלב הראשון. זה ארך שנים רבות, אך הם הצליחו והם נמצאים 70% מהדרך ליעד.
-עכשיו, הם נמצאים בעיצומו של השלב השני. עד האביב הבא, או לכל המאוחר בקיץ, לפי קצב ההעשרה הנוכחי, הם יסיימו את השלב של ההעשרה בדרגה בינונית ויתקדמו לשלב האחרון.
-מאותו רגע, התהליך יארך רק חודשים ספורים, ואולי אפילו שבועות בודדים עד שיעשירו אורניום בכמות מספיקה לפצצה הראשונה.
 
-גבירותיי ורבותיי,
+President Abbas just spoke here.
+I say to him and I say to you:
+We won't solve our conflict with libelous speeches at the UN. That's not the way to solve it.
+We won't solve our conflict with unilateral declarations of statehood.
+We have to sit together, negotiate together, and reach a mutual compromise, in which a
+demilitarized Palestinian state recognizes the one and only Jewish State.
+Israel wants to see a Middle East of progress and peace. We want to see the three great
+religions that sprang forth from our region – Judaism, Christianity and Islam – coexist in peace
+and in mutual respect.
 
-מה שאמרתי לכם עכשיו אינו מבוסס על מידע סודי. זה לא הגיע ממודיעין צבאי. הדברים מבוססים על הדו"חות של הסוכנות הבין-לאומית לאנרגיה אטומית. כל אחד יכול לקרוא אותם. הם מפורסמים באינטרנט.
-אם אלה הן העובדות, ואלה אכן העובדות, היכן עלינו למתוח את הקו האדום?
-יש לקבוע את הקו האדום כאן.....
-לפני שאיראן תשלים את השלב השני בהעשרה הגרעינית שתספיק ליצירת פצצה.
-לפני שאיראן תגיע למצב שהיא רחוקה אך מספר חודשים או שבועות מאיסוף אורניום מועשר בכמות מספיקה להפקת נשק גרעיני.
-בכל יום, רגע זה הולך וקרב. ולכן אני מדבר היום בכזאת דחיפות. לכן, כל כולם להתייחס לעניין בדחיפות.
+Yet the medieval forces of radical Islam, whom you just saw storming the American embassies
+throughout the Middle East, they oppose this.
+They seek supremacy over all Muslims. They are bent on world conquest. They want to destroy
+Israel, Europe, America. They want to extinguish freedom. They want to end the modern
+world .
+Militant Islam has many branches – from the rulers of Iran with their Revolutionary Guards to
+Al Qaeda terrorists to the radical cells lurking in every part of the globe .
+ But despite their differences, they are all rooted in the same bitter soil of intolerance. That
+intolerance is directed first at their fellow Muslims, and then to Christians, Jews, Buddhists,
+Hindus, secular people, anyone who doesn't submit to their unforgiving creed .
+They want to drag humanity back to an age of unquestioning dogma and unrelenting conflict  .
+I am sure of one thing. Ultimately they will fail. Ultimately, light will penetrate the darkness  .
+We've seen that happen before.
+Some five hundred years ago, the printing press helped pry a cloistered Europe out of a dark
+age. Eventually, ignorance gave way to enlightenment  .
+So too, a cloistered Middle East will eventually yield to the irresistible power of freedom and
+technology. When this happens, our region will be guided not by fanaticism and conspiracy, but
+by reason and curiosity   .
 
-יש אנשים שטוענים שגם אם איראן תשלים את תהליך ההעשרה, גם אם תחצה את הקו האדום שעכשיו ציירתי, גורמי המודיעין שלנו ידעו היכן ומתי איראן תכין את המרעום, תרכיב את הפצצה ותפיק את ראש הנפץ.
-אין אדם שמעריך יותר את גורמי המודיעין יותר מראש ממשלת ישראל. יחידות המודיעין, גם שלנו, מצוינות כולן. הן סיכלו אינספור התקפות; הן הצילו חיים רבים.
-אך הם אינם ללא רבב.
-במשך שנתיים, סוכנויות הביון שלנו לא ידעו שאיראן בונה מתקן ענקי להעשרת אורניום מתחת להר.
-האם אנו יכולים להמר על ביטחון העולם בהתבסס על ההנחה שנמצא סדנה בתוך מדינה שגודלה כחצי מיבשת אירופה?
+I think the relevant question is this: it's not whether this fanaticism will be defeated. It's how
+many lives will be lost before it's defeated   .
+We've seen that happen before too.
 
-גבירותי ורבותיי,
 
-השאלה אינה מתי איראן תשיג את הפצצה. השאלה היא מהו השלב שבו לא נוכל יותר למנוע מאיראן להשיג את הפצצה.
-יש למתוח את הקו האדום על תוכנית ההעשרה של איראן, כיון שמתקני ההעשרה הם המתקנים הגרעיניים היחידים שאנו רואים בוודאות ויכולים לפגוע בהם בצורה מדוייקת.
-אני מאמין שאם נציב בפניה קו אדום ברור, איראן תיסוג.
-זה יקנה לנו זמן רב יותר לסנקציות וניסיונות דיפלומטיים לשכנע את איראן לזנוח לחלוטין את תוכנית הנשק הגרעיני.
-לפני יומיים, מעל בימה זאת, חזר הנשיא אובמה על כך שלא יהיה ניתן לבלום איראן חמושה בנשק גרעיני.
-אני מעריך את עמדתו של הנשיא, כמו כולם במדינתי. אנו שותפים במטרה לבלום את תוכנית ההתחמשות הגרעינית של איראן. יעד זה מאחד את העם בישראל. הוא מאחד את האמריקנים, דמוקרטים ורפובליקנים כאחד, והוא משותף למנהיגים חשובים מכל העולם.
-הדברים שאמרתי היום יעזרו להבטיח שנשיג את יעדינו המשותף.
-ישראל דנה עם ארצות הברית בנושא זה, ואני סמוך ובטוח שיחדיו נוכל לקבוע את הנתיב.
 
-גבירותיי ורבותיי,
 
-ההתנגשות בין מודרניות לימי הביניים אינה בהכרח התנגשות בין קדמה למסורת.
-המנהגים של העם היהודי הם בני אלפי שנים. הם המקור לערכינו המשותפים והם הבסיס לחוזקנו הלאומי.
-בו בזמן, העם היהודי תמיד הביט אל עבר העתיד. לאורך כל ההיסטוריה, עמדנו בחזית להעמקת החירות, להאצת שוויון וקידום זכויות אדם.
-אנו נושאים על נס את הערכים האלה, לא למרות מנהגינו, אלא כתוצאה מהם.
-אנו מקשיבים למילותיהם של הנביאים היהודים ישעיה, עמוס וירמיה, להתייחס אל כל אדם בכבוד ובחמלה, לרדוף צדק, לקדש את החיים ולשאוף ולהתפלל לשלום.
-אלה הם הערכים האלמותיים של עמי, והם המתנה החשובה ביותר שנתן העם היהודי לאנושות.
 
-הבה נתחייב היום להגן על ערכים אלה כדי שנוכל להגן על חירותנו ולשמר את הציוויליזציה המשותפת.
 
-תודה רבה.`
+ Some 70 years ago, the world saw another fanatic ideology bent on world conquest. It went
+down in flames. But not before it took millions of people with it. Those who opposed that
+fanaticism waited too long to act. In the end they triumphed, but at an horrific cost.
+My friends, we cannot let that happen again .
+At stake is not merely the future of my own country. At stake is the future of the world.
+Nothing could imperil our common future more than the arming of Iran with nuclear weapons .
+To understand what the world would be like with a nuclear-armed Iran, just imagine the world
+with a nuclear-armed Al-Qaeda .
+It makes no difference whether these lethal weapons are in the hands of the world's most
+dangerous terrorist regime or the world's most dangerous terrorist organization. They're both
+fired by the same hatred; they're both driven by the same lust for violence.
+Just look at what the Iranian regime has done up till now, without nuclear weapons .
+In 2009, they brutally put down mass protests for democracy in their own country. Today, their
+henchmen are participating in the slaughter of tens of thousands of Syrian civilians, including
+thousands of children, directly participating in this murder.
+They abetted the killing of American soldiers in Iraq and continue to do so in Afghanistan.
+Before that, Iranian proxies killed hundreds of American troops in Beirut and in Saudi Arabia.
+They've turned Lebanon and Gaza into terror strongholds, embedding nearly 100,000 missiles
+and rockets in civilian areas. Thousands of these rockets and missiles have already been fired at
+Israeli communities by their terrorist proxies.
+In the last year, they've spread their international terror networks to two dozen countries across
+five continents – from India and Thailand to Kenya and Bulgaria. They've even plotted to blow
+up a restaurant a few blocks from the White House in order to kill a diplomat.
+ And of course, Iran's rulers repeatedly deny the Holocaust and call for Israel's destruction
+almost on a daily basis, as they did again this week from the United Nations.
+
+So I ask you, given this record of Iranian aggression without nuclear weapons, just imagine
+Iranian aggression with nuclear weapons. Imagine their long range missiles tipped with nuclear
+warheads, their terror networks armed with atomic bombs  .
+Who among you would feel safe in the Middle East? Who would be safe in Europe? Who
+would be safe in America? Who would be safe anywhere?
+
+There are those who believe that a nuclear-armed Iran can be deterred like the Soviet Union .
+ That's a very dangerous assumption .
+
+
+
+
+
+
+ Militant Jihadists behave very differently from secular Marxists. There were no Soviet suicide
+bombers. Yet Iran produces hordes of them .
+Deterrence worked with the Soviets, because every time the Soviets faced a choice between
+their ideology and their survival, they chose their survival.
+ But deterrence may not work with the Iranians once they get nuclear weapons.
+
+There's a great scholar of the Middle East, Prof. Bernard Lewis, who put it best. He said that
+for the Ayatollahs of Iran, mutually assured destruction is not a deterrent, it's an inducement  .
+Iran's apocalyptic leaders believe that a medieval holy man will reappear in the wake of a
+devastating Holy War, thereby ensuring that their brand of radical Islam will rule the earth  .
+ That's not just what they believe. That's what is actually guiding their policies and their actions.
+Just listen to Ayatollah Rafsanjani who said, I quote:  "The use of even one nuclear bomb
+inside Israel will destroy everything, however it would only harm the Islamic world".
+ Rafsanjani said: "It is not irrational to contemplate such an eventuality".
+Not irrational…
+ And that's coming from one of the so-called moderates of Iran.
+
+ Shockingly, some people have begun to peddle the absurd notion that a nuclear-armed Iran
+would actually stabilize the Middle East.
+Yeah, right …
+That's like saying a nuclear-armed Al-Qaeda would usher in an era of universal peace  .
+
+Ladies and Gentlemen,
+I've been speaking about the need to prevent Iran from developing nuclear weapons for over
+15 years.
+I spoke about it in my first term in office as Prime Minister, and then I spoke about it when I
+left office. I spoke about it when it was fashionable, and I spoke about it when it wasn't
+fashionable .
+I speak about it now because the hour is getting late, very late. I speak about it now because the
+Iranian nuclear calendar doesn't take time out for anyone or for anything. I speak about it now
+because when it comes to the survival of my country, it's not only my right to speak; it's my
+duty to speak. And I believe that this is the duty of every responsible leader who wants to
+preserve world peace.
+
+
+
+
+
+
+ For nearly a decade, the international community has tried to stop the Iranian nuclear program
+with diplomacy  .
+That hasn't worked.
+Iran uses diplomatic negotiations as a means to buy time to advance its nuclear program .
+
+ For over seven years, the international community has tried sanctions with Iran. Under the
+leadership of President Obama, the international community has passed some of the strongest
+sanctions to date .
+ I want to thank the governments represented here that have joined in this effort. It's had an
+effect. Oil exports have been curbed and the Iranian economy has been hit hard  .
+ It's had an effect on the economy, but we must face the truth. Sanctions have not stopped
+Iran's nuclear program either.
+
+According to the International Atomic Energy Agency, during the last year alone, Iran has
+doubled the number of centrifuges in its underground nuclear facility in Qom.
+At this late hour, there is only one way to peacefully prevent Iran from getting atomic bombs.
+That's by placing a clear red line on Iran's nuclear weapons program  .
+Red lines don't lead to war; red lines prevent war.
+Look at NATO's charter: it made clear that an attack on one member country would be
+considered an attack on all.  NATO's red line helped keep the peace in Europe for nearly half a
+century.
+President Kennedy set a red line during the Cuban Missile Crisis. That red line also prevented
+war and helped preserve the peace for decades.
+In fact, it's the failure to place red lines that has often invited aggression  .
+
+If the Western powers had drawn clear red lines during the 1930s, I believe they would have
+stopped Nazi aggression and World War II might have been avoided  .
+In 1990, if Saddam Hussein had been clearly told that his conquest of Kuwait would cross a red
+line, the first Gulf War might have been avoided.
+Clear red lines have also worked with Iran  .
+Earlier this year, Iran threatened to close the Straits of Hormouz. The United States drew a
+clear red line and Iran backed off   .
+
+
+
+
+
+
+ Red lines could be drawn in different parts of Iran's nuclear weapons program. But to be
+credible, a red line must be drawn first and foremost in one vital part of their program: on
+Iran's efforts to enrich uranium. Now let me explain why:
+Basically, any bomb consists of explosive material and a mechanism to ignite it   .
+The simplest example is gunpowder and a fuse. That is, you light the fuse and set off the
+gunpowder.
+In the case of Iran's plans to build a nuclear weapon, the gunpowder is enriched uranium. The
+fuse is a nuclear detonator  .
+For Iran, amassing enough enriched uranium is far more difficult than producing the nuclear
+fuse .
+For a country like Iran, it takes many, many years to enrich uranium for a bomb. That requires
+thousands of centrifuges spinning in tandem in very big industrial plants. Those Iranian plants
+are visible and they're still vulnerable   .
+In contrast, Iran could produce the nuclear detonator – the fuse – in a lot less time, maybe
+under a year, maybe only a few months .
+The detonator can be made in a small workshop the size of a classroom. It may be very difficult
+to find and target that workshop, especially in Iran. That's a country that's bigger than France,
+Germany, Italy and Britain combined  .
+The same is true for the small facility in which they could assemble a warhead or a nuclear
+device that could be placed in a container ship. Chances are you won't find that facility either .
+So in fact the only way that you can credibly prevent Iran from developing a nuclear weapon, is
+to prevent Iran from amassing enough enriched uranium for a bomb .
+So, how much enriched uranium do you need for a bomb? And how close is Iran to getting it ?
+Let me show you. I brought a diagram for you. Here's the diagram.
+
+
+This is a bomb; this is a fuse .
+In the case of Iran's nuclear plans to build a bomb, this bomb has to be filled with enough
+enriched uranium. And Iran has to go through three stages.
+The first stage: they have to enrich enough of low enriched uranium.
+The second stage: they have to enrich enough medium enriched uranium.
+And the third stage and final stage: they have to enrich enough high enriched uranium for the
+first bomb.
+
+
+
+
+
+
+ Where's Iran? Iran's completed the first stage. It took them many years, but they completed it
+and they're 70% of the way there.
+ Now they are well into the second stage. By next spring, at most by next summer at current
+enrichment rates, they will have finished the medium enrichment and move on to the final
+stage  .
+From there, it's only a few months, possibly a few weeks before they get enough enriched
+uranium for the first bomb.
+
+
+Ladies and Gentlemen,
+What I told you now is not based on secret information. It's not based on military intelligence.
+It's based on public reports by the International Atomic Energy Agency. Anybody can read
+them. They're online.
+So if these are the facts, and they are, where should the red line be drawn?
+
+The red line should be drawn right here
+
+Before Iran completes the second stage of nuclear enrichment necessary to make a bomb  .
+  Before Iran gets to a point where it's a few months away or a few weeks away from amassing
+enough enriched uranium to make a nuclear weapon  .
+Each day, that point is getting closer. That's why I speak today with such a sense of urgency.
+And that's why everyone should have a sense of urgency.
+Some who claim that even if Iran completes the enrichment process, even if it crosses that red
+line that I just drew, our intelligence agencies will know when and where Iran will make the
+fuse, assemble the bomb, and prepare the warhead  .
+Look, no one appreciates our intelligence agencies more than the Prime Minister of Israel. All
+these leading intelligence agencies are superb, including ours. They've foiled many attacks.
+They've saved many lives.
+ But they are not foolproof.
+For over two years, our intelligence agencies didn't know that Iran was building a huge nuclear
+enrichment plant under a mountain .
+
+
+
+
+
+
+ Do we want to risk the security of the world on the assumption that we would find in time a
+small workshop in a country half the size of Europe?
+
+Ladies and Gentlemen,
+The relevant question is not when Iran will get the bomb. The relevant question is at what stage
+can we no longer stop Iran from getting the bomb .
+The red line must be drawn on Iran's nuclear enrichment program because these enrichment
+facilities are the only nuclear installations that we can definitely see and credibly target .
+I believe that faced with a clear red line, Iran will back down.
+This will give more time for sanctions and diplomacy to convince Iran to dismantle its nuclear
+weapons program altogether .
+
+Two days ago, from this podium, President Obama reiterated that the threat of a nuclear-armed
+Iran cannot be contained  .
+ I very much appreciate the President's position as does everyone in my country. We share the
+goal of stopping Iran's nuclear weapons program. This goal unites the people of Israel.  It
+unites Americans, Democrats and Republicans alike and it is shared by important leaders
+throughout the world.
+What I have said today will help ensure that this common goal is achieved   .
+Israel is in discussions with the United States over this issue, and I am confident that we can
+chart a path forward together  .
+
+Ladies and Gentlemen,
+The clash between modernity and medievalism need not be a clash between progress and
+tradition.
+ The traditions of the Jewish people go back thousands of years.  They are the source of our
+collective values and the foundation of our national strength.
+ At the same time, the Jewish people have always looked towards the future. Throughout
+history, we have been at the forefront of efforts to expand liberty, promote equality, and
+advance human rights.
+ We champion these principles not despite of our traditions but because of them.
+ We heed the words of the Jewish prophets Isaiah, Amos, and Jeremiah to treat all with dignity
+and compassion, to pursue justice and cherish life and to pray and strive for peace.
+
+
+
+
+
+
+  These are the timeless values of my people and these are the Jewish people's greatest gift to
+mankind .
+ Let us commit ourselves today to defend these values so that we can defend our freedom and
+protect our common civilization.
+
+ Thank you.`
   },
   {
     id: "netanyahu-unga-2013",
-    title: 'נאום האו"ם 2013',
+    title: 'UN Speech 2013',
     speaker: "בנימין נתניהו",
     date: "2013-09-30",
-    dir: "rtl",
-    text: `אני חש כבוד וזכות עמוקים לעמוד כאן היום בפניכם, כמייצגם של אזרחי מדינת ישראל.
+    dir: "ltr",
+    text: `I feel deeply honored and privileged to stand here before you today representing the citizens of the State of Israel.
+We are an ancient people.  We date back nearly 4,000 years to Abraham, Isaac, and Jacob.  We have journeyed through time, we've overcome the greatest of adversities, And we reestablished our sovereign state in our ancestral homeland, the Land of Israel.
+The Jewish people's odyssey through time has taught us two things: Never give up hope.  Always remain vigilant.
+Hope charts the future.  Vigilance protects it.
+Today, our hope for the future is challenged by a nuclear-armed Iran that seeks our destruction.  But I want you to know: that wasn't always the case.  Some 2500 years ago, the great Persian King Cyrus ended the Babylonian exile of the Jewish people.  He issued a famous edict in which he proclaimed the right of the Jews to return to the Land of Israel and rebuild the Jewish Temple in Jerusalem.  That's a Persian decree, and thus began an historic friendship between the Jews and the Persians that lasted until modern times.
+But in 1979, a radical regime in Tehran tried to stamp out that friendship.  As it was busy crushing the Iranian people's hopes for democracy, it also led wild chants of "Death to the Jews!" Now, since that time, Presidents of Iran have come and gone.  Some presidents were considered moderates, others hardliners.  But they've all served that same unforgiving creed, that same unforgetting regime – that creed that is espoused and enforced by the real power in Iran, the dictator known in Iran as the Supreme Leader, first Ayatollah Khomeini  and now Ayatollah Khamenei.  President Rouhani, like the presidents who came before him is a loyal servant of the regime.  He was one of only six candidates the regime permitted to run for office.  Nearly 700 other candidateswere rejected.
+So what made him acceptable?  Well, Rouhani headed Iran's Supreme National Security Council from 1989 through 2003.  During that time, Iran's henchmen gunned down opposition leaders in a Berlin restaurant.  They murdered 85 people at the Jewish Community Center in Buenos Aires.  They killed 19 American soldiers by blowing up the Khobar Towers in Saudi Arabia.
+Are we to believe that Rouhani, the National Security Advisor of Iran at the time, knew nothing about these attacks?
+Of course he did.
+Just as 30 years ago, Iran's security chiefs knew about the bombings in Beirut that killed 241 American Marines and 58 French Paratroopers.
+ Rouhani was also Iran's chief nuclear negotiator between 2003 and 2005.  He masterminded the strategy which enabled Iran to advance its nuclear weapons program behind a smokescreen of diplomatic engagement and very soothing rhetoric.  Now I know Rouhani does not sound like Ahmadinejad.  But when it comes to Iran's nuclear weapons program, the only difference between them is this: Ahmadinejad was a wolf in wolf's clothing and Rouhani is a wolf in sheep's clothing – a wolf who thinks he can pull the wool over the eyes of the international community.
+Like everyone else, I wish we could believe Rouhani's words.  But we must focus on Iran's actions.
+And it’s the brazen contrast, this extraordinary contradiction between Rouhani's words and Iran's actions that is so startling.  Rouhani stood at this very podium last week and praised Iranian democracy.  Iranian democracy, he said.
+But the regime that he represents executes political dissidents by the hundreds and jails them by the thousands.  Rouhani spoke of "the human tragedy in Syria."  Yet Iran directly participates in Assad’s murder and massacre of tens of thousands of innocent men, women, and children in Syria, and that regime is propping up a Syrian regime that just used chemical weapons against its own people.
+Rouhani condemned the "violent scourge of terrorism."  Yet in the last three years alone Iran has ordered, planned or perpetrated terrorist attacks in 25 cities on five continents.
+Rouhani denounces "attempts to change the regional balance through proxies."  Yet Iran is actively destabilizing Lebanon, Yemen, Bahrain, and many other Middle Eastern countries.
+Rouhani promises "constructive engagement with other countries."  Yet two years ago, Iranian agents tried to assassinate Saudi Arabia's ambassador in Washington, DC.
+And just three weeks ago, an Iranian agent was arrested trying to collect information for possible attacks against the American Embassy in Tel Aviv.  Some constructive engagement!
+I wish I could be moved by Rouhani's invitation to join his "WAVE" –a world against violence and extremism.  Yet the only waves Iran has generated in the last 30 years are waves of violence and terrorism that it has unleashed on the region and across the world.
+Ladies and Gentlemen, I wish I could believe Rouhani, but
+I don't because facts are stubborn things.  And the facts are that Iran's savage record flatly contradicts Rouhani's soothing rhetoric.
+Last Friday, Rouhani assured us that in pursuit of its nuclear program, Iran has "never chosen deceit… and secrecy." Never chosen deceit and secrecy?!
+Well, in2002, Iran was caught red-handed secretly building an underground centrifuge facility at Natanz.  Then in 2009, Iran was again caught red-handed secretly building a huge underground nuclear facility for uranium enrichment in a mountain near Qom.  Rouhani tells us not to worry; he assures us that all this is not intended for nuclear weapons.  Do any of you believe that?  If you believe that, here's a few questions that you might want to ask:
+Why would a country that claims to only want peaceful nuclear energy, why would such a country build hidden underground enrichment facilities?
+Why would a country with vast natural energy reserves invest billions in developing nuclear energy?
+Why would a country intent on merely civilian nuclear programs continue to defy multiple Security Council resolutions and incur the costs of crippling sanctions on its economy?
+And why would a country with a peaceful nuclear program develop intercontinental ballistic missiles whose sole purpose is to deliver nuclear warheads?  You don't build ICBM's to carry TNT thousands of miles away.  You build them for one purpose – to carry nuclear warheads.  And Iran is now building ICBM's that the United States says can reach this city in three or four years.
+Why would they do all this?  The answer is simple.  Iran is not building a peaceful nuclear program.  Iran is developing nuclear weapons.
+Last year alone, Iran enriched three tons of uranium to 3.5%, doubled its stockpile of 20% enriched uranium, and added thousands of new centrifuges, including advanced centrifuges.  It also continued work on the heavy water reactor in Arak.  That's in order to have another route to the bomb – a plutonium path.
+And since Rouhani's election – and I stress this – this vast and feverish effort has continued unabated. Ladies and gentlemen,
+Underground nuclear facilities?
+Heavy water reactors?
+Advanced centrifuges?
+ICBM's?
+It's not that it's hard to find evidence that Iran has a nuclear weapons program. It's hard to find evidence that Iran doesn’t have a nuclear weapons program.
+Last year when I spoke here at the UN, I drew a red line.  Iran has been very careful not to cross that line. But Iran is positioning itself to race across that line in the future at a time of its choosing.  Iran wants to be in a position to rush forward to build nuclear bombs before the international community can detect it, much less prevent it.
+Yet Iran faces one big problem, and that problem is summed up in one word: Sanctions.
+I have argued for many years, including on this podium, that the only way to peacefully prevent Iran from developing nuclear weapons is to combine tough sanctions with a credible military threat.  And that policy is today bearing fruit.  Thanks to the effort of many countries, many represented here, and under the leadership of the United States, tough sanctions have taken a big bite out of Iran's economy.  Oil revenues have fallen.  The currency has plummeted.  Banks are hard pressed to transfer money.
+So as a result, the regime is under intense pressure from the Iranian people to get the sanctions removed.  That's why Rouhani got elected in the first place.  That's why he launched his charm offensive.
+He definitely wants to get the sanctions lifted, I guarantee you that, but he doesn't want togive up Iran's nuclear weapons program in return.
+Now, here's the strategy to achieve this:
+First, smile a lot.  Smiling never hurts. Second, pay lip service to peace, democracy and tolerance.  Third, offer meaningless concessions in exchange for lifting sanctions.  And fourth, and the most important, ensure that Iran retains sufficient nuclear material and sufficient nuclear infrastructure to race to the bomb at a time that it chooses to do so.  You know why Rouhani thinks he can get away with this?  I mean, this is a ruse; it's a ploy.  Why does Rouhani think he can get away with it?  Because he's gotten away with it before.  Because his strategy of talking a lot and doing little has worked for him in the past.  He even bragged about it.  Here's what he said in his 2011 book about his time as Iran's chief nuclear negotiator: "While we were talking to the Europeans in Tehran, we were installing equipment in Isfahan…"
+For those who you who don't know, the Isfahan facility is an indispensable part of Iran's nuclear weapons program.  That's where uranium ore called yellowcake is converted into an enrichable form.  Rouhani boasted, and I quote: "By creating a calm environment, we were able to complete the work in Isfahan."
+He fooled the world once.  Now he thinks he can fool it again.  You see, Rouhani thinks he can have his yellowcake and eat it too.
+And he has another reason to believe that he can get away with this, and that reason is called North Korea.
+Like Iran, North Korea also said its nuclear program was for peaceful purposes.  Like Iran, North Korea also offered meaningless concessions and empty promises in return for sanctions relief.  In 2005, North Korea agreed to a deal that was celebrated the world over by many well-meaning people.  Here is what the New York Times editorial had to say about it: "For years now, foreign policy insiders have pointed to North Korea as the ultimate nightmare... a closed, hostile and paranoid dictatorship with an aggressive nuclear weapons program.
+Very few could envision a successful outcome.
+And yet North Korea agreed in principle this week to dismantle its nuclear weapons program, return to the NPT, abide by the treaty's safeguards and admit international inspectors….
+Diplomacy, it seems, does work after all."
+End quote.
+Ladies and Gentlemen,
+A year later, North Korea exploded its first nuclear weapons device.
+Yet as dangerous as a nuclear-armed North Korea is, it pales in comparison to the danger of a nuclear-armed Iran. A nuclear-armed Iran would have a chokehold on the world's main energy supplies.  It would trigger nuclear proliferation throughout the Middle East, turning the most unstable part of the planet into a nuclear tinderbox.  And for the first time in history, it would make the specter of nuclear terrorism a clear and present danger.
+A nuclear-armed Iran in the Middle East wouldn't be another North Korea.  It would be another 50 North Koreas!
+I know that some in the international community think I'm exaggerating this threat.  Sure, they know that Iran's regime leads these chants, "Death to America!", "Death to Israel!", then it pledges to wipe Israel off the map.  But they think this wild rhetoric is just bluster for domestic consumption.  Have these people learned nothing from history?
+The last century has taught us that when a radical regime with global ambitions gets awesome power, sooner or later, its appetite for aggression knows no bounds.  That's the central lesson of the 20th century.  Now, we cannot forget it.
+The world may have forgotten this lesson.  The Jewish people have not.
+Iran's fanaticism is not bluster.  It's real.  This fanatic regime must never be allowed to arm itself with nuclear weapons.
+I know that the world is weary of war.  We in Israel, we know all too well the cost of war.  But history has taught us that to prevent war tomorrow, we must be firm today.
+This raises the question:  Can diplomacy stop this threat?
+Well, the only diplomatic solution that would work is one that fully dismantles Iran's nuclear weapons program and prevents it from having one in the future.  President Obama rightly said that Iran's conciliatory words must be matched by transparent, verifiable and meaningful action, and to be meaningful, a diplomatic solution would require Iran to do four things.  First, cease all uranium enrichment.  This is called for by several Security Council resolutions.  Second, remove from its territory the stockpiles of enriched uranium.  Third, dismantle the infrastructure for a nuclear breakout capability, including the underground facility near Qom and the advanced centrifuges in Natanz.  And four, stop all work at the heavy water reactor in Arak aimed at the production of plutonium.
+These steps would put an end to Iran's nuclear weapons program and eliminate its breakout capability.  There are those who would readily agree to leave Iran with a residual capability to enrich uranium.  I advise them to pay close attention to what Rouhani said in a speech to Iran's Supreme Cultural Revolutionary Council.  This was published in 2005: "A country that can enrich uranium to about 3.5% will also have the capability to enrich it to about 90%.  Having fuel cycle capability virtually means that a country that possesses this capability is able to produce nuclear weapons.
+Precisely.  This is precisely why Iran's nuclear weapons program must be fully and verifiably dismantled.  And this is why the pressure on Iran must continue.
+So here's what the international community must do.  First, keep up the sanctions.  If Iran advances its nuclear weapons program during negotiations, strengthen the sanctions.
+Second, don't agree to a partial deal.  A partial deal would lift international sanctions that have taken years to put in place in exchange for cosmetic concessions that will take only weeks for Iran to reverse.  Third, lift the sanctions only when Iran fully dismantles its nuclear weapons program.
+My friends,
+The international community has Iran on the ropes.  If you want to knockout Iran's nuclear weapons program peacefully, don't let up the pressure.  Keep it up.
+We all want to give diplomacy with Iran a chance to succeed.  But when it comes to Iran, the greater the pressure, the greater the chance.
+Three decades ago, President Ronald Reagan famously advised: Trust but verify.  When it comes to Iran's nuclear weapons program, here's my advice: Distrust, Dismantle, and Verify.
+Ladies and Gentlemen,
+Israel will never acquiesce to nuclear arms in the hands of a rogue regime that repeatedly promises to wipe us off the map.  Against such a threat, Israel will have no choice but to defend itself.  I want there to be no confusion on this point: Israel will not allow Iran to get nuclear weapons.  If Israel is forced to stand alone, Israel will stand alone.  Yet in standing alone, Israel will know that we will be defending many, many others.  The dangers of a nuclear-armed Iran and the emergence of other threats in our region have led many of our Arab neighbors to finally recognize that Israel is not their enemy.  This affords us the opportunity to overcome historic animosities and build new relationships, new friendships, new hopes.  Israel welcomes engagement with the wider Arab world.  We hope that our common interests and common challenges will help us forge a more peaceful future.
+And Israel continues to seek an historic peace with our Palestinian neighbors, one  that ends our conflict once and for all.  We want a peace based on security and mutual recognition in which a demilitarized Palestinian state recognizes the Jewish state of Israel.  I remain committed to achieving an historic conciliation and building a better future for Israelis and Palestinians alike.
+Now, I have no illusions about how difficult this will be to achieve.  Twenty years ago, the peace process between Israel and the Palestinians began.  Six Israeli Prime Ministers, myself included, have not succeeded in achieving peace with the Palestinians.  My predecessors were prepared to make painful concessions.  So am I.
+But so far, Palestinian leaders haven't been prepared to offer the painful concessions they must make to end the conflict.  For peace to be achieved, the Palestinians must finally recognize the Jewish state and Israel's security needs must be met.  I am prepared to make an historic compromise for a genuine and enduring peace.  But I will never compromise on the security of my people and of my country of the one and only Jewish state.
+Ladies and Gentlemen,
+One cold day in the late 19th century, my grandfather Nathan and his younger brother Judah were standing in a railway station in the heart of Europe. They were seen by a group of anti-Semitic hoodlums who ran towards them waving clubs, screaming, "Death to the Jews!"
+My grandfather shouted to his younger brother to flee and save himself.  And he then stood alone against the raging mob to slow it down.  They beat him senseless.  They left him for dead.  Before he passed out, covered in his own blood, he said to himself: "What a disgrace!  What a disgrace! The descendants of the Maccabees lie in the mud, powerless to defend themselves."
+He promised himself then that if he lived, he would take his family to the Jewish homeland to help build a future for the Jewish people.  I stand here today as Israel's Prime Minister because my grandfather kept that promise.
+So many other Israelis have a similar story: a parent or a grandparent who fled every conceivable oppression, and came to Israel to start a new life in our ancient homeland.
+Together, we've transformed a bludgeoned Jewish people left for dead into a vibrant, thriving nation, defending itself with the courage of modern Maccabees, developing limitless possibilities for the future.
+In our time, the biblical prophecies have been realized: As the prophet Amos said: They shall rebuild ruined cities and inhabit them,
+They shall plant vineyards and drink their wine,
+They shall till gardens and eat their fruit.
+And I will plant them upon their soil, never to be uprooted again.
+
+
+Ladies and Gentlemen,
+The people of Israel have come home, never to be uprooted again.
+
+
+
+
+
+
+
+
+
+
+
+
 
-אנחנו עם עתיק. שורשינו מגיעים כמעט 4,000 שנה לאחור, אל אברהם, יצחק ויעקב. עברנו מסע ארוך בזמן, התגברנו על הקשות שבפורענויות, והקמנו מחדש את מדינתנו הריבונית במולדת אבותינו, ארץ ישראל.
 
-האודיסיאה של העם היהודי לאורך הדורות לימדה אותנו שני דברים:
-לעולם אל תאבדו תקווה.
-ותמיד היו דרוכים.
 
-התקווה מתווה את העתיד.
-הדריכות מגינה עליו.
 
-כיום, תקוותנו לעתיד ניצבת מול אתגר בדמות איראן גרעינית המבקשת את השמדתנו. אבל אני רוצה שתדעו: לא תמיד זה היה כך. לפני כ-2,500 שנה, כורש מלך פרס הגדול שם קץ לגלות בבל של העם היהודי. הוא פרסם צו מפורסם שבו הכריז על זכותם של היהודים לשוב לארץ ישראל ולבנות מחדש את בית המקדש בירושלים. זהו צו פרסי, וכך החלה ידידות היסטורית בין היהודים לפרסים שנמשכה עד העת החדשה.
 
-אך בשנת 1979 ניסה משטר קיצוני בטהראן לעקור את הידידות הזאת מן השורש. ובזמן שדיכא את תקוות העם האיראני לדמוקרטיה, הוא גם הוביל קריאות פראיות של "מוות ליהודים!".
 
-ומאז, נשיאים באיראן באו והלכו. חלקם נחשבו למתונים, אחרים לקשוחים. אבל כולם שירתו את אותה אמונה חסרת רחמים, את אותו משטר שאינו שוכח — אותה אידיאולוגיה שמטיפים לה ואוכפים אותה בעלי הכוח האמיתיים באיראן: הדיקטטור המכונה שם "המנהיג העליון", תחילה האייתוללה חומייני וכיום האייתוללה חמינאי.
 
-הנשיא רוחאני, כמו הנשיאים שקדמו לו, הוא משרת נאמן של המשטר. הוא היה אחד משישה מועמדים בלבד שהמשטר התיר להם להתמודד. כמעט 700 מועמדים אחרים נפסלו.
 
-אז מה הפך אותו למקובל?
-
-ובכן, רוחאני עמד בראש המועצה העליונה לביטחון לאומי של איראן בין 1989 ל-2003. באותן שנים, שליחיו של המשטר ירו למוות במנהיגי אופוזיציה במסעדה בברלין. הם רצחו 85 בני אדם במרכז הקהילה היהודית בבואנוס איירס. הם הרגו 19 חיילים אמריקנים בפיצוץ מגדלי ח׳ובאר בסעודיה.
-
-האם מצופה מאיתנו להאמין שרוחאני, שהיה אז היועץ לביטחון לאומי של איראן, לא ידע דבר על המתקפות הללו?
-
-כמובן שהוא ידע.
-
-בדיוק כפי שלפני 30 שנה ידעו ראשי מערכות הביטחון של איראן על הפיגועים בביירות, שבהם נהרגו 241 נחתים אמריקנים ו-58 צנחנים צרפתים.
-
-רוחאני היה גם ראש צוות המשא ומתן הגרעיני של איראן בין 2003 ל-2005. הוא תכנן את האסטרטגיה שאפשרה לאיראן לקדם את תוכנית הנשק הגרעיני שלה מאחורי מסך עשן של מעורבות דיפלומטית ורטוריקה מרגיעה מאוד.
-
-אני יודע שרוחאני לא נשמע כמו אחמדינז׳אד. אבל כשמדובר בתוכנית הנשק הגרעיני של איראן, ההבדל היחיד ביניהם הוא זה:
-אחמדינז׳אד היה זאב בעור זאב,
-ורוחאני הוא זאב בעור כבש — זאב שחושב שיוכל למשוך צמר על עיני הקהילה הבינלאומית.
-
-כמו כולם, גם אני רוצה להאמין לדבריו של רוחאני. אבל עלינו להתמקד במעשיה של איראן.
-
-והניגוד הבוטה הזה, הסתירה יוצאת הדופן הזו, בין דבריו של רוחאני לבין מעשיה של איראן — הוא הדבר המדהים כל כך.
-
-רוחאני עמד כאן ממש על הדוכן הזה בשבוע שעבר ושיבח את הדמוקרטיה האיראנית.
-הדמוקרטיה האיראנית, כך אמר.
-
-אבל המשטר שהוא מייצג מוציא להורג מאות מתנגדים פוליטיים וכולא אלפים.
-
-רוחאני דיבר על "הטרגדיה האנושית בסוריה".
-ובכל זאת, איראן משתתפת ישירות ברצח ובטבח שמבצע אסד בעשרות אלפי גברים, נשים וילדים חפים מפשע בסוריה, ותומכת במשטר סורי שזה עתה השתמש בנשק כימי נגד עמו שלו.
-
-רוחאני גינה את "מכת הטרור האלים".
-אבל בשלוש השנים האחרונות בלבד איראן הורתה, תכננה או ביצעה פיגועי טרור ב-25 ערים על פני חמש יבשות.
-
-רוחאני מגנה "ניסיונות לשנות את מאזן הכוחות האזורי באמצעות שלוחים".
-אבל איראן עצמה מערערת באופן פעיל את היציבות בלבנון, בתימן, בבחריין ובמדינות רבות נוספות במזרח התיכון.
-
-רוחאני מבטיח "מעורבות בונה עם מדינות אחרות".
-ובכל זאת, רק לפני שנתיים ניסו סוכנים איראנים להתנקש בשגריר סעודיה בוושינגטון די.סי.
-
-ורק לפני שלושה שבועות נעצר סוכן איראני שניסה לאסוף מידע לקראת תקיפות אפשריות נגד שגרירות ארצות הברית בתל אביב.
-
-הלוואי שיכולתי להתרגש מהזמנתו של רוחאני להצטרף ל-WAVE שלו — עולם נגד אלימות וקיצוניות. אבל הגלים היחידים שאיראן יצרה ב-30 השנים האחרונות הם גלי האלימות והטרור שהיא שחררה באזור וברחבי העולם.
-
-גבירותיי ורבותיי, הלוואי שיכולתי להאמין לרוחאני, אבל איני מאמין לו, משום שעובדות הן דבר עקשן.
-
-והעובדות הן שהרקורד הפראי של איראן סותר באופן מוחלט את הרטוריקה המרגיעה של רוחאני.
-
-ביום שישי האחרון רוחאני הבטיח לנו שבחתירתה לקידום תוכניתה הגרעינית איראן "מעולם לא בחרה במרמה... ובחשאיות."
-
-מעולם לא בחרה במרמה ובחשאיות?!
-
-ובכן, ב-2002 נתפסה איראן על חם כשהקימה בחשאי מתקן צנטריפוגות תת-קרקעי בנתנז. ואז ב-2009 היא שוב נתפסה על חם כשהקימה בחשאי מתקן גרעיני עצום להעשרת אורניום בתוך הר ליד קום.
-
-רוחאני אומר לנו לא לדאוג. הוא מבטיח שכל זה לא נועד לנשק גרעיני.
-
-האם מישהו מכם מאמין לזה?
-
-אם אתם מאמינים, הנה כמה שאלות שאולי כדאי לשאול:
-
-למה מדינה שטוענת שהיא רוצה רק אנרגיה גרעינית למטרות שלום תבנה מתקני העשרה תת-קרקעיים מוסתרים?
-
-למה מדינה שיש לה עתודות אנרגיה טבעיות עצומות תשקיע מיליארדים בפיתוח אנרגיה גרעינית?
-
-למה מדינה שמטרתה לכאורה תוכנית גרעין אזרחית בלבד תמשיך להפר כמה וכמה החלטות של מועצת הביטחון, ותספוג את המחיר של סנקציות משתקות על כלכלתה?
-
-ולמה מדינה עם תוכנית גרעין "שלווה" תפתח טילים בליסטיים בין-יבשתיים, שכל מטרתם היא לשאת ראשי נפץ גרעיניים?
-
-לא בונים טילים בין-יבשתיים כדי לשאת TNT למרחק של אלפי קילומטרים. בונים אותם למטרה אחת בלבד — לשאת ראשי נפץ גרעיניים.
-
-ואיראן בונה כיום טילים כאלה, שלדברי ארצות הברית יוכלו להגיע לעיר הזאת בתוך שלוש או ארבע שנים.
-
-למה היא עושה את כל זה?
-
-התשובה פשוטה.
-איראן אינה בונה תוכנית גרעין למטרות שלום.
-איראן מפתחת נשק גרעיני.
-
-בשנה שעברה לבדה, איראן העשירה שלוש טונות של אורניום לרמה של 3.5%, הכפילה את מלאי האורניום המועשר שלה ל-20%, והוסיפה אלפי צנטריפוגות חדשות, כולל צנטריפוגות מתקדמות.
-
-היא גם המשיכה בעבודה על כור המים הכבדים באראק. זאת כדי להחזיק במסלול נוסף לפצצה — מסלול פלוטוניום.
-
-ומאז בחירתו של רוחאני — ואני מדגיש זאת — המאמץ העצום והקדחתני הזה נמשך ללא הפסקה.
-
-גבירותיי ורבותיי,
-
-מתקנים גרעיניים תת-קרקעיים? כורי מים כבדים? צנטריפוגות מתקדמות? טילים בין-יבשתיים?
-
-לא שקשה למצוא הוכחות לכך שלאיראן יש תוכנית נשק גרעיני.
-קשה למצוא הוכחות לכך שאין לה תוכנית נשק גרעיני.
-
-בשנה שעברה, כשדיברתי כאן באו"ם, שירטטתי קו אדום. איראן הקפידה מאוד שלא לחצות את הקו הזה. אבל היא ממקמת את עצמה כך שבעתיד תוכל לפרוץ את הקו הזה בריצה, בזמן שתבחר בו. איראן רוצה להיות בעמדה שממנה תוכל לזנק קדימה ולבנות פצצות גרעין לפני שהקהילה הבינלאומית תזהה זאת — שלא לדבר על למנוע זאת.
-
-אלא שלאיראן יש בעיה אחת גדולה, והבעיה הזאת מסתכמת במילה אחת: סנקציות.
-
-טענתי במשך שנים רבות, כולל מעל הדוכן הזה, שהדרך היחידה למנוע בדרכי שלום מאיראן לפתח נשק גרעיני היא לשלב בין סנקציות קשות לבין איום צבאי אמין.
-
-והמדיניות הזאת נושאת כיום פרי.
-
-הודות למאמץ של מדינות רבות, רבות מהן מיוצגות כאן, ותחת הנהגת ארצות הברית, הסנקציות הקשות נגסו נגיסה עמוקה בכלכלת איראן. ההכנסות מנפט ירדו. המטבע צנח. הבנקים מתקשים להעביר כספים.
-
-וכתוצאה מכך, המשטר נתון ללחץ כבד מצד העם האיראני להסיר את הסנקציות. לכן רוחאני נבחר מלכתחילה. לכן הוא יצא למתקפת הקסם שלו.
-
-הוא בהחלט רוצה שהסנקציות יוסרו — על כך אני יכול להבטיח לכם — אבל הוא לא רוצה לוותר בתמורה על תוכנית הנשק הגרעיני של איראן.
-
-ועכשיו, הנה האסטרטגיה שלו להשיג זאת:
-
-ראשית, לחייך הרבה. חיוך אף פעם לא מזיק.
-
-שנית, לשלם מס שפתיים לשלום, לדמוקרטיה ולסובלנות.
-
-שלישית, להציע ויתורים חסרי משמעות בתמורה להסרת סנקציות.
-
-ורביעית — והחשוב מכל — להבטיח שאיראן תשמור על מספיק חומר גרעיני ועל מספיק תשתית גרעינית כדי שתוכל לפרוץ לפצצה במועד שתבחר.
-
-אתם יודעים מדוע רוחאני חושב שהוא יכול להתחמק כך?
-
-מפני שהוא כבר התחמק כך בעבר.
-
-מפני שהאסטרטגיה שלו — לדבר הרבה ולעשות מעט — עבדה עבורו בעבר.
-
-הוא אפילו התרברב בכך.
-
-הנה מה שאמר בספרו משנת 2011 על תקופתו כראש צוות המשא ומתן הגרעיני של איראן:
-
-"בזמן שדיברנו עם האירופים בטהראן, התקנו ציוד באיספהאן..."
-
-למי מכם שאינו יודע, המתקן באיספהאן הוא חלק חיוני מתוכנית הנשק הגרעיני של איראן. שם הופך עפרת האורניום, המכונה "עוגה צהובה", לחומר שניתן להעשירו.
-
-רוחאני התגאה: "באמצעות יצירת אווירה רגועה, הצלחנו להשלים את העבודה באיספהאן."
-
-הוא הוליך את העולם שולל פעם אחת.
-כעת הוא חושב שיוכל להוליך אותו שולל שוב.
-
-רוחאני חושב שהוא יכול גם לאכול את העוגה הצהובה שלו וגם להשאיר אותה שלמה.
-
-ויש לו סיבה נוספת להאמין שיוכל לצאת מזה. והסיבה הזאת נקראת צפון קוריאה.
-
-כמו איראן, גם צפון קוריאה טענה שתוכניתה הגרעינית נועדה למטרות שלום.
-כמו איראן, גם צפון קוריאה הציעה ויתורים חסרי משמעות והבטחות ריקות בתמורה להקלה בסנקציות.
-
-בשנת 2005 הסכימה צפון קוריאה להסכם שזכה לחגיגה עולמית מצד רבים בעלי כוונות טובות.
-
-שנה לאחר מכן פוצצה צפון קוריאה את המתקן הגרעיני הראשון שלה.
-
-ואולם, מסוכנת ככל שתהיה צפון קוריאה חמושה בנשק גרעיני, היא מחווירה לעומת הסכנה שבאיראן חמושה בנשק גרעיני.
-
-איראן גרעינית תחזיק את מקורות האנרגיה העיקריים בעולם בצבת.
-היא תגרום להפצה גרעינית ברחבי המזרח התיכון, ותהפוך את החלק הבלתי יציב ביותר על פני הכדור לארגז הצתה גרעיני.
-
-ולראשונה בהיסטוריה, היא תהפוך את איום הטרור הגרעיני לסכנה ברורה ומיידית.
-
-איראן גרעינית במזרח התיכון לא תהיה עוד צפון קוריאה.
-היא תהיה עוד חמישים צפון קוריאות.
-
-אני יודע שיש בקהילה הבינלאומית מי שחושבים שאני מגזים באיום הזה.
-נכון, הם יודעים שהמשטר האיראני מוביל קריאות של "מוות לאמריקה!", "מוות לישראל!", ומבטיח למחוק את ישראל מן המפה. אבל הם חושבים שהרטוריקה הפרועה הזו היא רק התרברבות לצריכה פנימית.
-
-האם האנשים האלה לא למדו דבר מן ההיסטוריה?
-
-המאה הקודמת לימדה אותנו שכאשר משטר קיצוני בעל שאיפות עולמיות מקבל כוח אדיר, במוקדם או במאוחר תאבונו לתוקפנות אינו יודע גבול. זהו הלקח המרכזי של המאה ה-20. אסור לנו לשכוח אותו.
-
-אולי העולם שכח את הלקח הזה.
-העם היהודי לא שכח.
-
-הקנאות של איראן איננה התרברבות. היא אמיתית.
-
-לעולם אסור לאפשר למשטר הקנאי הזה להתחמש בנשק גרעיני.
-
-אני יודע שהעולם עייף ממלחמה.
-אנחנו בישראל מכירים היטב את מחירה של מלחמה.
-
-אבל ההיסטוריה לימדה אותנו שכדי למנוע מלחמה מחר, עלינו לעמוד איתנים היום.
-
-וזה מעלה את השאלה: האם הדיפלומטיה יכולה לעצור את האיום הזה?
-
-ובכן, הפתרון הדיפלומטי היחיד שיוכל לעבוד הוא כזה שיפרק לחלוטין את תוכנית הנשק הגרעיני של איראן וימנע ממנה להחזיק בה בעתיד.
-
-הנשיא אובמה אמר בצדק שמילות הפיוס של איראן חייבות להיות מגובות בפעולה שקופה, ניתנת לאימות ובעלת משמעות.
-
-וכדי שהפתרון יהיה בעל משמעות, הוא יחייב את איראן לעשות ארבעה דברים:
-
-ראשית, להפסיק את כל העשרת האורניום. זה נדרש בכמה החלטות של מועצת הביטחון.
-
-שנית, להוציא משטחה את מלאי האורניום המועשר.
-
-שלישית, לפרק את התשתית שמאפשרת פריצה לגרעין, כולל המתקן התת-קרקעי ליד קום והצנטריפוגות המתקדמות בנתנז.
-
-ורביעית, להפסיק כל עבודה על כור המים הכבדים באראק, שמטרתה ייצור פלוטוניום.
-
-צעדים אלה ישימו קץ לתוכנית הנשק הגרעיני של איראן ויבטלו את יכולת הפריצה שלה.
-
-יש מי שמוכנים להסכים בקלות להשאיר לאיראן יכולת שיורית להעשיר אורניום. אני מציע להם להקשיב היטב למה שאמר רוחאני בנאום למועצה העליונה למהפכה התרבותית באיראן, דברים שפורסמו ב-2005:
-
-"מדינה שיכולה להעשיר אורניום לכ-3.5% תוכל גם להעשיר אותו לכ-90%. עצם ההחזקה ביכולת של מחזור דלק פירושה למעשה שמדינה שיש לה יכולת זו יכולה לייצר נשק גרעיני."
-
-בדיוק.
-
-זוהי בדיוק הסיבה שבגללה יש לפרק באופן מלא וניתן לאימות את תוכנית הנשק הגרעיני של איראן.
-
-וזו הסיבה שבגללה הלחץ על איראן חייב להימשך.
-
-אז הנה מה שהקהילה הבינלאומית חייבת לעשות:
-
-ראשית, לשמור על הסנקציות.
-אם איראן מקדמת את תוכנית הנשק הגרעיני שלה במהלך המשא ומתן — לחזק את הסנקציות.
-
-שנית, לא להסכים להסכם חלקי.
-הסכם חלקי יסיר סנקציות בינלאומיות שלקח שנים לבנות, בתמורה לוויתורים קוסמטיים שלאיראן ייקח רק שבועות להפוך לאחור.
-
-ושלישית, להסיר את הסנקציות רק כאשר איראן תפרק באופן מלא את תוכנית הנשק הגרעיני שלה.
-
-ידידיי,
-
-לקהילה הבינלאומית יש כרגע את איראן על החבלים. אם אתם רוצים להפיל בנוקאאוט את תוכנית הנשק הגרעיני של איראן בדרך שלום — אל תרפו מן הלחץ. המשיכו אותו.
-
-כולנו רוצים לתת לדיפלומטיה עם איראן הזדמנות להצליח.
-אבל כשמדובר באיראן, ככל שהלחץ גדול יותר — כך גדל הסיכוי.
-
-לפני שלושה עשורים יעץ הנשיא רונלד רייגן: "סמוך, אבל וודא."
-
-כשמדובר בתוכנית הנשק הגרעיני של איראן, הנה העצה שלי: אל תסמכו, פרקו, ואמתו.
-
-גבירותיי ורבותיי,
-
-ישראל לעולם לא תשלים עם נשק גרעיני בידיו של משטר פורע חוק שמבטיח שוב ושוב למחוק אותנו מן המפה. מול איום כזה, לא תהיה לישראל ברירה אלא להגן על עצמה.
-
-אני רוצה שלא תהיה שום אי-הבנה בנקודה הזאת:
-ישראל לא תאפשר לאיראן להשיג נשק גרעיני.
-
-אם ישראל תיאלץ לעמוד לבדה — ישראל תעמוד לבדה.
-
-אך גם אם תעמוד לבדה, ישראל תדע שהיא מגינה בכך על רבים רבים אחרים.
-
-הסכנות שבאיראן גרעינית והופעתם של איומים נוספים באזורנו הביאו רבים משכנינו הערבים להכיר סוף סוף בכך שישראל איננה אויבתם.
-
-הדבר מעניק לנו הזדמנות להתגבר על עוינויות היסטוריות ולבנות יחסים חדשים, חברויות חדשות, תקוות חדשות.
-
-ישראל מקדמת בברכה מעורבות עם העולם הערבי הרחב יותר. אנו מקווים שהאינטרסים המשותפים והאתגרים המשותפים יעזרו לנו לעצב עתיד שליו יותר.
-
-וישראל ממשיכה לחתור לשלום היסטורי עם שכנינו הפלסטינים, שלום שיסיים את הסכסוך בינינו אחת ולתמיד. אנו רוצים שלום המבוסס על ביטחון ועל הכרה הדדית, שבו מדינה פלסטינית מפורזת מכירה במדינה היהודית ישראל.
-
-אני נותר מחויב להשגת פיוס היסטורי ולבניית עתיד טוב יותר לישראלים ולפלסטינים כאחד.
-
-אין לי אשליות עד כמה קשה יהיה להשיג זאת.
-
-לפני עשרים שנה החל תהליך השלום בין ישראל לפלסטינים.
-שישה ראשי ממשלה בישראל, ואני ביניהם, לא הצליחו להשיג שלום עם הפלסטינים.
-
-קודמיי היו מוכנים לעשות ויתורים כואבים.
-גם אני מוכן.
-
-אבל עד כה, המנהיגים הפלסטינים לא היו מוכנים להציע את הוויתורים הכואבים שעליהם להציע כדי לסיים את הסכסוך.
-
-כדי שיושג שלום, על הפלסטינים להכיר סוף סוף במדינה היהודית, וצרכי הביטחון של ישראל חייבים לקבל מענה.
-
-אני מוכן לפשרה היסטורית למען שלום אמיתי ובר-קיימא.
-
-אבל לעולם לא אתפשר על ביטחון עמי ומדינתי — המדינה היהודית האחת והיחידה.
-
-גבירותיי ורבותיי,
-
-ביום קר אחד בסוף המאה ה-19 עמדו סבי נתן ואחיו הצעיר יהודה בתחנת רכבת בלב אירופה. קבוצה של בריונים אנטישמים הבחינה בהם ורצה לעברם כשהם מנופפים באלות וצועקים: "מוות ליהודים!"
-
-סבי צעק לאחיו הצעיר לברוח ולהציל את עצמו. ואז עמד לבדו מול ההמון המשתולל כדי לעכב אותו.
-
-הם היכו אותו עד אובדן חושים.
-השאירו אותו כמת.
-
-לפני שהתעלף, מכוסה בדמו שלו, אמר לעצמו:
-"איזו חרפה! איזו חרפה! צאצאי המכבים שוכבים בעפר, חסרי אונים להגן על עצמם."
-
-אז הבטיח לעצמו שאם יישאר בחיים, ייקח את משפחתו למולדת היהודית כדי לסייע בבניית עתיד לעם היהודי.
-
-אני עומד כאן היום כראש ממשלת ישראל משום שסבי קיים את ההבטחה הזאת.
-
-לישראלים רבים כל כך יש סיפור דומה: הורה או סב שנמלטו מכל דיכוי אפשרי, והגיעו לישראל כדי להתחיל חיים חדשים במולדתנו העתיקה.
-
-יחד, הפכנו עם יהודי מוכה שהושאר כמת לאומה חיה, משגשגת, שמגינה על עצמה באומץ של מכבים מודרניים ומפתחת אפשרויות בלתי מוגבלות לעתיד.
-
-בזמננו התגשמו נבואות המקרא. כפי שאמר הנביא עמוס:
-
-ושבתי את שבות עמי ישראל,
-ובנו ערים נשמות וישבו,
-ונטעו כרמים ושתו את יינם,
-ועשו גינות ואכלו את פריהם,
-ונטעתים על אדמתם ולא יינטשו עוד.
-
-גבירותיי ורבותיי,
-
-עם ישראל שב הביתה — ולעולם לא ייעקר שוב.`
+PAGE`
   },
   {
     id: "netanyahu-unga-2014",
-    title: 'נאום האו"ם 2014',
+    title: 'UN Speech 2014',
     speaker: "בנימין נתניהו",
     date: "2014-09-29",
-    dir: "rtl",
-    text: `תודה לך, אדוני הנשיא,
-נציגים נכבדים,
+    dir: "ltr",
+    text: `Thank you, Mr. President,
+Distinguished delegates,
+
+I come here from Jerusalem to speak on behalf of my people, the people of Israel. I've come here to speak about the dangers we face and about the opportunities we see. I've come here to expose the brazen lies spoken from this very podium against my country and against the brave soldiers who defend it.
+Ladies and Gentlemen,
+The people of Israel pray for peace.
+But our hopes and the world's hope for peace are in danger. Because everywhere we look, militant Islam is on the march.
+It's not militants.
+It's not Islam.
+It's militant Islam.
+Typically, its first victims are other Muslims, but it spares no one. Christians, Jews, Yazidis, Kurds – no creed, no faith, no ethnic group is beyond its sights. And it's rapidly spreading in every part of the world.
+You know the famous American saying: "All politics is local"? For the militant Islamists, "All politics is global." Because their ultimate goal is to dominate the world.
+Now, that threat might seem exaggerated to some, since it starts out small, like a cancer that attacks a particular part of the body. But left unchecked, the cancer grows, metastasizing over wider and wider areas. To protect the peace and security of the world, we must remove this cancer before it's too late.
+Last week, many of the countries represented here rightly applauded President Obama for leading the effort to confront ISIS. And yet weeks before, some of these same countries, the same countries that now support confronting ISIS, opposed Israel for confronting Hamas. They evidently don’t understand that ISIS and Hamas are branches of the same poisonous tree.
+ISIS and Hamas share a fanatical creed, which they both seek to impose well beyond the territory under their control.
+Listen to ISIS’s self-declared caliph,Abu Bakr Al-Baghdadi. This is what he said two months ago:
+A day will soon come when the Muslim will walk everywhere as a master…
+The Muslims will cause the world to hear and understand the meaning of terrorism…
+and destroy the idol of democracy.
+Now listen to Khaled Meshaal, the leader of Hamas. He proclaims a similar vision of the future:
+We say this to the West…
+By Allah you will be defeated.
+Tomorrow our nation will sit on the throne of the world.
+As Hamas's charter makes clear, Hamas’s immediate goal is to destroy Israel. But Hamas has a broader objective. They also want a caliphate. Hamas shares the global ambitions of its fellow militant Islamists.
+That’s why its supporters wildly cheered in the streets of Gaza as thousands of Americans were murdered on 9/11. And that's why its leaders condemned the United States for killing Osama Bin Laden, whom they praised as a holy warrior.
+So when it comes to their ultimate goals, Hamas is ISIS and ISIS is Hamas.
+And what they share in common, all militant Islamists share in common:
+Boko Haram in Nigeria;
+Ash-Shabab in Somalia;
+Hezbollah in Lebanon;
+An-Nusrah in Syria;
+The Mahdi Army in Iraq;
+And the Al-Qaeda branches in Yemen, Libya, the Philippines, India and elsewhere.
+Some are radical Sunnis, some are radical Shi'ites. Some want to restore a pre-medieval caliphate from the 7th century. Others want to trigger the apocalyptic return of an imam from the 9th century. They operate in different lands, they target different victims and they even kill each other in their quest for supremacy.
+But they all share a fanatic ideology. They all seek to create ever expanding enclaves of militant Islam where there is no freedom and no tolerance – Where women are treated as chattel, Christians are decimated, and minorities are subjugated, sometimes given the stark choice: convert or die.
+For them, anyone can be an infidel, including fellow Muslims.
+Ladies and Gentlemen,
+Militant Islam's ambition to dominate the world seems mad. But so too did the global ambitions of another fanatic ideology that swept to power eight decades ago.
+The Nazis believed in a master race. The militant Islamists believe in a master faith. They just disagree about who among them will be the master… of the master faith. That’s what they truly disagree about. Therefore, the question before us is whether militant Islam will have the power to realize its unbridled ambitions.
+There is one place where that could soon happen: The Islamic State of Iran.
+For 35 years, Iran has relentlessly pursued the global mission which was set forth by its founding ruler, Ayatollah Khomeini, in these words:
+We will export our revolution to the entire world.
+Until the cry "There is no God but Allah" will echo throughout the world over…
+And ever since, the regime’s brutal enforcers, Iran's Revolutionary Guards, have done exactly that.
+Listen to its current commander, General Muhammad Ali Ja'afari. And he clearly stated this goal. He said:
+Our Imam did not limit the Islamic Revolution to this country…
+Our duty is to prepare the way for an Islamic world government…
+Iran's President Rouhani stood here last week, and shed crocodile tears over what he called "the globalization of terrorism."
+Maybe he should spare us those phony tears and have a word instead with the commanders of Iran's Revolutionary Guards. He could ask them to call off Iran's global terror campaign, which has included attacks in two dozen countries on five continents since 2011 alone.
+To say that Iran doesn't practice terrorism is like saying Derek Jeter never played shortstop for the New York Yankees.
+This bemoaning of the Iranian president of the spread of terrorism has got to be one of history’s greatest displays of doubletalk.
+Now, Some still argue that Iran's global terror campaign, its subversion of countries throughout the Middle East and well beyond the Middle East, some argue that this is the work of the extremists. They say things are changing. They point to last year's elections in Iran. They claim that Iran’s smooth talking President and Foreign Minister, they’ve changed not only the tone of Iran's foreign policy but also its substance. They believe Rouhani and Zarif genuinely want to reconcile with the West, that they’ve abandoned the global mission of the Islamic Revolution.
+Really?
+So let's look at what Foreign Minister Zarif wrote in his book just a few years ago:
+We have a fundamental problem with the West,
+and especially with America.
+This is because we are heirs to a global mission,
+which is tied to our raison d'etre…
+A global mission which is tied to our very reason of being.
+And then Zarif asks a question, I think an interesting one. He says:
+How come Malaysia [he’s referring to an overwhelmingly Muslim country] – how come Malaysia doesn't have similar problems?
+And he answers:
+Because Malaysia is not trying to change the international order.
+That's your moderate.
+So don’t be fooled by Iran’s manipulative charm offensive. It’s designed for one purpose, and for one purpose only: To lift the sanctions and remove the obstacles to Iran's path to the bomb. The Islamic Republic is now trying to bamboozle its way to an agreement that will remove the sanctions it still faces, and leave it with the capacity of thousands of centrifuges to enrich uranium.
+This would effectively cement Iran's place as a threshold military nuclear power. In the future, at a time of its choosing, Iran, the world’s most dangerous state in the world's most dangerous region, would obtain the world’s most dangerous weapons.
+Allowing that to happen would pose the gravest threat to us all.
+It’s one thing to confront militant Islamists on pick-up trucks, armed with Kalashnikov rifles. It’s another thing to confront militant Islamists armed with weapons of mass destruction.
+I remember that last year, everyone here was rightly concerned about the chemical weapons in Syria, including the possibility that they would fall into the hands of terrorists.
+That didn't happen. And President Obama deserves great credit for leading the diplomatic effort to dismantle virtually all of Syria's chemical weapons capability.
+Imagine how much more dangerous the Islamic State, ISIS, would be if it possessed chemical weapons. Now imagine how much more dangerous the Islamic state of Iran would be if it possessed nuclear weapons.
+Ladies and Gentlemen,
+Would you let ISIS enrich uranium?
+Would you let ISIS build a heavy water reactor?
+Would you let ISIS develop intercontinental ballistic missiles?
+Of course you wouldn’t.
+Then you mustn't let the Islamic State of Iran do those things either.
+Because here’s what will happen:
+Once Iran produces atomic bombs, all the charm and all the smiles will suddenly disappear. They’ll just vanish. It's then that the ayatollahs will show their true face and unleash their aggressive fanaticism on the entire world.
+There is only one responsible course of action to address this threat:
+Iran's nuclear military capabilities must be fully dismantled.
+Make no mistake – ISIS must be defeated. But to defeat ISIS and leave Iran as a threshold nuclear power is to win the battle and lose the war.
+To defeat ISIS and leave Iran as a threshold nuclear power is to win the battle and lose the war.
+Ladies and Gentlemen,
+The fight against militant Islam is indivisible. When militant Islam succeeds anywhere, it’s emboldened everywhere. When it suffers a blow in one place, it's set back in every place.
+That’s why Israel’s fight against Hamas is not just our fight. It’s your fight.
+Israel is fighting a fanaticism today that your countries may be forced to fight tomorrow.
+For 50 days this past summer, Hamas fired thousands of rockets at Israel, many of them supplied by Iran.
+I want you to think about what your countries would do if thousands of rockets were fired at your cities. Imagine millions of your citizens having seconds at most to scramble to bomb shelters, day after day.
+You wouldn't let terrorists fire rockets at your cities with impunity. Nor would you let terrorists dig dozens of terror tunnels under your borders to infiltrate your towns in order to murder and kidnap your citizens.
+Israel justly defended itself against both rocket attacks and terror tunnels.
+Yet Israel also faced another challenge. We faced a propaganda war.
+Because, in an attempt to win the world’s sympathy, Hamas cynically used Palestinian civilians as human shields. It used schools, not just schools - UN schools, private homes, mosques, even hospitals to store and fire rockets at Israel.
+As Israel surgically struck at the rocket launchers and at the tunnels, Palestinian civilians were tragically but unintentionally killed. There are heartrending images that resulted, and these fueled libelous charges that Israel was deliberately targeting civilians.
+We were not.
+We deeply regret every single civilian casualty. And the truth is this:
+Israel was doing everything to minimize Palestinian civilian casualties. Hamas was doing everything to maximize Israeli civilian casualties and Palestinian civilian casualties. Israel dropped flyers, made phone calls, sent text messages, broadcast warnings in Arabic on Palestinian television, always to enable Palestinian civilians to evacuate targeted areas.
+No other country and no other army in history have gone to greater lengths to avoid casualties among the civilian population of their enemies.
+This concern for Palestinian life was all the more remarkable, given that Israeli civilians were being bombarded by rockets day after day, night after night. As their families were being rocketed by Hamas, Israel's citizen army – the brave soldiers of the IDF, our young boys and girls – they upheld the highest moral values of any army in the world.
+Israel's soldiers deserve not condemnation, but admiration. Admiration from decent people everywhere.
+Now here’s what Hamas did: Hamas embedded its missile batteries in residential areas and told Palestinians to ignore Israel’s warnings to leave. And just in case people didn’t get the message, they executed Palestinian civilians in Gaza who dared to protest.
+No less reprehensible, Hamas deliberately placed its rockets where Palestinian children live and play. Let me show you a photograph. It was taken by a France 24 crew during the recent conflict. It shows two Hamas rocket launchers, which were used to attack us. You see three children playing next to them. Hamas deliberately put its rockets in hundreds of residential areas like this. Hundreds of them.
+Ladies and gentlemen, this is a war crime.
+And I say to President Abbas, these are the war crimes committed by your Hamas partners in the national unity government which you head and you are responsible for. And these are the real war crimes you should have investigated, or spoken out against from this podium last week.
+Ladies and Gentlemen,
+As Israeli children huddled in bomb shelters and Israel’s Iron Dome missile defense system knocked Hamas rockets out of the sky, the profound moral difference between Israel and Hamas couldn’t have been clearer:
+Israel was using its missiles to protect its children.
+Hamas was using its children to protect its missiles.
+By investigating Israel rather than Hamas for war crimes, the UN Human Rights Council has betrayed its noble mission to protect the innocent. In fact, what it’s doing is to turn the laws of war upside-down. Israel, which took unprecedented steps to minimize civilian casualties, Israel is condemned. Hamas, which both targeted and hid behind civilians – that a double war crime - Hamas is given a pass.
+The Human Rights Council is thus sending a clear message to terrorists everywhere:
+Use civilians as human shields. Use them again and again and again. You know why? Because sadly, it works.
+By granting international legitimacy to the use of human shields, the UN’s Human Rights Council has thus become a Terrorist Rights Council, and it will have repercussions. It probably already has, about the use of civilians as human shields.
+It’s not just our interest. It’s not just our values that are under attack. It’s your interests and your values.
+Ladies and Gentlemen,
+We live in a world steeped in tyranny and terror, where gays are hanged from cranes in Tehran, political prisoners are executed in Gaza, young girls are abducted en masse in Nigeria and hundreds of thousands are butchered in Syria, Libya and Iraq. Yet nearly half, nearly half of the UN Human Rights Council's resolutions focusing on a single country have been directed against Israel, the one true democracy in the Middle East – Israel. where issues are openly debated in a boisterous parliament, where human rights are protected by independent courts and where women, gays and minorities live in a genuinely free society.
+The Human Rights… (that’s an oxymoron, the UN Human Rights Council, but I’ll use it just the same), the Council’s biased treatment of Israel is only one manifestation of the return of the world’s oldest prejudices.
+We hear mobs today in Europe call for the gassing of Jews. We hear some national leaders compare Israel to the Nazis. This is not a function of Israel’s policies. It's a function of diseased minds. And that disease has a name. It’s called anti-Semitism.
+It is now spreading in polite society, where it masquerades as legitimate criticism of Israel.
+For centuries the Jewish people have been demonized with blood libels and charges of deicide. Today, the Jewish state is demonized with the apartheid libel and charges of genocide.
+Genocide?
+In what moral universe does genocide include warning the enemy's civilian population to get out of harm's way? Or ensuring that they receive tons, tons of humanitarian aid each day, even as thousands of rockets are being fired at us? Or setting up a field hospital to aid for their wounded?
+Well, I suppose it's the same moral universe where a man who wrote a dissertation of lies about the Holocaust, and who insists on a Palestine free of Jews, Judenrein, can stand at this podium and shamelessly accuse Israel of genocide and ethnic cleansing.
+In the past, outrageous lies against the Jews were the precursors to the wholesale slaughter of our people.
+But no more.
+Today we, the Jewish people, have the power to defend ourselves.
+We will defend ourselves against our enemies on the battlefield. We will expose their lies against us in the court of public opinion.
+Israel will continue to stand proud and unbowed.
+Ladies and Gentlemen,
+Despite the enormous challenges facing Israel, I believe we have an historic opportunity.
+After decades of seeing Israel as their enemy, leading states in the Arab world increasingly recognize that together we and they face many of the same dangers: principally this means a nuclear-armed Iran and militant Islamist movements gaining ground in the Sunni world.
+Our challenge is to transform these common interests to create a productive partnership. One that would build a more secure, peaceful and prosperous Middle East.
+Together we can strengthen regional security. We can advance projects in water, agriculture, in transportation, in health, in energy, in so many fields.
+I believe the partnership between us can also help facilitate peace between Israel and the Palestinians.
+Many have long assumed that an Israeli-Palestinian peace can help facilitate a broader rapprochement between Israel and the Arab World. But these days I think it may work the other way around: Namely that a broader rapprochement between Israel and the Arab world may help facilitate an Israeli-Palestinian peace.
+And therefore, to achieve that peace, we must look not only to Jerusalem and Ramallah, but also to Cairo, to Amman, Abu Dhabi, Riyadh and elsewhere. I believe peace can be realized with the active involvement of Arab countries, those that are willing to provide political, material and other indispensable support.
+I’m ready to make a historic compromise, not because Israel is occupying a foreign land. The people of Israel are not occupiers in the Land of Israel. History, archeology and common sense all make clear that we have had a singular attachment to this land for over 3,000 years.
+I want peace because I want to create a better future for my people.
+But it must be a genuine peace, one that is anchored in mutual recognition and enduring security arrangements, rock solid security arrangements on the ground. Because you see, Israel's withdrawals from Lebanon and Gaza created two militant Islamic enclaves on our borders from which tens of thousands of rockets have been fired at Israel.
+These sobering experiences heighten Israel's security concerns regarding potential territorial concessions in the future. Those security concerns are even greater today.
+Just look around you.
+The Middle East is in chaos. States are disintegrating. Militant Islamists are filling the void.
+Israel cannot have territories from which it withdraws taken over by Islamic militants yet again, as happened in Gaza and Lebanon. That would place the likes of ISIS within mortar range – a few miles – of 80% of our population.
+Think about that. The distance between the 1967 lines and the suburbs of Tel Aviv is like the distance between the UN building here and Times Square. Israel’s a tiny country. That’s why in any peace agreement, which will obviously necessitate a territorial compromise, I will always insist that Israel be able to defend itself by itself against any threat.
+Yet despite all that has happened, some still don't take Israel’s security concerns seriously.
+But I do, and I always will.
+Because, as Prime Minister of Israel, I am entrusted with the awesome responsibility of ensuring the future of the Jewish people and the future of the Jewish state.
+And no matter what pressure is brought to bear, I will never waver in fulfilling that responsibility.
+I believe that with a fresh approach from our neighbors, we can advance peace despite the difficulties we face.
+In Israel, we have a record of making the impossible possible. We’ve made a desolate land flourish. And with very few natural resources, we have used the fertile minds of our people to turn Israel into a global center of technology and innovation.
+Peace, of course, would enable Israel to realize its full potential and to bring a promising future not only for our people, not only for the Palestinian people, but for many, many others in our region.
+But the old template for peace must be updated. It must take into account new realities and new roles and responsibilities for our Arab neighbors.
+Ladies and Gentlemen,
+There is a new Middle East. It presents new dangers, but also new opportunities.
+Israel is prepared to work with Arab partners and the international community to confront those dangers and to seize those opportunities.
+Together we must recognize the global threat of militant Islam, the primacy of dismantling Iran’s nuclear weapons capability and the indispensable role of Arab states in advancing peace with the Palestinians.
+All this may fly in the face of conventional wisdom, but it’s the truth. And the truth must always be spoken, especially here, in the United Nations.
+Isaiah, our great prophet of peace, taught us nearly 3,000 years ago in Jerusalem to speak truth to power.
 
-באתי הנה מירושלים כדי לדבר בשם עמי, עם ישראל.
-באתי הנה כדי לדבר על הסכנות שאנו ניצבים מולן ועל ההזדמנויות שאנו רואים.
-באתי הנה כדי לחשוף את השקרים הבוטים שנאמרו מעל הדוכן הזה ממש נגד מדינתי ונגד החיילים האמיצים המגינים עליה.
 
-גבירותיי ורבותיי,
 
-עם ישראל מתפלל לשלום.
+For the sake of Zion, I will not be silent.
+For the sake of Jerusalem, I will not be still.
+Until her justice shines bright,
+And her salvation glows like a flaming torch.
 
-אבל תקוותינו לשלום — ותקוות העולם לשלום — נמצאות בסכנה.
-מפני שבכל מקום שאנו מביטים אליו, האסלאם המיליטנטי נמצא בתנופה.
+Ladies and Gentlemen,
+Let's light a torch of truth and justice to safeguard our common future.
+Thank you.
 
-זה לא מיליטנטים.
-זה לא אסלאם.
-זה אסלאם מיליטנטי.
 
-בדרך כלל קורבנותיו הראשונים הם מוסלמים אחרים, אך הוא אינו פוסח על איש.
-נוצרים, יהודים, יזידים, כורדים — אין אמונה, אין דת, אין קבוצה אתנית שנמצאות מחוץ לכוונותיו.
-והוא מתפשט במהירות בכל חלקי העולם.
 
-אתם מכירים את האמרה האמריקנית המפורסמת:
-"כל הפוליטיקה היא מקומית"?
 
-עבור האסלאמיסטים המיליטנטיים,
-"כל הפוליטיקה היא גלובלית".
 
-מפני שמטרתם הסופית היא לשלוט בעולם.
 
-כעת, האיום הזה עשוי להיראות מוגזם בעיני חלק מהאנשים, משום שהוא מתחיל קטן — כמו סרטן שתוקף אזור מסוים בגוף. אבל אם לא עוצרים אותו, הסרטן גדל ושולח גרורות לאזורים הולכים ומתרחבים. כדי להגן על שלום העולם וביטחונו, עלינו להסיר את הסרטן הזה לפני שיהיה מאוחר מדי.
 
-בשבוע שעבר רבות מהמדינות המיוצגות כאן מחאו, ובצדק, כפיים לנשיא אובמה על שהוביל את המאמץ להתמודד עם דאעש.
-ובכל זאת, שבועות ספורים קודם לכן, חלק מאותן מדינות עצמן — אותן מדינות שכעת תומכות בהתמודדות עם דאעש — התנגדו לישראל על כך שהתמודדה עם חמאס.
 
-כנראה שהן אינן מבינות שדאעש וחמאס הם ענפים של אותו עץ מורעל.
 
-לדאעש ולחמאס יש אמונה קנאית משותפת, שאותה שניהם מבקשים לכפות הרבה מעבר לשטח שבשליטתם.
 
-הקשיבו למה שאמר הח'ליף שהכריז על עצמו מטעם דאעש, אבו בכר אל-בגדאדי. כך אמר לפני חודשיים:
 
-"יבוא בקרוב היום שבו המוסלמי ילך בכל מקום כאדון...
-המוסלמים יגרמו לעולם לשמוע ולהבין את משמעות הטרור...
-ויהרסו את אליל הדמוקרטיה."
 
-ועכשיו הקשיבו לח'אלד משעל, מנהיג חמאס. הוא מציג חזון דומה לעתיד:
 
-"אנחנו אומרים זאת למערב...
-באללה, אתם תובסו.
-מחר תשב אומתנו על כס העולם."
 
-כפי שאמנת חמאס מבהירה, מטרתו המיידית של חמאס היא להשמיד את ישראל.
-אך לחמאס יש יעד רחב יותר. גם הוא רוצה ח'ליפות. חמאס חולק את השאיפות הגלובליות של עמיתיו מהאסלאם המיליטנטי.
 
-לכן תומכיו הריעו בפראות ברחובות עזה כאשר אלפי אמריקנים נרצחו ב-11 בספטמבר. ולכן מנהיגיו גינו את ארצות הברית על הריגת אוסאמה בן לאדן, שאותו היללו כלוחם קודש.
 
-לכן, בכל הנוגע למטרותיהם הסופיות —
-חמאס הוא דאעש ודאעש הוא חמאס.
 
-ומה שמשותף להם, משותף לכל האסלאמיסטים המיליטנטיים:
-בוקו חראם בניגריה, א-שבאב בסומליה, חיזבאללה בלבנון, א-נוסרה בסוריה, צבא המהדי בעיראק, ושלוחות אל-קאעידה בתימן, לוב, הפיליפינים, הודו ובמקומות אחרים.
 
-חלקם סונים קיצונים, חלקם שיעים קיצונים.
-חלקם רוצים להחזיר ח'ליפות קדם-ימי-ביניימית מן המאה השביעית. אחרים רוצים לזרז את שובו האפוקליפטי של אימאם מן המאה התשיעית. הם פועלים בארצות שונות, מכוונים לקורבנות שונים ואפילו הורגים זה את זה במאבקם על עליונות.
 
-אבל לכולם יש אידיאולוגיה קנאית משותפת.
-כולם מבקשים ליצור מובלעות הולכות ומתרחבות של אסלאם מיליטנטי, שבהן אין חופש ואין סובלנות — שבהן נשים מטופלות כרכוש, נוצרים מושמדים, ומיעוטים משועבדים, ולעיתים ניתנת להם הברירה האכזרית: להתאסלם או למות.
 
-מבחינתם, כל אחד יכול להיות כופר — גם מוסלמים אחרים.
-
-גבירותיי ורבותיי,
-
-השאיפה של האסלאם המיליטנטי לשלוט בעולם נראית משוגעת.
-אבל כך גם נראו השאיפות הגלובליות של אידיאולוגיה קנאית אחרת שעלתה לשלטון לפני שמונה עשורים.
-
-הנאצים האמינו בגזע אדונים.
-האסלאמיסטים המיליטנטיים מאמינים באמונת אדונים.
-הם פשוט חלוקים ביניהם בשאלה מי מהם יהיה האדון... של אמונת האדונים.
-
-על זה הם באמת חלוקים.
-
-ולכן השאלה שלפנינו היא האם האסלאם המיליטנטי יקבל את הכוח להגשים את שאיפותיו חסרות המעצורים.
-
-יש מקום אחד שבו זה עלול לקרות בקרוב: המדינה האסלאמית של איראן.
-
-במשך 35 שנה איראן רודפת ללא לאות אחר המשימה הגלובלית שהציב שליטה המייסד, האייתוללה חומייני, במילים הבאות:
-
-"נייצא את המהפכה שלנו לכל העולם.
-עד שהקריאה 'אין אלוהים מבלעדי אללה' תהדהד בכל העולם כולו..."
-
-ומאז, האוכפים האכזריים של המשטר — משמרות המהפכה של איראן — עושים בדיוק את זה.
-
-הקשיבו למפקדם הנוכחי, הגנרל מוחמד עלי ג'עפרי.
-הוא ניסח את המטרה הזו בבירור. הוא אמר:
-
-"האימאם שלנו לא הגביל את המהפכה האסלאמית למדינה הזו...
-חובתנו היא להכין את הדרך לממשלה עולמית אסלאמית..."
-
-נשיא איראן רוחאני עמד כאן בשבוע שעבר והזיל דמעות תנין על מה שכינה "הגלובליזציה של הטרור".
-
-אולי מוטב שיחסוך מאיתנו את הדמעות המזויפות הללו, ובמקום זאת ידבר עם מפקדי משמרות המהפכה. הוא יכול לבקש מהם להפסיק את מסע הטרור העולמי של איראן, שכלל מתקפות בשני תריסרי מדינות על פני חמש יבשות מאז 2011 בלבד.
-
-לומר שאיראן אינה עוסקת בטרור זה כמו לומר שדרק ג'יטר מעולם לא שיחק כשורטסטופ של היאנקיז מניו יורק.
-
-קינת הנשיא האיראני על התפשטות הטרור היא מן הסתם אחת ההצגות הגדולות ביותר של כפל לשון בהיסטוריה.
-
-יש עדיין מי שטוענים שמסע הטרור העולמי של איראן, החתרנות שלה במדינות ברחבי המזרח התיכון ומעבר לו, הוא מעשה ידי קיצונים בלבד. הם אומרים שהדברים משתנים. הם מצביעים על הבחירות בשנה שעברה באיראן. הם טוענים שנשיאה חלק הלשון ושר החוץ שלה שינו לא רק את הטון של מדיניות החוץ האיראנית אלא גם את מהותה. הם מאמינים שרוחאני וזריף באמת רוצים להתפייס עם המערב, שהם זנחו את המשימה הגלובלית של המהפכה האסלאמית.
-
-באמת?
-
-אז בואו נראה מה כתב שר החוץ זריף בספרו לפני כמה שנים בלבד:
-
-"יש לנו בעיה יסודית עם המערב,
-ובמיוחד עם אמריקה.
-זאת משום שאנו יורשיה של שליחות עולמית,
-הקשורה לעצם סיבת קיומנו..."
-
-שליחות עולמית שקשורה לעצם סיבת היותנו.
-
-ואז זריף שואל שאלה: "איך זה שמלזיה אין לה בעיות דומות?"
-והוא משיב: "משום שמלזיה אינה מנסה לשנות את הסדר הבינלאומי."
-
-זה המתון שלכם.
-
-לכן אל תלכו שולל אחרי מתקפת הקסם המניפולטיבית של איראן. היא מיועדת למטרה אחת בלבד: להסיר את הסנקציות ולהסיר את המכשולים מדרכה של איראן אל הפצצה. הרפובליקה האסלאמית מנסה כעת להוליך שולל את דרכה להסכם שיסיר את הסנקציות שעוד עומדות בפניה, וישאיר בידה את היכולת של אלפי צנטריפוגות להעשיר אורניום.
-
-זה יעגן למעשה את מקומה של איראן כמדינה על סף יכולת גרעינית צבאית.
-
-בעתיד, בזמן שייבחר על ידה, איראן — המדינה המסוכנת ביותר בעולם באזור המסוכן ביותר בעולם — תשיג את הנשק המסוכן ביותר בעולם.
-
-לאפשר לזה לקרות יהיה האיום החמור ביותר על כולנו.
-
-זה דבר אחד להתמודד עם אסלאמיסטים מיליטנטיים בטנדרים, חמושים ברובי קלצ'ניקוב.
-זה דבר אחר לחלוטין להתמודד עם אסלאמיסטים מיליטנטיים חמושים בנשק להשמדה המונית.
-
-אני זוכר שבשנה שעברה כולכם דאגתם, ובצדק, מן הנשק הכימי שבסוריה, כולל האפשרות שהוא ייפול לידי טרוריסטים.
-זה לא קרה. ולנשיא אובמה מגיע קרדיט רב על הובלת המאמץ הדיפלומטי לפרק כמעט לחלוטין את יכולת הנשק הכימי של סוריה.
-
-דמיינו עד כמה מסוכן יותר היה דאעש אילו החזיק בנשק כימי.
-ועכשיו דמיינו עד כמה מסוכנת יותר תהיה המדינה האסלאמית של איראן אם תחזיק בנשק גרעיני.
-
-גבירותיי ורבותיי,
-
-האם הייתם מאפשרים לדאעש להעשיר אורניום?
-האם הייתם מאפשרים לדאעש לבנות כור מים כבדים?
-האם הייתם מאפשרים לדאעש לפתח טילים בליסטיים בין-יבשתיים?
-
-כמובן שלא.
-
-אם כך, אסור לכם לאפשר גם למדינה האסלאמית של איראן לעשות את הדברים הללו.
-
-כי הנה מה שיקרה:
-
-ברגע שאיראן תייצר פצצות אטום, כל הקסם וכל החיוכים ייעלמו לפתע. הם פשוט יתפוגגו. ואז האייתוללות יראו את פניהם האמיתיות וישחררו את הקנאות התוקפנית שלהם על העולם כולו.
-
-יש רק דרך פעולה אחראית אחת כדי להתמודד עם האיום הזה:
-יש לפרק לחלוטין את היכולות הגרעיניות הצבאיות של איראן.
-
-אל תטעו — חייבים להביס את דאעש.
-אבל להביס את דאעש ולהשאיר את איראן כמדינה על סף יכולת גרעינית — פירושו לנצח בקרב ולהפסיד במלחמה.
-
-גבירותיי ורבותיי,
-
-המאבק נגד האסלאם המיליטנטי אינו ניתן לחלוקה.
-כאשר האסלאם המיליטנטי מצליח במקום אחד, הוא מתעודד בכל מקום.
-כאשר הוא סופג מכה במקום אחד, הוא נסוג בכל מקום.
-
-לכן המאבק של ישראל נגד חמאס איננו רק המאבק שלנו.
-זהו גם המאבק שלכם.
-
-ישראל נלחמת היום בקנאות שמדינותיכם עלולות להיאלץ להילחם בה מחר.
-
-במשך 50 יום בקיץ האחרון ירה חמאס אלפי רקטות לעבר ישראל, רבות מהן סופקו על ידי איראן.
-
-אני רוצה שתחשבו מה המדינות שלכם היו עושות אם אלפי רקטות היו נורות על הערים שלכם. דמיינו מיליוני אזרחים שלכם שיש להם שניות ספורות בלבד לרוץ למקלטים, יום אחרי יום.
-
-לא הייתם נותנים לטרוריסטים לירות רקטות על הערים שלכם ללא עונש. וגם לא הייתם נותנים לטרוריסטים לחפור עשרות מנהרות טרור מתחת לגבולותיכם כדי לחדור לעיירותיכם ולרצוח ולחטוף את אזרחיכם.
-
-ישראל הגנה על עצמה בצדק הן מפני מתקפות הרקטות והן מפני מנהרות הטרור.
-
-אבל ישראל עמדה גם מול אתגר נוסף — מלחמת תעמולה.
-
-מפני שבניסיון לזכות באהדת העולם, חמאס השתמש בציניות באזרחים פלסטינים כמגינים אנושיים. הוא השתמש בבתי ספר — ולא רק בתי ספר, אלא גם בתי ספר של האו"ם — בבתים פרטיים, במסגדים ואפילו בבתי חולים, כדי לאחסן ולשגר רקטות לעבר ישראל.
-
-כאשר ישראל תקפה באופן כירורגי את משגרי הרקטות ואת המנהרות, נהרגו באופן טרגי אך לא מכוון גם אזרחים פלסטינים. נוצרו תמונות קורעות לב, ואלה הזינו עלילות שקר שלפיהן ישראל מכוונת במכוון נגד אזרחים.
-
-לא כך היה.
-
-אנו מצטערים עמוקות על כל פגיעה באזרח, אפילו אחת.
-
-והאמת היא זו:
-
-ישראל עשתה הכול כדי לצמצם את מספר הנפגעים האזרחים הפלסטינים.
-חמאס עשה הכול כדי להגדיל את מספר הנפגעים האזרחים הישראלים והפלסטינים.
-
-ישראל הפילה כרוזים, ביצעה שיחות טלפון, שלחה הודעות טקסט, שידרה אזהרות בערבית בטלוויזיה הפלסטינית — תמיד כדי לאפשר לאזרחים פלסטינים להתפנות מאזורים שיועדו לתקיפה.
-
-שום מדינה אחרת ושום צבא אחר בהיסטוריה לא עשו מאמצים גדולים יותר כדי למנוע פגיעה באוכלוסייה האזרחית של אויביהם.
-
-הדאגה הזו לחיי פלסטינים הייתה יוצאת דופן אף יותר לנוכח העובדה שאזרחים ישראלים הופגזו ברקטות יום אחר יום, לילה אחר לילה. בזמן שמשפחותיהם הותקפו על ידי רקטות חמאס, צבא העם של ישראל — חיילי צה"ל האמיצים שלנו, בנינו ובנותינו הצעירים — שמרו על הערכים המוסריים הגבוהים ביותר של כל צבא בעולם.
-
-לחיילי ישראל לא מגיע גינוי — מגיעה להם הערכה. הערכה מכל אדם הגון באשר הוא.
-
-והנה מה שחמאס עשה:
-
-חמאס הטמיע את סוללות הטילים שלו בתוך אזורי מגורים ואמר לפלסטינים להתעלם מן האזהרות של ישראל לעזוב. ולמקרה שמישהו לא הבין את המסר, הוא הוציא להורג אזרחים פלסטינים בעזה שהעזו למחות.
-
-ולא פחות חמור, חמאס הציב בכוונה את הרקטות שלו במקומות שבהם ילדים פלסטינים חיים ומשחקים.
-
-גבירותיי ורבותיי, זהו פשע מלחמה.
-
-ואני אומר לנשיא עבאס: אלה הם פשעי המלחמה שביצעו שותפיך מחמאס בממשלת האחדות הלאומית שבראשה אתה עומד, ואתה אחראי להם. ואלה הם פשעי המלחמה האמיתיים שהיית צריך לחקור, או לפחות לגנות מעל הדוכן הזה בשבוע שעבר.
-
-גבירותיי ורבותיי,
-
-בזמן שילדי ישראל הצטופפו במקלטים ומערכת "כיפת ברזל" יירטה את רקטות חמאס מן השמיים, ההבדל המוסרי העמוק בין ישראל לבין חמאס לא יכול היה להיות ברור יותר:
-
-ישראל השתמשה בטילים שלה כדי להגן על ילדיה.
-חמאס השתמש בילדיו כדי להגן על טיליו.
-
-בכך שמועצת זכויות האדם של האו"ם חוקרת את ישראל ולא את חמאס על פשעי מלחמה, היא בגדה בשליחותה הנאצלת להגן על חפים מפשע. למעשה, מה שהיא עושה הוא להפוך את דיני המלחמה על ראשם. ישראל, שנקטה צעדים חסרי תקדים כדי לצמצם פגיעה באזרחים — מגונה. חמאס, שגם כיוון נגד אזרחים וגם הסתתר מאחוריהם — פשע מלחמה כפול — מקבל פטור.
-
-מועצת זכויות האדם שולחת בכך מסר ברור לטרוריסטים בכל מקום:
-השתמשו באזרחים כמגינים אנושיים.
-עשו זאת שוב ושוב ושוב.
-כי למרבה הצער, זה עובד.
-
-בכך שהיא מעניקה לגיטימציה בינלאומית לשימוש במגינים אנושיים, הפכה מועצת זכויות האדם של האו"ם למועצת זכויות הטרוריסטים.
-
-לא רק האינטרסים שלנו ולא רק הערכים שלנו נמצאים תחת מתקפה.
-אלה גם האינטרסים שלכם והערכים שלכם.
-
-גבירותיי ורבותיי,
-
-אנו חיים בעולם הרווי בעריצות ובטרור, שבו הומואים נתלים ממנופים בטהראן, אסירים פוליטיים מוצאים להורג בעזה, ילדות צעירות נחטפות בהמוניהן בניגריה, ומאות אלפים נטבחים בסוריה, בלוב ובעיראק.
-
-ובכל זאת, כמעט מחצית מן ההחלטות של מועצת זכויות האדם של האו"ם שהתמקדו במדינה אחת, הופנו נגד ישראל, הדמוקרטיה האמיתית היחידה במזרח התיכון — ישראל, שבה נושאים נדונים בגלוי בפרלמנט סוער, שבה זכויות אדם מוגנות על ידי בתי משפט עצמאיים, ושבה נשים, הומואים ומיעוטים חיים בחברה חופשית באמת.
-
-הטיפול המוטה של המועצה בישראל הוא רק ביטוי אחד של חזרתה של הדעה הקדומה העתיקה ביותר בעולם.
-
-היום אנו שומעים באירופה המונים הקוראים להרעיל יהודים בגז. אנו שומעים מנהיגים לאומיים מסוימים משווים את ישראל לנאצים. זה איננו תוצאה של מדיניותה של ישראל. זהו תוצר של מוחות חולים. ולמחלה הזו יש שם: אנטישמיות.
-
-היא מתפשטת כיום גם בחברה המכובדת, שם היא מתחפשת לביקורת לגיטימית על ישראל.
-
-במשך מאות שנים הושמצו היהודים באמצעות עלילות דם והאשמות ברצח האל.
-היום מדינת היהודים מושמצת באמצעות עלילת האפרטהייד והאשמות ברצח עם.
-
-רצח עם?
-
-באיזה יקום מוסרי רצח עם כולל אזהרה לאוכלוסייה האזרחית של האויב לצאת מאזור הסכנה?
-או הבטחה שיקבלו טונות על טונות של סיוע הומניטרי מדי יום, אפילו בזמן שאלפי רקטות נורות לעברנו?
-או הקמת בית חולים שדה כדי לטפל בפצועיהם?
-
-כנראה שזה אותו יקום מוסרי שבו אדם שכתב עבודת גמר מלאה בשקרים על השואה, ואשר דורש פלסטין נקייה מיהודים, יכול לעמוד על הדוכן הזה ולהאשים את ישראל ללא בושה ברצח עם ובטיהור אתני.
-
-בעבר, שקרים מזעזעים נגד היהודים היו הקדמה לטבח נרחב בעמנו.
-
-אבל לא עוד.
-
-כיום, לנו — העם היהודי — יש הכוח להגן על עצמנו.
-
-נגן על עצמנו מפני אויבינו בשדה הקרב.
-נחשוף את שקריהם נגדנו בזירת דעת הקהל.
-
-ישראל תמשיך לעמוד זקופה, גאה ובלתי כפופה.
-
-גבירותיי ורבותיי,
-
-למרות האתגרים העצומים הניצבים בפני ישראל, אני מאמין שיש לנו הזדמנות היסטורית.
-
-לאחר עשורים שבהם מדינות מובילות בעולם הערבי ראו בישראל אויב, הן מכירות יותר ויותר בכך שיחד אנחנו והן ניצבים מול רבות מאותן סכנות: בראש ובראשונה איראן גרעינית ותנועות אסלאמיסטיות מיליטנטיות שמתחזקות בעולם הסוני.
-
-האתגר שלנו הוא להפוך את האינטרסים המשותפים הללו לשותפות יצרנית. שותפות שתבנה מזרח תיכון בטוח יותר, שקט יותר ומשגשג יותר.
-
-יחד נוכל לחזק את הביטחון האזורי.
-נוכל לקדם פרויקטים במים, בחקלאות, בתחבורה, בבריאות, באנרגיה, ובתחומים רבים כל כך.
-
-אני מאמין שהשותפות בינינו יכולה גם לסייע בקידום שלום בין ישראל לפלסטינים.
-
-רבים הניחו זמן רב ששלום ישראלי-פלסטיני יכול לסייע בהתקרבות רחבה יותר בין ישראל לבין העולם הערבי. אבל בימים אלה אני חושב שזה עשוי לפעול בכיוון ההפוך: כלומר, שהתקרבות רחבה יותר בין ישראל לעולם הערבי עשויה לסייע בקידום שלום ישראלי-פלסטיני.
-
-ולכן, כדי להשיג את השלום הזה, עלינו להביט לא רק לירושלים ולרמאללה, אלא גם לקהיר, לעמאן, לאבו דאבי, לריאד ולמקומות נוספים.
-
-אני מאמין שניתן לממש שלום במעורבות פעילה של מדינות ערב, אלה המוכנות להעניק תמיכה פוליטית, חומרית ותמיכה חיונית אחרת.
-
-אני מוכן לפשרה היסטורית, לא מפני שישראל כובשת ארץ זרה.
-עם ישראל איננו כובש בארץ ישראל.
-
-ההיסטוריה, הארכיאולוגיה והשכל הישר כולם מבהירים שהיה לנו קשר ייחודי לארץ הזו במשך יותר מ-3,000 שנה.
-
-אני רוצה שלום מפני שאני רוצה ליצור עתיד טוב יותר לעמי.
-
-אבל זה חייב להיות שלום אמיתי, כזה שמעוגן בהכרה הדדית ובהסדרי ביטחון בני קיימא — הסדרי ביטחון יציבים מאוד בשטח. משום שנסיגותיה של ישראל מלבנון ומעזה יצרו שתי מובלעות של אסלאם מיליטנטי על גבולותינו, שמהן נורו לעבר ישראל עשרות אלפי רקטות.
-
-הניסיון המפוכח הזה מעמיק את הדאגות הביטחוניות של ישראל לגבי ויתורים טריטוריאליים אפשריים בעתיד. והחששות הללו גדולים אף יותר היום.
-
-רק הסתכלו סביבכם.
-
-המזרח התיכון נמצא בכאוס. מדינות מתפרקות. אסלאמיסטים מיליטנטיים ממלאים את הוואקום.
-
-ישראל אינה יכולה להרשות לעצמה ששוב יקרה מה שקרה בעזה ובלבנון — ששטחים שמהם תיסוג ייתפסו שוב בידי גורמים אסלאמיסטיים מיליטנטיים. זה יציב ארגונים כמו דאעש במרחק של פצמ"ר — כמה קילומטרים בלבד — מ-80% מאוכלוסייתנו.
-
-חשבו על זה.
-
-המרחק בין קווי 1967 לבין פרברי תל אביב דומה למרחק שבין בניין האו"ם כאן לבין טיימס סקוור.
-
-ישראל היא מדינה זעירה.
-
-לכן, בכל הסכם שלום, שיחייב כמובן פשרה טריטוריאלית, תמיד אתעקש שישראל תוכל להגן על עצמה בכוחות עצמה מפני כל איום.
-
-ועדיין, למרות כל מה שקרה, יש מי שאינם מתייחסים ברצינות לחששות הביטחוניים של ישראל.
-
-אבל אני כן — ותמיד אתייחס.
-
-מפני שכראש ממשלת ישראל הופקדה בידי האחריות הכבדה להבטיח את עתידו של העם היהודי ואת עתידה של המדינה היהודית.
-
-ולא משנה איזה לחץ יופעל עליי, לעולם לא אסוג ממילוי האחריות הזו.
-
-אני מאמין שעם גישה רעננה מצד שכנינו, נוכל לקדם שלום למרות הקשיים שאנו ניצבים מולם.
-
-בישראל יש לנו רקורד של הפיכת הבלתי אפשרי לאפשרי.
-הפכנו ארץ שוממה לפורחת.
-ועם מעט מאוד משאבי טבע, השתמשנו במוחות הפוריים של עמנו כדי להפוך את ישראל למרכז עולמי של טכנולוגיה וחדשנות.
-
-שלום, כמובן, יאפשר לישראל לממש את מלוא הפוטנציאל שלה ולהביא עתיד מבטיח לא רק לעמנו, לא רק לעם הפלסטיני, אלא גם לרבים רבים אחרים באזורנו.
-
-אבל התבנית הישנה של השלום חייבת להתעדכן.
-היא חייבת לקחת בחשבון מציאויות חדשות ותפקידים ואחריויות חדשות של שכנינו הערבים.
-
-גבירותיי ורבותיי,
-
-יש מזרח תיכון חדש.
-הוא מציב סכנות חדשות, אך גם הזדמנויות חדשות.
-
-ישראל מוכנה לעבוד עם שותפים ערבים ועם הקהילה הבינלאומית כדי להתמודד עם הסכנות הללו ולנצל את ההזדמנויות הללו.
-
-יחד עלינו להכיר באיום הגלובלי של האסלאם המיליטנטי, בעליונות הצורך לפרק את יכולת הנשק הגרעיני של איראן, ובתפקיד ההכרחי של מדינות ערב בקידום השלום עם הפלסטינים.
-
-כל זה אולי מנוגד לחוכמה המקובלת, אבל זו האמת.
-ואת האמת תמיד צריך לומר, במיוחד כאן, באומות המאוחדות.
-
-ישעיהו, נביא השלום הגדול שלנו, לימד אותנו לפני כמעט 3,000 שנה בירושלים לדבר אמת אל מול הכוח:
-
-לְמַעַן צִיּוֹן לֹא אֶחֱשֶׁה
-וּלְמַעַן יְרוּשָׁלִַם לֹא אֶשְׁקוֹט
-עַד-יֵצֵא כַנֹּגַהּ צִדְקָהּ
-וִישׁוּעָתָהּ כְּלַפִּיד יִבְעָר.
-
-למען ציון לא אשתוק.
-למען ירושלים לא אנוח.
-עד שצדקתה תצא כאור,
-וישועתה תבער כלפיד.
-
-גבירותיי ורבותיי,
-
-בואו נדליק לפיד של אמת ושל צדק כדי להבטיח את עתידנו המשותף.
-
-תודה רבה.`
+PAGE`
   },
   {
     id: "netanyahu-unga-2015",
-    title: 'נאום האו"ם 2015',
+    title: 'UN Speech 2015',
     speaker: "בנימין נתניהו",
     date: "2015-10-01",
-    dir: "rtl",
-    text: `גבירותיי ורבותיי, אני מביא לכם ברכות מירושלים — העיר שבה תקוותיהם ותפילותיהם של העם היהודי לשלום לכל האנושות הדהדו לאורך הדורות. לפני שלושים ואחת שנה, כשגריר ישראל באו״ם, עמדתי לראשונה על הדוכן הזה. באותו יום דיברתי נגד החלטה שיזמה איראן להוציא את ישראל מהאו״ם. אז כמו היום, האו״ם היה עוין באופן אובססיבי כלפי ישראל — הדמוקרטיה האמיתית היחידה במזרח התיכון. אז כמו היום, היו מי שביקשו לשלול מהמדינה היהודית היחידה מקום בין אומות העולם. סיימתי את אותו נאום ראשון במילים: אדונים נכבדים, השאירו את הקנאות שלכם מחוץ לדלת. יותר משלושה עשורים לאחר מכן, כראש ממשלת ישראל, אני שוב זוכה לעמוד על הדוכן הזה. ובעבורי, הזכות הזו תמיד באה עם אחריות מוסרית לומר את האמת. לכן, לאחר שלושה ימים שבהם שמעתי מנהיגים ברחבי העולם משבחים את הסכם הגרעין עם איראן, אני פותח את נאומי היום ואומר: גבירותיי ורבותיי — השאירו את ההתלהבות שלכם מחוץ לדלת. אתם מבינים, ההסכם הזה לא מקרב שלום. בכך שהוא מזרים לאיראן מיליארדי דולרים דרך הסרת הסנקציות, הוא דווקא מקרב מלחמה. רק תראו מה איראן עשתה בששת החודשים האחרונים בלבד, מאז שהוכרזה מסגרת ההסכם בלוזאן. איראן הגדילה את אספקת הנשק ההרסני שלה לסוריה. איראן שלחה עוד חיילים ממשמרות המהפכה לסוריה. איראן שלחה אלפי לוחמים שיעים מאפגניסטן ומפקיסטן לסוריה. איראן עשתה את כל זה כדי לתמוך במשטרו האכזרי של אסד. איראן גם שלחה טונות של נשק ותחמושת למורדים החות׳ים בתימן, כולל משלוח נוסף רק לפני יומיים. איראן איימה להפיל את ירדן. שליחתה של איראן, חיזבאללה, הבריחה ללבנון טילי SA-22 להפלת מטוסינו וטילי שיוט יאחונט להטבעת ספינותינו. איראן סיפקה לחיזבאללה טילים מדויקים קרקע-קרקע ומל״טים תוקפים כדי שיוכל לפגוע בדיוק בכל יעד בישראל. איראן סייעה לחמאס ולג׳יהאד האיסלאמי לבנות מל״טים חמושים בעזה. איראן גם הבהירה את תוכניותיה לפתוח שתי חזיתות טרור חדשות נגד ישראל — בהבטחתה לחמש פלסטינים ביהודה ושומרון ובשליחת גנרלים ממשמרות המהפכה לרמת הגולן, שממנה ירו לאחרונה פעיליה רקטות לעבר צפון ישראל. ישראל תמשיך להגיב בעוצמה על כל התקפה נגדה מסוריה. ישראל תמשיך לפעול כדי למנוע העברת נשק אסטרטגי לחיזבאללה משטח סוריה ובאמצעותו. כל כמה שבועות איראן וחיזבאללה מקימים תאי טרור חדשים בערים ברחבי העולם. שלושה תאים כאלה נחשפו לאחרונה בכווית, בירדן ובקפריסין. בחודש מאי פשטו כוחות הביטחון בקפריסין על דירתו של פעיל חיזבאללה בעיר לרנקה. שם הם מצאו חמישה טונות של אמוניום חנקתי — בערך אותה כמות ששימשה לפיצוץ הבניין הפדרלי באוקלהומה סיטי. וזה רק בדירה אחת, בעיר אחת, במדינה אחת. אבל איראן מקימה עשרות תאי טרור כאלה ברחבי העולם. גבירותיי ורבותיי — הם מקימים תאים כאלה גם בחצי הכדור הזה. אני חוזר: איראן עשתה את כל הדברים שתיארתי — רק בששת החודשים האחרונים, בזמן שניסתה לשכנע את העולם להסיר ממנה את הסנקציות. עכשיו דמיינו מה איראן תעשה אחרי שהסנקציות יוסרו. משוחררת וללא רסן, איראן תצא לציד — ותטרוף עוד ועוד קורבנות. בעקבות הסכם הגרעין, איראן מוציאה מיליארדי דולרים על נשק ולוויינים. אתם חושבים שהיא עושה זאת כדי לקדם שלום? אתם חושבים שמאות מיליארדי דולרים של הקלות בסנקציות וחוזים שמנים יהפכו את הנמר הטורף הזה לגור חתולים? אם כן — כדאי שתחשבו שוב. בשנת 2013 הנשיא רוחאני החל כאן באו״ם את מה שכינה מתקפת הקסם שלו. שנתיים לאחר מכן, איראן מוציאה להורג יותר אסירים פוליטיים, מגבירה את תוקפנותה האזורית ומרחיבה במהירות את רשת הטרור העולמית שלה. אומרים שמעשים מדברים חזק יותר ממילים. אבל במקרה של איראן — המילים מדברות חזק לא פחות מהמעשים. הקשיבו לדבריו של סגן מפקד כוח קודס של משמרות המהפכה. כך אמר בפברואר: "המהפכה האסלאמית אינה מוגבלת בגבולות גאוגרפיים..." הוא התרברב שאפגניסטן, עיראק, לבנון, סוריה, פלסטין ותימן הן בין המדינות שנכבשות על ידי הרפובליקה האסלאמית של איראן. נכבשות. ולמי שמאמין שההסכם בווינה יביא שינוי במדיניות איראן — הקשיבו למה שאמר המנהיג העליון, האייתוללה חמינאי, חמישה ימים בלבד לאחר חתימת ההסכם: "המדיניות שלנו כלפי ממשלת ארצות הברית השחצנית לא תשתנה." ארצות הברית, הוא נשבע, תמשיך להיות אויבה של איראן. מתן כסף נוסף למולות צפוי להגביר את הדיכוי בתוך איראן, והוא בוודאי יגביר את התוקפנות מחוץ לאיראן. כמנהיג מדינה המגינה על עצמה יום-יום מול התוקפנות האיראנית הגוברת, הלוואי ויכולתי להתנחם בטענה שההסכם הזה חוסם את דרכה של איראן לנשק גרעיני. אבל איני יכול — משום שהוא לא. ההסכם אכן מטיל מגבלות מסוימות על תוכנית הגרעין של איראן. ובצדק, משום שהקהילה הבינלאומית מכירה בכך שאיראן מסוכנת כל כך. אבל הנה המלכוד: על פי ההסכם הזה, גם אם איראן לא תשנה את התנהגותה — ואפילו אם תהפוך למסוכנת יותר — המגבלות החשובות ביותר יוסרו אוטומטית לאחר 10 שנים ולאחר 15 שנים. זה יציב משטר טרור אסלאמי קיצוני במרחק שבועות מחומר בקיע לארסנל שלם של פצצות גרעיניות. זה פשוט לא הגיוני. אמרתי שאם איראן רוצה שיתייחסו אליה כאל מדינה נורמלית — שתתנהג כמו מדינה נורמלית. אבל ההסכם הזה יתייחס אליה כאל מדינה נורמלית גם אם תישאר תיאוקרטיה אפלה הכובשת את שכנותיה, מממנת טרור ברחבי העולם וצועקת "מוות לישראל", "מוות לאמריקה". האם מישהו באמת מאמין שהצפת תיאוקרטיה קיצונית בכסף ובנשק תרסן את תאבונה לתוקפנות? האם מישהו באמת חושב שאיראן עם טפרים ושיניים חדות יותר תשנה את טבעה? יש כלל אחד שלמדתי בחיי — כשמתגמלים התנהגות רעה, היא רק מחמירה. גבירותיי ורבותיי, אמרתי כבר זמן רב שהסכנה הגדולה ביותר לעולמנו היא השילוב בין אסלאם קיצוני לבין נשק גרעיני. ואני חושש מאוד שההסכם עם איראן יהפוך לתעודת הנישואין של האיחוד המסוכן הזה. רוב הישראלים מאמינים שזה הסכם גרוע מאוד. ומה שמחמיר עוד יותר הוא שאנחנו רואים עולם שחוגג את ההסכם הזה וממהר לחבק ולעשות עסקים עם משטר שמצהיר בגלוי על מחויבותו להשמיד אותנו. בשבוע שעבר הכריז מפקד צבא איראן: "אנחנו בוודאות נשמיד את ישראל." המנהיג העליון עצמו פרסם ספר בן 400 עמודים המתאר תוכנית להשמדת מדינת ישראל. הוא גם הבטיח שלא תהיה ישראל בעוד 25 שנה. שבעים שנה לאחר רצח שישה מיליון יהודים — שליטי איראן מבטיחים להשמיד את מדינתי. והתגובה של הגוף הזה, ושל כמעט כל הממשלות כאן — הייתה שתיקה מוחלטת. שתיקה מוחלטת. שתיקה מחרישת אוזניים. אולי עכשיו אתם מבינים מדוע ישראל אינה מצטרפת לחגיגות סביב ההסכם הזה. אל תחשבו שאיראן מסוכנת רק לישראל. היא גם בונה טילים בליסטיים בין-יבשתיים שמטרתם לשאת ראשי נפץ גרעיניים. לא ישראל זקוקה לטילים כאלה. הם מיועדים לכם. לאירופה. לאמריקה. להמטיר הרס המוני — בכל מקום, בכל זמן.`
+    dir: "ltr",
+    text: `Ladies and Gentlemen, I bring you greetings from Jerusalem. The city in which the Jewish People's hopes and prayers for peace for all of humanity have echoed throughout the ages.
+
+Thirty-one years ago, as Israel’s Ambassador to the United Nations, I stood at this podium for the first time.
+
+I spoke that day against a resolution sponsored by Iran to expel Israel from the United Nations.
+Then as now, the UN was obsessively hostile towards Israel, the one true democracy in the Middle East.
+
+Then as now, some sought to deny the one and only Jewish state a place among the nations.
+
+I ended that first speech by saying:
+Gentlemen, check your fanaticism at the door.
+
+More than three decades later, as the Prime Minister of Israel, I am again privileged to speak from this podium.
+
+And for me, that privilege has always come with a moral responsibility to speak the truth.
+
+So after three days of listening to world leaders praise the nuclear deal with Iran, I begin my speech today by saying:
+
+Ladies and Gentlemen, check your enthusiasm at the door.
+
+You see, this deal doesn't make peace more likely.
+
+By fueling Iran’s aggressions with billions of dollars in sanctions relief, it makes war more likely.
+
+Just look at what Iran has done in the last six months alone, since the framework agreement was announced in Lausanne.
+
+Iran boosted its supply of devastating weapons to Syria.
+
+Iran sent more soldiers of its Revolutionary Guard into Syria. Iran sent thousands of Afghani and Pakistani Shi’ite fighters to Syria.
+
+Iran did all this to prop up Assad's brutal regime.
+
+Iran also shipped tons of weapons and ammunitions to the Houthi rebels in Yemen, including another shipment just two days ago.
+
+Iran threatened to topple Jordan.
+
+Iran’s proxy Hezbollah smuggled into Lebanon SA-22 missiles to down our planes, and Yakhont cruise missiles to sink our ships.
+
+Iran supplied Hezbollah with precision-guided surface-to-surface missiles and attack drones so it can accurately hit any target in Israel.
+
+Iran aided Hamas and Islamic Jihad in building armed drones in Gaza.
+
+Iran also made clear its plans to open two new terror fronts against Israel, promising to arm Palestinians in the West Bank and sending its Revolutionary Guard generals to the Golan Heights, from which its operatives recently fired rockets on northern Israel.
+
+Israel will continue to respond forcefully to any attacks against it from Syria.
+
+Israel will continue to act to prevent the transfer of strategic weapons to Hezbollah from and through Syrian territory.
+
+Every few weeks, Iran and Hezbollah set up new terror cells in cities throughout the world. Three such cells were recently uncovered in Kuwait, Jordan and Cyprus.
+
+In May, security forces in Cyprus raided a Hezbollah agent’s apartment in the city of Larnaca. There they found five tons of ammonium nitrate, that's roughly the same amount of ammonium nitrate that was used to blow up the federal building in Oklahoma City.
+
+And that’s just in one apartment, in one city, in one country.
+
+But Iran is setting up dozens of terror cells like this around the world, ladies and gentlemen, they're setting up those terror cells in this hemisphere too.
+
+I repeat: Iran’s been doing all of this, everything that I've just described,  just in the last six months, when it was trying to convince the world to remove the sanctions.
+
+Now just imagine what Iran will do after those sanctions are lifted.
+
+Unleashed and un-muzzled, Iran will go on the prowl, devouring more and more prey.
+
+In the wake of the nuclear deal, Iran is spending billions of dollars on weapons and satellites.
+
+You think Iran is doing that to advance peace?
+
+You think hundreds of billions of dollars in sanctions relief and fat contracts will turn this
+rapacious tiger into a kitten?
+
+If you do, you should think again.
+
+In 2013 president Rouhani began his so-called charm offensive here at the UN. Two years later, Iran is executing more political prisoners, escalating its regional aggression, and rapidly expanding its global terror network.
+
+You know they say, actions speak louder than words.
+
+But in Iran’s case, the words speak as loud as the actions.
+
+Just listen to the Deputy Commander of Iran’s Revolutionary Guard Quds Force. Here's what he said in February:
+
+“The Islamic revolution is not limited by geographic borders….” He boasted that Afghanistan, Iraq, Lebanon, Syria, Palestine and Yemen are among the countries being “conquered by the Islamic Republic of Iran.”
+
+Conquered.
+
+And for those of you who believe that the deal in Vienna will bring a change in Iran’s policy, just listen to what Iran’s Supreme Leader Ayatollah Khamenei said five days after the nuclear deal was reached: “Our policies towards the arrogant government of the United States will not change.”
+
+The United States, he vowed, will continue to be Iran’s enemy.
+
+While giving the mullahs more money is likely to fuel more repression inside Iran, it will definitely fuel more aggression outside Iran.
+
+As the leader of a country defending itself every day against Iran’s growing aggression, I wish I could take comfort in the claim that this deal blocks Iran’s path to nuclear weapons.
+
+But I can’t, because it doesn’t.
+
+This deal does place several constraints on Iran’s nuclear program.
+
+And rightly so, because the international community recognizes that Iran is so dangerous.
+
+But you see here’s the catch:
+
+Under this deal, If Iran doesn’t change its behavior, In fact, if it becomes even more dangerous in the years to come, the most important constraints will still be automatically lifted by year 10 and by year 15.
+
+That would place a militant Islamic terror regime weeks away from having the fissile material for an entire arsenal of nuclear bombs.
+
+That just doesn’t make any sense.
+
+I’ve said that if Iran wants to be treated like a normal country, let it act like a normal country.
+
+But this deal, this deal will treat Iran like a normal country even if it remains a dark theocracy that conquers its neighbors, sponsors terrorism worldwide and chants “Death to Israel”, “Death to America.”
+
+Does anyone seriously believe that flooding a radical theocracy with weapons and cash will curb its appetite for aggression?
+
+Do any of you really believe that a theocratic Iran with sharper claws and sharper fangs will be more likely to change its stripes?
+
+So here's a general rule that I've learned and you must have learned in your life time - When bad behavior is rewarded, it only gets worse.
+
+Ladies and Gentlemen,
+
+I have long said that the greatest danger facing our world is the coupling of militant Islam with nuclear weapons.
+
+And I’m gravely concerned that the nuclear deal with Iran will prove to be the marriage certificate of that unholy union.
+
+I know that some well-intentioned people sincerely believe that this deal is the best way to block Iran’s path to the bomb.
+
+But one of history’s most important yet least learned lessons is this:
+
+The best intentions don’t prevent the worst outcomes.
+
+The vast majority of Israelis believe that this nuclear deal with Iran is a very bad deal.
+
+And what makes matters even worse is that we see a world celebrating this bad deal, rushing to embrace and do business with a regime openly committed to our destruction.
+
+Last week, Major General Salehi, the commander of Iran’s army, proclaimed this:
+
+“We will annihilate Israel for sure.”
+
+“We are glad that we are in the forefront of executing the Supreme Leader’s order to destroy Israel.”
+
+And as for the Supreme Leader himself, a few days after the nuclear deal was announced, he released his latest book.
+Here it is.
+
+It’s a 400-page screed detailing his plan to destroy the State of Israel.
+
+Last month, Khamenei once again made his genocidal intentions clear before Iran's top clerical body, the Assembly of Experts.
+
+He spoke about Israel, home to over six million Jews.
+He pledged, “there will be no Israel in 25 years.”
+
+Seventy years after the murder of six million Jews,
+Iran’s rulers promise to destroy my country.
+
+Murder my people.
+
+And the response from this body, the response from nearly every one of the governments represented here has been absolutely nothing!
+
+Utter silence!
+
+Deafening silence.
+
+Perhaps you can now understand why Israel is not joining you in celebrating this deal.
+
+If Iran’s rulers were working to destroy your countries, perhaps you’d be less enthusiastic about the deal.
+
+If Iran’s terror proxies were firing thousands of rockets at your cities, perhaps you’d be more measured in your praise.
+
+And if this deal were unleashing a nuclear arms race in your neighborhood, perhaps you’d be more reluctant to celebrate.
+
+But don’t think that Iran is only a danger to Israel.
+
+Besides Iran’s aggression in the Middle East and its terror around the world, Iran is also building intercontinental ballistic missiles whose sole purpose is to carry nuclear warheads.
+
+Now remember this: Iran already has missiles that can reach Israel.
+
+So those intercontinental ballistic missiles that Iran is building - they're not meant for us –
+They’re meant for you.
+
+For Europe.
+
+For America.
+
+For raining down mass destruction – anytime, anywhere.
+
+Ladies and Gentlemen,
+
+It’s not easy to oppose something that is embraced by the greatest powers in the world.
+
+Believe me, it would be far easier to remain silent.
+
+But throughout our history, the Jewish people have learned the heavy price of silence.
+
+And as the Prime Minister of the Jewish State, as someone who knows that history,
+
+I refuse to be silent.
+
+I’ll say it again:
+
+The days when the Jewish people remained passive in the face of genocidal enemies –
+those days are over.
+
+Not being passive means speaking up about those dangers.
+
+We have. We are.
+We will.
+
+Not being passive also means defending ourselves against those dangers.
+
+We have. We are.
+And we will.
+
+Israel will not allow Iran to break-in, to sneak-in or to walk-in to the nuclear weapons club.
+
+I know that preventing Iran from developing nuclear weapons remains the official policy of the international community.
+
+But no one should question Israel’s determination to defend itself against those who seek our destruction.
+
+For in every generation, there were those who rose up to destroy our people.
+
+In antiquity, we faced destruction from the ancient empires of Babylon and Rome.
+
+In the Middle Ages, we faced inquisition and expulsion.
+
+And In modern times, we faced pogroms and the Holocaust.
+
+Yet the Jewish people persevered.
+
+And now another regime has arisen, swearing to destroy Israel.
+
+That regime would be wise to consider this:
+
+I stand here today representing Israel, a country 67 years young,
+but the nation-state of a people nearly 4,000 years old.
+
+Yet the empires of Babylon and Rome are not represented in this hall of nations.
+Neither is the Thousand Year Reich.
+
+Those seemingly invincible empires are long gone.
+
+But Israel lives.
+
+The people of Israel live.
+
+
+The re-birth of Israel is a testament to the indomitable spirit of my people.
+
+For a hundred generations, the Jewish people dreamed of returning to the
+Land of Israel.
+
+Even in our darkest hours, and we had so many, even in our darkest hours we never gave up hope of rebuilding our eternal capital Jerusalem.
+
+The establishment of Israel made realizing that dream possible.
+
+It has enabled us to live as a free people in our ancestral homeland.
+
+It's enabled us to embrace Jews who've come from the four corners of the earth to find refuge from persecution.
+
+They came from war-torn Europe, from Yemen, Iraq, Morocco, from Ethiopia and the Soviet Union, from a hundred other lands.
+
+And today, as a rising tide of anti-Semitism once again sweeps across Europe and elsewhere, many Jews come to Israel to join us in building the Jewish future.
+
+So here’s my message to the rulers of Iran:
+
+Your plan to destroy Israel will fail.
+
+Israel will not permit any force on earth to threaten its future.
+
+And here's my message to all the countries represented here:
+
+Whatever resolutions you may adopt in this building, whatever decisions you may take in your capitals, Israel will do whatever it must do to defend our state and to defend our people.
+
+Distinguished delegates,
+
+As this deal with Iran moves ahead, I hope you’ll enforce it…how can I put this? With a little more rigor than you showed with the six Security Council resolutions that Iran has systematically violated and which now have been effectively discarded.
+
+Make sure that the inspectors actually inspect.
+
+Make sure that the snapback sanctions actually snap back.
+
+And make sure that Iran’s violations aren’t swept under the Persian rug.
+
+Well, of one thing I can assure you:
+Israel will be watching… closely.
+
+What the international community now needs to do is clear:
+
+First, make Iran comply with all its nuclear obligations.
+
+Keep Iran’s feet to the fire.
+
+Second, check Iran’s regional aggression.
+
+Support and strengthen those fighting Iran’s aggression, beginning with Israel.
+
+Third, use sanctions and all the tools available to you to tear down Iran’s global terror network.
+
+Ladies and Gentlemen,
+
+Israel is working closely with our Arab peace partners to address our common security challenges from Iran and also the security challenges from ISIS and from others.
+
+We are also working with other states in the Middle East as well as countries in Africa, in Asia and beyond.
+
+Many in our region know that both Iran and ISIS are our common enemies.
+
+And when your enemies fight each other, don’t strengthen either one – weaken both.
+
+Common dangers are clearly bringing Israel and its Arab neighbors closer.
+
+And as we work together to thwart those dangers, I hope we'll build lasting partnerships – lasting partnerships for security, for prosperity and for peace.
+
+But in Israel, we never forget one thing. We never forget that the most important partner that Israel has has always been, and will always be, the United States of America.
+
+The alliance between Israel and the United States is unshakeable.
+
+President Obama and I agree on the need to keep arms out of the hands of Iran’s terror proxies.
+
+We agree on the need to stop Iran from destabilizing countries throughout the Middle East.
+Israel deeply appreciates President Obama’s willingness to bolster our security, help Israel maintain its qualitative military edge and help Israel confront the enormous challenges we face.
+
+Israel is grateful that this sentiment is widely shared by the American people and its representatives in Congress, by both those who supported the deal and by those who opposed it.
+
+President Obama and I have both said that our differences over the nuclear deal are a disagreement within the family.
+
+But we have no disagreement about the need to work together to secure our common future.
+
+And what a great future it could be.
+
+Israel is uniquely poised to seize the promise of the 21st century.
+
+Israel is a world leader in science and technology, in cyber, software, water, agriculture,
+medicine, biotechnology and so many other fields that are being revolutionized by Israeli ingenuity and Israeli innovation.
+
+Israel is the innovation nation.
+
+Israeli knowhow is everywhere.
+
+It’s in your computers’ microprocessors and flash drives.
+
+It’s in your smartphones, when you send instant messages and navigate your cars.
+
+It’s on your farms, when you drip irrigate your crops and keep your grains and produce fresh.
+
+It’s in your universities, when you study Nobel Prize winning discoveries in chemistry and economics.
+
+It’s in your medicine cabinets, when you use drugs to treat Parkinson’s Disease and Multiple Sclerosis.
+
+It’s even on your plate, when you eat the delicious cherry tomato.
+
+That too was perfected in Israel, in case you didn’t know.
+
+We are so proud in Israel of the long strides our country has made in a short time.
+
+We're so proud that our small country is making such a huge contribution to the entire world.
+
+Yet the dreams of our people, enshrined for eternity by the great prophets of the Bible, those dreams will be fully realized only when there is peace.
+
+As the Middle East descends into chaos, Israel’s peace agreements with Egypt and Jordan are two cornerstones of stability.
+
+Israel remains committed to achieving peace with the Palestinians as well.
+
+Israelis know the price of war.
+
+I know the price of war.
+
+I was nearly killed in battle.
+
+I lost many friends.
+
+I lost my beloved brother Yoni.
+
+Those who know the price of war can best appreciate what the blessings of peace would mean – for ourselves, our children, our grandchildren.
+
+I am prepared to immediately, immediately, resume direct peace negotiations with the Palestinian Authority without any preconditions whatsoever.
+
+Unfortunately, President Abbas said yesterday that he is not prepared to do this.
+
+Well, I hope he changes his mind.
+
+Because I remain committed to a vision of two states for two peoples, in which a demilitarized Palestinian state recognizes the Jewish state.
+
+You know, the peace process began over two decades ago.
+
+Yet despite the best efforts of six Israeli prime ministers – Rabin, Peres, Barak, Sharon, Olmert and myself – the Palestinians have consistently refused to end the conflict and make a final peace with Israel.
+
+And unfortunately, you heard that rejectionism again only yesterday from President Abbas.
+
+How can Israel make peace with a Palestinian partner who refuses to even sit at the negotiating table?
+
+Israel expects the Palestinian Authority to abide by its commitments.
+
+The Palestinians should not walk away from peace.
+
+President Abbas, I know it's not easy. I know it's hard. But we owe it to our peoples to try, to continue to try, because together, if we actually negotiate and stop negotiating about the negotiation, if we actually sit down and try to resolve this conflict between us, recognize each other, not use a Palestinian state as a stepping stone for another Islamist dictatorship in the Middle East, but something that will live at peace next to the Jewish state, if we actually do that, we can do remarkable things for our peoples.
+
+The UN can help advance peace by supporting direct, unconditional negotiations between the parties.
+
+The UN won't help peace, certainly won't help advance peace by trying to impose solutions or by encouraging Palestinian rejectionism,
+
+And the UN, distinguished delegates, should do one more thing. The UN should finally rid itself of the obsessive bashing of Israel.
+
+Here’s just one absurd example of this obsession:
+
+In four years of horrific violence in Syria, more than a quarter of a million people have lost their lives.
+
+That’s more than ten times, more than ten times, the number of Israelis and Palestinians combined who have lost their lives in a century of conflict between us.
+
+Yet last year, this Assembly adopted 20 resolutions against Israel and just one resolution about the savage slaughter in Syria.
+
+Talk about injustice. Talk about disproportionality. Twenty.  Count them. One against Syria.
+
+Well, frankly I am not surprised.
+
+To borrow a line from Yogi Berra, the late, great baseball player and part time philosopher: When it comes to the annual bashing of Israel at the UN, it’s déjà vu all over again.
+
+Enough!
+
+Thirty one years after I stood here for the first time, I'm still asking:
+
+When will the UN finally check its anti-Israel fanaticism at the door?
+
+When will the UN finally stop slandering Israel as a threat to peace and actually start helping Israel advance peace?
+
+And the same question should be posed to Palestinian leaders.
+
+When will you start working with Israel to advance peace and reconciliation and stop libeling Israel, stop inciting hatred and violence?
+
+President Abbas, here’s a good place to begin:
+
+Stop spreading lies about Israel’s alleged intentions on the Temple Mount.
+
+Israel is fully committed to maintaining the status quo there.
+
+What President Abbas should be speaking out against are the actions of militant Islamists who are smuggling explosives into the al-Aqsa mosque and who are trying to prevent Jews and Christians from visiting the holy sites.
+
+That’s the real threat to these sacred sites.
+
+A thousand years before the birth of Christianity, more than 1,500 years before the birth of Islam, King David made Jerusalem our capital, and King Solomon built the Temple on that mount.
+
+Yet Israel, Israel will always respect the sacred shrines of all.
+
+In a region plagued by violence and by unimaginable intolerance, in which Islamic fanatics are destroying the ancient treasures of civilization, Israel stands out as a towering beacon of enlightenment and tolerance.
+
+Far from endangering the holy sites, it is Israel that ensures their safety.
+
+Because unlike the powers who have ruled Jerusalem in the past, Israel respects the holy sites and freedom of worship of all – Jews, Muslims, Christians, everyone.
+
+And that, ladies and gentlemen, will never change.
+
+Because Israel will always stay true to its values.
+
+These values are on display each and every day:
+
+When Israel’s feisty parliament vigorously debates every issue under the sun,
+
+When Israel’s Chief Justice sits in her chair at our fiercely independent Supreme Court,
+
+When our Christian community continues to grow and thrive from year to year, as Christian communities are decimated elsewhere in the Middle East,
+
+When a brilliant young Israeli Muslim student gives her valedictorian address at one of our finest universities,
+
+And when Israeli doctors and nurses – doctors and nurses from the Israeli military –
+
+treat thousands of wounded from the killing fields of Syria and thousands more in the wake of natural disasters from Haiti to Nepal.
+
+This is the true face of Israel.
+
+These are the values of Israel.
+
+And In the Middle East, these values are under savage assault by militant Islamists who are forcing millions of terrified people to flee to distant shores.
+
+Ten miles from ISIS, a few hundred yards from Iran’s murderous proxies, Israel stands in the breach – proudly and courageously, defending freedom and progress.
+
+Israel is civilization's front line in the battle against barbarism.
+
+So here’s a novel idea for the United Nations:
+
+Instead of continuing the shameful routine of bashing Israel, stand with Israel.
+
+Stand with Israel as we check the fanaticism at our door.
+
+Stand with Israel as we prevent that fanaticism from reaching your door.
+
+Ladies and Gentlemen,
+
+Stand with Israel because Israel is not just defending itself.
+
+More than ever, Israel is defending you.`
   },
   {
     id: "netanyahu-unga-2016",
-    title: 'נאום האו"ם 2016',
+    title: 'UN Speech 2016',
     speaker: "בנימין נתניהו",
     date: "2016-09-22",
-    dir: "rtl",
-    text: `אדוני הנשיא, גבירותיי ורבותיי,
+    dir: "ltr",
+    text: `Mr. President,
+Ladies and Gentlemen,
 
-מה שאני עומד לומר עכשיו יפתיע אתכם: לישראל יש עתיד מזהיר באו״ם.
+What I'm about to say is going to shock you: Israel has a bright future at the UN.
 
-אני יודע שלשמוע את זה ממני בוודאי נשמע מפתיע, משום ששנה אחר שנה עמדתי בדיוק על הדוכן הזה ותקפתי את האו״ם על ההטיה האובססיבית שלו נגד ישראל. והאו״ם היה ראוי לכל מילה חריפה — על החרפה שבכך שהעצרת הכללית קיבלה בשנה שעברה 20 החלטות נגד מדינת ישראל הדמוקרטית, ובסך הכול שלוש החלטות נגד כל שאר מדינות העולם גם יחד.
+Now I know that hearing that from me must surely come as a surprise, because year after year I've stood at this very podium and slammed the UN for its obsessive bias against Israel. And the UN deserved every scathing word – for the disgrace of the General Assembly that last year passed 20 resolutions against the democratic State of Israel and a grand total of three resolutions against all the other countries on the planet.
 
-ישראל — עשרים; שאר העולם — שלוש.
+Israel – twenty; rest of the world – three.
 
-ומה באשר לבדיחה שנקראת מועצת זכויות האדם של האו״ם, שבכל שנה מגנה את ישראל יותר מכל מדינות העולם יחד? בזמן שנשים נאנסות באופן שיטתי, נרצחות ונמכרות לעבדות ברחבי העולם, מהי המדינה היחידה שהוועדה למעמד האישה של האו״ם בחרה לגנות השנה? כן, ניחשתם נכון — ישראל. ישראל. ישראל — המדינה שבה נשים מטיסות מטוסי קרב, עומדות בראש תאגידים גדולים, מנהלות אוניברסיטאות, כיהנו — פעמיים — כנשיאות בית המשפט העליון, וכיהנו גם כיושבת ראש הכנסת וכראשת ממשלה.
+And what about the joke called the UN Human Rights Council, which each year condemns Israel more than all the countries of the world combined. As women are being systematically raped, murdered, sold into slavery across the world, which is the only country that the UN's Commission on Women chose to condemn this year? Yep, you guessed it – Israel. Israel. Israel where women fly fighter jets, lead major corporations, head universities, preside – twice – over the Supreme Court, and have served as Speaker of the Knesset and Prime Minister.
 
-והקרקס הזה נמשך גם באונסק״ו. אונסק״ו, גוף האו״ם שאמור לשמר את המורשת העולמית. זה כמעט בלתי נתפס, אבל אונסק״ו הכחיש זה עתה את הקשר בן 4,000 השנים בין העם היהודי לבין האתר הקדוש ביותר שלו — הר הבית. זה אבסורדי בדיוק כמו להכחיש את הקשר בין החומה הסינית לבין סין.
+And this circus continues at UNESCO. UNESCO, the UN body charged with preserving world heritage. Now, this is hard to believe but UNESCO just denied the 4,000 year connection between the Jewish people and its holiest site, the Temple Mount. That's just as absurd as denying the connection between the Great Wall of China and China.
 
-גבירותיי ורבותיי,
+Ladies and Gentlemen,
 
-האו״ם, שהוקם ככוח מוסרי, הפך לפארסה מוסרית. לכן, כשמדובר בישראל באו״ם, אפשר היה לחשוב ששום דבר לעולם לא ישתנה, נכון? ובכן, תחשבו שוב. כי הכול ישתנה — והרבה יותר מוקדם מכפי שאתם חושבים. השינוי יתרחש באולם הזה, משום שבמדינות שלכם, הממשלות משנות במהירות את גישתן כלפי ישראל. ובמוקדם או במאוחר, זה ישנה גם את האופן שבו אתם מצביעים על ישראל באו״ם.
+The UN, begun as a moral force, has become a moral farce. So when it comes to Israel at the UN, you'd probably think nothing will ever change, right? Well think again. You see, everything will change and a lot sooner than you think. The change will happen in this hall, because back home, your governments are rapidly changing their attitudes towards Israel. And sooner or later, that's going to change the way you vote on Israel at the UN.
 
-יותר ויותר מדינות באסיה, באפריקה, באמריקה הלטינית — יותר ויותר מדינות רואות בישראל שותפה עוצמתית. שותפה במאבק בטרור של היום, שותפה בפיתוח הטכנולוגיה של המחר.
+More and more nations in Asia, in Africa, in Latin America, more and more nations see Israel as a potent partner – a partner in fighting the terrorism of today, a partner in developing the technology of tomorrow.
 
-כיום יש לישראל יחסים דיפלומטיים עם יותר מ-160 מדינות. זה כמעט פי שניים ממספר המדינות שהיה לנו כאשר שירתתי כאן כשגריר ישראל לפני כ-30 שנה. והקשרים הללו הולכים ומתרחבים ומעמיקים מיום ליום. מנהיגי העולם מעריכים יותר ויותר את העובדה שישראל היא מדינה חזקה עם אחד משירותי המודיעין הטובים בעולם. בזכות ניסיוננו חסר התקדים ויכולותינו המוכחות במאבק בטרור, רבות מהממשלות שלכם מבקשות את עזרתנו כדי לשמור על ביטחון מדינותיכם.
+Today Israel has diplomatic relations with over 160 countries. That's nearly double the number that we had when I served here as Israel's ambassador some 30 years ago. And those ties are getting broader and deeper every day. World leaders increasingly appreciate that Israel is a powerful country with one of the best intelligence services on earth. Because of our unmatched experience and proven capabilities in fighting terrorism, many of your governments seek our help in keeping your countries safe.
 
-רבים גם מבקשים ליהנות מן היצירתיות הישראלית בחקלאות, בבריאות, במים, בסייבר, ובשילוב בין ביג דאטה, קישוריות ובינה מלאכותית — השילוב הזה שמשנה את עולמנו בכל דרך.
+Many also seek to benefit from Israel's ingenuity in agriculture, in health, in water, in cyber and in the fusion of big data, connectivity and artificial intelligence – that fusion that is changing our world in every way.
 
-חשבו על הנתון הבא: ישראל מובילה את העולם במחזור מי שפכים. אנחנו ממחזרים כ-90% ממי השפכים שלנו. עד כמה זה יוצא דופן? ובכן, בהתחשב בכך שהמדינה הבאה ברשימה ממחזרת רק כ-20% ממי השפכים שלה, ישראל היא מעצמת מים עולמית. אז אם יש לנו עולם צמא — ויש — אין בעלת ברית טובה יותר מישראל.
+You might consider this: Israel leads the world in recycling wastewater. We recycle about 90% of our wastewater. Now, how remarkable is that? Well, given that the next country on the list only recycles about 20% of its wastewater, Israel is a global water power. So if you have a thirsty world, and we do, there's no better ally than Israel.
 
-ומה לגבי סייבר? זה נושא שנוגע לכולם. ישראל מהווה עשירית האחוז מאוכלוסיית העולם, ובכל זאת בשנה שעברה משכנו כ-20% מכלל ההשקעות הפרטיות העולמיות בתחום הסייבר. אני רוצה שתעכלו את המספר הזה. בתחום הסייבר, ישראל פועלת בעוצמה הגדולה פי 200 ממשקלה היחסי. לכן ישראל היא גם מעצמת סייבר עולמית. אם האקרים מכוונים לבנקים שלכם, למטוסים שלכם, לרשתות החשמל שלכם ולכמעט כל דבר אחר — ישראל יכולה להציע עזרה חיונית שאין לה תחליף.
+How about cybersecurity? That's an issue that affects everyone. Israel accounts for one-tenth of one percent of the world's population, yet last year we attracted some 20% of the global private investment in cybersecurity. I want you to digest that number. In cyber, Israel is punching a whopping 200 times above its weight. So Israel is also a global cyber power. If hackers are targeting your banks, your planes, your power grids and just about everything else, Israel can offer indispensable help.
 
-ממשלות משנות את יחסן לישראל משום שהן יודעות שישראל יכולה לעזור להן להגן על עמיהן, לעזור להן להאכיל אותם, ולעזור להן לשפר את חייהם.
+Governments are changing their attitudes towards Israel because they know that Israel can help them protect their peoples, can help them feed them, can help them better their lives.
 
-בקיץ הזה הייתה לי הזדמנות בלתי רגילה לראות את השינוי הזה באופן כל כך מוחשי, במהלך ביקור בלתי נשכח בארבע מדינות באפריקה. זה היה הביקור הראשון של ראש ממשלה ישראלי באפריקה זה עשרות שנים. מאוחר יותר היום אפגש עם מנהיגים מ-17 מדינות אפריקאיות. נדון כיצד הטכנולוגיה הישראלית יכולה לסייע להם במאמציהם לשנות את מדינותיהם.
+This summer I had an unbelievable opportunity to see this change so vividly during an unforgettable visit to four African countries. This is the first visit to Africa by an Israeli prime minister in decades. Later today, I'll be meeting with leaders from 17 African countries. We'll discuss how Israeli technology can help them in their efforts to transform their countries.
 
-באפריקה דברים משתנים. גם בסין, בהודו, ברוסיה וביפן היחס לישראל השתנה. המדינות החזקות הללו יודעות שלמרות גודלה הקטן של ישראל, היא יכולה לחולל שינוי גדול בתחומים רבים וחשובים עבורן.
+In Africa, things are changing. In China, India, Russia, Japan, attitudes towards Israel have changed as well. These powerful nations know that, despite Israel's small size, it can make a big difference in many, many areas that are important to them.
 
-אבל עכשיו אני עומד להפתיע אתכם עוד יותר. השינוי הגדול ביותר ביחס לישראל מתרחש במקום אחר. הוא מתרחש בעולם הערבי. הסכמי השלום שלנו עם מצרים וירדן ממשיכים להיות עוגני יציבות במזרח התיכון הסוער. אבל אני חייב לומר לכם זאת: בפעם הראשונה בחיי, מדינות רבות אחרות באזור מכירות בכך שישראל איננה אויבת שלהן. הן מכירות בכך שישראל היא בעלת בריתן. האויבים המשותפים שלנו הם איראן ודאעש. המטרות המשותפות שלנו הן ביטחון, שגשוג ושלום. אני מאמין שבשנים הבאות נפעל יחד כדי להשיג את המטרות הללו — ונפעל יחד בגלוי.
+But now I'm going to surprise you even more. You see, the biggest change in attitudes towards Israel is taking place elsewhere. It's taking place in the Arab world. Our peace treaties with Egypt and Jordan continue to be anchors of stability in the volatile Middle East. But I have to tell you this: For the first time in my lifetime, many other states in the region recognize that Israel is not their enemy. They recognize that Israel is their ally. Our common enemies are Iran and ISIS. Our common goals are security, prosperity and peace. I believe that in the years ahead we will work together to achieve these goals, work together openly.
 
-לכן היחסים הדיפלומטיים של ישראל עוברים לא פחות ממהפכה. אבל בתוך המהפכה הזו, לעולם איננו שוכחים שהברית היקרה לנו מכול, הידידות העמוקה ביותר שלנו, היא עם ארצות הברית של אמריקה — האומה החזקה והנדיבה ביותר בעולם. הקשר הבלתי ניתן לשבירה שלנו עם ארצות הברית חוצה מפלגות ופוליטיקה. הוא משקף מעל הכול את התמיכה העצומה בישראל בקרב העם האמריקני — תמיכה שנמצאת בשיאים חסרי תקדים, ועליה אנו אסירי תודה עמוקה.
+So Israel's diplomatic relations are undergoing nothing less than a revolution. But in this revolution, we never forget that our most cherished alliance, our deepest friendship is with the United States of America, the most powerful and the most generous nation on earth. Our unbreakable bond with the United States of America transcends parties and politics. It reflects, above all else, the overwhelming support for Israel among the American people, support which is at record highs and for which we are deeply grateful.
 
-האו״ם מגנה את ישראל; ארצות הברית תומכת בישראל. ועמוד תווך מרכזי של אותה הגנה היה התמיכה העקבית של אמריקה בישראל באו״ם. אני מעריך את מחויבותו של הנשיא אובמה למדיניות האמריקנית ארוכת השנים הזו. למעשה, הפעם היחידה שבה ארצות הברית הטילה וטו במועצת הביטחון במהלך כהונתו של אובמה הייתה נגד החלטה אנטי-ישראלית ב-2011. כפי שהנשיא אובמה אמר בצדק מעל הדוכן הזה: השלום לא יבוא מהצהרות ומהחלטות באו״ם.
+The United Nations denounces Israel; the United States supports Israel. And a central pillar of that defense has been America's consistent support for Israel at the UN. I appreciate President Obama's commitment to that longstanding US policy. In fact, the only time that the United States cast a UN Security Council veto during the Obama presidency was against an anti-Israel resolution in 2011. As President Obama rightly declared at this podium, peace will not come from statements and resolutions at the United Nations.
 
-אני מאמין שהיום שבו ישראל תוכל לסמוך על מדינות רבות רבות שיעמדו לצידנו באו״ם — איננו רחוק. לאט אבל בטוח, הימים שבהם שגרירי האו״ם גינו את ישראל באופן אוטומטי מתקרבים לסיומם.
+I believe the day is not far off when Israel will be able to rely on many, many countries to stand with us at the UN. Slowly but surely, the days when UN ambassadors reflexively condemn Israel, those days are coming to an end.
 
-גבירותיי ורבותיי,
+Ladies and Gentlemen,
 
-הרוב האוטומטי של היום נגד ישראל באו״ם מזכיר לי את סיפורו המדהים של הירו אונודה. הירו היה חייל יפני שנשלח לפיליפינים ב-1944. הוא חי בג׳ונגל, ליקט מזון ונמנע מליפול בשבי. בסופו של דבר הוא נכנע — אבל זה קרה רק ב-1974, כ-30 שנה לאחר תום מלחמת העולם השנייה. במשך עשרות שנים הירו סירב להאמין שהמלחמה הסתיימה. בזמן שהוא הסתתר בג׳ונגל, תיירים יפנים שחו בבריכות של מלונות יוקרה אמריקניים במנילה הסמוכה. לבסוף, ברחמים, נשלח מפקדו לשעבר לשכנע אותו לצאת ממחבואו. רק אז הניח הירו את נשקו.
+Today's automatic majority against Israel at the UN reminds me of the story, the incredible story of Hiroo Onada. Hiroo was a Japanese soldier who was sent to the Philippines in 1944. He lived in the jungle. He scavenged for food. He evaded capture. Eventually he surrendered, but that didn't happen until 1974, some 30 years after World War II ended. For decades, Hiroo refused to believe the war was over. As Hiroo was hiding in the jungle, Japanese tourists were swimming in pools in American luxury hotels in nearby Manila. Finally, mercifully, Hiroo's former commanding officer was sent to persuade him to come out of hiding. Only then did Hiroo lay down his arms.
 
-גבירותיי ורבותיי,
+Ladies and Gentlemen,
 
-נציגים נכבדים מכל כך הרבה מדינות, יש לי מסר אחד עבורכם היום: הניחו את נשקכם.
+Distinguished delegates from so many lands,
 
-המלחמה נגד ישראל באו״ם הסתיימה.
+I have one message for you today: Lay down your arms. The war against Israel at the UN is over. Perhaps some of you don't know it yet, but I am confident that one day in the not too distant future you will also get the message from your president or from your prime minister informing you that the war against Israel at the United Nations has ended. Yes, I know, there might be a storm before the calm. I know there is talk about ganging up on Israel at the UN later this year. Given its history of hostility towards Israel, does anyone really believe that Israel will let the UN determine our security and our vital national interests?
 
-אולי חלק מכם עדיין לא יודעים זאת, אבל אני בטוח שיום אחד, בעתיד הלא רחוק, גם אתם תקבלו את המסר מהנשיא שלכם או מראש הממשלה שלכם, שיגיד לכם שהמלחמה נגד ישראל באו״ם הסתיימה.
+We will not accept any attempt by the UN to dictate terms to Israel. The road to peace runs through Jerusalem and Ramallah, not through New York.
 
-כן, אני יודע — אולי תהיה סערה לפני השקט. אני יודע שיש דיבורים על התגודדות נגד ישראל באו״ם בהמשך השנה. אך בהתחשב בהיסטוריה של העוינות כלפי ישראל, האם מישהו באמת מאמין שישראל תאפשר לאו״ם לקבוע את ביטחונה ואת האינטרסים הלאומיים החיוניים שלה?
+But regardless of what happens in the months ahead, I have total confidence that in the years ahead the revolution in Israel's standing among the nations will finally penetrate this hall of nations. I have so much confidence, in fact, that I predict that a decade from now an Israeli prime minister will stand right here where I am standing and actually applaud the UN. But I want to ask you: Why do we have to wait a decade? Why keep vilifying Israel? Perhaps because some of you don't appreciate that the obsessive bias against Israel is not just a problem for my country, it's a problem for your countries too. Because if the UN spends so much time condemning the only liberal democracy in the Middle East, it has far less time to address war, disease, poverty, climate change and all the other serious problems that plague the planet.
 
-לא נקבל שום ניסיון של האו״ם להכתיב לישראל תנאים.
+Are the half million slaughtered Syrians helped by your condemnation of Israel? The same Israel that has treated thousands of injured Syrians in our hospitals, including a field hospital that I built right along the Golan Heights border with Syria. Are the gays hanging from cranes in Iran helped by your denigration of Israel? That same Israel where gays march proudly in our streets and serve in our parliament, including I'm proud to say in my own Likud party. Are the starving children in North Korea's brutal tyranny, are they helped by your demonization of Israel? Israel, whose agricultural knowhow is feeding the hungry throughout the developing world?
 
-הדרך לשלום עוברת דרך ירושלים ורמאללה — לא דרך ניו יורק.
+The sooner the UN's obsession with Israel ends, the better. The better for Israel, the better for your countries, the better for the UN itself.
 
-אבל בלי קשר למה שיקרה בחודשים הקרובים, יש לי ביטחון מלא בכך שבשנים הקרובות המהפכה במעמדה של ישראל בין האומות תחדור סוף סוף גם לאולם האומות הזה.
+Ladies and Gentlemen,
 
-למעשה, יש לי ביטחון כה רב, עד שאני מנבא שבעוד עשור יעמוד כאן ראש ממשלה ישראלי במקום שבו אני עומד עכשיו — וימחא כפיים לאו״ם.
+If UN habits die hard, Palestinian habits die even harder. President Abbas just attacked from this podium the Balfour Declaration. He's preparing a lawsuit against Britain for that declaration from 1917. That's almost 100 years ago – talk about being stuck in the past. The Palestinians may just as well sue Iran for the Cyrus Declaration, which enabled the Jews to rebuild our Temple in Jerusalem 2,500 years ago. Come to think of it, why not a Palestinian class action suit against Abraham for buying that plot of land in Hebron where the fathers and mothers of the Jewish people were buried 4,000 years ago? You're not laughing. It's as absurd as that. To sue the British government for the Balfour Declaration? Is he kidding? And this is taken seriously here?
 
-אבל אני רוצה לשאול אתכם: למה לחכות עשור? למה להמשיך להשמיץ את ישראל? אולי משום שחלק מכם עדיין לא מבינים שההטיה האובססיבית נגד ישראל איננה רק בעיה עבור מדינתי — היא בעיה גם עבור מדינותיכם. משום שאם האו״ם מבזבז כל כך הרבה זמן בגינוי הדמוקרטיה הליברלית היחידה במזרח התיכון, נשאר לו הרבה פחות זמן לעסוק במלחמה, במחלות, בעוני, בשינויי אקלים ובכל שאר הבעיות החמורות שפוקדות את כדור הארץ.
+President Abbas attacked the Balfour Declaration because it recognized the right of the Jewish people to a national home in the land of Israel. When the United Nations supported the establishment of a Jewish state in 1947, it recognized our historical and our moral rights in our homeland and to our homeland. Yet today, nearly 70 years later, the Palestinians still refuse to recognize those rights – not our right to a homeland, not our right to a state, not our right to anything. And this remains the true core of the conflict, the persistent Palestinian refusal to recognize the Jewish state in any boundary. You see, this conflict is not about the settlements. It never was.
 
-האם חצי מיליון הסורים שנטבחו נעזרים בגינויים שלכם לישראל? אותה ישראל שטיפלה באלפי פצועים סורים בבתי החולים שלנו, כולל בית חולים שדה שהקמתי ממש על גבול רמת הגולן עם סוריה.
+The conflict raged for decades before there was a single settlement, when Judea Samaria and Gaza were all in Arab hands. The West Bank and Gaza were in Arab hands and they attacked us again and again and again. And when we uprooted all 21 settlements in Gaza and withdrew from every last inch of Gaza, we didn't get peace from Gaza – we got thousands of rockets fired at us from Gaza.
 
-האם ההומואים שנתלים על מנופים באיראן נעזרים בהשמצות שלכם נגד ישראל? אותה ישראל שבה הומואים צועדים בגאווה ברחובותינו ומכהנים בפרלמנט שלנו — כולל, ואני גאה לומר, גם במפלגת הליכוד שלי.
+This conflict rages because for the Palestinians, the real settlements they're after are Haifa, Jaffa and Tel Aviv.
 
-האם הילדים הרעבים תחת העריצות האכזרית של צפון קוריאה נעזרים בדמוניזציה שלכם כלפי ישראל? אותה ישראל שהידע החקלאי שלה מאכיל רעבים ברחבי העולם המתפתח?
+Now mind you, the issue of settlements is a real one and it can and must be resolved in final status negotiations. But this conflict has never been about the settlements or about establishing a Palestinian state. It's always been about the existence of a Jewish state, a Jewish state in any boundary.
 
-ככל שהאובססיה של האו״ם כלפי ישראל תסתיים מוקדם יותר — כך ייטב. ייטב לישראל, ייטב למדינות שלכם, וייטב לאו״ם עצמו.
+Ladies and Gentlemen,
 
-גבירותיי ורבותיי,
+Israel is ready, I am ready to negotiate all final status issues but one thing I will never negotiate: Our right to the one and only Jewish state.
 
-אם הרגלי האו״ם מתים לאט, ההרגלים הפלסטיניים מתים לאט עוד יותר.
+Wow, sustained applause for the Prime Minister of Israel in the General Assembly? The change may be coming sooner than I thought.
 
-הנשיא עבאס תקף מעל הדוכן הזה את הצהרת בלפור. הוא מתכונן להגיש תביעה נגד בריטניה על ההצהרה ההיא מ-1917. זה היה לפני כמעט מאה שנה — זו ממש דוגמה להיתקעות בעבר. הפלסטינים כבר יכולים באותה מידה לתבוע את איראן על הצהרת כורש, שאפשרה ליהודים לבנות מחדש את בית המקדש בירושלים לפני 2,500 שנה. ואם כבר חושבים על זה — למה לא תביעה ייצוגית פלסטינית נגד אברהם, על כך שקנה את חלקת האדמה בחברון שבה נקברו אבות ואימהות העם היהודי לפני 4,000 שנה? אתם לא צוחקים. זה עד כדי כך אבסורדי. לתבוע את ממשלת בריטניה על הצהרת בלפור? הוא רציני? ואת זה לוקחים כאן ברצינות?
+Had the Palestinians said yes to a Jewish state in 1947, there would have been no war, no refugees and no conflict. And when the Palestinians finally say yes to a Jewish state, we will be able to end this conflict once and for all.
 
-הנשיא עבאס תקף את הצהרת בלפור משום שהיא הכירה בזכותו של העם היהודי לבית לאומי בארץ ישראל. כאשר האו״ם תמך בהקמת מדינה יהודית ב-1947, הוא הכיר בזכויותינו ההיסטוריות והמוסריות במולדתנו ולמולדתנו. ובכל זאת, היום, כמעט 70 שנה לאחר מכן, הפלסטינים עדיין מסרבים להכיר בזכויות הללו — לא בזכותנו למולדת, לא בזכותנו למדינה, לא בזכותנו לשום דבר. וזו עדיין ליבת הסכסוך האמיתית: הסירוב הפלסטיני המתמשך להכיר במדינה היהודית בכל גבול שהוא.
+Now here's the tragedy, because, see, the Palestinians are not only trapped in the past, their leaders are poisoning the future.
 
-הסכסוך הזה איננו על ההתנחלויות. הוא מעולם לא היה.
+I want you to imagine a day in the life of a 13-year-old Palestinian boy, I'll call him Ali. Ali wakes up before school, he goes to practice with a soccer team named after Dalal Mughrabi, a Palestinian terrorist responsible for the murder of a busload of 37 Israelis. At school, Ali attends an event sponsored by the Palestinian Ministry of Education honoring Baha Alyan, who last year murdered three Israeli civilians. On his walk home, Ali looks up at a towering statue erected just a few weeks ago by the Palestinian Authority to honor Abu Sukar, who detonated a bomb in the center of Jerusalem, killing 15 Israelis.
 
-הסכסוך השתולל במשך עשרות שנים לפני שהייתה אפילו התנחלות אחת, כאשר יהודה ושומרון ועזה היו כולן בידי הערבים. הגדה המערבית ועזה היו בידיים ערביות, והם תקפו אותנו שוב ושוב ושוב. וכאשר עקרנו את כל 21 היישובים בעזה ונסוגונו מכל סנטימטר של עזה — לא קיבלנו שלום מעזה. קיבלנו אלפי רקטות שנורו עלינו מעזה.
+When Ali gets home, he turns on the TV and sees an interview with a senior Palestinian official, Jibril Rajoub, who says that if he had a nuclear bomb, he'd detonate it over Israel that very day. Ali then turns on the radio and he hears President Abbas's adviser, Sultan Abu al-Einein, urging Palestinians, here's a quote, "to slit the throats of Israelis wherever you find them." Ali checks his Facebook and he sees a recent post by President Abbas's Fatah Party calling the massacre of 11 Israeli athletes at the Munich Olympics a "heroic act". On YouTube, Ali watches a clip of President Abbas himself saying, "We welcome every drop of blood spilled in Jerusalem." Direct quote.
 
-הסכסוך הזה נמשך משום שעבור הפלסטינים, ה"התנחלויות" האמיתיות שהם מבקשים הן חיפה, יפו ותל אביב.
+Over dinner, Ali asks his mother what would happen if he killed a Jew and went to an Israeli prison? Here's what she tells him. She tells him he'd be paid thousands of dollars each month by the Palestinian Authority. In fact, she tells him, the more Jews he would kill, the more money he'd get. Oh, and when he gets out of prison, Ali would be guaranteed a job with the Palestinian Authority.
 
-שלא תבינו לא נכון — שאלת ההתנחלויות היא שאלה אמיתית, ואפשר וחייבים לפתור אותה במשא ומתן על הסדר הקבע. אבל הסכסוך הזה מעולם לא היה על ההתנחלויות או על הקמת מדינה פלסטינית. הוא תמיד היה על עצם קיומה של מדינה יהודית — מדינה יהודית בכל גבול שהוא.
+Ladies and Gentlemen,
 
-גבירותיי ורבותיי,
+All this is real. It happens every day, all the time. Sadly, Ali represents hundreds of thousands of Palestinian children who are indoctrinated with hate every moment, every hour.
 
-ישראל מוכנה, ואני מוכן, לנהל משא ומתן על כל סוגיות הסדר הקבע. אבל יש דבר אחד שלעולם לא אנקוט עליו משא ומתן: זכותנו למדינה היהודית האחת והיחידה.
+This is child abuse.
 
-אילו הפלסטינים היו אומרים כן למדינה יהודית ב-1947, לא הייתה מלחמה, לא היו פליטים ולא היה סכסוך. וכאשר הפלסטינים יאמרו סוף־סוף כן למדינה יהודית, נוכל לסיים את הסכסוך הזה אחת ולתמיד.
+Imagine your child undergoing this brainwashing. Imagine what it takes for a young boy or girl to break free out of this culture of hate. Some do but far too many don't. How can any of us expect young Palestinians to support peace when their leaders poison their minds against peace?
 
-וכאן טמונה הטרגדיה: הפלסטינים לא רק שבויים בעבר — מנהיגיהם גם מרעילים את העתיד.
+We in Israel don't do this. We educate our children for peace. In fact, we recently launched a pilot program, my government did, to make the study of Arabic mandatory for Jewish children so that we can better understand each other, so that we can live together side-by-side in peace.
 
-אני רוצה שתדמיינו יום בחייו של נער פלסטיני בן 13. נקרא לו עלי. עלי קם בבוקר לפני בית הספר והולך להתאמן בקבוצת כדורגל שנקראת על שמה של דלאל מוגרבי, מחבלת פלסטינית האחראית לרצח 37 ישראלים באוטובוס. בבית הספר עלי משתתף באירוע שממומן על ידי משרד החינוך הפלסטיני לכבודו של בהאא עליאן, שרצח בשנה שעברה שלושה אזרחים ישראלים. בדרכו הביתה עלי מביט בפסל עצום שהקימה הרשות הפלסטינית לפני שבועות אחדים לכבוד אבו סוכר, שפוצץ מטען במרכז ירושלים והרג 15 ישראלים.
+Of course, like all societies Israel has fringe elements. But it's our response to those fringe elements, it's our response to those fringe elements that makes all the difference.
 
-כשעלי מגיע הביתה, הוא מדליק את הטלוויזיה ורואה ראיון עם בכיר פלסטיני, ג׳יבריל רג׳וב, שאומר שאילו הייתה לו פצצה גרעינית, היה מפוצץ אותה מעל ישראל עוד באותו יום. לאחר מכן עלי מדליק את הרדיו ושומע את יועצו של אבו מאזן, סולטן אבו אל-עינין, קורא לפלסטינים — ואני מצטט — "לשסף את גרונותיהם של ישראלים בכל מקום שתמצאו אותם". עלי בודק את הפייסבוק ורואה פוסט של תנועת פת״ח של אבו מאזן, שבו הטבח ב-11 ספורטאים ישראלים באולימפיאדת מינכן מתואר כ"מעשה גבורה". ביוטיוב עלי צופה בקטע שבו אבו מאזן עצמו אומר: "אנחנו מברכים על כל טיפת דם שנשפכת בירושלים." ציטוט ישיר.
+Take the tragic case of Ahmed Dawabsha. I'll never forget visiting Ahmed in the hospital just hours after he was attacked. A little boy, really a baby, he was badly burned. Ahmed was the victim of a horrible terrorist act perpetrated by Jews. He lay bandaged and unconscious as Israeli doctors worked around the clock to save him.
 
-במהלך ארוחת הערב עלי שואל את אמו מה יקרה אם יהרוג יהודי וייכנס לכלא ישראלי. הנה מה שהיא מספרת לו: היא אומרת לו שהרשות הפלסטינית תשלם לו אלפי דולרים בכל חודש. למעשה, היא אומרת לו שככל שיהרוג יותר יהודים — כך יקבל יותר כסף. וכאשר ישתחרר מהכלא, מובטחת לו עבודה ברשות הפלסטינית.
+No words can bring comfort to this boy or to his family. Still, as I stood by his bedside I told his uncle, "This is not our people. This is not our way." I then ordered extraordinary measures to bring Ahmed's assailants to justice and today the Jewish citizens of Israel accused of attacking the Dawabsha family are in jail awaiting trial.
 
-גבירותיי ורבותיי,
+Now, for some, this story shows that both sides have their extremists and both sides are equally responsible for this seemingly endless conflict.
 
-כל זה אמיתי. זה קורה כל יום, כל הזמן. למרבה הצער, עלי מייצג מאות אלפי ילדים פלסטינים שמוסתים לשנאה בכל רגע, בכל שעה.
+But what Ahmed's story actually proves is the very opposite. It illustrates the profound difference between our two societies, because while Israeli leaders condemn terrorists, all terrorists, Arabs and Jews alike, Palestinian leaders celebrate terrorists. While Israel jails the handful of Jewish terrorists among us, the Palestinians pay thousands of terrorists among them.
 
-זו התעללות בילדים.
+So I call on President Abbas: you have a choice to make. You can continue to stoke hatred as you did today or you can finally confront hatred and work with me to establish peace between our two peoples.
 
-דמיינו את ילדכם עובר שטיפת מוח כזו. דמיינו כמה קשה לילד או לילדה להשתחרר מתרבות השנאה הזו. יש שמצליחים — אבל רבים מדי לא. איך אפשר לצפות מפלסטינים צעירים לתמוך בשלום, כאשר מנהיגיהם מרעילים את מחשבתם נגד השלום?
+Ladies and Gentlemen,
 
-אנחנו בישראל לא עושים זאת. אנחנו מחנכים את ילדינו לשלום. למעשה, ממשלתי השיקה לאחרונה תוכנית ניסיונית להפוך את לימודי הערבית לחובה עבור ילדים יהודים, כדי שנוכל להבין זה את זה טוב יותר, כדי שנוכל לחיות יחד זה לצד זה בשלום.
+I hear the buzz. I know that many of you have given up on peace. But I want you to know – I have not given up on peace. I remain committed to a vision of peace based on two states for two peoples. I believe as never before that changes taking place in the Arab world today offer a unique opportunity to advance that peace.
 
-כמובן, כמו בכל חברה, גם בישראל יש גורמי שוליים. אבל התגובה שלנו לאותם גורמי שוליים היא שעושה את כל ההבדל.
+I commend President el-Sisi of Egypt for his efforts to advance peace and stability in our region. Israel welcomes the spirit of the Arab peace initiative and welcomes a dialogue with Arab states to advance a broader peace. I believe that for that broader peace to be fully achieved the Palestinians have to be part of it. I'm ready to begin negotiations to achieve this today – not tomorrow, not next week, today.
 
-קחו את המקרה הטרגי של אחמד דוואבשה. לעולם לא אשכח את ביקורי אצל אחמד בבית החולים שעות ספורות לאחר שהותקף. ילד קטן, ממש תינוק, שנכווה קשות. אחמד היה קורבן של מעשה טרור נורא שבוצע על ידי יהודים. הוא שכב חבוש ומחוסר הכרה, בעוד רופאים ישראלים עובדים מסביב לשעון כדי להציל אותו.
+President Abbas spoke here an hour ago. Wouldn't it be better if instead of speaking past each other we were speaking to one another? President Abbas, instead of railing against Israel at the United Nations in New York, I invite you to speak to the Israeli people at the Knesset in Jerusalem. And I would gladly come to speak to the Palestinian parliament in Ramallah.
 
-שום מילים אינן יכולות לנחם את הילד הזה או את משפחתו. ובכל זאת, כאשר עמדתי ליד מיטתו, אמרתי לדודו: "זה לא העם שלנו. זו לא דרכנו." לאחר מכן הוריתי לנקוט צעדים יוצאי דופן כדי להביא את תוקפיו של אחמד לדין, וכיום האזרחים היהודים של ישראל המואשמים בתקיפת משפחת דוואבשה נמצאים בכלא וממתינים למשפט.
+Ladies and Gentlemen,
 
-יש מי שרואים בסיפור הזה הוכחה לכך שלשני הצדדים יש קיצוניים וששני הצדדים נושאים באחריות שווה לסכסוך האינסופי לכאורה. אבל מה שסיפורו של אחמד מוכיח למעשה הוא בדיוק ההפך.
+While Israel seeks peace with all our neighbors, we also know that peace has no greater enemy than the forces of militant Islam. The bloody trail of this fanaticism runs through all the continents represented here. It runs through Paris and Nice, Brussels and Baghdad, Tel Aviv and Jerusalem, Minnesota and New York, from Sydney to San Bernardino. So many have suffered its savagery: Christian and Jews, women and gays, Yazidis and Kurds and many, many others.
 
-הוא ממחיש את ההבדל העמוק בין שתי החברות שלנו. משום שבעוד שמנהיגי ישראל מגנים טרוריסטים — את כולם, ערבים ויהודים כאחד — המנהיגים הפלסטינים מהללים טרוריסטים. בעוד שישראל כולאת את קומץ הטרוריסטים היהודים שבתוכה, הפלסטינים משלמים לאלפי טרוריסטים שבקרבם.
+Yet the heaviest price, the heaviest price of all has been paid by innocent Muslims. Hundreds of thousands unmercifully slaughtered. Millions turned into desperate refugees, tens of millions brutally subjugated. The defeat of militant Islam will thus be a victory for all humanity, but it would especially be a victory for those many Muslims who seek a life without fear, a life of peace, a life of hope.
 
-ולכן אני קורא לנשיא עבאס: יש לך בחירה לעשות. אתה יכול להמשיך ללבות שנאה, כפי שעשית היום, או שאתה יכול סוף סוף להתמודד עם השנאה ולעבוד איתי כדי לבסס שלום בין שני עמינו.
+But to defeat the forces of militant Islam, we must fight them relentlessly. We must fight them in the real world. We must fight them in the virtual world. We must dismantle their networks, disrupt their funding, discredit their ideology. We can defeat them and we will defeat them. Medievalism is no match for modernity. Hope is stronger than hate, freedom mightier than fear.
 
-גבירותיי ורבותיי,
+We can do this.
 
-אני שומע את הרחש. אני יודע שרבים מכם כבר ויתרו על השלום. אבל אני רוצה שתדעו — אני לא ויתרתי על השלום. אני נותר מחויב לחזון של שלום המבוסס על שתי מדינות לשני עמים. אני מאמין, יותר מאי פעם, שהשינויים המתרחשים היום בעולם הערבי מציעים הזדמנות ייחודית לקדם את השלום הזה.
+Ladies and Gentlemen,
 
-אני משבח את הנשיא א-סיסי ממצרים על מאמציו לקדם שלום ויציבות באזורנו. ישראל מקדמת בברכה את רוחה של יוזמת השלום הערבית ומקדמת בברכה דיאלוג עם מדינות ערב כדי לקדם שלום רחב יותר. אני מאמין שכדי שהשלום הרחב הזה יושג במלואו, הפלסטינים חייבים להיות חלק ממנו. אני מוכן להתחיל במשא ומתן כדי להשיג זאת היום — לא מחר, לא בשבוע הבא, היום.
+Israel fights this fateful battle against the forces of militant Islam every day. We keep our borders safe from ISIS, we prevent the smuggling of game-changing weapons to Hezbollah in Lebanon, we thwart Palestinian terror attacks in Judea and Samaria, the West Bank, and we deter missile attacks from Hamas-controlled Gaza.
 
-הנשיא עבאס דיבר כאן לפני שעה. האם לא היה טוב יותר שבמקום שנדבר זה מעבר לכתפו של זה — נדבר זה עם זה? הנשיא עבאס, במקום לצאת נגד ישראל באו״ם בניו יורק, אני מזמין אותך לדבר אל העם הישראלי בכנסת בירושלים. ואני אבוא בשמחה לדבר אל הפרלמנט הפלסטיני ברמאללה.
+That's the same Hamas terror organization that cruelly, unbelievably cruelly refuses to return three of our citizens and the bodies of our fallen soldiers, Oron Shaul and Hadar Goldin. Hadar Goldin's parents, Leah and Simcha Goldin, are here with us today. They have one request – to bury their beloved son in Israel. All they ask for is one simple thing – to be able to visit the grave of their fallen son Hadar in Israel. Hamas refuses. They couldn't care less.
 
-גבירותיי ורבותיי,
+I implore you to stand with them, with us, with all that's decent in our world against the inhumanity of Hamas – all that is indecent and barbaric. Hamas breaks every humanitarian rule in the book, throw the book at them.
 
-בעוד ישראל מבקשת שלום עם כל שכנינו, אנחנו יודעים גם שלשלום אין אויב גדול יותר מכוחות האסלאם המיליטנטי. שובל הדם של הקנאות הזו עובר בכל היבשות המיוצגות כאן. הוא עובר בפריז ובניס, בבריסל ובבגדאד, בתל אביב ובירושלים, במינסוטה ובניו יורק, מסידני ועד סן ברנרדינו. רבים כל כך סבלו מן האכזריות הזו: נוצרים ויהודים, נשים והומואים, יזידים וכורדים ורבים רבים אחרים.
+Ladies and Gentlemen,
 
-אך את המחיר הכבד ביותר — הכבד מכול — שילמו מוסלמים חפים מפשע. מאות אלפים נטבחו ללא רחם. מיליונים הפכו לפליטים מיואשים, עשרות מיליונים שועבדו באכזריות. התבוסה של האסלאם המיליטנטי תהיה לכן ניצחון לאנושות כולה, אך במיוחד ניצחון עבור אותם מוסלמים רבים המבקשים לחיות חיים ללא פחד, חיים של שלום, חיים של תקווה.
+The greatest threat to my country, to our region, and ultimately to our world remains the militant Islamic regime of Iran. Iran openly seeks Israel's annihilation. It threatens countries across the Middle East, it sponsors terror worldwide.
 
-אבל כדי להביס את כוחות האסלאם המיליטנטי, עלינו להילחם בהם ללא הרף. עלינו להילחם בהם בעולם האמיתי. עלינו להילחם בהם בעולם הווירטואלי. עלינו לפרק את הרשתות שלהם, לשבש את המימון שלהם, לערער את האידיאולוגיה שלהם. אנחנו יכולים להביס אותם — ואנחנו נביס אותם. ימי הביניים אינם יריב למודרנה. התקווה חזקה מן השנאה, והחירות חזקה מן הפחד.
+This year, Iran has fired ballistic missiles in direct defiance of Security Council Resolutions. It has expended its aggression in Iraq, in Syria, in Yemen. Iran, the world's foremost sponsor of terrorism continued to build its global terror network. That terror network now spans five continents.
 
-אנחנו יכולים לעשות זאת.
+So my point to you is this: The threat Iran poses to all of us is not behind us, it's before us. In the coming years, there must be a sustained and united effort to push back against Iran's aggression and Iran's terror. With the nuclear constraints on Iran one year closer to being removed, let me be clear: Israel will not allow the terrorist regime in Iran to develop nuclear weapons – not now, not in a decade, not ever.
 
-גבירותיי ורבותיי,
+Ladies and Gentlemen,
 
-ישראל נלחמת מדי יום במערכה הגורלית הזו נגד כוחות האסלאם המיליטנטי. אנחנו שומרים על גבולותינו מפני דאעש, מונעים הברחת נשק משנה-משחק לחיזבאללה בלבנון, מסכלים פיגועי טרור פלסטיניים ביהודה ושומרון, ומרתיעים מתקפות טילים מעזה שבשליטת חמאס.
+I stand before you today at a time when Israel's former president, Shimon Peres, is fighting for his life. Shimon is one of Israel's founding fathers, one of its boldest statesmen, one of its most respected leaders. I know you will all join me and join all the people of Israel in wishing him refuah shlemah Shimon, a speedy recovery.
 
-זהו אותו ארגון הטרור חמאס, שמסרב באכזריות בלתי נתפסת להחזיר שלושה מאזרחינו ואת גופות חיילינו הנופלים, אורון שאול והדר גולדין. הוריו של הדר גולדין, לאה ושמחה גולדין, נמצאים כאן איתנו היום. יש להם בקשה אחת בלבד — לקבור את בנם האהוב בישראל. כל מה שהם מבקשים הוא דבר פשוט אחד — שיוכלו לבקר בקברו של בנם הדר בישראל. חמאס מסרב. לא אכפת לו.
+I've always admired Shimon's boundless optimism, and like him, I too am filled with hope. I am filled with hope because Israel is capable of defending itself by itself against any threat. I am filled with hope because the valor of our fighting men and women is second to none. I am filled with hope because I know the forces of civilization will ultimately triumph over the forces of terror. I am filled with hope because in the age of innovation, Israel – the innovation nation – is thriving as never before. I am filled with hope because Israel works tirelessly to advance equality and opportunity for all its citizens: Jews, Muslims, Christians, Druze, everyone. And I am filled with hope because despite all the naysayers, I believe that in the years ahead, Israel will forge a lasting peace with all our neighbors.
 
-אני מפציר בכם לעמוד לצידם, לצידנו, ולצידו של כל מה שהגון בעולמנו מול חוסר האנושיות של חמאס — מול כל מה שאינו הגון וכל מה שברברי. חמאס מפר כל כלל הומניטרי בספר — הפנו כלפיו את הספר כולו.
+Ladies and Gentlemen,
 
-גבירותיי ורבותיי,
+I am hopeful about what Israel can accomplish because I've seen what Israel has accomplished. In 1948, the year of Israel's independence, our population was 800,000. Our main export was oranges. People said then we were too small, too weak, too isolated, too demographically outnumbered to survive, let alone thrive. The skeptics were wrong about Israel then; the skeptics are wrong about Israel now.
 
-האיום הגדול ביותר על מדינתי, על אזורנו, ובסופו של דבר על העולם כולו, נותר המשטר האסלאמי המיליטנטי של איראן.
+Israel's population has grown tenfold, our economy fortyfold. Today our biggest export is technology – Israeli technology, which powers the world's computers, cellphones, cars and so much more.
 
-איראן מבקשת בגלוי את השמדת ישראל. היא מאיימת על מדינות ברחבי המזרח התיכון, ומממנת טרור ברחבי העולם.
+Ladies and Gentlemen,
 
-השנה איראן שיגרה טילים בליסטיים בניגוד ישיר להחלטות מועצת הביטחון. היא הרחיבה את תוקפנותה בעיראק, בסוריה ובתימן. איראן, נותנת החסות הגדולה בעולם לטרור, המשיכה לבנות את רשת הטרור הגלובלית שלה. הרשת הזו משתרעת כיום על פני חמש יבשות.
+The future belongs to those who innovate and this is why the future belongs to countries like Israel. Israel wants to be your partner in seizing that future, so I call on all of you: Cooperate with Israel, embrace Israel, dream with Israel. Dream of the future that we can build together, a future of breathtaking progress, a future of security, prosperity and peace, a future of hope for all humanity, a future where even at the UN, even in this hall, Israel will finally, inevitably, take its rightful place among the nations.
 
-ולכן הנקודה שלי אליכם היא זו: האיום שאיראן מציבה לכולנו אינו מאחורינו — הוא לפנינו. בשנים הקרובות חייב להיות מאמץ מתמשך ומאוחד להדוף את התוקפנות והטרור של איראן. כאשר הגבלות הגרעין על איראן מתקרבות להסרה בעוד שנה אחת נוספת, הרשו לי להיות ברור: ישראל לא תאפשר למשטר הטרור באיראן לפתח נשק גרעיני — לא עכשיו, לא בעוד עשור, ולא לעולם.
+Thank you.
 
-גבירותיי ורבותיי,
 
-אני עומד בפניכם היום בזמן שנשיאה לשעבר של ישראל, שמעון פרס, נאבק על חייו. שמעון הוא מאבותיה המייסדים של ישראל, אחד המדינאים הנועזים שלה ואחד ממנהיגיה המכובדים ביותר. אני יודע שכולכם תצטרפו אליי ואל כל עם ישראל באיחולי רפואה שלמה לשמעון — החלמה מהירה.
 
-תמיד הערצתי את האופטימיות הבלתי מוגבלת של שמעון, וכמוהו גם אני מלא תקווה. אני מלא תקווה משום שישראל מסוגלת להגן על עצמה בכוחות עצמה מפני כל איום. אני מלא תקווה משום שאומץ לבם של חיילינו וחיילותינו הוא מן הגבוהים בעולם. אני מלא תקווה משום שאני יודע שכוחות הציוויליזציה ינצחו בסופו של דבר את כוחות הטרור. אני מלא תקווה משום שבעידן החדשנות, ישראל — אומת החדשנות — משגשגת כפי שלא שגשגה מעולם. אני מלא תקווה משום שישראל פועלת ללא לאות לקדם שוויון והזדמנויות לכל אזרחיה: יהודים, מוסלמים, נוצרים, דרוזים — כולם. ואני מלא תקווה משום שלמרות כל הספקנים, אני מאמין שבשנים הבאות ישראל תכונן שלום בר-קיימא עם כל שכנינו.
 
-גבירותיי ורבותיי,
 
-אני מלא תקווה לגבי מה שישראל יכולה להשיג, משום שראיתי מה ישראל כבר השיגה. בשנת 1948, שנת העצמאות של ישראל, מנתה אוכלוסייתנו 800,000 נפש. הייצוא העיקרי שלנו היה תפוזים. אז אמרו שאנחנו קטנים מדי, חלשים מדי, מבודדים מדי ונחותים מדי מבחינה דמוגרפית מכדי לשרוד — שלא לדבר על לשגשג. הספקנים טעו לגבי ישראל אז; הספקנים טועים לגבי ישראל גם עכשיו.
 
-אוכלוסיית ישראל גדלה פי עשרה, והכלכלה שלנו גדלה פי ארבעים. כיום הייצוא הגדול ביותר שלנו הוא טכנולוגיה — טכנולוגיה ישראלית, שמניעה את המחשבים, הטלפונים הניידים, המכוניות ועוד אינספור דברים ברחבי העולם.
 
-גבירותיי ורבותיי,
 
-העתיד שייך למי שמחדש — ולכן העתיד שייך למדינות כמו ישראל.
 
-ישראל רוצה להיות השותפה שלכם בתפיסת העתיד הזה, ולכן אני קורא לכולכם: שתפו פעולה עם ישראל, אמצו את ישראל, חלמו עם ישראל.
 
-חלמו על העתיד שנוכל לבנות יחד — עתיד של קִדמה מסחררת, עתיד של ביטחון, שגשוג ושלום, עתיד של תקווה לכל האנושות, עתיד שבו גם באו״ם, גם באולם הזה, ישראל סוף סוף, ובהכרח, תתפוס את מקומה הראוי בין האומות.`
+
+
+
+
+
+
+
+
+
+
+PAGE`
   },
   {
     id: "netanyahu-unga-2017",
-    title: 'נאום האו"ם 2017',
+    title: 'UN Speech 2017',
     speaker: "בנימין נתניהו",
     date: "2017-09-19",
-    dir: "rtl",
-    text: `אדוני הנשיא, גבירותיי ורבותיי,
-
-אנחנו בעיצומה של מהפכה גדולה — מהפכה במעמדה של ישראל בין אומות העולם. הדבר מתרחש משום שכל כך הרבה מדינות ברחבי העולם התעוררו סוף־סוף למה שישראל יכולה לעשות למענן. המדינות הללו מכירות כיום במה שמשקיעים מבריקים כמו וורן באפט וחברות ענק כמו גוגל ואינטל כבר הכירו וידעו במשך שנים: שישראל היא אומת החדשנות — המקום שבו נוצרת הטכנולוגיה המתקדמת ביותר בחקלאות, במים, בסייבר, ברפואה, בכלי רכב אוטונומיים — כל מה שתבחרו, יש לנו את זה.
-
-המדינות הללו מכירות כיום גם ביכולות יוצאות הדופן של ישראל במאבק בטרור. בשנים האחרונות ישראל סיפקה מודיעין שמנע עשרות פיגועי טרור גדולים ברחבי העולם. הצַלנו אינספור חיים. אולי אינכם יודעים זאת, אבל ממשלותיכם יודעות זאת, והן משתפות פעולה באופן הדוק עם ישראל כדי לשמור על ביטחון מדינותיכם ואזרחיכם.
-
-עמדתי כאן על הדוכן הזה בשנה שעברה ודיברתי על השינוי העמוק במעמדה של ישראל בעולם — ותראו מה קרה מאז, בתוך שנה אחת בלבד: מאות נשיאים, ראשי ממשלה, שרי חוץ ומנהיגים אחרים ביקרו בישראל, רבים מהם בפעם הראשונה.
-
-מבין כל הביקורים הללו, שניים היו היסטוריים במיוחד.
-
-בחודש מאי, הנשיא טראמפ הפך לנשיא האמריקני הראשון שכלל את ישראל בביקורו הראשון מחוץ לארצות הברית. הנשיא טראמפ עמד ליד הכותל המערבי, למרגלות הר הבית, המקום שבו עמדו מקדשי העם היהודי במשך כמעט אלף שנים. כאשר הנשיא נגע באבנים העתיקות הללו — הוא נגע בליבנו לעד.
-
-בחודש יולי, ראש ממשלת הודו מודי הפך לראש הממשלה ההודי הראשון שביקר בישראל. אולי ראיתם את התמונות. היינו בחוף בחדרה. נסענו יחד בג׳יפ שהיה מצויד במתקן התפלה נייד שהמציא יזם ישראלי מצליח. חלצנו נעליים, נכנסנו למימי הים התיכון ושתינו מי ים שהותפלו רק דקות קודם לכן. דמיינו יחד את האפשרויות האינסופיות עבור ישראל, עבור הודו, עבור האנושות כולה.
-
-בשנה האחרונה ישראל אירחה מנהיגים רבים כל כך מהעולם, והיה לי הכבוד לייצג את מדינתי בשש יבשות שונות. שנה אחת. שש יבשות.
-
-נסעתי לאפריקה, שם ראיתי יזמים ישראלים מגדילים יבולים חקלאיים, הופכים אוויר למים ונלחמים באיידס.
-
-נסעתי לאסיה, שם העמקנו את יחסינו עם סין וסינגפור, והרחבנו את שיתוף הפעולה עם ידידינו המוסלמים באזרבייג׳ן ובקזחסטן.
-
-נסעתי לאירופה, שם בלונדון ובפריז, בסלוניקי ובבודפשט, חיזקנו את קשרי הביטחון והכלכלה שלנו.
-
-נסעתי לאוסטרליה והפכתי לראש הממשלה הישראלי הראשון שביקר בבעלות בריתנו הגדולות שם.
-
-ורק בשבוע שעבר נסעתי לדרום אמריקה, ביקרתי בארגנטינה ובקולומביה, ולאחר מכן במקסיקו — והפכתי, אם תאמינו או לא, לראש הממשלה הישראלי הראשון שביקר באמריקה הלטינית.
-
-לאחר שבעים שנה, העולם מחבק את ישראל — וישראל מחבקת את העולם.
-
-שנה אחת. שש יבשות.
-
-זה נכון — עדיין לא ביקרתי באנטארקטיקה. אבל יום אחד אני רוצה להגיע גם לשם, כי שמעתי שגם הפינגווינים הם תומכים נלהבים של ישראל. אתם צוחקים, אבל לפינגווינים אין קושי להבחין בין שחור ללבן — בין נכון ללא נכון.
-
-למרבה הצער, כשמדובר בהחלטות האו״ם לגבי ישראל, ההבחנה הפשוטה הזו נעדרת לעיתים קרובות.
-
-היא נעדרה בדצמבר האחרון כאשר מועצת הביטחון קיבלה החלטה אנטי־ישראלית שפגעה במאמצי השלום.
-
-היא נעדרה גם במאי האחרון, כאשר ארגון הבריאות העולמי אימץ — תקשיבו טוב — החלטה ביוזמת סוריה שמבקרת את ישראל על מצב הבריאות ברמת הגולן.
-
-כפי שאמר הטניסאי ג׳ון מקנרו:
-"You cannot be serious!" — אתם לא יכולים להיות רציניים!
-
-זה פשוט מגוחך.
-
-סוריה הפציצה בחביות נפץ, הרעיבה, השתמשה בגז ורצחה מאות אלפי אזרחים שלה ופצעה מיליונים נוספים — בזמן שישראל העניקה טיפול רפואי מציל חיים לאלפי קורבנות סורים של אותה זוועה.
-
-ובכל זאת — את מי מבקר ארגון הבריאות העולמי?
-
-את ישראל.
-
-אז האם אין גבול לאבסורדים של האו״ם כשמדובר בישראל?
-
-כנראה שלא.
-
-כי ביולי הכריז אונסק״ו על מערת המכפלה בחברון כאתר מורשת עולמית פלסטיני.
-
-זה גרוע יותר מפייק ניוז — זו היסטוריה מזויפת.
-
-נכון שאברהם, אביהם של ישמעאל ויצחק, קבור שם. אבל גם יצחק, יעקב, שרה, רבקה ולאה — האבות והאימהות של העם היהודי — קבורים שם.
-
-את זה לא תמצאו בדו״ח האחרון של אונסק״ו.
-
-אבל אם תרצו, תוכלו לקרוא על כך בפרסום מעט יותר רציני — ספר שנקרא התנ״ך.
-
-אני ממליץ עליו מאוד.
-
-שמעתי שאפילו קיבל ארבעה וחצי כוכבים מתוך חמישה באמזון.
-
-וזה ספר נהדר.
-
-אני קורא בו כל שבוע.
-
-גבירותיי ורבותיי, רגע של רצינות.
-
-למרות האבסורדים הללו, למרות החזרות על האירועים הפארסיים הללו — יש שינוי. לאט אך בבטחה יש סימנים לשינוי חיובי, אפילו באו״ם.
-
-אדוני המזכ״ל, אני מעריך מאוד את הצהרתך שהכחשת זכותה של ישראל להתקיים היא אנטישמיות — פשוטו כמשמעו.
-
-זה חשוב, משום שבמשך זמן רב מוקד האנטישמיות העולמית היה כאן, באו״ם.
-
-ואני בטוח לחלוטין שהמהפכה ביחסי ישראל עם מדינות העולם תשתקף בסופו של דבר גם באולם הזה.
-
-אני אומר זאת משום שגם בעמדתם של כמה מידידינו המרכזיים יש שינוי ברור.
-
-בזכות תמיכתו הברורה של הנשיא טראמפ בישראל באו״ם — השינוי החיובי הזה צובר תאוצה.
-
-אז תודה לך הנשיא טראמפ.
-
-ותודה לך השגרירה ניקי היילי על כך שאמרת את האמת על ישראל.
-
-אבל כאן באו״ם עלינו לומר גם את האמת על איראן, כפי שעשה הנשיא טראמפ הבוקר.
-
-הסכם הגרעין עם איראן הוא מבוכה.
-
-איראן מתחייבת להשמיד את מדינתי כמעט מדי יום.
-
-היא מנהלת מסע כיבושים ברחבי המזרח התיכון ומפתחת טילים בליסטיים המאיימים על העולם כולו.
-
-לפני שנתיים הסברתי כאן שהסכם הגרעין כולל מה שנקרא סעיף שקיעה (Sunset Clause) — כלומר, בעוד כמה שנים ההגבלות על תוכנית הגרעין של איראן יוסרו אוטומטית.
-
-לא בגלל שינוי בהתנהגות איראן.
-לא בגלל הפחתה בטרור שלה.
-
-אלא פשוט בגלל שינוי בלוח השנה.
-
-ואז איראן תוכל להעשיר אורניום בקנה מידה תעשייתי ולהיות על סף ארסנל גרעיני עצום.
-
-ולכן אמרתי אז: הסכנה הגדולה אינה שאיראן תפר את ההסכם כדי לבנות פצצה אחת — אלא שתוכל לבנות פצצות רבות תוך שמירה על ההסכם.
-
-דמיינו מאות נשק גרעיני בידיה של אימפריה אסלאמית איראנית עם טילים שמסוגלים להגיע לכל מקום על פני כדור הארץ.
-
-לכן המדיניות של ישראל פשוטה:
-
-לשנות את ההסכם או לבטל אותו — Fix it or nix it.
-
-צריך לבטל את סעיף השקיעה, לפקח על כל אתר חשוד ולהטיל סנקציות על כל הפרה.
-
-מעבר לכך, צריך לעצור את פיתוח הטילים הבליסטיים של איראן ולהדוף את תוקפנותה באזור.
-
-איראן מתנהגת כמו נמר רעב ששוחרר מכלובו.
-
-מן הים הכספי ועד הים התיכון — מסך איראני יורד על המזרח התיכון.
-
-הוא מכסה את עיראק, סוריה, לבנון ומקומות נוספים — ומבטיח לכבות את האור של ישראל.
-
-המסר שלי היום למנהיג איראן, האייתוללה חמינאי, הוא פשוט:
-
-האור של ישראל לעולם לא יכבה.
-
-מי שמאיים להשמיד אותנו — מסכן את עצמו.
-
-ישראל תגן על עצמה בכל עוצמת נשקה ובכל כוח אמונתה.
-
-אבל יש לי גם מסר לעם האיראני:
-
-אתם לא אויבינו — אתם ידידינו.
-
-יום אחד תהיו חופשיים מן המשטר שמדכא אתכם.
-
-וכשיגיע יום החירות — הידידות בין עמינו העתיקים תשוב לפרוח.
-
-גבירותיי ורבותיי,
-
-ישראל מחויבת לשלום עם כל שכנותיה הערביות, כולל הפלסטינים.
-
-הברית בין ארצות הברית לישראל מעולם לא הייתה חזקה יותר.
-
-השנה אנחנו מציינים גם אבני דרך היסטוריות:
-
-לפני 120 שנה כינס הרצל את הקונגרס הציוני הראשון.
-לפני 100 שנה הצהרת בלפור הכירה בזכות העם היהודי לבית לאומי.
-לפני 70 שנה האו״ם תמך בהקמת מדינה יהודית.
-ולפני 50 שנה איחדנו את ירושלים.
-
-הרצל היה משה המודרני שלנו — וחלומו התגשם.
-
-חזרנו לארץ המובטחת, החיינו את שפתנו ובנינו דמוקרטיה מודרנית ומשגשגת.
-
-מחר בערב יחגגו יהודים בכל העולם את ראש השנה.
-
-זה זמן של התבוננות — להביט לאחור בפליאה על תחיית עמנו, ולהביט קדימה בגאווה על התרומה הגדולה שישראל תמשיך להביא לעולם.
-
-כפי שאמר הנביא ישעיהו:
-
-"ונתתיך לאור גויים, להיות ישועתי עד קצה הארץ."
-
-והיום, 2,700 שנה אחרי דבריו — ישראל הופכת לכוח עולה בין האומות.
-
-ואורה מאיר על פני היבשות ומביא תקווה וישועה עד קצה הארץ.
-
-שנה טובה מישראל. תודה רבה.`
+    dir: "ltr",
+    text: `Mr. President,
+Ladies and gentlemen,
+We’re in the midst of a great revolution, a revolution in Israel’s standing among the nations. This is happening because so many countries around the world have finally woken up to what Israel can do for them. Those countries now recognize what brilliant investors like Warren Buffet and great companies like Google and Intel, what they’ve recognized and known for years: That Israel is the innovation nation – the place for cutting-edge technology in agriculture, in water, in cyber security, in medicine, in autonomous vehicles – you name it, we’ve got it.
+Those countries now also recognize Israel’s exceptional capabilities in fighting terrorism. In recent years, Israel has provided intelligence that has prevented dozens of major terrorist attacks around the world. We have saved countless lives. You may not know this, but your governments do, and they are working closely together with Israel to keep your countries safe and your citizens safe.
+I stood here last year on this podium and I spoke about this profound change in Israel’s standing in the world and just look at what has happened since in one year: Hundreds of presidents, prime ministers, foreign ministers and other leaders have visited Israel, many for the first time.
+Of these many visits, two were truly historic. In May, President Trump became the first American president to include Israel in his first visit abroad. President Trump stood at the Western Wall, at the foot of the Temple Mount, where the Jewish people’s temples stood for nearly a thousand years. When the President touched those ancient stones, he touched our hearts forever.
+In July, Prime Minister Modi became the first Indian Prime Minister to visit Israel. You may have seen the pictures. We were on a beach in Hadera. We rode together in a jeep outfitted with a portable desalination device that some thriving Israeli entrepreneur invented. We took off our shoes, waded into the Mediterranean and drank seawater that had been purified only a few minutes earlier. We imagined the endless possibilities for Israel, India, for all humanity.
+In the past year, Israel hosted so many world leaders, and I had the honor of representing my country on six different continents. One year.
+Six continents.
+I went to Africa, where I saw Israeli innovators increasing crop yields, turning air into water, fighting AIDS.
+I went to Asia, where we deepened our relations with China and with Singapore, and expanded our cooperation with our Muslim friends in Azerbaijan and Kazakhstan.
+I went to Europe, where in London and Paris, Thessaloniki and Budapest, we enhanced our security and economic ties.
+I went to Australia, becoming the first Israeli prime minister to visit our great allies Down Under.
+And just last week, I went to South America, visiting Argentina and Colombia, and then I went on to Mexico, becoming, if you can believe it, the first Israeli prime minister ever to visit Latin America.
+After 70 years, the world is embracing Israel, and Israel is embracing the world. One year. Six continents. Now, it’s true. I haven’t yet visited Antarctica, but one day I want to go there too because I’ve heard that penguins are also enthusiastic supporters of Israel. You laugh, but penguins have no difficulty recognizing that some things are black and white, are right and wrong.
+Unfortunately, when it comes to UN decisions about Israel, that simple recognition is too often absent. It was absent last December when the Security Council passed an anti-Israel resolution that set back the cause of peace.	It was absent last May, when the World Health Organization adopted – you have to listen to this: the World Health Organization adopted a Syrian-sponsored resolution that criticized Israel for health conditions on the Golan Heights.
+As the great John McEnroe would say, “You can-not be serious!” I mean, this is preposterous.
+Syria has barrel bombed, starved, gassed and murdered hundreds of thousands of its own citizens and wounded millions more, while Israel has provided lifesaving medical care to thousands of Syrian victims of that very same carnage. Yet who does the World Health Organization criticize? Israel.
+So is there no limit to the UN’s absurdities when it comes to Israel?
+Well, apparently not, because in July, UNESCO declared the Tomb of the Patriarchs in Hebron a Palestinian World Heritage site. That’s worse than fake news. That’s fake history. Mind you, it’s true that Abraham, the father of both Ishmael and Isaac, is buried there, but so too are Isaac, Jacob, Sarah, Rebecca – Sarah is a Jewish name, by the way – and Leah, who just happen to be patriarchs and matriarchs of the Jewish people. You won’t read about that in the latest UNESCO report.
+But if you want to, you can read about that in a somewhat weightier publication – it’s called the Bible. I highly recommend it. I hear it even got 4 ½ out of 5 stars on Amazon. And it’s a great read. I read it every week.
+Ladies and gentlemen,
+A moment to be serious: Despite the absurdities, despite the repetition of these farcical events, there is change. Slowly but surely, there are signs of positive change even at the United Nations.
+Mr. Secretary General, I very much appreciate your statement that denying Israel’s right to exist is anti-Semitism, pure and simple. Now, that’s important, because for too long the epicenter of global anti-Semitism has been right here at the UN. And while it may take many years, I am absolutely confident that the revolution in Israel’s ties with individual nations will ultimately be reflected in this hall of nations. I say that because there is also a marked change in the position of some of our key friends.
+Thanks to President Trump’s unequivocal support for Israel in this body, that positive change is gathering force. So, thank you, President Trump. Thank you for supporting Israel at the UN. And thank you for your support, Ambassador Nikki Haley. Thank you for speaking the truth about Israel.
+But, ladies and gentlemen, here at the UN, we must also speak the truth about Iran, as President Trump did so powerfully this morning. Now, you know I’ve been ambassador to the UN and I’m  a long-serving Israeli Prime Minister, so I’ve listened to countless speeches in this hall, but I can say this: none were bolder, none more courageous and forthright than the one delivered by President Trump today.
+President Trump rightly called the nuclear deal with Iran, he called it an embarrassment. Well, I couldn’t agree with him more. And here’s why: Iran vows to destroy my country every day, including by its chief of staff the other day. Iran is conducting a campaign of conquest across the Middle East and Iran is developing ballistic missiles to threaten the entire world.
+Two years ago, I stood here and explained why the Iranian nuclear deal not only doesn’t block Iran’s path to the bomb, Iran’s nuclear program has what’s called a sunset clause. Let me explain what that term means: It means that in a few years, those restrictions will be automatically removed – not by a change in Iran’s behavior, not by a lessening of its terror or its aggression. They’ll just be removed by a mere change in the calendar. And I warned that when that sunset comes, a dark shadow will be cast over the entire Middle East and the world, because Iran will then be free to enrich uranium on an industrial scale, placing it on the threshold of a massive arsenal of nuclear weapons.
+That’s why I said two years ago that the greater danger is not that Iran will rush to
+a single bomb by breaking the deal, but that Iran will be able to build many bombs by keeping the deal.
+Now, in the last few months, we’ve all seen how dangerous even a few nuclear weapons can be in the hands of a small rogue regime.
+Now imagine the danger of hundreds of nuclear weapons in the hands of a vast Iranian Islamist empire, with the missiles to deliver them anywhere on earth.
+I know there are those who still defend the dangerous deal with Iran, arguing that it will block Iran’s path to the bomb.
+Ladies and gentlemen,
+That’s exactly what they said about the nuclear deal with North Korea, and we all know how that turned out. Unfortunately, if nothing changes, this deal will turn out exactly the same way.
+That’s why Israel’s policy regarding the nuclear deal with Iran is very simple: Change it or cancel it, fix it or nix it. Nixing the deal means restoring massive pressure on Iran, including crippling sanctions, until Iran fully dismantles its nuclear weapons capability. Fixing the deal requires many things, among them inspecting military and any other site that is suspect, and penalizing Iran for every violation. But above all, fixing the deal means getting rid of the sunset clause.
+And beyond fixing this bad deal, we must also stop Iran’s development of ballistic missiles and roll back its growing aggression in the region. I remember we had these debates. As you know, I took a fairly active role in them. And many supporters of the nuclear deal naively believed that it would moderate Iran. It would make it a responsible member, so they said, of the international community.
+Well as you know, I strongly disagreed. I warned that when the sanctions on Iran would be removed, Iran would behave like a hungry tiger unleashed, not joining the community of nations, but devouring nations, one after the other. And that’s precisely what Iran is doing today.
+From the Caspian Sea to the Mediterranean, from Tehran to Tartus, an Iranian curtain is descending across the Middle East. Iran spreads this curtain of tyranny and terror over Iraq, Syria, Lebanon and elsewhere, and it pledges to extinguish the light of Israel.
+Today I have a simple message for Ayatollah Khamenei, the dictator of Iran: The light of Israel will never be extinguished.
+Those who threaten us with annihilation put themselves in mortal peril. Israel will defend itself with the full force of our arms and the full power of our convictions. We will act to prevent Iran from establishing permanent military bases in Syria for its air, sea and ground forces. We will act to prevent Iran from producing deadly weapons in Syria or in Lebanon for use against us. And we will act to prevent Iran from opening new terror fronts against Israel along our northern border.
+As long as Iran’s regime seeks the destruction of Israel, Iran will face no fiercer enemy than Israel.
+But I also have a message today for the people of Iran: You are not our enemy; you are our friends. Shomaah doosteh mah hasteed [You are our friends]. One day, my Iranian friends, you will be free from the evil regime that terrorizes you, hangs gays, jails journalists, tortures political prisoners, and shoots innocent women like Neda Sultan, leaving her choking on her own blood on the streets of Tehran. I have not forgotten Neda. I am sure you haven’t too.
+And when that day of liberation finally comes, the friendship between our two ancient peoples will surely flourish once again.
+Ladies and gentlemen,
+Israel knows that in confronting the Iranian regime, we are not alone. We stand shoulder to shoulder with those in the Arab world who share our hopes for a brighter future.	We’ve made peace with Jordan and Egypt, whose courageous President Abdel Fattah a-Sisi I met here last night. I appreciate President a-Sisi’s support for peace, and I hope to work closely with him and other leaders in the region to advance peace.
+Israel is committed to achieving peace with all our Arab neighbors, including the Palestinians. Yesterday President Trump and I discussed this, all of this, at great length. I appreciate President Trump’s leadership, his commitment to stand by Israel’s side, his commitment to advance a peaceful future for all. Together we can seize the opportunities for peace and together we can confront the great dangers of Iran.
+The remarkable alliance between the United States and Israel has never been stronger, never been deeper. Israel is deeply grateful for the support of the Trump administration, the American Congress and the American people.
+Ladies and gentlemen,
+In this year of historic visits and historic anniversaries, Israel has so much to be grateful for. A hundred and twenty years ago, Theodor Herzl convened the First Zionist Congress to transform our tragic past into a brilliant future by establishing the Jewish state. One hundred years ago, the Balfour Declaration advanced Herzl’s vision by recognizing the right of the Jewish people to a national home in our ancestral homeland. Seventy years ago, the United Nations further advanced that vision by adopting a resolution supporting the establishment of a Jewish state. And 50 years ago, we reunited our eternal capital Jerusalem, achieving a miraculous victory against those who sought to destroy our state.
+Theodor Herzl was our modern Moses – and his dream has come true. We’ve returned to the Promised Land, revived our language, ingathered our exiles and built a modern, thriving democracy.
+Tomorrow evening, Jews around the world will celebrate Rosh Hashanah, the beginning of our new year. It’s time of reflection, and we look back with wonder at the miraculous rebirth of our nation, and we look ahead with pride to the remarkable contributions Israel will continue to make to all nations.
+You look around you and you will see those contributions every day – in the food you eat, the water you drink, the medicines you take, the cars you drive, the cell phones you use, and in so many other ways that are transforming our world.
+You see it in the smile of an African mother in a remote village, who, thanks to an Israeli innovation, no longer must walk eight hours a day to bring water to her children.
+You see it in the eyes of an Arab child, who was flown to Israel to undergo a life-saving heart operation.
+And you see it in the faces of the people in earthquake-stricken Haiti and Nepal who were rescued from the rubble and given new life by Israeli doctors.
+As the prophet Isaiah said,
+“I have made you a light unto the nations, bringing salvation to the ends of the earth.”
+Today, 2,700 years after Isaiah spoke those prophetic words, Israel is becoming a rising power among the nations. And at long last, its light is shining across the continents, bringing hope and salvation to the ends of the earth.
+Happy New Year, Shana Tova from Israel. Thank you
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PAGE`
   },
   {
     id: "netanyahu-unga-2018",
-    title: 'נאום האו"ם 2018',
+    title: 'UN Speech 2018',
     speaker: "בנימין נתניהו",
     date: "2018-09-27",
-    dir: "rtl",
-    text: `נציגים נכבדים, גבירותי ורבותי,
-
-כשדיברתי כאן לפני שלוש שנים, ישראל עמדה לבד בין האומות. מתוך קרוב ל-200 מדינות שיושבות באולם הזה, רק ישראל התנגדה בפומבי לעסקה הגרעינית עם איראן. התנגדנו לה כיוון שהיא מאיימת על עתידנו, ואף על עצם הישרדותנו. התנגדנו לה כיוון שהעסקה סללה את דרכה של איראן לארסנל גרעיני ועל ידי הסרת הסנקציות, היא תדלקה את הקמפיין של איראן של קטל וכיבוש ברחבי המזרח התיכון. התנגדנו לה כיוון שהעסקה הייתה מבוססת על שקר בסיסי – שאיראן לא חותרת לפתח נשק גרעיני. ישראל חשפה את השקר הזה מוקדם יותר השנה.
-
-בפברואר האחרון, ישראל ביצעה פשיטה נועזת על ארכיון הגרעין הסודי של איראן. השגנו יותר ממאה אלף מסמכים וסרטונים שהוחבאו בכספות בבניין שנראה תמים למדי בלבה של טהראן. במאי, הצגתי סיכום קצר של מה שהשגנו לתקשורת העולמית. סיפקתי הוכחות חותכות לתכניותיה של איראן לבנות נשק גרעיני ותכניותיה להונות את הקהילה הבינלאומית.
-
-ישראל חלקה את המידע הזה והוכחות עוד יותר מרשיעות שמצאנו עם חברות ה-P5+1 ועם הסוכנות הבינלאומית לאנרגיה אטומית. חודשים חלפו, אך סבא"א לא נקטה בשום פעולה ולא שאלה את איראן אף שאלה, היא לא דרשה לבדוק שום אתר חדש שנחשף בארכיון הסודי הזה. בהינתן חוסר הפעולה הזה, החלטתי לחשוף היום דבר נוסף שחלקנו עם סבא"א ועם סוכנויות מודיעין אחדות. מה שאני עומד להגיד לא נאמר קודם באופן פומבי. היום, אני חושף בפעם הראשונה שלאיראן יש מתקן סודי נוסף בטהראן – מחסן גרעין סודי לאחסון כמויות אדירות של ציוד וחומרים מתוכנית הגרעין הסודית של איראן.
-
-במאי, חשפנו את האתר של ארכיון הגרעין הסודי של איראן. ממש כאן במחוז שוראבאד בטהראן. היום, אני חושף אתר שיש בו מתקן שני – מחסן הגרעין הסודי של איראן. הוא ממש כאן, במחוז טוקוזאבאד, שנמצא רק כ-3 מייל משם. בדומה לארכיון הגרעין, גם זה מתחם שנראה תמים למדי. המחסן הגרעיני נמצא ברחוב מאהר – 100 מטר מקאלישויי, העסק לניקוי השטיחים. אגב, שמעתי שהם עושים שם עבודה נהדרת בניקוי שטיחים. אבל אולי כעת הם הפכו להיות שטיחים רדיואקטיביים.
-
-מדינות בעלות יכולות לווייניות יבחינו בפעילות מוגברת בסמטת מאהר בימים ובשבועות הקרובים. הם יראו אנשים ממהרים הנה והנה – אלה נציגים איראניים שעובדים נמרצות על מנת לסיים את העבודה של פינוי האתר הזה. רק בחודש שעבר, הם פינו 15 קילוגרמים של חומרים רדיואקטיביים וכדי להסתיר את העדויות פיזרו אותם ברחבי טהראן. לנציגים האיראניים שפינו את האתר ההוא נותרה עבודה רבה כיוון שהיו להם לפחות 15 מכולות של ספינה מלאות בציוד וחומרים מהתחום הגרעיני שאוחסנו שם. כיוון שכל אחת מהמכולות האלה יכולה לשאת 20 טון של חומרים, משמעות הדבר שבאתר הזה היו כ-300 טון של ציוד וחומרים מהתחום הגרעיני.
-
-לכן, נציגים נכבדים, עליכם לשאול את עצמכם שאלה. מדוע איראן שמרה ארכיון גרעין סודי ומחסן גרעיני סודי? כיוון שכשדרום אפריקה ולוב ויתרו על תוכניות הגרעין שלהן, הדבר הראשון שהן עשו היה להרוס הן את הארכיון והן את הציוד והחומרים. הסיבה שאיראן לא הרסה את ארכיון הגרעין ואת המחסן הגרעיני שלה היא כיוון שהיא לא נטשה את מטרתה לפתח נשק גרעיני. למעשה, היא מתכננת להשתמש בשני האתרים האלה בעוד מספר שנים כשהזמן יתאים להשיג פצצה גרעינית.
-
-אולם, גבירותי ורבותי, היו בטוחים שזה לא יקרה. זה לא יקרה כיוון שישראל תמצא את מה שאיראן מסתירה. יש לי מסר לראש סבא"א, מר יוקיאה אמאנו. אני מאמין שהוא אדם טוב. אני מאמין שהוא רוצה לעשות את הדבר הנכון. מר אמאנו, עשה את הדבר הנכון. לך ובדוק את המחסן האטומי הזה מיידית לפני שהאיראנים יסיימו לפנות אותו.
-
-נציגים נכבדים, אתם זוכרים שהבטיחו לנו שניתן יהיה לערוך בדיקות בכל זמן ובכל מקום? בכל זמן ובכל מקום? מה לגבי בדיקות כאן ועכשיו? ומר אמאנו, בעודך עושה זאת, בדוק את האתרים האחרים שסיפרנו לך עליהם. אחת ולתמיד, אמור לעולם את האמת על איראן.
-
-יש לי גם מסר היום לעריצים בטהראן: ישראל יודעת מה אתם עושים וישראל יודעת איפה אתם עושים זאת. ישראל לעולם לא תאפשר למשטר שקורא להשמדתנו לפתח נשק גרעיני. לא כעת, לא בעוד עשר שנים, אף פעם לא.
-
-ישראל תעשה כל שעליה לעשות כדי להגן על עצמה מפני תוקפנותה של איראן. נמשיך לפעול נגדכם בסוריה. נפעל נגדכם בלבנון. נפעל נגדכם בעיראק. נפעל נגדכם בכל זמן ובכל מקום. עלינו לפעול כדי להגן על מדינתנו ולהגן על עמנו.
-
-נציגים נכבדים, לפני שלוש שנים, שבועות אחדים לאחר שעיסקת הגרעין הושלמה, שאלתי את השאלה הזו מעל הבמה הזו: האם מישהו מאמין ברצינות שהזרמת נשק וכסף לתאוקרטיה הקיצונית של איראן תרסן את התיאבון שלה לתוקפנות? אבל רבים מתומכי העיסקה האמינו בדיוק בזה. הם האמינו שהמשטר האיראני יהפוך למתון יותר ושוחר שלום. הם האמינו שאיראן תשתמש במיליארדי הדולרים שהיא קיבלה באמצעות הסרת הסנקציות כדי לשפר את חיי העם שלה. זה לא קרה. במקום זאת, איראן השתמשה בכסף כדי לתדלק את מכונת המלחמה האדירה שלה.
-
-רק בשנה החולפת, איראן תקפה כורדים בעיראק, שחטה סונים בסוריה, חימשה את חיזבאללה בלבנון, מימנה את חמאס בעזה, ירתה טילים לסעודיה, ואיימה על חופש הניווט במצרי הורמוז ובמצר באב אל-מנדב. איזה שלום. איזו מתינות. אם אתם חושבים שתוקפנותה של איראן מוגבלת למזרח התיכון בלבד, חישבו שנית. בחודש שעבר, נעצרו שני סוכנים איראנים בעוון תכנון פעולות טרור ממש כאן, בארצות הברית. ולפני מספר שבועות, נעצרו סוכנים איראנים בעוון תכנון פעולות טרור בלבה של אירופה.
-
-אולם, בעוד ארצות הברית מתעמתת עם איראן באמצעות סנקציות חדשות, אירופה ואחרות מפייסות את איראן בכך שהן מנסות לעזור לה לעקוף את הסנקציות החדשות האלה. ואני משתמש במילה "פייסנות" בחוסר רצון. אולם, למרבה הצער זה בדיוק מה שאנחנו רואים שוב באירופה.
-
-חשבו על כך: באותו השבוע שבו איראן נתפסה בשעת מעשה בניסיון לרצוח אזרחים אירופאים, מנהיגים אירופאים פרסו את השטיח האדום לנשיא רוחאני, מבטיחים לתת לאיראן עוד יותר כסף. אני בנו של היסטוריון ועליי לשאול: האם המנהיגים האירופאים לא למדו דבר מההיסטוריה? האם הם לעולם לא יתעוררו?
-
-אנחנו בישראל לא זקוקים לקריאת השכמה, כיוון שאיראן מאיימת עלינו כל יום. העיסקה הזו לא הרחיקה את המלחמה, אלא הביאה אותה קרוב מתמיד לגבולותינו. בסוריה, איראן מנסה לבסס בסיסים צבאיים קבועים נגדנו וכבר שיגרה טילים ומזל"טים לשטחנו. בעזה, איראן מחמשת קבוצות טרור על מנת לירות רקטות לתוך ערינו. בלבנון, איראן מדריכה את חיזבאללה כיצד להפוך טילים לא מדויקים לטילים מונחים מדויקים – טילים שמסוגלים לכוון עמוק לתוך שטח ישראל ברמת דיוק של 10 מטרים.
-
-הקשיבו לזה: חיזבאללה משתמש באנשי ביירות החפים מפשע במכוון כמגן אנושי. הם הציבו שלושה מאתרי המרת הטילים האלה לאורך שדה התעופה הבינלאומי של ביירות – אחד בשכונת עוזיי על שפת המים, אחד מתחת לאצטדיון כדורגל, ואחד בסמוך לשדה התעופה עצמו.
-
-לכן, יש לי היום מסר לחיזבאללה: ישראל יודעת מה אתם עושים. ישראל יודעת איפה אתם עושים את זה. וישראל לא תאפשר לכם להתחמק מזה.
-
-גבירותי ורבותי, בדיוק כפי שתומכי עיסקת הגרעין טעו לגבי מה שיקרה כשהסנקציות יוסרו, כך הם טועים לחלוטין לגבי מה שיקרה כשהסנקציות יוטלו שוב. הם טענו שלסנקציות של ארצות הברית לבדה תהיה השפעה כלכלית מועטה בלבד על איראן. באמת? לפני שנה, כלכלתה של איראן שגשגה – כעת היא קורסת. המטבע האיראני צונח. האינפלציה והאבטלה גואות. בריטיש איירליינס, בנקים גרמניים, חברות נפט צרפתיות, יבואני נפט יפנים ורבים אחרים נאבקים לצאת משם.
-
-תומכי העיסקה טעו גם כשטענו שהשבת הסנקציות תגרום לעם האיראני להתאגד סביב המשטר. הם אכן מתאגדים - אך לא סביב המשטר – הם מתאגדים נגד המשטר. הם אינם קוראים "מוות לאמריקה" אלא "מוות לרודן". הם לא קוראים "לייצא את המהפכה האסלאמית" אלא "עיזבו את סוריה, עיזבו את לבנון, עיזבו את עזה. דאגו לנו באיראן!". העם באיראן עומד באומץ מול משטר שדיכא אותם בכוח במשך ארבעה עשורים ושבזבז את כספם במלחמות עקובות מדם במזרח התיכון.
-
-הנה מה שאני אומר למנהיגים באירופה ולאחרים: במקום לחבק את הרודנים האיראנים, הצטרפו לארצות הברית, ישראל ומרבית העולם הערבי בתמיכה בסנקציות חדשות נגד משטר שמסכן את כולנו ואת כל העולם.
-
-ישראל מודה מקרב לב לנשיא טראמפ על החלטתו האמיצה לסגת מעיסקת הגרעין הנוראה עם איראן. רבים מבין שכנינו הערבים מודים לו מאוד גם הם.
-
-אולם, גבירותי ורבותי, יש לי וידוי חשוב. עליי להודות שלעיסקה עם איראן הייתה תוצאה חיובית אחת, לא מכוונת אך חיובית. בעקבות העצמתה של איראן, העיסקה קרבה בין ישראל למדינות ערביות רבות יותר מאי פעם. קרובות מאי פעם בקירבה וידידות שלא חזיתי בחיי ושלא ניתן היה לדמיין לפני מספר שנים. כשאתה בונה ידידות סביב איום, סביב אתגר, אתה רואה במהרה הזדמנויות לא רק מבחינת הביטחון, אלא הזדמנויות לשיפור חיי העמים שלנו. ישראל מעריכה מאוד את קשרי הידידות החדשים האלה. ואני מקווה שקרב היום בו ישראל תוכל לכונן שלום רשמי עם שכנותיה הערביות בנוסף למצרים ולירדן, וביניהן גם הפלסטינים.
-
-ברצוני לנצל את ההזדמנות הזו כדי להביע את הערכתה של ישראל לנשיא טראמפ ולשגרירה היילי על התמיכה האיתנה שהם סיפקו לישראל באו"ם. הם תמכו בזכותה של ישראל להגן על עצמה, פרשו בצדק מאונסק"ו מכחיש ההיסטוריה וממועצת זכויות אדם של האו"ם הלא מוסרית, והפסיקו לממן את ארגון אונר"א – ארגון שבמקום לפתור את בעיית הפליטים הפלסטינים, מנציח אותה.
-
-ישראל הטיסה יהודים מאתיופיה לחופש ולחיים חדשים בישראל. אולם, כאן באו"ם ישראל מואשמת בגזענות באופן אבסורדי. אזרחיה הערבים של ישראל מצביעים בבחירות שלנו, משרתים בפרלמנט שלנו, מכהנים בבתי המשפט שלנו ויש להם בדיוק את אותן זכויות הפרט שיש לכל האזרחים האחרים בישראל. אולם, כאן באו"ם ישראל מואשמת באופן מביש באפרטהייד. כיום, מספר הפלסטינים הוא לפחות פי חמישה מזה שהיה בשנת 1948. אולם, כאן באו"ם ישראל מואשמת באופן שערורייתי בטיהור אתני.
-
-גבירותי ורבותי, אתם יודעים מה זה? זו אותה אנטישמיות עתיקה עם פנים חדשות. פעם היה זה העם היהודי שהושמץ ושהועמד בפני סטנדרטים אחרים משל כולם. היום, זו המדינה היהודית שמושמצת ונדרשת לעמוד בסטנדרטים אחרים.
-
-הנה דוגמה: קחו את ההתקפות החריגות נגד ישראל לאחר שהכנסת שלנו אישרה לאחרונה חוק שמכריז על ישראל כמדינת הלאום של העם היהודי. כשישראל נקראת גזענית על כך שהיא קבעה שעברית היא השפה הרשמית שלה ושמגן דוד הוא הדגל הלאומי שלה, כשישראל זוכה לתווית של מדינת אפרטהייד על כך שהיא הכריזה שהיא מדינת הלאום של העם היהודי, זה מגוחך לחלוטין.
-
-ואתם יודעים מדוע? כיוון שהיום מיוצגים באולם הזה למעלה מ-100 מדינות שיש להן רק שפה רשמית אחת. יש יותר מ-50 מדינות כאן שיש להן צלבים או סהר על דגליהן. יש עשרות מדינות שמגדירות עצמן כמדינות לאום של עם מסוים. אף אחת מהמדינות האלה לא מושמצת. רק ישראל מושמצת.
-
-מה שמיוחד בעם היהודי הוא לא שיש לנו מדינת לאום. מה שמיוחד הוא שרבים עדיין מתנגדים לכך שיש לנו מדינת לאום. הנשיא עבאס, עליך לדעת טוב יותר. אתה כתבת חיבור מדעי שמכחיש את השואה. הרשות הפלסטינית שלך מטילה עונשי מוות על פלסטינים על מכירת אדמות ליהודים. ואתה מגנה את המוסריות של ישראל? אתה קורא לישראל "גזענית"? זו לא הדרך לשלום שכולנו רוצים וצריכים ושישראל נותרת מחויבת לו.
-
-הגוף הזה צריך לגנות את המדיניות המתועבת של תשלום לטרוריסטים. והאו"ם צריך לדרוש שחמאס ישחרר את חללינו, אורון שאול והדר גולדין, אשר נחטפו כשחמאס הפר את הפסקת האש ב-2014. על חמאס לשחרר גם את שני האזרחים הישראלים שהוא מחזיק בשבי, אברה מנגיסטו והישאם אל-סייד.
-
-גבירותי ורבותי, יש לי הזכות לעמוד כאן כראש הממשלה של מדינת ישראל היהודית והדמוקרטית. חלק מאמינים שישראל לא יכולה להיות גם יהודית וגם דמוקרטית. זו טעות. ישראל היא כזו ותמיד תישאר כזו.
-
-עוד מהתקופה שבה אברהם ושרה עשו את מסעם לארץ המובטחת לפני כ-4,000 שנים, ארץ ישראל הייתה מולדתנו. זה המקום בו יצחק ורבקה, יעקב לאה ורחל כרתו את הברית הנצחית שלהם עם אלוהים. זה המקום שבו יהושוע הפך אותנו לאומה ריבונית, בו דוד שלט ועוזיה הטיף, בו המכבים לחמו ובו מצדה נפלה. זה המקום ממנו גורשנו ואליו שבנו, בנינו מחדש את בירתנו ההיסטורית והנצחית ירושלים.
-
-מדינת הלאום של ישראל היא המקום היחיד בו העם היהודי מממש בגאווה את זכותנו הקולקטיבית להגדרה עצמית. הזכות הזו הוכרה לפני קרוב למאה שנים על ידי חבר הלאומים ולפני למעלה משבעים שנים על ידי ארגון האומות המאוחדות כשהוא הצביע בעד הקמת מדינה יהודית. ובה בעת, ישראל היא דמוקרטיה תוססת, בה כל אזרחיה – יהודים ולא יהודים – נהנים מזכויות פרט שוות המובטחות להם בחוק.
-
-בישראל, בין אתה יהודי או ערבי, נוצרי או מוסלמי, דרוזי או בדואי, או כל אדם אחר – זכויות הפרט שלך הן שוות לחלוטין והן תמיד תהיינה כאלה. במזרח התיכון זה לא ברור מאליו, בלשון המעטה. במזרח התיכון, בו לעיתים קרובות מתייחסים לנשים כאל רכוש, מיעוטים נרדפים והומוסקסואלים נתלים למוות, ישראל בולטת כדוגמה בוהקת של חופש והתקדמות.
-
-גבירותי ורבותי, לא יכולתי להיות גאה יותר לייצג את מדינתי ישראל. אני גאה שהפכנו את ישראל למעצמה טכנולוגית עולמית, של יצירתיות עוצרת נשימה בטכנולוגית מידע, בחקלאות מדויקת, בניהול מים, באבטחת סייבר, ברכבים אוטונומיים, בבריאות דיגיטלית, במכשור רפואי, ובתחומים רבים אחרים שמשפרים את חייהם של מיליארדי אנשים ברחבי העולם.
-
-אני גאה בחוקרים המבריקים של ישראל, ביזמים החדשניים, באמנים המוכשרים. אני גאה במורים המסורים של ישראל, ברופאים הרחומים, בצוותי האיתור והחילוץ שמצילים חיים מהאיטי למקסיקו, מנפאל לפיליפינים.
-
-אני גאה מאוד בחיילים האמיצים של ישראל, הגברים והנשים שמגינים על מולדתנו באומץ, תוך שמירה על הערכים הגבוהים ביותר.
-
-יותר מכל, גבירותי ורבותי, אני גאה בעם ישראל ששואבים חוזק יוצא דופן ממקורות המורשת שלנו, שיש להם רוח שלא ניתן לשבור ושהם נחושים כמו תמיד לבנות עתיד בטוח ומפואר למדינה היהודית האחת והיחידה.
-
-תודה לכם.`
+    dir: "ltr",
+    text: `Distinguished delegates, ladies and gentlemen,
+When I spoke here three years ago Israel stood alone among the nations. Of the nearly 200 countries that sit in this hall, only Israel openly opposed the nuclear deal with Iran. We oppose it because it threatens our future, even our very survival. We opposed it because the deal paved Iran’s path to a nuclear arsenal. And by lifting the sanctions, it fueled Iran’s campaign of carnage and conquest throughout the Middle East. We oppose it because the deal was based on a fundamental lie that Iran is not seeking to develop nuclear weapons.
+Now, Israel exposed that lie earlier this year. Last February, Israel conducted a daring raid on Iran's secret atomic archive. We obtained over 100,000 documents and videos that had been stashed in vaults in an innocent-looking building in the heart of Tehran. In May, I presented a short summary of what we obtained to the international media. I provided hard evidence of Iran’s plans to build nuclear weapons and its plans to deceive the international community. Israel shared this information and more damning evidence that we found with members of the P5+1 and with the international atomic energy agency. Months have passed, the IAA has still not taken any actions. It has not posed a single question to Iran. It has not demanded to inspect a single new site discovered in that secret archive.
+Related Articles
+So given this inaction, I decided to reveal today something else that we have shared with the IAA and with a few intelligence agencies. What I’m about to say has not been shared publicly before. Today I’m disclosing for the first time that Iran has another secret facility in Tehran. A secret atomic warehousec for storing massive amounts of equipment and material for Iran’s secret nuclear weapons program.
+In May we exposed the site of Iran’s secret atomic archive. It’s right here in the Shuabad Distrcit of Tehran. Today I’m revealing the site of a second facility: Iran’s secret atomic warehouse. It’s right here, in the Turkuzahbad Distrcit of Tehran. Just three miles away. Let me show you exactly what the secret atomic warehouse looks like. Here it is. You see, like the atomic archive it’s another innocent-looking compound. Now for those of you at home using Google Earth, this no longer secret atomic warehouse. You have the coordinates, you can try to get there. And for those of you who try to get there: It’s 100 meters from the rug-cleaning operation. By the way, i hear they do a fantastic job of cleaning rugs there. But by now they may be radioactive rags. This is the second secret site. Now countries with satellite capabilities may notice some increased activity on the alley in the days and weeks ahead.
+The people they see scurrying back and forth are Iranian officials desperately trying to finish the job of cleaning up that site. Because you see-- since we raided the atomic archive they’ve been busy cleaning up the atomic warehouse. Just last month they removed 15 kilograms of radioactive material. You know what they did with it? Those 15 kilograms of radioactive material, they had to get it out of this site so they took it out and they spread it around Tehran in an effort to hide the evidence. The endangered residents of Tehran may want to know that they can a geiger counter on Amazon for only 29.99$. As of today, that’s just four million Iranian reals.
+But we’ll get to that later, I’ll talk about the Iranian economy in a minute. They took this radioactive material and spread it around Tehran. Now the Iranian officials cleaning out that site still have a lot of work to do because they’ve had at least 15 ship containers, they’re gigantic, 15 ship containers full of nuclear-related equipment and material stored there. Now since each of those containers can hold 20 tons of material this means that this site contained as much as 300 tons of nuclear-related equipment and material.
+Right here. So, distinguished delegates, you have to ask yourself a question. Why did Iran keep a secret atomic archive and a secret atomic warehouse? Because after all, when South Africa and Libya, when they gave up their nuclear programs the first thing they did was to destroy both the archives and the material and equipment. And the answer to the question is simple: The reason Iran didn’t destroy its atomic archive and its atomic warehouse is because it hasn’t abandoned its goal to develop nuclear weapons. In fact, it planned to use both of these sites in a few years when the time would be right to break out to the atom bomb. But ladies and gentlemen, rest assured, that won’t happen. It won’t happen because what Iran hides Israel will find.
+Ladies and gentlemen, I have a message to the head of the IAA, Mr. Yukiya Amano. I believe he’s a good man. I believe he wants to do the right thing. Well Mr. Amano, do the right thing. Go inspect this atomic warehouse. Immediately. Before the Iranians finish clearing it out. Distinguished delegates, do you remember when we were promised that inspections could take place anytime, anywhere? Remember that? Anytime, anywhere. Well, how about inspections right here, right now? And Mr. Amano-- while you’re at it, inspect the other sites we told you about. Once and for all, tell the world the truth about Iran.
+Now I also have a message today for the tyrants of Tehran. Israel knows what you’re doing and Israel where you’re doing it. Israel will never let a regime that calls for our destruction to develop nuclear weapons. Not now, not in ten years, not ever.
+And Israel will do whatever it must do to defend itself against Iran’s aggression. We will continue to act against you in Syria. We will act against you in Lebanon. We will act against you in Iraq. We will act against you whenever, and wherever. We must act to defend our state and to defend our people. Distinguished delegates, three years ago, a few weeks after the nuclear deal was completed i asked this question from this very podium: Does anyone seriously believe that flooding Iran’s radical theocracy with weapons and cash will curb its appetite for aggression?
+But many of the deal’s supporters believed just that. They believed that Iran’s regime will become more moderate, more peaceful. They believed that Iran would use the billions of dollars it received in sanctions relief to improve the lives of its people. To solve the water problem. To solve the trucking problem. To solve the electricty problem. Hosppitals, schools. That’s what they believed. Perhaps some of you also believed in that. Well, that didn’t happen. Instead, Iran used the money to fuel its vast war machine. Just this past year Iran has attacked Kurds in Iraq, slaughtered Sunnis in Syria, armed Hezbollah in Lebanon, financed Hamas in Gaza, fired missiles into Saudi Arabia and threatened freedom of navigation in the straits of Hurmuz and the Strait of Bab al-Mad.
+Some peace. Some moderation. Now if you think, if you think that Iran’s aggression has been confined to the Middle East think again. Last month two Iranian agents were arrested for plotting terror attacks right here, in the United States. And several weeks ago, Iranian agents were arrested for plotting terror attacks in the heart of Europe. Yet while the US is confronting Iran with new sanctions Europe and others are appeasing Iran by trying to help it bypass those new sanctions.
+Now I’ve just used a word. A tough word. A very strong word. Appeasement. And I use it reluctanctly. But unfortunately that’s exactly what we’re seeing again. In Europe. Think about this. The same week Iran was caught red-handed trying to murder European citizens, European leaders were rolling out the red carpet for President Rohani, promising to give Iran even more money. I’m a historian’s son, I have to ask: I ask it not merely as a historian’s son, as a jew, as a citizen of the world, as someone who has lived through the 20th century- have these European leaders learned nothing from history? Will they ever wake up? Well we in Israel-- we don’t need a wakeup call because Iran threatens us every day. Because despite the best of hopes and there were many hopes around the nuclear deal this deal did not push war further away. It brought war ever closer to our borders. In Syria, Iran has tried to establish permanent military bases against us and has already launched missiles and drones into our territory. In Gaza Iran is arming terror groups to launch rocket attacks into our cities and terror attacks against our civilians. In Lebanon, Iran is directing Hezbollah to build secret sites to convert inaccurate projectiles into precision-guided missiles. Missiles that can target deep inside Israel within an accuracy of ten meters. Hezbollah, listen to this, Hezbollah is deliberately using the innocent people of Beirut as human shields. They’ve placed three of these missile conversion sites along Beirut’s international airport. Here’s a picture that’s worth a thousand missiles. Here’s Beirut’s international airport. Here’s the first missile site. It’s in the Uzai neighborhood, on the water;s edge, a few blocks away from the runway. Here’s the second site. It’s underneath a soccer stadium, two blocks away. And here’s the third site. It’s adjacent to the airport itself, right next to it. So I have a message for Hezbollah today: Israel knows, Israel also knows what you’re doing. Israel knows where you’re doing it. And Israel will not let you get away with it.
+Ladies and gentlemen, the nuclear deal supporters were wrong about what would happen when sanctions would be removed. They were wrong, dead wrong about what would happen when sanctions would be restored. They argued that US sanctions alone will have little economic impact on Iran. That’s what they said. Really? Well let’s see what happened to Iran’s economy now that President Trump has forced companies to choose between doing business with Iran and doing business with the US, whose GDP is fifty times the size of Iran’s GDP. A year ago Iran’s economy was booming. Now it’s collapsing. Iran’s currency is plummenting. Inflation and unemployment are soaring. British airlines, German banks, French oil companies, Japanese oil importers and many others are scrambling to get out. If that’s little economic impact, imagine what will happen with the next batch of US sanctions imposed in November.
+The deal’s supporters were also wrong when they argued that restoring sanctions would rally the Iranian people around the regime. Well, they’re definitely rallying but not around the regime-- they're rallying against the regime. They’re not chanting ‘Death to America.’ They’re chanting ‘Death to the Dictator.’ They’re not chanting ‘Export the Islamic Revolution,’ they’re chanting ‘Leave Syria,’ ‘Leave Lebanon,’ ‘Leave Gaza,’ ‘Take Care of Us, in Iran.’
+I listened to these protests. I talked to the Iranian people. I share these videos. And I get so many responses. From Iranians. At first I thought these are Iranian exiles in the safety of London or Paris or Los Angeles. No. Iranians from Iran, embracing Israel, criticizing the regime--- that’s an understatement--- with their names. And I ask my intelligence people: What’s going on? And shortly after the protests broke out, not because of what I said but it was an indicator of something extraordinary that was taking place there because in these protests the Iranian people are showing unbelievable courage. From the urban centers to the outlying villages, and it’s embracing now the whole of Iran. From the striking Bazaar merchants to the young women uncovering their hair: the people of Iran are bravely standing up to a regime that has brutally repressed them for four decades and that has squandered their money, still squanders their money, in bloody wars across the Middle East.
+So here’s what I say to Europe’s leaders and to others: Instead of cuddling Iran’s dictators, join the U.S. and Israel and most of the Arab world in supporting new sanctions against a regime that endangers all of us in all of the world.
+Israel is deeply grateful to President Trump for his bold decision to withdraw from the disasterous nuclear deal with Iran. Many, many of our Arab neighbors are also grateful. And everyone who cares about the peace and security of the world should also be grateful. But ladies and gentlemen, I have an important confession to make: This may surprise you but I have to admit that the Iran deal has had one positive consequence, an unintended one but a positive consequence-- by empowering Iran, it brought Israel and many Arab states closer together than ever before in an intimacy and friendship that I have not seen in my lifetime and would have been unimagineable a few years ago.
+And you know, when you form friendships around a threat, around a challenge, you quickly see opportunities. Not only for security but how to bring a better life for our people, which Israel can help and wants to help do. Israel deeply values these new friendships and I hope the day will soon arrive when Israel will be able to expand peace, a formal peace, beyond Egypt and Jordan to other Arab neighbors, including the Palestinians. I look forward to working with President Trump and his peace team to achieve that goal. I also want to use this opportunity, we’re here at the UN, a place I know because I served here as ambassador many years ago for many years, so I know something about the UN. So I want to use this opportunity to express Israel’s appreciation to President Trump and Ambassador Haley for the unwavering support they’ve provided Israel at the UN. They have unequivocally backed Israel’s right to defend itself.
+They rightly pulled out of a history-denying UNESCO and a morally bankrupt UN Human Rights Council. They have more resolutions about Israel than the rest of the world combined, I think. And tenfold compared to, I don’t know, Iran, Syria, you name it. Not even tenfold, because you can’t multiply zero by any number.
+They stopped funding, President Trump and Ambassador Haley, they stopped funding an unreformed UNRWA, an organization that instead of solving the Palestinian refugee problem, perpetuates it.
+Day after day, the Trump administration has stood up to what has long been a specialty here at the UN—slandering Israel. Even though the shameful resolution comparing Zionism to racism was repealed 25 years ago, I’m sorry to say that its foul stench still clings to these halls.
+Israel airlifted Ethiopian Jews to freedom and a new life in Israel, in the Jewish state. Yet here at the UN, here at the UN, Israel is absurdly accused of racism.
+Israel’s Arab citizens vote in our elections, serve in our parliament, preside over our courts, and have exactly the same individual rights as all other Israeli citizens. Yet here at the UN, Israel is shamefully accused of apartheid.
+Today, there are at least five times as many Palestinians as there were in 1948, the year of Israel’s founding. Yet here at the UN, Israel is outrageously accused of ethnic cleansing.
+Ladies and Gentlemen, you know what this is?
+It’s the same old antisemitism with a brand new face. That’s all it is.
+Once, it was the Jewish people that were slandered and held to a different standard.
+Today, it’s the Jewish state that is slandered and held to a different standard.
+Here’s an example: Take the outlandish attacks that have been leveled against Israel after our Knesset, our parliament, recently adopted a law declaring Israel the nation state of the Jewish people.
+Mind you, Israel is a free country. You can oppose a law, and people did. You can call for different wording in this or that clause, or you can call to add or subtract a clause. You can do that.
+But when Israel is called racist, Israel is called racist for making Hebrew its official language and the Star of David its national flag, when Israel is labeled an apartheid state for declaring itself the nation state of the Jewish people, this is downright preposterous. And you know why?
+Because represented in this hall today are more than 100 countries that have only one official language, even though many other languages are commonly spoken within those countries. There are more than 50 countries here that have crosses or crescents on their flags, even though they have many non-Muslims and non-Christians, many of them, living in their midst. And there are dozens of countries that define themselves as nation states of a particular people, even though there are many ethnic and national minorities within their borders.
+None of those countries are denigrated or libeled for celebrating their unique national identity. Only Israel is denigrated. Only Israel is libeled.
+What is unique about the Jewish people is not that we have a nation state. What is unique is that many still oppose us having a nation state.
+Moments ago, President Abbas outrageously said that Israel’s Nation State Law proves that Israel is a racist, apartheid state.
+President Abbas, you should know better. You wrote a dissertation denying the Holocaust. Your Palestinian Authority imposes death sentences on Palestinians for selling land to Jews. Did you hear that? If a Jew buys an apartment, a piece of land anywhere in the Palestinian territories, the Palestinian who sold him that land is executed. That’s what the law says.
+President Abbas, you proudly pay Palestinian terrorists who murder Jews. In fact, the more they slay, the more you pay. That’s in their law too. And you condemn Israel’s morality? You call Israel racist?
+This is not the way to peace. This is not the way to achieve the peace we all want and need and to which Israel remain committed. This body should not be applauding the head of a regime that pays terrorists. The UN should condemn such a despicable policy.
+And the UN, the UN which brokered a ceasefire in 2014, should demand that Hamas release our fallen soldiers Oron Shaul and Hadar Goldin, who was kidnapped when Hamas violated that very ceasefire.
+Hamas should also release the two Israeli citizens it holds captive, Abera Mengistu and Hisham al Sayed.
+Ladies and gentlemen,
+Every time I stand here, I feel as I do today. I am privileged to stand here as the Prime Minister of the Jewish and democratic state of Israel.
+Some believe that Israel cannot be both Jewish and democratic. This is false. Israel is both, and Israel will always remain both.
+Ever since Abraham and Sarah made their journey to the promised land nearly 4,000 years ago, the Land of Israel has been our homeland. It’s the place where Isaac and Rebecca, Jacob, Leah and Rachel carried on their eternal covenant with God.”`
   },
   {
     id: "netanyahu-unga-2020",
-    title: 'נאום האו"ם 2020',
+    title: 'UN Speech 2020',
     speaker: "בנימין נתניהו",
     date: "2020-09-29",
-    dir: "rtl",
-    text: `אדוני הנשיא, גבירותיי ורבותיי,
-
-המזרח התיכון אינו בדיוק אזור הידוע בחדשות טובות, ומעטים ציפו שהשנה הזו תהיה שונה. כידוע לכם, המגפה משתוללת באזור שלנו כפי שהיא משתוללת בכל העולם.
-
-אבל אני שמח לדווח לכם שהשנה אני יכול להביא חדשות טובות מהמזרח התיכון. למעשה, אני יכול לדווח על שתי בשורות טובות.
-
-מוקדם יותר החודש, בטקס בבית הלבן בהובלת הנשיא טראמפ, חתמה ישראל על הסכמים היסטוריים עם איחוד האמירויות הערביות ועם ממלכת בחריין.
-
-זה היה הסכם השלום הראשון בין ישראל למדינה ערבית זה יותר מרבע מאה. וזו הייתה הפעם הראשונה שבה נחתמו הסכמי שלום בין ישראל לשתי מדינות ערביות באותו יום.
-
-הבשורה הטובה הזו על שלום התאפשרה בזכות פריצה ברורה מהאסטרטגיות הכושלות של העבר.
-
-במשך זמן רב מדי, הפלסטינים החזיקו למעשה בזכות וטו על שלום בין ישראל לבין העולם הערבי הרחב.
-
-במשך עשרות שנים נעצר כל התקדמות והוחזקה כבני ערובה לדרישות פלסטיניות בלתי מציאותיות לחלוטין, כגון הדרישה שישראל תיסוג לקווי 1967 שאינם בני הגנה ותפקיד את ביטחונה בידי אחרים; או הדרישה שישראל תגרש עשרות אלפי יהודים מבתיהם, מה שהיה למעשה טיהור אתני; או הדרישה שישראל תקלוט מיליוני פלסטינים שהם צאצאי פליטים ממלחמה שנפתחה על ידי הפלסטינים נגד ישראל לפני יותר מחצי מאה.
-
-כמובן שהדרישות הללו, יחד עם רבות אחרות, הן לחלוטין בלתי מתקבלות על הדעת עבור כל ממשלה ישראלית אחראית. ובכל זאת, במשך שנים רבות ניסו רבים בקהילה הבינלאומית לרצות את הדרישות האבסורדיות הללו, וכתוצאה מכך בזבזו זמן בניסיון לקדם אשליה שלא תתרחש, במקום לעבוד למען פתרון מציאותי שכן יכול להתרחש.
-
-לשמחתנו, הנשיא טראמפ בחר בדרך אחרת לשלום — דרך המעוגנת במציאות.
-
-הוא הכיר בירושלים כבירת ישראל; הוא הכיר בריבונות ישראל על רמת הגולן; והוא הציג תוכנית שלום מציאותית שמכירה בזכותה של ישראל, מתייחסת לצורכי הביטחון של ישראל ומציעה לפלסטינים דרך מכובדת ומעשית קדימה אם יעשו שלום עם ישראל.
-
-המבקרים טענו שכל אחד מהצעדים הללו של הנשיא טראמפ יהרוג את הסיכוי לשלום.
-
-ובכן, הם טעו. טעו לחלוטין.
-
-הצעדים הללו קידמו את השלום.
-
-כעת שתי מדינות ערביות החליטו לעשות שלום עם ישראל, ואחרות עוד יבואו בעקבותיהן.
-
-ההסכמים החדשים הללו יביאו לעמינו את ברכת השלום ואת היתרונות העצומים הנלווים לכך: יותר סחר, יותר השקעות, יותר מסחר, תחבורה, תיירות ושיתופי פעולה מוגברים בתחומים רבים אחרים.
-
-אין לי גם ספק שמדינות ערביות ומוסלמיות נוספות יצטרפו למעגל השלום — בקרוב מאוד.
-
-המעגל המתרחב של השלום לא יהפוך הסכם בין ישראל לפלסטינים לפחות סביר. הוא יהפוך שלום בין ישראלים לפלסטינים לסביר יותר.
-
-מנהיגים פלסטינים יבינו יותר ויותר שאין להם עוד זכות וטו על שלום והתקדמות באזור שלנו, ואני מקווה שבסופו של דבר אותם מנהיגים יחליטו לעשות שלום עם המדינה היהודית.
-
-וכאשר זה יקרה — ישראל תהיה מוכנה.
-
-אני אהיה מוכן ואהיה נכון לנהל משא ומתן על בסיס תוכנית טראמפ כדי לסיים את הסכסוך בינינו לבין הפלסטינים אחת ולתמיד.
-
-גבירותיי ורבותיי,
-
-ישראל ומדינות ברחבי העולם הערבי אינן עומדות יחד רק בקידום השלום. אנחנו עומדים יחד גם בהתמודדות עם האויב הגדול ביותר של השלום במזרח התיכון — איראן.
-
-איראן תוקפת את שכנותיה שוב ושוב ללא הבחנה, ושלוחות הטרור שלה מעורבות ישירות באלימות ברחבי המזרח התיכון, כולל בעיראק, בסוריה, בתימן, בעזה וכמובן בלבנון.
-
-כולנו ראינו את הפיצוץ הנורא בנמל ביירות בחודש שעבר.
-
-כאן התרחש הפיצוץ — זהו נמל ביירות.
-
-מאתיים בני אדם נהרגו, אלפים נפצעו ורבע מיליון אנשים נותרו ללא קורת גג.
-
-ועכשיו — כאן עלול להתרחש הפיצוץ הבא. בדיוק כאן.
-
-זהו אזור ג'נח בביירות, סמוך לשדה התעופה הבינלאומי.
-
-וכאן חיזבאללה מחזיק מחסן נשק סודי.
-
-מחסן הנשק הסודי הזה נמצא במרחק של מטר אחד בלבד מחברת גז. כאן נמצאים מכלי הגז. כמה מטרים מכאן נמצאת תחנת דלק. חמישים מטרים מכאן נמצאת חברת הגז. כאן נמצאות משאיות גז נוספות.
-
-והכול משולב בתוך אזור מגורים אזרחי.
-
-לתושבי שכונת ג'נח — אלו הקואורדינטות המדויקות.
-
-אני רוצה להראות לכם את הכניסה למפעל הטילים של חיזבאללה. כי זה בדיוק מה שזה.
-
-כאן נמצאת חברת הגז — וכאן נמצא מחסן חומרי הנפץ לטילים.
-
-אני אומר לתושבי ג'נח: אתם חייבים לפעול עכשיו. אתם חייבים למחות נגד זה.
-
-כי אם זה יתפוצץ — זו תהיה טרגדיה נוספת.
-
-אני אומר לעם בלבנון: ישראל אינה רוצה להזיק לכם.
-
-אבל איראן כן.
-
-איראן וחיזבאללה שמו אתכם ואת משפחותיכם בסכנה חמורה בכוונה תחילה.
-
-ואתם צריכים להבהיר להם שזה בלתי מתקבל על הדעת. אתם צריכים לומר להם: לפרק את המחסנים הללו.
-
-רק לפני כמה ימים אחד מהמחסנים הללו התפוצץ בעין קנא בדרום לבנון.
-
-ולכן הקהילה הבינלאומית חייבת לדרוש שחיזבאללה יפסיק להשתמש בלבנון ובאזרחי לבנון כמגן אנושי.
-
-גבירותיי ורבותיי,
-
-כולנו חייבים לעמוד מול איראן, והנשיא טראמפ ראוי לשבח על שעשה בדיוק זאת.
-
-ראשית, אני משבח את הנשיא טראמפ על פרישתו מהסכם הגרעין הפגום עם איראן.
-
-בשנת 2015 עמדתי כמעט לבדי בין מנהיגי העולם בהתנגדות להסכם הגרעין המביש שנחתם עם איראן.
-
-התנגדתי לו משום שההסכם לא חסם את דרכה של איראן לפצצה — הוא למעשה סלל לה את הדרך אליה.
-
-התנגדתי לו משום שההגבלות על תוכנית הגרעין של איראן היו זמניות בלבד ולא היו קשורות כלל לשינוי בהתנהגותה של איראן.
-
-כעת איראן הפרה אפילו את ההגבלות הזמניות הללו.
-
-כתוצאה מהפרות אלה, בתוך כמה חודשים יהיה לאיראן מספיק אורניום מועשר לשתי פצצות גרעין.
-
-ואיראן פיתחה דור חדש של צנטריפוגות — ה-IR9 — שיגדילו פי חמישים את יכולת ההעשרה שלה.
-
-גבירותיי ורבותיי,
-
-אין ספק שאיראן מבקשת להשיג נשק גרעיני.
-
-ארכיון הגרעין הסודי שאנשי המודיעין של ישראל השיגו מלב טהראן מוכיח זאת מעל לכל ספק.
-
-לפני חתימת הסכם הגרעין נאמר לישראל — במיוחד על ידי ידידינו באירופה — שכל הפרה איראנית תיענה בתגובה מהירה וחמורה.
-
-אבל לנוכח ההפרות הבוטות של איראן ולנוכח הראיות הבלתי ניתנות להכחשה מארכיון הגרעין — מועצת הביטחון לא עשתה, ובכן, שום דבר.
-
-ובגלל הדבקות בהסכם הגרעין הכושל, מועצת הביטחון גם מסרבת לראות את מה שהיה ברור לכל מי שמבין משהו על המזרח התיכון.
-
-במקום לרסן את התוקפנות של איראן — הסכם הגרעין הזין ומימן אותה.
-
-לפני חמש שנים, כאשר הסנקציות הוסרו מעל איראן, המעצמות המובילות בעולם פתחו את דלת הכלוב של הנמר — ופשוט קיוו לטוב.
-
-אבל בדיוק כפי שהזהרתי לפני חמש שנים, אנחנו במזרח התיכון משלמים את המחיר על ההסכם חסר האחריות הזה.
-
-איראן עשירה ונועזת יותר השתמשה במיליארדים שזרמו לקופתה כדי לממן מסע של הרס וכיבוש ברחבי האזור.
-
-למרבה המזל, הנשיא טראמפ הבין עד כמה הסכם הגרעין הרסני — ופעל.
-
-הוא החזיר את הסנקציות האמריקניות, אילץ מדינות לבחור בין עשיית עסקים עם ארצות הברית לבין עשיית עסקים עם איראן, וחיסל את הטרוריסט המסוכן ביותר בעולם — קאסם סולימאני.
-
-וכאשר בחודש שעבר סירבה מועצת הביטחון להאריך את אמברגו הנשק על איראן — ארצות הברית החזירה את הסנקציות.
-
-בעוד מועצת הביטחון מפולגת — אנחנו באזור מאוחדים.
-
-ערבים וישראלים יחד קוראים לפעולה תקיפה נגד איראן.
-
-וכאשר ערבים וישראלים מסכימים — אחרים צריכים להקשיב.
-
-ישראל קוראת לכל חברי מועצת הביטחון:
-עמדו לצד ארצות הברית מול התוקפנות האיראנית.
-עמדו לצדה בדרישה שאיראן תפסיק את תוכנית הנשק הגרעיני שלה אחת ולתמיד.
-עמדו לצד ארצות הברית בהתמודדות עם האיום הגדול ביותר על השלום באזורנו.
-
-ואם תעשו זאת — אני בטוח שבשנים הבאות נוכל לחגוג עוד חדשות טובות מהמזרח התיכון.
-
-חדשות טובות לישראל.
-
-חדשות טובות לשכנינו הערבים.
-
-וחדשות טובות לעולם כולו — לכל מי שמבקש שלום, ביטחון ושגשוג.`
+    dir: "ltr",
+    text: `Mr. President, Ladies and Gentlemen,
+The Middle East is not exactly renowned for producing good news, and few expected this year to be any different. You know, the pandemic is ravaging our part of the world like everywhere else.
+Promoted: ChaiFlicks – Streaming Jewish stories from around the WorldKeep Watching
+But I am pleased to report to you that this year, I can tell you about good news from the Middle East. In fact, I can report two pieces of good news.
+Earlier this month, at a White House ceremony hosted by President Trump, Israel signed historic agreements with the United Arab Emirates and the Kingdom of Bahrain.
+This was the first peace treaty between Israel and an Arab country in over a quarter of a century. And it was the first time peace agreements between Israel and two Arab countries were signed on the same day.
+These new agreements will bring our peoples the blessings of peace and the enormous benefits that come with more trade, more investment, more commerce, transportation, tourism, increased cooperation in so many other areas.
+I also have no doubt that more Arab and Muslim countries will be joining the circle of peace, soon, very soon.
+This good news about peace came about because of a clear break with the failed strategies of the past.
+For far too long, the Palestinians effectively wielded a veto on peace between Israel and the broader Arab world.
+For decades, all progress was halted and was held hostage to completely unrealistic Palestinian demands, such as the demand that Israel withdraw to the indefensible lines of 1967 and place its security in the hands of others; or the demand that Israel expel tens of thousands of Jews from their homes, effectively committing ethnic cleansing; or the demand that Israel absorb millions of Palestinians who are descendants of refugees from a war that was launched by the Palestinians against Israel more than half a century ago.
+Of course, these demands, along with many others, are complete non-starters for any responsible Israeli government. Yet for years, many in the international community have tried to appease these absurd Palestinian demands, and as a result, they have wasted time to try to advance an illusion that won’t happen, instead of working for a realistic solution that could happen.
+Thankfully, President Trump chose a different path to peace—a path anchored in reality.
+He recognized Jerusalem as Israel’s capital; he recognized Israel’s sovereignty over the Golan Heights; and he put forward a realistic peace plan that recognizes Israel’s right, addresses Israel’s security needs and provides the Palestinians with a dignified realistic path forward if they make peace with Israel.
+The critics argued that each of these steps by President Trump would kill the chances for peace.
+Well, they were wrong. Dead wrong.
+Those steps advanced peace.
+Now two Arab states have decided to make peace with Israel, and more will follow.
+
+The expanding circle of peace will not make an agreement between Israel and the Palestinians less likely. It will make peace between Israelis and Palestinians more likely.
+Palestinian leaders will increasingly realize that they no longer have a veto over peace and progress in our region, and hopefully, those leaders will ultimately decide to make peace with the Jewish state.
+And when that happens, Israel will be ready.
+I will be ready and I’d be willing to negotiate on the basis of the Trump plan to end our conflict with the Palestinians once and for all.
+Ladies and Gentlemen,
+Israel and states across the Arab world not only stand together in advancing peace. We stand together in confronting the greatest enemy of peace in the Middle East—Iran.
+Iran wantonly and repeatedly attacks its neighbors, and it’s terror proxies are directly involved in violence throughout the Middle East, including in Iraq, Syria, Yemen, Gaza and of course, Lebanon.
+We all saw the terrible explosion at Beirut port last month. The explosion happened here. This is the Beirut port.
+Two hundred people died, thousands of people were injured, and a quarter of a million people were made homeless.
+Now, here is where the next explosion could take place. Right here. This is the Beirut neighborhood of Janah. It’s right next to the international airport. And here, Hezbollah is keeping a secret arms depot. This secret arms depot, right here, is adjacent, a meter away, from a gas company. These are gas canisters. Right here. It’s a few meters away from a gas station. It’s fifty meters away from the gas company. Here are more gas trucks. And it’s embedded in civilian housing here, civilian housing here. For the Janah neighborhood residents this is the actual coordinates.
+
+So I want to show you the entrance to Hezbollah’s missile factory. Because that’s what it is. It’s right here. This is the gas company, and this is the missile explosive depot.
+I say to the people of Janah, you’ve got to act now. You’ve got to protest this. Because if this thing explodes, it’s another tragedy.
+I say to the people of Lebanon, Israel means you no harm.
+But Iran does.
+
+Iran and Hezbollah have deliberately put you and your families in grave danger.
+And what you should make clear is that what they have done is unacceptable. You should tell them, tear these depots down.
+Just a few days ago, one of these depots exploded at Ain Qana in south Lebanon.
+And that is why the international community must insist that Hezbollah stop using Lebanon and Lebanese civilians as human shields.
+Ladies and Gentlemen,
+We must all stand up to Iran, and President Trump deserves praise for doing exactly that.
+First and foremost, I commend President Trump for withdrawing from the flawed nuclear deal with Iran.
+In 2015, I stood alone among world leaders in opposing the shameful nuclear deal that was made with Iran. I opposed it because the nuclear deal did not block Iran’s path to the bomb, it actually paved its way to it. I opposed it because the deal’s restrictions on Iran’s nuclear program were only temporary and were no way tied to Iran’s change of behavior.
+Now, Iran has violated even those temporary restrictions.
+Because of these violations, Iran will have enough enriched uranium in a few months for two nuclear bombs.
+And Iran has been working on a new generation of centrifuges, it’s called the IR9, which will multiply Iran’s enrichment capability fifty-fold.
+
+Ladies and Gentlemen,
+There is no question that Iran is seeking nuclear weapons.
+The once-secret nuclear archive, Israel’s agents obtained from the heart of Tehran, proves that beyond a shadow of a doubt.
+In the run-up to the nuclear deal, Israel was told—especially by our European friends—that any Iranian violation would be met with a quick and severe response.
+But in the face of Iran’s brazen violations, in the face of the irrefutable evidence of the nuclear archive, the Security Council has done, well, absolutely nothing.
+And wedded to the failed nuclear deal, the Security Council also still refuses to see what was obvious to anyone who understands anything about the Middle East.
+Rather than curb Iran’s aggression, the nuclear deal fed and funded it.
+Five years ago, in removing the sanctions on Iran, the leading powers of the world opened the door of a tiger’s cage, and then they simply hoped for the best.
+But instead, exactly as I warned five years ago, we who live in the Middle East are suffering the consequences of that irresponsible deal. A richer and emboldened Iran used the billions that flowed into its coffers to fuel its campaign of carnage and conquest across the region.
+Thankfully, President Trump recognized the disastrous nuclear deal for what it was and he acted.
+He restored US sanctions, forced countries to choose between doing business with America or doing business with Iran, and took out the world’s most dangerous terrorist, Qassem Suleimani.
+And last month, when the Security Council refused to extend an arms embargo on Iran, the United States snapped back the sanctions.
+While the Security Council is divided, we in the region are united.
+Both Arabs and Israelis are together urging tough action on Iran. And when Arabs and Israelis agree, others should pay attention.
+Israel calls upon all members of the Security Council, stand with the United States against Iran’s aggression, stand with it in insisting that Iran end its nuclear weapons program once and for all, stand with the United States in confronting the greatest danger to peace in our region.
+And if you do, I am confident that in the years ahead we will be able to celebrate more good news from the Middle East.
+Good news for Israel.
+Good news for our Arab neighbors.
+And good news for the world for all those who seek peace, security and prosperity.`
   },
   {
     id: "netanyahu-unga-2023",
-    title: 'נאום האו"ם 2023',
+    title: 'UN Speech 2023',
     speaker: "בנימין נתניהו",
     date: "2023-09-22",
-    dir: "rtl",
-    text: `גבירותיי ורבותיי,
-לפני יותר משלושת אלפים שנה,  פנה מנהיגנו הדגול משה רבנו אל בני ישראל בעומדם להיכנס לארץ המובטחת. הוא אמר שהם ימצאו שם שני הרים הניצבים זה מול זה:  הר גריזים, בו יתבשרו על ברכה גדולה והר עיבל, בו תהיה קללה גדולה.
-משה אמר כי גורלו של העם יקבע על ידי הבחירה שיעשו בין הברכה והקללה. אותה בחירה הדהדה לאורך הדורות, לא רק עבור עם ישראל אלא עבור האנושות כולה.כיום אנו עומדים בפני בחירה דומה. היא תקבע האם נהנה מברכותיו של שלום היסטורי, שגשוג אינסופי ותקווה או שנסבול מקללת מלחמה נוראית, טרור וייאוש.כאשר נאמתי על במה זו לפני חמש שנים, הזהרתי מפני הרודנים בטהראן שהיו לקללה עבור עמם, עבור אזורנו  ועבור העולם כולו. בה בעת, דיברתי גם על ברכה גדולה שראיתי באופק. אמרתי אז: "האיום המשותף של איראן קירב יותר מתמיד את ישראל ומדינות ערביות רבות בקשרי ידידות, באופן שלא ראיתי מימיי. היום שבו ישראל תוכל להרחיב את השלום לשכנים ערבים אחרים מעבר למצרים וירדן קרב ובא."בפגישותיי הרבות עם מנהיגים מהעולם, טענתי שלישראל ולמדינות ערב יש אינטרסים משותפים רבים ושאני מאמין שאותם אינטרסים משותפים יכולים לסייע להגיע לפריצת דרך לשלום רחב יותר באזורנו.רבים באותה תקופה ביטלו את האופטימיות שלי כתקוות שווא. הפסימיות שלהם התבססה על יותר מעשרים וחמש שנים של כוונות טובות לצד כישלון בהשגת שלום.
+    dir: "ltr",
+    text: `Ladies and Gentlemen,
 
-מדוע אותן כוונות טובות הסתיימו תמיד בכישלון?
-כיוון שהן היו מבוססות על רעיון אחד שגוי והוא שאף מדינה ערבית נוספת לא תנרמל את יחסיה עם ישראל בטרם יושג שלום עם הפלסטינים.זה זמן רב שאני מנסה להגיע לשלום עם הפלסטינים. אך בה בעת האמנתי שאסור לתת לפלסטינים כוח וטו על הסכמי שלום חדשים עם מדינות ערביות.הפלסטינים, שיכולים להפיק תועלת רבה משלום רחב יותר, צריכים להיות חלק מהתהליך הזה אבל לא צריך להיות להם כוח וטו על התהליך עצמו. האמנתי גם שהשגת שלום עם מדינות ערביות נוספות תגדיל למעשה את הסיכויים לשלום עם הפלסטינים. הפלסטינים מהווים שני אחוזים מהעולם הערבי. הם מאמינים שכל עוד אותם תשעים האחוזים האחרים יישארו במצב מלחמה עם ישראל אותו עולם ערבי גדול יותר יכול בסופו של דבר לחנוק, לפרק ולהרוס את המדינה היהודית.
-לכן, כאשר הפלסטינים ייווכחו שרוב העולם הערבי השלים עם מדינת היהודים, הם יהיו נכונים יותר לנטוש את הפנטזיה של השמדת ישראל ולאמץ סוף סוף במקומה נתיב של שלום אמיתי עם ישראל.במשך שנים, הגישה שלי להשגת שלום נדחתה על ידי המומחים לכאורה. הם טעו. דווקא הגישה שלהם לא הביאה אף לא להסכם שלום אחד במשך עשרים וחמש שנים.ב-2020, תחת הגישה שתמכתי בה ניסינו משהו שונה, ומהר מאוד השגנו פריצת דרך מרשימה. בתיאום עם ארצות הברית, ישראל השיגה ארבעה הסכמי שלום בארבעה חודשים עם ארבע מדינות ערביות: איחוד האמירויות הערביות, בחריין, סודאן ומרוקו. הסכמי אברהם סימנו נקודת מפנה בהיסטוריה והיום אנו עדים לפירות מההסכמים הללו. הסחר וההשקעות עם שותפות השלום החדשות שלנו משגשגים. אומותינו משתפות פעולה במסחר, אנרגיה, מים, חקלאות, רפואה, אקלים ותחומים רבים אחרים. קרוב למיליון ישראלים ביקרו באיחוד האמירויות הערביות בשלוש השנים האחרונות. מדי יום ישראלים חוסכים זמן וכסף כשהם עושים משהו שלא היה אפשרי במשך 70 שנה: טיסה ישירה מעל חצי האי ערב ליעדים במפרץ, הודו, המזרח הרחוק ואוסטרליה.הסכמי אברהם חוללו שינוי דרמטי נוסף. הם קירבו בין ערבים ויהודים. אנחנו רואים זאת בחתונות יהודיות תכופות בדובאי, בהקדשת ספר תורה בבית כנסת בבחריין ובמבקרים הנוהרים למוזיאון יהדות מרוקו בקזבלנקה. אנו רואים זאת בשיעורים על השואה שמועברים לסטודנטים ערבים באיחוד האמירויות הערביות. אין ספק - הסכמי אברהם בישרו על עידן חדש של שלום.
+Over three millennia ago, our great leader Moses addressed the people of Israel as they were about to enter the Promised Land.
 
-אבל אני מאמין שאנו נמצאים על סף פריצת דרך גדולה עוד יותר: שלום היסטורי בין ישראל וערב הסעודית. שלום כזה יתרום רבות לסיום הסכסוך הערבי-ישראלי. הוא יעודד מדינות ערביות אחרות לנרמל את יחסיהן עם ישראל. הוא ישפר את הסיכויים לשלום עם הפלסטינים, יעודד פיוס רחב יותר בין היהדות והאסלאם, בין ירושלים ומכה, בין צאצאי יצחק וצאצאי ישמעאל.כל אלה ברכות אדירות. לפני שבועיים ראינו באופק ברכה נוספת. בפסגת ה- G20,  הנשיא ביידן, ראש הממשלה מודי, יחד עם מנהיגים אירופאים וערבים, הכריזו על תוכניות לפרוזדור כלכלי שישתרע לאורכו של חצי האי ערב ועד לישראל. הוא יחבר בין הודו לאירופה באמצעות קשרים ימיים ומסילתיים, צינורות אנרגיה וכבלי סיב אופטי. פרוזדור זה יעקוף נקודות ימיות מסוכנות ויפחית באופן דרמטי את עלויות שינוע סחורות, התקשורת והאנרגיה עבור יותר משני מיליארד בני אדם.איזה שינוי היסטורי עבור ארצנו!בשוכנה על צומת הדרכים בין אפריקה, אסיה ואירופה, במשך מאות שנים ארץ ישראל נכבשה שוב ושוב על ידי אימפריות בדרכן למסעות ביזה וכיבוש במקומות אחרים. אבל כיום, כאשר אנו מסירים חומות של עוינות, ישראל יכולה להפוך לגשר של שלום ושגשוג בין היבשות האלה. שלום בין ישראל לערב הסעודית ייצור מזרח תיכון חדש באמת ובתמים.כדי להבין את ממדי השינוי שאנו עמלים עליו, אראה לכם מפה של המזרח התיכון ב-1948, השנה בה הוקמה מדינה ישראל. הנה ישראל ב-1948 – מדינה זעירה, מבודדת, מוקפת בעולם ערבי עוין. בשבעים השנים הראשונות שלנו עשינו שלום עם מצרים וירדן, ואז ב-2020 עשינו שלום עם ארבע מדינות ערביות נוספות.
-עכשיו תראו מה יכול לקרות אם נעשה שלום בין ישראל לערב הסעודית. כל המזרח התיכון משתנה. נוריד חומות של עוינות. נביא את הסיכוי לשגשוג ושלום עבור כל האזור. אבל נעשה גם דבר נוסף. לפני שנים אחדות, עמדתי כאן עם טוש אדום כדי להראות את הקללה, קללה גדולה – הקללה של איראן גרעינית. אך היום הבאתי את הטוש הזה כדי להראות ברכה גדולה – ברכה של מזרח תיכון חדש בין ישראל, ערב הסעודית ושכנות אחרות שלנו. לא רק שנוריד מחסומים בין ישראל לשכנותיה, אלא נבנה פרוזדור חדש של שלום ושגשוג שיקשר בין אסיה דרך איחוד האמירויות, ערב הסעודית, ירדן, ישראל לאירופה. זה שינוי היסטורי. שינוי אדיר. נקודת מפנה נוספת בהיסטוריה.עם הרחבתו של מעגל השלום, אני מאמין שניתן יהיה סוף סוף לסלול נתיב אמיתי לשלום עם שכנינו הפלסטינים. אבל יש לזה סייג והוא צריך להיאמר כאן בצורה ברורה. ניתן להשיג שלום רק אם הוא מבוסס על אמת. הוא לא יכול להיות מבוסס על שקרים. הוא לא יכול להיות מבוסס על הכפשה בלתי פוסקת של העם היהודי.
+He said they would find there two mountains facing one another: Mount Gerizim, the site on which a great blessing would be proclaimed, and Mount Ebal, the site of a great curse.
 
-המנהיג הפלסטיני מחמוד עבאס חייב להפסיק להפיץ קנוניות אנטישמיות נוראיות נגד העם היהודי והמדינה היהודית. עבאס טען לא מזמן שהיטלר לא היה אנטישמי. אי אפשר להמציא את הדברים האלה. אבל הוא עשה את זה. הוא באמת אמר את זה.
-והרשות הפלסטינית חייבת להפסיק להאדיר מחבלים ואת המדיניות המבישה שלה של תגמול לרצח, המעניקה כסף למחבלים פלסטינים תמורת רצח יהודים. כל הדברים האלה מזעזעים. הם חייבים להיפסק כדי שישרור שלום.
-יש לדחות את האנטישמיות בכל מקום - בין אם בשמאל או בימין, בין אם באולמות באוניברסיטאות או באולמות האו"ם.על מנת שהשלום ישרור, על הפלסטינים להפסיק להטיף לשנאת יהודים וסוף-סוף לקבל את המדינה היהודית – לא רק את קיומה של המדינה היהודית אלא את זכותו של העם היהודי למדינה משלהם במולדתו ההיסטורית, ארץ ישראל.  ואני אומר לכם: עם ישראל כמה לשלום כזה, וכמותו גם אני. כחייל צעיר לפני יותר מחמישים שנה, חבריי בסיירת ואני התמודדנו עם סכנות קטלניות בחזיתות ובשדות קרב רבים – מהמים החמים של תעלת סואץ, עד למדרונות הקפואים של הר חרמון, מגדותיו של נהר הירדן ועד למסלול ההמראה של נמל התעופה בביירות.חוויות אלו ואחרות לימדו אותי את מחירה של המלחמה. חברי לנשק נהרג לצדי. אחר מת בזרועותיי. קברתי את אחי הבכור. רק מי שסבלו אישית מקללות המלחמה יכולים להעריך באופן הטוב ביותר את ברכת השלום. ישנן משוכות רבות בדרך לשלום. ישנן משוכות רבות בדרך יוצאת הדופן לשלום שתיארתי הרגע. אך אני מחויב לעשות כל שביכולתי כדי להתגבר על המכשולים האלה וליצור עתיד טוב יותר למדינת ישראל ולכל עמי האזור.לפני יומיים דנתי בחזון שלום זה עם הנשיא ביידן. אנחנו חולקים אופטימיות זהה לגבי מה שניתן להשיג. אני מוקיר מאוד את מחויבותו לנצל הזדמנות היסטורית זו. ארצות הברית היא גורם חיוני במאמץ זה.
-בדיוק כפי שהשגנו את הסכמי אברהם תחת הנהגתו של הנשיא טראמפ, אני מאמין שנוכל להשיג שלום עם ערב הסעודית תחת הנהגתו של הנשיא ביידן. בשיתוף פעולה עם מנהיגותו של יורש העצר מוחמד בן סלמאן, אנחנו יכולים לעצב עתיד של ברכות גדולות לכל העמים שלנו.
+Moses said the people’s fate would be determined by the choice they made between the blessing and the curse.
 
-גבירותי ורבותי,
-אתם יודעים שיש דבר אחד שמקלקל את השמחה הזאת כיוון שתהיו בטוחים שהקנאים השולטים באיראן יעשו כל שביכולתם כדי לסכל את השלום ההיסטורי הזה. איראן ממשיכה להשקיע מיליארדים בחימוש שלוחות הטרור שלה. היא ממשיכה לפרוש את זרועות הטרור שלה במזרח התיכון, באירופה, אסיה, דרום אמריקה ואפילו בצפון אמריקה. הם ניסו אפילו להתנקש במזכיר המדינה וביועץ לביטחון לאומי האמריקאים. זה אומר לכם את כל מה שאתם צריכים לדעת על הכוונות הרצחניות של איראן ועל טבעה הרצחני. איראן ממשיכה לאיים על נתיבי שייט בין-לאומיים, להחזיק בבני ערובה זרים למטרת כופר ולעסוק בסחיטה גרעינית. במהלך השנה האחרונה, הבריונים הרצחניים שלה הרגו מאות ועצרו אלפים מאזרחיה האמיצים של איראן.תוכנית הרחפנים והטילים של איראן מאיימת על ישראל ועל שכנותיה הערביות. הרחפנים של איראן מביאים  למוות והרס בקרב אנשים חפים מפשע באוקראינה. ובכל זאת, תוקפנותו של המשטר מתקבלת לרוב באדישות בקרב הקהילה הבין-לאומית. לפני שמונה שנים, מעצמות המערב הבטיחו שאם איראן תפר את הסכם הגרעין, הסנקציות יוחזרו. ובכן, איראן מפרה את ההסכם אך הסנקציות לא הושבו על כנן. כדי לעצור את שאיפותיה הגרעיניות של איראן, מדיניות זו חייבת להשתנות. הסנקציות חייבות לחזור ומעל לכל, איראן חייבת לעמוד בפני איום גרעיני אמין. כל עוד אני ראש ממשלת ישראל, אני אעשה כל שביכולתי למנוע מאיראן להשיג נשק גרעיני. באותה מידה, עלינו לתמוך בנשים ובגברים האמיצים של איראן אשר מתעבים את המשטר וכמהים לחירות. אותם אנשים אשר יצאו בגבורה לרחובות טהרן וערים אחרות באיראן ועמדו מול סכנת מוות. העם של איראן, ולא מדכאיו, הם השותפים האמיתיים שלנו לעתיד טוב יותר.
+That same choice has echoed down the ages not just for the people of Israel but for all humanity.
 
-גבירותיי ורבותיי,
-בין אם עתידנו יהיה לברכה או לקללה תלוי גם באופן שבו נתמודד עם ההתפתחות, אולי ההתפתחות המשמעותית ביותר זמננו – עלייתה של הבינה המלאכותית.מהפכת הבינה המלאכותית מתקדמת במהירות הבזק. נדרשו מאות שנים לאנושות להסתגל למהפכה החקלאית. נדרשו לה עשורים להסתגל למהפכה התעשייתית. ייתכן שיש לנו רק שנים ספורות להסתגל למהפכת הבינה המלאכותית.הסכנות הן גדולות והן ניצבות לפנינו; שיבוש הדמוקרטיה, מניפולציה של דעת הקהל, הכחדה של משרות, התפשטות הפשיעה ופריצה לכל המערכות המאפשרות את חיינו המודרניים. מטרידה אף יותר היא אפשרות לפרוץ מלחמות המונעות על ידי בינה מלאכותית בקנה מידה בלתי נתפס. ומעבר לכך מרחף אולי איום גדול אף יותר, כזה שהיה פעם נחלת המדע הבדיוני: מכונות בעלות יכולות של למידה עצמית השולטות בבני האדם, במקום ההיפך.למרות התחרותיות השוררת בין המדינות המובילות בעולם, עליהן לטפל בסכנות הללו. אנחנו חייבים לעשות זאת במהירות וביחד. אנו חייבים לוודא שההבטחה של אוטופיית בינה מלאכותית לא תהפוך לדיסטופיה של בינה מלאכותית.יש לנו כל כך הרבה מה להרוויח. תארו לעצמכם את הברכות של פיצוחו של הקוד הגנטי, הארכת חיי האדם בעשרות שנים והפחתה דרמטית של נזקי ההזדקנות.דמיינו רפואה מותאמת אישית להרכב הגנטי של כל אחד ואחת, ורפואה שתמנע מחלות זמן רב לפני שהן מתרחשות. שוו בנפשכם רובוטים שעוזרים לטפל בקשישים. תארו לעצמכם סוף לפקקי התנועה עם כלי רכב אוטונומיים על הקרקע, מתחת לקרקע ובאוויר; חינוך מותאם אישית שמממש את הפוטנציאל המלא של כל אדם לאורך חייו; עולם עם אנרגיה נקייה ומשאבי טבע בלתי מוגבלים עבורכל אומות העולם; . שוו בנפשכם חקלאות מדויקת ומפעלים אוטומטיים שמייצרים מזון וסחורות בשפע אשר יביאו קץ לרעב ולמחסור.אני יודע שזה נשמע כמו שיר של ג'ון לנון אבל כל זה יכול לקרות.תארו לכם שנוכל לשים קץ למחסור – משהו שהאנושות לא הצליחה להשיג עד כה. הדבר נמצא בהישג יד. והנה עוד משהו שנמצא בהישג ידנו עם בינה מלאכותית: לחקור את שמי היקום כפי שלא היה ניתן מעולם ולהרחיב את האנושות מעבר לכוכב הלכת הכחול שלנו.לטוב ולרע, פיתוחי הבינה המלאכותית יובלו על ידי מספר מצומצם של מדינות. המדינה שלי, ישראל, כבר נמנית עליהן. ממש כפי שהמהפכה הטכנולוגית של ישראל סיפקה לעולם חידושים מרהיבים, אני בטוח שבינה מלאכותית שפותחה בישראל תסייע שוב לכלל האנושות. אני קורא למנהיגי העולם להתכנס יחד כדי לעצב את השינויים הגדולים שלפנינו – אבל לעשות זאת בצורה אחראית ומוסרית. מטרתנו חייבת להיות להבטיח שבינה מלאכותית תביא יותר חופש ולא פחות, תמנע מלחמות ולא תגרום להן, ותבטיח שאנשים יחיו חיים ארוכים, בריאים, פוריים ושלווים יותר. זה נמצא בהישג ידנו. בעודנו מנצלים את כוחה של הבינה המלאכותית, עלינו לזכור תמיד את הערכים של האינטואיציה והחוכמה האנושית – ערכים שאין להם תחליף. הבה נוקיר ונשמר את היכולת האנושית לאמפתיה – יכולת שאף מכונה לא יכולה להחליף.לפני אלפי שנים, משה רבנו הציג בפני בני ישראל בחירה נצחית ואוניברסלית:
- "רְאֵה אָנֹכִי נֹתֵן לִפְנֵיכֶם הַיּוֹם בְּרָכָה וְקְלָלָה"
+We face such a choice today.
 
-הלוואי שנבחר בחוכמה בין הקללה לברכה העומדות לפנינו היום. הבה ננצל את נחישותנו ואומץ לבנו כדי לעצור את קללת איראן הגרעינית ולעצור את הפנאטיות והתוקפנות שלה.הבה נביא את הברכות של מזרח תיכון חדש, אשר יהפוך ארצות שהיו שרויות פעם בסכסוך וכאוס לשדות של שגשוג ושלום. מי יתן ונמנע את סכנות הבינה המלאכותית על ידי שילוב הכוחות של האינטליגנציה האנושית וזו של המכונה כדי לפלס דרך לעתיד מזהיר לעולמנו – בזמננו ולעתיד לבוא.
-תודה לכם.`
+It will determine whether we enjoy the blessings of a historic peace of boundless prosperity and hope or suffer the curse of a horrific war, of terrorism and despair.
+
+When I last spoke at this podium five years ago, I warned about the tyrants of Tehran. They have been nothing but a curse. A curse to their own people, to our region, to the entire world.
+But at that time, I also spoke about a great blessing that I could see on the horizon.
+
+Here’s what I said. Quote: “The common threat of Iran has brought Israel and many Arab states closer than ever before in a friendship that I have not seen in my lifetime.”
+
+I said: “The day would soon arrive when Israel would be able to expand peace beyond Egypt and Jordan to other Arab neighbors.” End quote.
+
+Now, in countless meetings with world leaders, I made the case that Israel and the Arab states shared many common interests, and that I believed that these many common interests could facilitate a breakthrough for a broader peace in our region.
+
+You applaud now, but at the time, many dismissed my optimism as wishful thinking.
+
+Their pessimism was based on a quarter-century of good intentions and failed peacemaking.
+
+Why were these good intentions, why did they always meet failure?
+
+Because they were based on one false idea, that unless we first concluded a peace agreement with the Palestinians, no other Arab state would normalize its relations with Israel.
+
+I’ve long sought to make peace with the Palestinians.
+
+But I also believe that we must not give the Palestinians a veto over new peace treaties with Arab states.
+
+The Palestinians could greatly benefit from a broader peace. They should be part of the process, but they should not have a veto over the process.
+
+And I also believe that making peace with more Arab states would actually increase the prospects of making peace between Israel and the Palestinians.
+
+See, the Palestinians are only 2% of the Arab world. As long as they believe that the other 98% will remain in a war-like state with Israel, that larger mass, that larger Arab world could eventually choke, dissolve, destroy the Jewish state.
+
+So when the Palestinians see that most of the Arab world has reconciled itself to the Jewish state, they too will be more likely to abandon the fantasy of destroying Israel and finally embrace a path of genuine peace with it.
+
+For years, my approach to peace was rejected by the so-called experts.
+
+Well, they were wrong.
+
+Under their approach, we didn’t forge a single peace treaty for a quarter century.
+
+Yet in 2020, under the approach that I advocated, we tried something different, and in no time we achieved a remarkable breakthrough.
+
+We achieved four peace treaties working with the United States. Israel forged four peace agreements in four months with four Arab states: the United Arab Emirates, Bahrain, Sudan and Morocco.
+
+The Abraham Accords were a pivot of history.
+
+And today, we all see the blessings of those accords.
+
+Trade and investment with our new peace partners are booming.
+
+Our nations cooperate in commerce, energy, water, agriculture, medicine, climate and many many other fields.
+
+Close to a million Israelis have visited the United Arab Emirates in the past three years.
+
+Every day, Israelis save time and money by doing something they couldn't do for 70 years. They fly over the Arabian Peninsula to destinations in the Gulf, India, the Far East, Australia.
+
+The Abraham Accords ushered in another dramatic change.
+
+It brought Arabs and Jews closer together.
+We see it in the frequent Jewish weddings in Dubai, in the dedication of a Torah scroll in a synagogue in Bahrain, in the visitors flocking to the museum of Moroccan Judaism in Casablanca. We see it in lessons that are given to Arab students about the Holocaust in the UAE.
+
+There's no question, the Abraham Accords heralded the dawn of a new age of peace.
+
+But I believe that we are at the cusp of an even more dramatic breakthrough: an historic peace with Saudi Arabia.
+
+Such a peace will go a long way to ending the Arab-Israeli conflict. It will encourage other Arab states to normalize relations with Israel. It will enhance the prospects of peace with the Palestinians. It will encourage a broader reconciliation between Judaism and Islam, between Jerusalem and Mecca, between the descendants of Isaac and the descendants of Ishmael.
+
+All these are tremendous blessings.
+
+Two weeks ago, we saw another blessing already in sight. In the G20 Conference, President Biden, Prime Minister Modi, and European and Arab leaders announced plans for a visionary corridor that will stretch across the Arabian Peninsula and Israel.
+It will connect India to Europe with maritime links, rail links, energy pipelines, fiber-optic cables.
+
+This corridor will bypass maritime chokepoints and dramatically lower the costs of goods, communication and energy for over two billion people.
+
+What a historic change for my country!
+
+You see, the Land of Israel is situated on the crossroads between Africa, Asia and Europe. And for centuries, my country was repeatedly invaded by empires passing through it in their campaigns of plunder and conquest elsewhere.
+
+But today, as we tear down walls of enmity, Israel can become a bridge of peace and prosperity between these continents.
+
+Peace between Israel and Saudi Arabia will truly create a new Middle East.
+
+So understand the magnitude of the transformation that we seek to advance. Let me show you a map of the Middle East in 1948, the year Israel was established.
+
+Here is Israel in 1948. It's a tiny country, isolated, surrounded by a hostile Arab world.
+
+In our first 70 years we made peace with Egypt and Jordan. And then in 2020, we made the Abraham Accords, peace with another four Arab states
+
+Now look at what happens when we make peace between Israel and Saudi Arabia.
+
+The whole Middle East changes. We tear down the walls of enmity. We bring the possibility of peace to this entire region.
+
+But we do something else.
+
+You know, a few years ago I stood here with a red marker to show the curse, a great curse, the curse of a nuclear Iran. But today, I bring this marker to show a great blessing. The blessing of a new Middle East, between Israel, Saudi Arabia and our other neighbours.
+
+We will not only bring down barriers between Israel and our neighbors. We’ll build a new corridor of peace and prosperity that connects Asia through the UAE, Saudi Arabia, Jordan, Israel, to Europe.
+
+This is an extraordinary change, a monumental change, another pivot of history.
+
+As the circle of peace expands, I believe that a real path towards a genuine peace with our Palestinian neighbors can finally be achieved.
+
+But there's a caveat. It has to be said here forcefully. Peace can only be achieved if it is based on truth. It cannot be based on lies. It cannot be based on endless vilification of the Jewish people.
+
+Palestinian leader Mahmoud Abbas must stop spreading the horrible antisemitic conspiracies against the Jewish people and the Jewish state. He recently said that Hitler wasn’t an antisemite. You can't make this up. But he did. He said that.
+
+The Palestinian Authority must stop glorifying terrorists. They must stop its ghoulish pay-to-slay policy of giving money to Palestinian terrorists for the murder of Jews. This is all outrageous. It must stop for peace to prevail.
+
+Antisemitism must be rejected wherever it appears, whether on the left or on the right, whether in the halls of universities or in the halls of the United Nations.
+
+For peace to prevail the Palestinians must stop spewing Jew-hatred and finally reconciliation themselves to the Jewish state. By that I mean not only to the existence of the Jewish state but to the right of the Jewish people to have a state of their own in their historic homeland, the Land of Israel.
+
+And let me tell you, the people of Israel yearn for a genuine peace. I yearn for such a peace.
+
+As a young soldier over half a century ago, my comrades and I in Israel’s Special Forces faced mortal danger on many fronts, on many battlefields. From the warm waters of the Suez Canal to the frozen slopes of Mount Hermon, from the banks of the Jordan river to the tarmac of Beirut airport.
+
+These experiences and other experiences taught me the cost of war.
+
+A fellow soldier was killed next to me. Another died in my arms. I buried my older brother.
+
+Those who have personally suffered the curse of war can best appreciate the blessing of peace.
+
+There are many hurdles on the path of peace. There are many hurdles on the extraordinary path to peace that I've just described.
+
+But I am committed to doing everything I can to overcome those hurdles, to forge a better future for Israel and all the peoples in our region.
+
+Two days ago, I discussed this vision of peace with President Biden.
+
+We share the same optimism for what can be achieved. And I deeply appreciate his commitment to seize this historic opportunity.
+
+The United States of America is indispensable in this effort.
+
+Just as we achieved the Abraham Accords with the leadership of President Trump, I believe we can achieve peace with Saudi Arabia with the leadership of President Biden.
+
+Working together with the leadership of Crown Prince Muhammed Bin Salman, we can shape a future of great blessings for all our peoples.
+
+Now you know, Ladies and Gentlemen, you know there's a fly in this ointment, because rest assured, the fanatics ruling Iran are will do everything they can to thwart this historic peace.
+
+Iran continues to spend billions to arm its terror proxies. It continues to extend its terror tentacles in the Middle East, Europe, Asia, South America, even North America.
+
+They even tried to assassinate the Secretary of State of the United States of America. They even tried to assassinate the National Security Advisor of the United States of America. This tell you all you need to know about Iran's murderous intentions and Iran's murderous nature.
+
+Iran continues to threaten international shipping lanes, hold foreign nationals for ransom and engage in nuclear blackmail.
+
+Over the past year, its murderous goons have killed hundreds and arrested thousands of Iran’s brave citizens.
+
+Iran’s drones and missile program threaten Israel and our Arab neighbors. And Iran's drones have brought and bring death and destruction to innocent people in the Ukraine.
+
+Yet the regime’s aggression is largely met by indifference in the international community.
+
+Eight years ago, the Western powers promised that if Iran violated the nuclear deal, the sanctions would be snapped back.
+
+Well, Iran is violating the deal. But the sanctions have not been snapped back.
+
+To stop its nuclear ambitions, this policy must change.
+
+Sanctions must be snapped back and above all, Iran must face a credible military threat.
+
+As long as I am prime minister of Israel, I will do everything in my power to prevent Iran from getting nuclear weapons.
+
+Equally, we should support the brave women and men of Iran who despise this regime and yearn for freedom, who've gone out bravely on the sidewalks of Tehran and Iran's other cities and face death.
+
+It is the people of Iran, not their oppressors, who are our real partners for a better future.
+
+Ladies and Gentlemen,
+
+Whether our future will prove to be a blessing or a curse will also depend on how we address perhaps the most consequential development of our time, the rise of artificial intelligence.
+
+The AI revolution is progressing at lightning speed.
+
+It took centuries for humanity to adapt to the agricultural revolution.
+
+It took decades to adapt to the industrial revolution.
+
+We may have but a few years to adapt to the AI revolution.
+
+The perils are great and they are before us: the disruption of democracy, the manipulation of minds, the decimation of jobs, the proliferation of crime and the hacking of all the systems that facilitate modern life.
+
+Yet even more disturbing, is the potential eruption of AI-driven wars that could achieve an unimaginable scale.
+
+Behind this perhaps looms an even greater threat, once the stuff of science fiction: that self-taught machines could eventually control humans instead of the other way around.
+
+The world’s leading nations, however competitive, must address these dangers.
+
+We must do so quickly and we must do so together.
+
+We must ensure that the promise of an AI utopia does not turn into an AI dystopia.
+
+We have so much to gain.
+
+Imagine the blessings of finally cracking the genetic code, extending human life by decades and dramatically reducing the ravages of aging.
+
+Imagine healthcare tailored to each individual's genetic composition and predictive medicine that prevents diseases long before they occur.
+
+Imagine robots helping to care for the elderly.
+
+Imagine the end of traffic jams with self-driving vehicles on the ground, below the ground and in the air.
+
+Imagine personalized education that cultivates each person’s full potential throughout their lifetime.
+
+Imagine a world with boundless clean energy and natural resources for all nations.
+
+Imagine precision agriculture and automated factories that yield food and goods in an abundance that ends hunger and want.
+
+I know this sounds like a John Lennon song, but it could all happen.
+
+Imagine that we can achieve the end of scarcity, something that eluded humanity for all history.
+
+It’s all within our reach. And here’s something else within our reach.
+
+With AI we can explore the heavens as never before and extend humanity beyond our blue planet.
+
+For good or bad, the developments of AI will be spearheaded by a handful of nations.
+
+And my country Israel is already among them.
+
+Just as Israel’s technological revolution provided the world with breathtaking innovations, I am confident that AI developed by Israel will once again help all humanity.
+
+I call upon world leaders to come together to shape the great changes before us, but to do so in a responsible and ethical way.
+
+Our goal must be to ensure that AI brings more freedom and not less, prevents wars instead of starting them, and ensures that people live longer, healthier, more productive and peaceful lives. It’s in our reach.
+
+As we harness the powers of AI, let us always remember the irreplaceable value of human intuition and wisdom.
+
+Let us cherish and preserve the human capacity for empathy which no machine can replace.
+
+Thousands of years ago, Moses presented the children of Israel with a timeless and universal choice, “Behold, I set before you this day a blessing and a curse.”
+
+May we choose wisely between the curse and the blessings that stand before us this day.
+
+Let us harness our resolve and our courage to stop the curse of a nuclear Iran and roll back its fanaticism and aggression.
+
+Let us bring forth the blessings of a new Middle East that will transform lands once ridden with conflict and chaos into fields of prosperity and peace.
+
+And may we avoid the perils of AI by combining the forces of human and machine intelligence to usher in a brilliant future for our world, in our time and for all time".`
   },
   {
     id: "netanyahu-unga-2024",
-    title: 'נאום האו"ם 2024',
+    title: 'UN Speech 2024',
     speaker: "בנימין נתניהו",
     date: "2024-09-27",
-    dir: "rtl",
+    dir: "ltr",
     text: PLACEHOLDER_TEXT
   },
   {
     id: "netanyahu-unga-2025",
-    title: 'נאום האו"ם 2025',
+    title: 'UN Speech 2025',
     speaker: "בנימין נתניהו",
     date: "2025-09-23",
-    dir: "rtl",
-    text: `אדוני הנשיא , משפחות החטופים היקרים שלנו הנמקים במרתפי עזה , גבירותיי ורבותיי , בשנה שעברה עמדתי על הדוכן הזה והצגתי את המפה הזו . המפה הזו מראה את קללת ציר הטרור של איראן . הציר הזה איים על שלום העולם כולו . הוא איים על יציבות האזור שלנו ועל עצם קיומה של מדינתי, ישראל . איראן פיתחה במהירות תוכנית עצומה לנשק גרעיני ותוכנית מסיבית של טילים בליסטיים . התוכניות הללו נועדו לא רק להשמיד את ישראל — הן נועדו גם לאיים על ארצות הברית ולסחוט מדינות ברחבי העולם . מעזה שלח יחיא סינוואר גלים של מחבלי חמאס . הם פרצו לישראל ב-7 באוקטובר וביצעו מעשי אכזריות שאין לתאר . מלבנון שיגר חסן נסראללה אלפי טילים ורקטות לעבר ערינו, והטיל אימה על אזרחינו . בסוריה אירח הדיקטטור הרצחני אסד את כוחות איראן, והידק חבל מוות סביב צווארנו . בתימן שיגרו החות’ים טילים בליסטיים לעבר ישראל, ובמקביל חנקו את הסחר העולמי בפתח ים סוף . אז מה קרה בשנה האחרונה ? הכינו את החות’ים — כולל אתמול . ריסקנו את רוב מכונת הטרור של חמאס . שיתקנו את חיזבאללה, חיסלנו את רוב מנהיגיו וחלק גדול מארסנל הנשק שלו . זוכרים את הביפרים, את הזימוניות? אנחנו "זימנו" את חיזבאללה . ותאמינו לי — הם קיבלו את המסר. ואלפי מחבלים נפלו לקרקע . השמדנו את מערך החימוש של אסד בסוריה . הרתענו את המיליציות השיעיות של איראן בעיראק . והחשוב ביותר, מעל כל דבר אחר שאוכל לומר לכם על השנה האחרונה — ואף על העשור האחרון : פגענו קשות בתוכניות הנשק הגרעיני והטילים הבליסטיים של איראן . כך נראים הדברים היום : חצי מהנהגת החות’ים בתימן — איננה . יחיא סינוואר בעזה — איננו . חסן נסראללה בלבנון — איננו . משטר אסד בסוריה — איננו . המיליציות בעיראק? הן עדיין מורתעות . ומנהיגיהן — אם יתקפו את ישראל — גם הם לא יהיו . ולגבי המפקדים הצבאיים הבכירים של איראן והמדענים הבכירים בתוכנית הפצצה הגרעינית — גם הם אינם עוד . המלחמה בת 12 הימים של ישראל נגד איראן — שקראתי לה  מבצע "אריה קם "  —  מן התנ״ך  — המלחמה הזו תירשם בדברי ימי ההיסטוריה הצבאית . הטייסים הנועזים שלנו נטרלו את מערכי ההגנה האווירית של איראן והשתלטו על השמיים מעל טהראן . וכפי שראיתם — טייסי הקרב הישראלים יחד עם מפציצי  B-2  אמריקניים הפציצו את מתקני העשרת הגרעין של איראן . אני רוצה להודות לנשיא טראמפ על פעולתו האמיצה והנחרצת . הנשיא טראמפ ואני הבטחנו למנוע מאיראן לפתח נשק גרעיני . וקיימנו את ההבטחה הזו . הסרנו איום קיומי מעל ישראל ואיום קטלני מעל העולם המתורבת . הסרנו ענן אפל שיכול היה לגבות מיליוני ומיליוני חיים . אך גבירותיי ורבותיי — עלינו להישאר דרוכים . עלינו להישאר צלולים ודרוכים לחלוטין . אסור לנו לאפשר לאיראן לשקם את יכולותיה הגרעיניות הצבאיות . מאגרי האורניום המועשר שלה — חייבים להיעלם . ומחר — הסנקציות של מועצת הביטחון של האו״ם על איראן חייבות לחזור במלואן . הודות לנחישות עמנו, לאומץ חיילינו ולהחלטות הנועזות שקיבלנו  — ישראל קמה מהיום האפל ביותר שלה והביאה לאחד הקאמבקים הצבאיים המדהימים בהיסטוריה . אבל עדיין לא סיימנו . שרידי חמאס האחרונים מתבצרים בעיר עזה . הם נשבעים לחזור על זוועות ה-7 באוקטובר שוב ושוב ושוב . לכן ישראל חייבת להשלים את המשימה — ואנו רוצים לעשות זאת מהר ככל האפשר . גבירותיי ורבותיי , חלק גדול מהעולם כבר אינו זוכר את ה-7 באוקטובר . אבל אנחנו זוכרים. ישראל זוכרת . ביום ההוא … אתם יכולים לזכור גם כן . אתם רואים את הסיכה הגדולה הזו? זה קוד  QR. אני מבקש מכם להרים את הטלפונים, להתקרב , ואתם תראו מדוע אנחנו נלחמים — ולמה אנחנו חייבים לנצח . ב-7 באוקטובר ביצע חמאס את המתקפה הקשה ביותר נגד יהודים מאז השואה . הם רצחו 1,200 בני אדם חפים מפשע , כולל יותר מ-40 אמריקנים ואזרחים זרים מעשרות מדינות המיוצגות כאן . הם ערפו ראשים לגברים . אנסו נשים . שרפו תינוקות חיים . שרפו תינוקות חיים מול הוריהם . איזה מפלצות . המפלצות האלה חטפו יותר מ-250 בני אדם . ביניהם ניצולי שואה, סבתות, וסבתות עם נכדיהן . מי חוטף סבתות ונכדים ? חמאס . עד כה החזרנו הביתה 207 מן החטופים . אך 48 עדיין נמצאים במרתפי עזה . 20  מהם חיים — מורעבים, מעונים, ללא אור יום, ללא אנושיות . אלה שמותיהם של 20 החטופים החיים : מַתָּן אנגרסט גלי וזיו ברמן – אחים אלקנה בוהבוט רום ברסלבסקי נמרוד כהן אריאל ודוד קוניו – גם הם אחים גיא גלבוע-דלל אבייתר דוד — ראיתם את תמונתו, כחוש, נאלץ לחפור את קברו מקסים הרקין איתן הורן שגב קלפון בר קופרשטיין עמרי מירן איתן מור יוסף-חיים אוחנה אלון אוהל אבינתן אור ומתן צנגאוקר כעת, גבירותיי ורבותיי, אני רוצה לעשות דבר שמעולם לא עשיתי קודם . אני רוצה לדבר מכאן ישירות אל החטופים . הצבנו סביב עזה רמקולים עצומים המחוברים למיקרופון הזה — בתקווה שהחטופים ישמעו את דבריי . אני אומר זאת קודם בעברית — ואז באנגלית . [ עברית ] גיבורינו האמיצים, כאן ראש הממשלה נתניהו מדבר אליכם מהאו״ם . לא שכחנו אתכם . לא לרגע . עם ישראל איתכם . לא ניכשל ולא ננוח — עד שנחזיר את כולכם הביתה . גבירותיי ורבותיי , הודות למאמץ מיוחד של המודיעין הישראלי, דבריי מועברים עכשיו גם לטלפונים של תושבי עזה . ולכן אני אומר כעת למנהיגי חמאס שנותרו ולסוהרי החטופים שלנו : הניחו את נשקכם . שחררו את עמי . שחררו את החטופים — את כולם . את כל ה-48 . שחררו אותם עכשיו . אם תעשו זאת — תחיו . אם לא — ישראל תצוד אתכם . גבירותיי ורבותיי , אם חמאס יסכים לדרישותינו — המלחמה יכולה להסתיים כבר עכשיו . עזה תפורז מנשק , ישראל תשמור על שליטה ביטחונית עליונה , ותוקם סמכות אזרחית של תושבי עזה ואחרים המחויבים לשלום עם ישראל . אבל יש אנשים בניו יורק, בלונדון, במלבורן ואולי במקומות אחרים ששואלים : מה כל זה קשור אליי ? התשובה היא :  הכול . כי אויבינו הם אויביכם . אז בואו נעשה משהו נוסף — עוד דבר ראשון מסוגו באו״ם . בואו נעשה חידון קצר. הרימו יד אם אתם יודעים את התשובה . שאלה ראשונה : מי צועק "מוות לאמריקה "? האם זה א) איראן ב) חמאס ג) חיזבאללה ד) החות’ים או ה) כל התשובות נכונות ? התשובה היא — כל התשובות נכונות . שאלה שנייה : מי רצח אמריקנים ואירופאים בדם קר ? א) אל־קאעידה ב) חמאס ג) חיזבאללה ד) איראן או ה) כל התשובות נכונות ? נכון שוב — כל התשובות נכונות . אז הנה הנקודה שאני רוצה להדגיש : האויבים שלנו שונאים את כולנו באותה שנאה . הם רוצים לגרור את העולם המודרני לאחור — אל עידן אפל של אלימות, קנאות וטרור . אני חושב שרבים מכם כבר מרגישים בחברות שלכם את הגל של האסלאם הרדיקלי . עמוק בפנים אתם יודעים שישראל נלחמת גם את המלחמה שלכם . אני רוצה לגלות לכם סוד . מאחורי דלתיים סגורות, רבים מהמנהיגים שמגנים אותנו בפומבי — מודים לנו בפרטי . הם אומרים לי עד כמה הם מעריכים את שירותי המודיעין המצוינים של ישראל, שמנעו שוב ושוב פיגועי טרור בבירות שלהם — ושוב ושוב הצילו אינספור חיים . הגנרל ג׳ורג׳ קיגן, לשעבר ראש מודיעין חיל האוויר האמריקני, אמר פעם : " אם ארצות הברית הייתה צריכה לאסוף בעצמה את המודיעין שישראל מספקת לנו  — היינו צריכים להקים חמישה  CIA." חמישה  CIA. ביוני האחרון, כאשר ישראל תקפה את מתקני הגרעין של איראן, קנצלר גרמניה מרץ אמר את האמת . הוא אמר : " ישראל עושה את העבודה המלוכלכת עבור כולנו ." הנשיא טראמפ מבין יותר מכל מנהיג אחר שישראל ואמריקה ניצבות מול איום משותף . הוא הראה לעולם שכאשר איראן ושלוחותיה רוצחות אמריקנים, חוטפות אמריקנים, צועקות "מוות לאמריקה", שורפות דגלים אמריקניים ומנסות להתנקש בנשיא ארצות הברית — לא פעם אחת אלא פעמיים — יש מחיר למעשים האלה . למרבה הצער, רבים מהמנהיגים המיוצגים באולם הזה שולחים מסר אחר לגמרי . כן, בימים שלאחר ה-7 באוקטובר רבים מהם תמכו בישראל . אבל התמיכה הזו התאדתה במהירות כאשר ישראל עשתה את מה שכל מדינה המכבדת את עצמה הייתה עושה לאחר מתקפה כה אכזרית . נלחמנו בחזרה . דמיינו לרגע מתקפה נגד ארצות הברית — ביחס דומה למתקפה על ישראל ב-7 באוקטובר . דמיינו משטר טרור ששולח אלפי מחבלים לפלוש לארצות הברית . הם רוצחים 40,000 אמריקנים . חוטפים 10,000 אמריקנים . מה לדעתכם אמריקה הייתה עושה ? האם אתם חושבים שהיא הייתה משאירה את המשטר הזה עומד על תילו ? אין סיכוי . ארצות הברית הייתה מוחקת את משטר הטרור הזה ומבטיחה שאכזריות כזו לעולם לא תאיים עליה שוב . זה בדיוק מה שישראל עושה בעזה . אנחנו מחסלים את משטר הטרור של חמאס ומבטיחים שהאכזריות שלו לעולם לא תאיים על ישראל שוב . זה מה שאנחנו עושים . זה מה שכל ממשלה המכבדת את עצמה הייתה עושה . ובכל זאת, לצערי אני אומר זאת כאן — עם הזמן רבים ממנהיגי העולם נכנעו . הם נכנעו ללחץ של תקשורת מוטה, קהלים אסלאמיסטיים רדיקליים והמונים אנטישמיים . יש פתגם מוכר : " כשהמצב נהיה קשה — החזקים פועלים ." ובכן, עבור רבות מהמדינות כאן — כשהמצב נהיה קשה, אתם נשברתם . והנה התוצאה המבישה של הקריסה הזו . במשך חלק גדול מהשנתיים האחרונות, ישראל נאלצה להילחם במלחמה בשבע חזיתות נגד הברבריות — כאשר רבות ממדינותיכם מתנגדות לנו . באופן מדהים, בזמן שאנו נלחמים בטרוריסטים שרצחו רבים מאזרחיכם — אתם נלחמים בנו . אתם מגנים אותנו . מטילים עלינו אמברגו . ומנהלים נגדנו מלחמה פוליטית ומשפטית . אני אומר לנציגי המדינות הללו : זה לא כתב אישום נגד ישראל — זה כתב אישום נגדכם . זה כתב אישום נגד מנהיגים חלשי ברכיים שמפייסים את הרוע במקום לתמוך במדינה שחייליה האמיצים מגינים גם עליכם מפני הברברים שבשער . מתי תלמדו ? אי אפשר לפייס את הג׳יהאד . ולא תברחו מהסערה האסלאמיסטית על ידי הקרבת ישראל . כדי להתגבר על הסערה הזו — צריך לעמוד לצד ישראל . אבל זה לא מה שאתם עושים . כפי שניבאו נביאי ישראל בתנ״ך — הפכתם טוב לרע ורע לטוב . קחו למשל את ההאשמה השקרית של רצח עם . ישראל מואשמת בכך שהיא מכוונת בכוונה תחילה נגד אזרחים . גבירותיי ורבותיי — האמת היא ההפך . ראש מחקר הלוחמה האורבנית, קולונל ג׳ון ספנסר, אולי המומחה הגדול בעולם ללחימה בשטח בנוי, אומר : " ישראל נוקטת יותר צעדים למזעור פגיעה באזרחים מכל צבא בהיסטוריה ." היחס בין אזרחים ללוחמים שנהרגו בעזה הוא פחות מ-2 ל-1 . זה יחס נמוך באופן מדהים — נמוך יותר מאשר במלחמות נאט״ו באפגניסטן ובעיראק . וזאת כאשר עזה היא אחת הסביבות העירוניות הצפופות ביותר בעולם . יש בה מאות קילומטרים של מנהרות טרור מתחת לאדמה, אלפי מחבלים משולבים בתוך אזורים אזרחיים ומגדלי טרור מעל הקרקע . אם אתם רוצים לראות אילו צעדים ישראל נוקטת כדי להימנע מפגיעה באזרחים — תראו מה אנחנו עושים עכשיו בעיר עזה . במשך שלושה שבועות הפצנו מיליוני כרוזים, שלחנו מיליוני הודעות טקסט וביצענו אינספור שיחות טלפון כדי לקרוא לאזרחים לעזוב . באותו זמן חמאס מתבצר במסגדים, בבתי ספר, בבתי חולים ובבנייני מגורים ומנסה למנוע מהאזרחים לעזוב — לעיתים באיומי נשק . עבור ישראל כל פגיעה באזרח היא טרגדיה . עבור חמאס — זו אסטרטגיה . חמאס משתמש באזרחים כמגן אנושי וכאביזר במלחמת התעמולה שלו נגד ישראל . מלחמת תעמולה שהתקשורת המערבית בולעת ללא ביקורת . למרות איומי חמאס, קרוב ל-700,000 תושבי עזה כבר עברו לאזורים בטוחים . אז אני שואל שאלה פשוטה : האם מדינה שמבצעת רצח עם מתחננת בפני האוכלוסייה האזרחית לצאת מאזור הסכנה ? ברור שלא . האמת התהפכה על ראשה . ארגון טרור רצחני עם אמנה הקוראת להשמדת כל היהודים בעולם — מקבל פטור . ואילו ישראל, שעושה הכול כדי להגן על אזרחים — עומדת על ספסל הנאשמים . איזו בדיחה . רוצים עוד אחת ? ישראל מואשמת בהרעבת עזה — בזמן שישראל מאכילה את עזה . מאז תחילת המלחמה הכנסנו לעזה יותר מ-2 מיליון טונות של מזון וסיוע . זה כמעט 3,000 קלוריות לאדם ביום . אם יש רעב בעזה — זה כי חמאס גונב את המזון, אוגר אותו ומוכר אותו במחירים מופקעים . אפילו האו״ם הודה לאחרונה שחמאס וקבוצות חמושות אחרות בזזו 85% ממשאיות הסיוע . אנטישמיות לא מתה . היא פשוט חוזרת שוב ושוב בלבוש חדש . והשקרים האנטישמיים האלה יש להם השלכות . בחודשים האחרונים יהודים הותקפו בקנדה, אוסטרליה, בריטניה, צרפת והולנד . כאן באמריקה ניצולת שואה מבוגרת נשרפה למוות בקולורדו . וזוג צעיר ויפה מהשגרירות הישראלית בוושינגטון נורה למוות מול מוזיאון השואה . למרבה המזל ממשל טראמפ נלחם בנחישות במגפת האנטישמיות . אבל רבים מהממשלות כאן עושים את ההפך . השבוע מנהיגי צרפת, בריטניה, אוסטרליה וקנדה הכירו ללא תנאי במדינה פלסטינית . לאחר הזוועות של חמאס . כמעט 90% מהפלסטינים תמכו במתקפת 7 באוקטובר — ואף חגגו אותה . המסר שאתם שולחים להם ברור : רצח יהודים משתלם . אני אומר למנהיגים הללו : כאשר הטרוריסטים האכזריים ביותר בעולם משבחים בהתלהבות את החלטתכם — לא עשיתם משהו נכון. עשיתם משהו נורא . ( סיום הנאום ) הזוועות של 7 באוקטובר הן חלק מההיסטוריה הארוכה של העם היהודי בגלות . דם יהודי היה זול . יהודים נרצחו ללא עונש . הקמת מדינת ישראל לא עצרה את הניסיונות להשמיד אותנו  — אבל היא נתנה לנו את היכולת להילחם . מאז 7 באוקטובר — זה בדיוק מה שעשינו . בנינו ובנותינו נלחמו כמו אריות . הם יצאו לקרב עם חלומם של מאה דורות של יהודים . החלום לחיות כעם חופשי בארץ ישראל — מולדתנו כבר יותר מ-3000 שנה . החלום לחיות במדינה עצמאית . החלום שיהיה לנו צבא שיגן עלינו . והחלום להיות אור לגויים — מגדלור של קידמה, יצירתיות וחדשנות למען האנושות . ב-7 באוקטובר אויבינו ניסו לכבות את האור הזה . שנתיים לאחר מכן — נחישותה של ישראל וכוחה של ישראל בוערים חזק יותר מאי פעם . בעזרת השם — הכוח הזה והנחישות הזו יובילו אותנו לניצחון מהיר ולעתיד מזהיר של שגשוג ושלום .`
+    dir: "ltr",
+    text: `Mr. President,
+The families of our dear hostages languishing in the dungeons of Gaza,
+Ladies and Gentlemen,
+Last year, I stood at this podium, and I showed this map. It shows the curse of Iran’s terror axis.
+This axis threatened the peace of the entire world. It threatened the stability of our region and the very existence of my country Israel.
+Iran was rapidly developing a massive nuclear weapons program and a massive ballistic missile program. These were meant not only to destroy Israel, they were meant also to threaten the United States and blackmail nations everywhere.
+From Gaza, Yahya Sinwar dispatched waves of Hamas terrorists. They stormed into Israel on October 7th and committed acts of unspeakable savagery.
+From Lebanon, Hassan Nasrallah had launched thousands of missiles and rockets at our cities, terrorizing our citizens.
+In Syria, the murderous dictator Assad hosted Iran’s forces, tightening a noose of death around our throats.
+In Yemen, the Houthis launched ballistic missiles at Israel, while choking global trade at the mouth of the Red Sea.
+So what’s happened over the past year?
+We’ve hammered the Houthis, including yesterday.
+We crushed the bulk of Hamas’s terror machine.
+We crippled Hezbollah, taking out most of its leaders and much of its weapons
+arsenal. Remember those beepers, the pagers? We paged Hezbollah. And believe me, they got the message — and thousands of terrorists dropped to the ground.
+We destroyed Assad’s armaments in Syria.
+We deterred Iran’s Shiite militias in Iraq.
+And most importantly, and above everything else that I could say to you or that we did in this past year, in this past decade: We devastated Iran’s atomic weapons and ballistic missile programs.
+Here’s where things stand today.
+Half the Houthi leadership in Yemen — gone. Yahya Sinwar in Gaza — gone. Hasan Nasrallah in Lebanon — gone. The Assad regime in Syria — gone.
+Those militias in Iraq? Well, they’re still deterred. And their leaders, if they attack Israel, will also be gone.
+And for Iran’s top military commanders and its top atomic bomb scientists – well, they’re gone too.
+Israel’s 12-day war with Iran, which I renamed Operation Rising Lion — that’s from the Bible — this 12-day war will go down in the annals of military history.
+Our daring pilots neutralized Iran’s missile defenses and took control of the skies over Tehran. And you saw this, Israeli fighter pilots and American B2 pilots bombed Iran’s nuclear enrichment sites.
+I want to thank President Trump for his bold and decisive action.
+President Trump and I promised to prevent Iran from developing nuclear weapons. And we delivered on that promise. We removed an existential threat to Israel, and a mortal threat to the civilized world. We lifted a dark cloud that could have claimed millions and millions of lives.
+But, Ladies and Gentlemen, we must remain vigilant. We must remain absolutely clear-minded and vigilant. We must not allow Iran to rebuild its military nuclear capacities. Iran’s stockpile of enriched uranium, these stockpiles must be eliminated.
+And tomorrow, UN Security Council sanctions on Iran must be snapped back.
+Thanks to the resolve of our people, the courage of our soldiers, and the bold decisions we took, Israel rebounded from its darkest day to deliver one of the most stunning military comebacks in history.
+But we’re not done yet. The final remnants of Hamas are holed up in Gaza City. They vow to repeat the atrocities of October 7th again and again and again, no matter how diminished their forces.
+That is why Israel must finish the job, and that is why we want to do so as fast as possible.
+Ladies and Gentlemen,
+Much of the world no longer remembers October 7th. But we remember, Israel remembers October 7th.
+On that day… I’ll tell you, you can remember October 7th too. You see this large pin here? It’s a QR code. What I ask you to do is hold up your phones, zoom in, and you too will see why we fight, and why we must win. It’s all in here.
+On October 7th, Hamas carried out the worst attack on Jews since the Holocaust. They slaughtered 1,200 innocent people, including over 40 Americans, and foreign nationals from dozens of countries represented here.
+They beheaded men. They raped women. They burned babies, alive. They burned babies alive in front of their parents. What monsters.
+These monsters took more than 250 people hostage. Those included Holocaust survivors, grandmothers, grandmothers and their grandchildren. Who takes hostage grandmothers and grandchildren? Hamas does.
+So far, we’ve brought home 207 of these hostages. But 48 still remain in the dungeons of Gaza. 20 of them are alive — starved, tortured, deprived of any daylight, deprived of humanity.
+These are the names of the 20 living hostages:
+Matan Angrest
+Gali and Ziv Berman - Brothers
+Elkana Bohbot
+Rom Braslavski
+Nimrod Cohen
+Ariel and David Cunio – another pair of brothers
+Guy Gilboa Dalal
+Evyatar David. You saw the picture of Evyatar David. Emaciated, forced to dig his own grave.
+Maxim Herkin
+Eitan Horn
+Segev Kalfon
+Bar Kuperstein
+Omri Miran
+Eitan Mor
+Yosef-Haim Ohana
+Alon Ohel
+Avinatan Or
+and Matan Zangauker
+Now, Ladies and Gentlemen, I want to do something I’ve never done before — I want to speak from this forum directly to those hostages through loudspeakers.
+I’ve surrounded Gaza with massive loud-speakers connected to this microphone
+in the hope that our dear hostages will hear my message.
+I will say it first in Hebrew, and then in English.
+[Hebrew]
+Our brave heroes, this is Prime Minister Netanyahu, speaking to you live from the United Nations.
+We have not forgotten you. Not even for a second.
+The people of Israel are with you. We will not falter, and we will not rest, until we bring all of you home.
+Ladies and Gentlemen,
+Thanks to special efforts by Israeli intelligence, my words are now also being carried, they’re streamed live to the cellphones of Gazans.
+So to the remaining Hamas leaders, and to the jailors of our hostages, I now say:
+Lay down your arms! Let my people go! Free the hostages! All of them. The whole 48. Free the hostages now!
+If you do, you will live. If you don’t, Israel will hunt you down.
+Ladies and Gentlemen,
+If Hamas agrees to our demands, the war could end right now.
+Gaza would be demilitarized, Israel would retain overriding security control, and a peaceful civilian authority would be established by Gazans and others committed to peace with Israel.
+Of course, you understand that the war in Gaza has affected every Israeli. But I am sure there are people in New York, London, Melbourne and elsewhere who are probably thinking – what does all of this have to do with me?
+The answer is… EVERYTHING.
+Because our enemies are your enemies.
+Let’s do something else, another first at the UN. Let’s do a pop quiz. Raise your hand if you know the answer.
+Here's the first question. Who shouts “Death to America”?
+Is it A) Iran, B) Hamas, C) Hezbollah, D) the Houthis or E) All of the above?
+All of the above. Correct. All of the above.
+Second question. Who has murdered Americans and Europeans in cold blood. Is it A) Al Qaeda, B) Hamas, C) Hezbollah, D) Iran or E) All of the above?
+Correct again, all of the above.
+So here’s the point I want to make: Our enemies hate all of us with equal venom. They want to drag the modern world back to the past, to a dark age of violence, fanaticism, and terror.
+I think many of you are already feeling in your own societies the radical Islamist surge. I’m sure you do.
+You know deep down that Israel is fighting your fight.
+I want to tell you a secret. Behind closed doors, many of the leaders who publicly condemn us, privately thank us. They tell me how much they value Israel’s superb intelligence services that have prevented time and again terrorist attacks in their capitals, time and again saving countless lives.
+General George Keegan, former head of US air force intelligence, once said:
+“If the United States had to gather on its own the intelligence that Israel gives us,
+we would have to establish five CIAs.”
+Five CIAs.
+This past June, when Israel struck Iran’s nuclear facilities, German Chancellor Merz admitted the truth. He said, “Israel is doing the dirty work for all of us.”
+President Trump understands better than any other leader that Israel and America face a common threat.
+He showed the world that when Iran and its proxies murder Americans, take Americans hostage, shout “Death to America”, burn American flags and try to assassinate the President of the United States – not once, but twice — he showed them there is a price to pay for all that.
+Regrettably, many leaders who are represented in this hall, they send a very different message. Sure, in the days immediately following October 7th, many of them supported Israel. But that support quickly evaporated when Israel did what any self-respecting nation would do in the wake of such a savage attack.
+We fought back.
+Just imagine, just sit back for a second and imagine, an attack against America proportionate to the attack against Israel on October 7th. Imagine a regime, a terror regime dispatching thousands of terrorists to invade the United States.
+They massacre 40,000 Americans. They take 10,000 Americans hostage. What do you think America would do?
+Do you think America would leave that regime standing? You don’t think that. No way. Not a chance!
+The United States would wipe out that terror regime and ensure that such savagery would never threaten America again.
+This is precisely what Israel is doing in Gaza. We’re wiping out the terror regime of Hamas and ensuring that its savagery will never threaten Israel again. That’s what we’re doing. That’s what any self-respecting  government would do.
+Yet, and it’s a yet that I’m sorry to say here, yet over time, many world leaders buckled. They buckled under the pressure of a biased media, radical Islamist constituencies, and antisemitic mobs.
+There’s a familiar saying: When the going gets tough, the tough get going. Well, for many countries here, when the going got tough, you caved!
+And here’s the shameful result of that collapse. For much of the past two years, Israel has had to fight a seven-front war against barbarism with many of your nations opposing us. Astoundingly, as we fight the terrorists who murdered many of your citizens, you are fighting us. You condemn us. You embargo us. And you wage political and legal warfare, it’s called lawfare, against us.
+I say to the representatives of those nations: This is not an indictment of Israel. It’s an indictment of you!
+It’s an indictment of weak-kneed leaders who appease evil, rather than support a nation whose brave soldiers guard you from the barbarians at the gate — they’re already penetrating the gate.
+When will you learn? You can’t appease your way out of Jihad, and you won’t escape the Islamist storm by sacrificing Israel. To overcome that storm, you have to stand with Israel. But that’s not what you’re doing.
+As the prophets of Israel foretold in the Bible, you’ve turned good into evil … and evil into good.
+I want to drill down on this.
+Take the false charge of genocide. Israel is accused of deliberately targeting civilians.
+Ladies and Gentlemen, the opposite is true.
+The head of urban warfare studies, Col. John Spencer, he’s perhaps the world’s greatest expert on urban warfare, and he says: “Israel is applying more measures to minimize civilian casualties than any military in history.”
+And because we’re doing that, the ratio of non-combatant to combatant casualties is less than 2 to 1 in Gaza. That’s an astoundingly low ratio, lower than NATO’s wars in Afghanistan and Iraq, especially when you consider that Gaza is one of the most densely populated urban areas on earth.
+It has hundreds of miles of terror tunnels underground, and it has countless terror towers above ground, and thousands of terrorists embedded in these tunnels and in these towers in civilian areas.
+If you want to see what measures Israel takes to avoid civilian casualties in this war, just look at what we’re doing now in Gaza City, the last Hamas stronghold, one of the two last strongholds.
+For three weeks, Israel dropped millions of leaflets, sent millions of text messages and made countless phone calls urging civilians to leave Gaza city before our military moves in.
+At the same time, Hamas implants itself in mosques, schools, hospitals, apartment buildings and tries to force these civilians not to leave, to stay in harm’s way. It often threatens them at gunpoint if they try to do so.
+For Israel, every civilian casualty is a tragedy; for Hamas, it’s a strategy.
+Hamas uses civilians as human shields and as props in its sick propaganda war against Israel. A propoganda war that the western media buys hook, line and sinker.
+Despite Hamas’s threats, close to 700,000 Gazans, almost three quarters of a million, have already heeded our calls and moved to safe zones.
+Now, I want to ask you a simple question. A simple logical question. Would a country committing genocide plead with the civilian population it is supposedly targeting, to get out of harm’s way? Would we tell them get out if we’re trying to commit genocide? We’re trying to get them out. And Hamas is trying to keep them in.
+This charge is so baseless, the comparison to genocide, wholesale slaughter of populations. Did the Nazis ask the Jews to leave, kindly leave, go out? Did others? Do you want me to name all the genocidal leaders of history. Just go one by one. Did anyone do this? Did they say “get out so we can come in”?
+Of course not. The truth has been turned on its head.
+Hamas, a genocidal terrorist organization whose charter calls for the murder of all Jews on the planet, this genocidal organization is given a pass. It’s barely mentioned.
+While Israel, which does everything it can to get civilians out of harm’s way — Israel is put in the dock.
+What a joke!
+Want to hear another one? Israel is accused of deliberately starving the people of Gaza, when Israel is deliberately feeding the people of Gaza.
+Since the beginning of the war, Israel has let into Gaza more than 2,000,000 tons of food and aid. That’s one ton of aid for every man, woman and child in Gaza; nearly 3,000 calories per person, per day.
+Some starvation policy!
+If there are Gazans who don’t have enough food, it’s because Hamas is stealing it. Hamas steals it, hoards it and sells it at exorbitant prices to fund its war machine.
+Last month, even the UN, not exactly a supporter of Israel. You’re supposed to laugh, by the way. Last month, even the UN admitted that Hamas and other armed groups looted 85% of the trucks. That’s why you have deprivation.
+Those who peddle the blood libels of genocide and starvation against Israel
+are no better than those who peddled blood libels against the Jews in the Middle Ages, when they falsely accused us of poisoning wells, spreading plague and using the blood of children to bake Passover Matzas.
+Antisemitism dies hard. In fact, it doesn’t die at all. It just keeps coming back with its libelous lies, refurbished, regurgitated, over and over again.
+And I want to tell you something else. These antisemitic lies have consequences.
+In recent months, Jews have been assaulted in Canada, Australia, Britain, France, the Netherlands and elsewhere.
+Here in America, an elderly Holocaust survivor was burned to death in Colorado. And a beautiful young couple from the Israeli Embassy in Washington was brutally gunned down right in front of the Holocaust Museum there.
+Thankfully, President Trump’s administration is forcefully fighting the scourge of antisemitism. And every government here should follow its lead.
+But instead, many do the opposite. They actually reward the worst antisemites on earth.
+This week, the leaders of France, Britain, Australia, Canada and other countries unconditionally recognized a Palestinian state. They did so after the horrors committed by Hamas on October 7th — horrors praised on that day by nearly 90% of the Palestinian population.
+Let me say that again. Nearly 90% of Palestinians supported the attack on October 7th. Not supported it — they celebrated. They danced on the rooftops, they threw candies. That’s both in Gaza and in Judea and Samaria — the West Bank, as you call it.
+And it’s just the way they celebrated another horror — 9/11. They danced on the rooftops, they cheered, they threw candy.
+You know what message the leaders who recognized a Palestinian state this week sent to the Palestinians?
+It’s a very clear message. Murdering Jews pays off.
+
+Well, I have a message to these leaders:
+When the most savage terrorists on earth are effusively praising your decision,
+you didn’t do something right, you did something wrong.
+Horribly wrong.
+Your disgraceful decision will encourage terrorism against Jews, and against innocent people everywhere.
+It will be a mark of shame on all of you.
+But, but, but, wait a minute, Mr. Prime Minister, they tell me. Wait a minute. We believe in a two-state solution, where the Jewish state of Israel will live side by side in peace with a Palestinian state.
+There’s only one problem with that. The Palestinians – they don’t believe in this solution. They never have.
+They don’t want a state next to Israel. They want a Palestinian state instead of Israel.
+That’s why every time they were offered a Palestinian state but were required to end the conflict with Israel and recognize the Jewish state, every time over the decades, they turned it down.
+That is why every time they were given territory — they used it to attack us.
+In fact they effectively had a Palestinian state — in Gaza.
+What did they do with that state? Peace? Co-existence?
+No, they attacked us time and time again, totally unprovoked, they fired rockets into our cities, they murdered our children, they turned Gaza into a terror base from which they committed the October 7 massacre.
+Here’s the uncomfortable truth: The persistent Palestinian rejection of a Jewish state in any boundary is what has driven this conflict for over a century. It is still driving it.
+It’s not the absence of a Palestinian state, it’s the presence of a Jewish state.
+And I find it amazing, amazing, that the foreign chancelleries and the ministries and all those who pontificate about this, and the leaders, how can they not see this basic truth when it is repeated again and again and again ad nauseum?
+And I want to say something else.
+This rejection of a Jewish state not only applies to Hamas.
+It also applies to the so-called moderate Palestinian Authority.
+You should know that the Palestinian Authority pays terrorists to slay Jews.
+The more Jews the terrorists slay, the more the Palestinian Authority pays.
+The Palestinian Authority names its government buildings, its public squares, its schools after the mass murderers of Jews, which they glorify as martyrs.
+They pay and glorify not just the killers of Jews but also killers of Christians.
+Christians like Taylor Force – an American veteran, who was brutally murdered in Israel by Palestinian terrorists.
+“But, but, but,” Again, but that I hear from the Western Leaders. They tell me the PA promised us it will reform. And I know this time, Prime minister, it will be different.”
+Yeah, right.
+We’ve heard these promises for decades.
+They always promise.
+They never deliver.
+The Palestinian Authority is corrupt to the core.
+They haven’t held elections in 20 years.
+They use the same textbooks as Hamas. Exactly the same textbooks.
+They teach their children to hate Jews and destroy the Jewish state.
+And Christians don’t fare much better.
+When Bethlehem, the birthplace of Jesus, was under Israeli control, 80 percent of its residents were Christians.
+But since the PA took control, that number has dwindled to under 20 percent.
+These are the people you want to give a state to?
+What you’re doing is giving the ultimate reward to intolerant fanatics who perpetrated and supported the October 7th massacre.
+Giving the Palestinians a state one mile from Jerusalem after October 7th is like giving Al-Qaeda a state one mile from New York City after September 11th.
+This is sheer madness. It’s insane, and we won’t do it.
+So here’s another message for these Western leaders: Israel will not allow you to shove a terror state down our throats.
+We will not commit national suicide because you don’t have the guts to face down a hostile media and antisemitic mobs demanding Israel’s blood.
+I want you to grasp something else that is also distorted in the media. I say this not only in my name or the name of my government but on behalf of all the people of Israel.
+Last year, there was a vote in the Knesset, our parliament, whether or not to oppose the imposition of a Palestinian state.
+You want to guess what the results were?
+Out of the 120 members of our parliament, 99 voted against. And only 9 supported. That’s over 90%. It’s not a fringe group, it’s not the prime minister who is extreme or is held hostage by extreme parties to his right.
+So my opposition to a Palestinian state is not simply my policy or my government’s policy.
+It is the policy of the state and people of the State of Israel.
+Western leaders may have buckled under pressure.
+I guarantee you one thing, Israel won’t.
+Israel’s victories over the Iranian terror axis have opened up possibilities for peace that were unthinkable two years ago.
+Take Syria.
+For decades, the very idea of peace between Israel and Syria seemed unimaginable.
+No more.
+Today we have begun serious negotiations with the new Syrian government.
+I believe an agreement can be reached that respects Syria’s sovereignty and protects both Israel’s security and the security of the minorities in the region, including the Druze minorities.
+From the founding of Israel, Jews and Druze have been brothers in arms. We have fought together, bled together, we built our lives together.
+When I was a young commander in Israel’s special forces, my own life was saved by the invaluable advice given to me by a great friend, Salem Shufi, a heroic Druze IDF veteran.
+That’s why I could not sit idly by, nor could Israel sit idly by, while the Druze were being slaughtered by Jihadists. And I instructed our forces to stop the massacre. Which they promptly did.
+Peace between Israel and Lebanon is possible as well.
+I call on the Lebanese government to also begin direct negotiations with Israel.
+I commend it for its declared aim to disarm Hezbollah.
+But we need more than words.
+If Lebanon takes genuine and sustained action to disarm Hezbollah,
+I am sure we can achieve a sustainable peace. Of course, until that happens, we will take whatever action we need to defend ourselves and to maintain the conditions of the ceasefire that was established in Lebanon.
+Our goal is not merely to monitor Hezbollah’s actions, but to prevent them from violating the ceasefire and attacking us at any time.  I’m sure that if the Lebanese government persists in its goal of disarming Hezbollah, peace will come very speedily and very readily.
+Victory over Hezbollah has made peace possible with our two Arab neighbors in the North.
+Victory over Hamas will make peace possible with nations throughout the Arab and Muslim world.
+Our victory would lead to a dramatic expansion of the historic Abraham Accords, which President Trump brokered between Arab leaders and myself five years ago.
+I took note, as I’m sure you did too, of the encouraging words spoken here by the President of Indonesia.
+This is the country with the world’s largest Muslim population of all nations.
+It’s also is a sign of what could come.
+Forward looking Arab and Muslim leaders know that cooperating with Israel will provide them with ground-breaking Israeli technologies including in medicine and science, agriculture and water, defense and AI and so many other fields.
+I believe that in the coming years, the Middle East will look dramatically different.
+Many of those who wage war on Israel today will be gone tomorrow.
+Brave peacemakers will take their place.
+Nowhere will this be more true than in Iran.
+The long-suffering Iranian people will regain their freedom.
+They will Make Iran Great Again!
+And our two ancient peoples, the people of Israel and the people of Iran, will restore a friendship that will benefit the entire world.
+Ladies and Gentlemen:
+The horrors that happened on one dark day, October 7th, those horrors happened countless times during the centuries of my people’s exile among the nations.
+Jewish blood was cheap.
+Jews were killed with impunity.
+We had to beg others to defend us.
+The rise of Israel did not mean that the attempts to destroy us would end.
+It meant that we could fight back against those attempts.
+That is exactly what Israel has done since October 7th.
+Our sons and daughters fought like lions.
+Our brave soldiers donned their uniforms and rushed into battle.
+They were armed with the dreams of the 100 generations of Jews who came before them.
+The dream of living as a free people in the Land of Israel, our beloved homeland for more than 3000 years.
+The dreams of living in our own independent state.
+The dream of having an army to defend ourselves.
+And the dream of being a light unto the nations — a beacon of progress, ingenuity and innovation for the benefit of all humanity.
+On October 7th, the enemies of Israel tried to extinguish that light.
+Two years later, the resolve of Israel, and the strength of Israel burn brighter than ever.
+With God’s help, that strength and that resolve will lead us to a speedy victory and to a brilliant future of prosperity and peace”.`
   }
 ];
 
 const ALL_TOPICS = [
-  { label: "Peace",    terms: ["שלום"],                                    color: "#5868c0" },
-  { label: "Hope",     terms: ["תקווה"],                                    color: "#b0aaee" },
-  { label: "Security", terms: ["ביטחון", "הגנה", "בטחון"],                 color: "#f9bc29" },
-  { label: "War",      terms: ["מלחמה", "לחימה", "אויב", "מחבל"],          color: "#e07830" },
-  { label: "Terror",   terms: ["טרור", "טרוריסט", "פיגוע"],                color: "#e04020" },
-  { label: "Iran",     terms: ["איראן"],                                    color: "#c42820" },
+  { label: "Peace",    terms: ["peace", "peaceful", "peacemaking"],                               color: "#5868c0" },
+  { label: "Hope",     terms: ["hope", "hopes", "hopeful"],                                       color: "#b0aaee" },
+  { label: "Defense",  terms: ["security", "defense", "protection", "defend", "defensive"],       color: "#f9bc29" },
+  { label: "War",      terms: ["war", "wars", "warfare", "enemy", "enemies", "battle", "combat"], color: "#e07830" },
+  { label: "Terror",   terms: ["terror", "terrorism", "terrorist", "terrorists"],                 color: "#e04020" },
+  { label: "Iran",     terms: ["iran", "iranian"],                                                color: "#c42820" },
 ];

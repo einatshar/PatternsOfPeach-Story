@@ -12,7 +12,7 @@ const CHUNK_SIZE        = 3;
 const CUSTOM_COLOR      = '#9ea0a4';
 const CELL_ASPECT       = 4;
 const COLS_PER_SPEECH   = 1;   // one column per speech in all-years view
-const ALL_YEARS_CELL_PX = 6;   // target cell height (px) in all-years view
+const ALL_YEARS_CELL_PX = 6;   // target cell height in all-years view (drives segsPerCell)
 
 let allYearsSegsPerCell = 1;   // updated each time all-years grid is built
 
@@ -66,7 +66,7 @@ function buildBackground(colors, alpha) {
 const WORD_SPLIT = /[\s,.\-–—:;!?()[\]"'״׳\/]+/;
 
 function wordSet(text) {
-  return new Set(text.split(WORD_SPLIT).filter(Boolean));
+  return new Set(text.split(WORD_SPLIT).filter(Boolean).map(w => w.toLowerCase()));
 }
 
 // ── Speech chunking ────────────────────────────────────────────────────────
@@ -109,8 +109,7 @@ function buildAllSegments() {
 
 function renderYearSelector() {
   const container = document.getElementById('yearSelector');
-  // year-selector uses flex-direction: row-reverse, so append oldest first
-  // (first DOM child → rightmost, matching the grid column order)
+  // Append oldest first → displays left-to-right, matching the grid column order
   const sorted = [...SPEECHES].sort((a, b) => new Date(a.date) - new Date(b.date));
 
   sorted.forEach(speech => {
@@ -132,13 +131,6 @@ function setPaneCollapsed(collapsed) {
 }
 
 function selectAllYears() {
-  // Hide container first so the flex-direction flip from .view-all isn't visible
-  const container = document.getElementById('gridContainer');
-  if (container && container.children.length > 0) {
-    container.style.transition = 'none';
-    container.style.opacity = '0';
-  }
-
   state.lastSpeechId     = state.selectedSpeechId;
   state.allYears         = true;
   state.selectedSpeechId = null;
@@ -258,45 +250,35 @@ function buildAllYearsGrid(container) {
     window.innerHeight - 150
   );
 
-  // How many rows would the longest speech have at our target cell height?
+  const CELL_GAP_PX   = 1;
   const targetRows    = Math.max(10, Math.floor(containerH / ALL_YEARS_CELL_PX));
-  // How many segments does one cell represent (same ratio for all speeches)
   const segsPerCell   = Math.max(1, Math.ceil(maxCount / targetRows));
+  const cellH         = Math.max(3, Math.floor((containerH - (targetRows - 1) * CELL_GAP_PX) / targetRows));
   allYearsSegsPerCell = segsPerCell;
-
-  const GAP  = 2;
-  const cellH = Math.max(3, Math.floor((containerH - (targetRows - 1) * GAP) / targetRows));
 
   container.innerHTML = '';
 
-  // Append oldest first → appears rightmost with flex row-reverse
+  // Append oldest first → left-to-right
   sortedSpeeches.forEach(speech => {
     const segs     = segmentsCache.get(speech.id) || [];
     const numCells = Math.ceil(segs.length / segsPerCell);
 
-    const col = document.createElement('div');
-    col.className = 'speech-column';
-    col.dataset.speechId = speech.id;
-    col.style.justifyContent = 'flex-end'; // anchor cells to bottom (bar-chart baseline)
+    const colEl = document.createElement('div');
+    colEl.className = 'speech-column';
+    colEl.dataset.speechId = speech.id;
 
     const cellsEl = document.createElement('div');
     cellsEl.className = 'column-cells';
-    cellsEl.style.flex = '0 0 auto'; // height = speech length, not full container
-    cellsEl.style.gap = '2px';
 
     for (let ci = 0; ci < numCells; ci++) {
-      const from    = ci * segsPerCell;
-      const bucketSegs = segs.slice(from, from + segsPerCell);
-      const firstSeg   = bucketSegs[0];
+      const firstSeg = segs[ci * segsPerCell];
+      const cell     = document.createElement('div');
+      cell.className         = 'cell';
+      cell.dataset.speechId  = speech.id;
+      cell.dataset.cellIndex = ci;
+      cell.style.height      = `${cellH}px`;
 
-      const cell = document.createElement('div');
-      cell.style.flex         = `0 0 ${cellH}px`;
-      cell.className          = 'cell';
-      cell.dataset.speechId   = speech.id;
-      cell.dataset.cellIndex  = ci;
-      cell.dataset.index      = firstSeg.index; // for tooltip compat
-
-      attachCellTooltip(cell, firstSeg, segs);
+      attachCellTooltip(cell, firstSeg, segs, segsPerCell);
       cell.addEventListener('click', () => {
         state.selectedSpeechId = speech.id;
         renderSpeechPane();
@@ -307,8 +289,8 @@ function buildAllYearsGrid(container) {
       cellsEl.appendChild(cell);
     }
 
-    col.appendChild(cellsEl);
-    container.appendChild(col);
+    colEl.appendChild(cellsEl);
+    container.appendChild(colEl);
   });
 }
 
@@ -334,14 +316,15 @@ function applyIllumination() {
 
     if (state.allYears) {
       // ── All-years: aggregate segments into cell buckets ──────────────────
-      // Build hit map: cellIndex → { topicLabels: Set, customHits: number }
+      // Build hit map: cellIndex → { topics: Map<label,count>, customHits: number }
       const buckets = new Map();
       segments.forEach(seg => {
         const ci = Math.floor(seg.index / allYearsSegsPerCell);
-        if (!buckets.has(ci)) buckets.set(ci, { topics: new Set(), customHits: 0 });
+        if (!buckets.has(ci)) buckets.set(ci, { topics: new Map(), customHits: 0 });
         const b = buckets.get(ci);
         activeTopicDefs.forEach(t => {
-          if (t.terms.some(term => seg.keywords.includes(term))) b.topics.add(t.label);
+          if (t.terms.some(term => seg.keywords.includes(term)))
+            b.topics.set(t.label, (b.topics.get(t.label) || 0) + 1);
         });
         if (hasCustom) {
           const w = wordSet(seg.text);
@@ -349,25 +332,30 @@ function applyIllumination() {
         }
       });
 
+
+      // Color each cell by matched active topics (gradient if multiple)
       document.querySelectorAll(`.cell[data-speech-id="${speechId}"]`).forEach(cell => {
         cell.classList.remove('lit');
         cell.style.background = cell.style.borderColor = cell.style.boxShadow = '';
 
-        const ci     = parseInt(cell.dataset.cellIndex);
-        const bucket = buckets.get(ci);
-        if (!bucket || (bucket.topics.size === 0 && bucket.customHits === 0)) return;
+        const bucket = buckets.get(parseInt(cell.dataset.cellIndex));
+        if (!bucket) return;
+
+        const matchedTopics = activeTopicDefs.filter(t => bucket.topics.has(t.label));
+        const customHits    = bucket.customHits;
+
+        if (matchedTopics.length === 0 && customHits === 0) return;
 
         cell.classList.add('lit');
-        const matchedTopicDefs = activeTopicDefs.filter(t => bucket.topics.has(t.label));
-        const colors = matchedTopicDefs.map(t => t.color);
-        if (bucket.customHits > 0) colors.push(CUSTOM_COLOR);
+        const colors = matchedTopics.map(t => t.color);
+        if (customHits > 0) colors.push(CUSTOM_COLOR);
 
+        const numTopics   = matchedTopics.length + (customHits > 0 ? 1 : 0);
         const [r, g, b]   = colors.length === 1 ? hexToRgb(colors[0]) : blendColors(colors);
-        const termHits     = bucket.topics.size + (bucket.customHits > 0 ? 1 : 0);
-        const bgAlpha      = termHits === 1 ? 0.52 : termHits <= 3 ? 0.80 : 1.0;
-        const borderAlpha  = termHits === 1 ? 0.70 : termHits <= 3 ? 0.90 : 1.0;
-        const glowAlpha    = termHits === 1 ? 0.45 : termHits <= 3 ? 0.38 : 0.58;
-        const glowSize     = termHits === 1 ? 12   : termHits <= 3 ? 10   : 18;
+        const bgAlpha     = numTopics === 1 ? 0.72 : 0.90;
+        const borderAlpha = numTopics === 1 ? 0.80 : 0.95;
+        const glowAlpha   = numTopics === 1 ? 0.25 : 0.45;
+        const glowSize    = numTopics === 1 ? 5    : 12;
 
         cell.style.background  = buildBackground(colors, bgAlpha);
         cell.style.borderColor = `rgba(${r},${g},${b},${borderAlpha})`;
@@ -404,10 +392,10 @@ function applyIllumination() {
           sum + t.terms.filter(term => seg.keywords.includes(term)).length, 0
         ) + customHits;
 
-        const bgAlpha     = termHits === 1 ? 0.52 : termHits <= 3 ? 0.80 : 1.0;
-        const borderAlpha = termHits === 1 ? 0.70 : termHits <= 3 ? 0.90 : 1.0;
-        const glowAlpha   = termHits === 1 ? 0.20 : termHits <= 3 ? 0.38 : 0.58;
-        const glowSize    = termHits === 1 ? 5    : termHits <= 3 ? 10   : 18;
+        const bgAlpha     = termHits === 1 ? 0.75 : termHits <= 3 ? 0.92 : 1.0;
+        const borderAlpha = termHits === 1 ? 0.90 : termHits <= 3 ? 1.0  : 1.0;
+        const glowAlpha   = termHits === 1 ? 0.45 : termHits <= 3 ? 0.65 : 0.85;
+        const glowSize    = termHits === 1 ? 10   : termHits <= 3 ? 18   : 28;
 
         cell.style.background  = buildBackground(colors, bgAlpha);
         cell.style.borderColor = `rgba(${r},${g},${b},${borderAlpha})`;
@@ -557,7 +545,7 @@ function highlightText(text) {
 
   const matches = [];
   entries.forEach(({ term, color }) => {
-    const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+    const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
     let m;
     while ((m = re.exec(text)) !== null) {
       matches.push({ start: m.index, end: m.index + m[0].length, text: m[0], color });
@@ -589,15 +577,17 @@ function setupTooltip() {
   tooltip.el = document.getElementById('tooltip');
 }
 
-function buildTooltipHtml(seg, allSegments) {
+function buildTooltipHtml(seg, allSegments, bucketSize = 1) {
   const CONTEXT = 2;
   const parts = [];
+  // Show context before + the full bucket + context after
+  const bucketEnd = Math.min(seg.index + bucketSize - 1, allSegments.length - 1);
   const from = Math.max(0, seg.index - CONTEXT);
-  const to   = Math.min(allSegments.length - 1, seg.index + CONTEXT);
+  const to   = Math.min(allSegments.length - 1, bucketEnd + CONTEXT);
 
   for (let i = from; i <= to; i++) {
     const s = allSegments[i];
-    if (i === seg.index) {
+    if (i >= seg.index && i <= bucketEnd) {
       parts.push(`<span class="ctx-focus">${highlightText(s.text)}</span>`);
     } else {
       parts.push(`<span class="ctx-dim">${escapeHtml(s.text)}</span>`);
@@ -606,9 +596,9 @@ function buildTooltipHtml(seg, allSegments) {
   return parts.join(' ');
 }
 
-function attachCellTooltip(cell, seg, allSegments) {
+function attachCellTooltip(cell, seg, allSegments, bucketSize = 1) {
   cell.addEventListener('mouseenter', () => {
-    tooltip.el.innerHTML = buildTooltipHtml(seg, allSegments);
+    tooltip.el.innerHTML = buildTooltipHtml(seg, allSegments, bucketSize);
 
     if (cell.classList.contains('lit')) {
       const bcMatch = cell.style.borderColor.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
@@ -968,13 +958,21 @@ const STORY_STEPS = [
   () => {},
 ];
 
+function buildOverlayHtml(text) {
+  const COLORS = ['#5868c0', '#b0aaee', '#f9bc29', '#e07830', '#e04020', '#c42820'];
+  return text.split(' ').map(word => {
+    if (!word.trim() || Math.random() > 0.03) return escapeHtml(word);
+    const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+    return `<span class="word-hl" style="background:${color}">${escapeHtml(word)}</span>`;
+  }).join(' ');
+}
+
 function showSpeechTextOverlay(speechId) {
   const overlay = document.getElementById('speechTextOverlay');
   const speech  = SPEECHES.find(s => s.id === speechId);
   if (!overlay || !speech) return;
   // Repeat text 4× for density + seamless infinite scroll loop
-  const escaped = escapeHtml(speech.text);
-  const block   = `${escaped}<br><br>`;
+  const block = buildOverlayHtml(speech.text) + '<br><br>';
   overlay.innerHTML = `<div class="overlay-text">${block.repeat(4)}</div>`;
   requestAnimationFrame(() => overlay.classList.add('visible'));
 }
@@ -1258,9 +1256,61 @@ function buildCoverDecoration() {
   });
 }
 
+// ── Speech text loading ─────────────────────────────────────────────────────
+
+function cleanSpeechText(raw) {
+  const lines = raw.split(/\r?\n/);
+  const result = [];
+  let started = false;
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+
+    if (!started) {
+      if (!line) continue;
+      // Skip known header patterns
+      if (/^\d{1,2}[\/\-.]\d{1,2}[\/\-.]\d{4}/.test(line)) continue;       // date
+      if (/^(Transcription|Prime Minister|PM Netanyahu|Speech at|United Nations|General Assembly)/i.test(line)) continue;
+      if (/[\u0590-\u05FF]/.test(line)) continue;                            // Hebrew
+      if (line.split(/\s+/).length < 5) continue;                           // very short line
+      started = true;
+    }
+
+    // Stop at footer markers
+    if (/[\u0590-\u05FF]/.test(line)) break;
+    if (/^(PAGE\s*$|HEAD OF|E-MAIL:|Tel:\s*\+|Fax:)/.test(line)) break;
+
+    // Skip inline editorial inserts
+    if (/^(Promoted:|Keep Watching|Related Articles)/i.test(line)) continue;
+
+    result.push(line);
+  }
+
+  return result.join(' ')
+    .replace(/\s+/g, ' ')
+    .replace(/^["\u201c\u201d]+/, '')   // strip leading smart/straight quotes
+    .trim();
+}
+
+async function loadSpeechTexts() {
+  await Promise.all(SPEECHES.map(async speech => {
+    const year = speech.id.slice(-4);
+    try {
+      const res = await fetch(`Data/${year}.txt`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const raw = await res.text();
+      const cleaned = cleanSpeechText(raw);
+      if (cleaned.length > 100) speech.text = cleaned; // only override if we got real content
+    } catch (e) {
+      console.warn(`Could not load Data/${year}.txt, using embedded text`, e);
+    }
+  }));
+}
+
 // ── Init ───────────────────────────────────────────────────────────────────
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadSpeechTexts();
   buildAllSegments();
   buildCoverDecoration();
   renderTopicPresets();
