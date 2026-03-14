@@ -14,6 +14,22 @@ const CELL_ASPECT       = 4;
 const COLS_PER_SPEECH   = 1;   // one column per speech in all-years view
 const ALL_YEARS_CELL_PX = 6;   // target cell height in all-years view (drives segsPerCell)
 
+const HOPE_DATA = [
+  { year: 2009, count: 4  },
+  { year: 2011, count: 9  },
+  { year: 2012, count: 0  },
+  { year: 2013, count: 6  },
+  { year: 2014, count: 2  },
+  { year: 2015, count: 5  },
+  { year: 2016, count: 11 },
+  { year: 2017, count: 3  },
+  { year: 2018, count: 3  },
+  { year: 2020, count: 0  },
+  { year: 2023, count: 1  },
+  { year: 2024, count: 1  },
+  { year: 2025, count: 1  },
+];
+
 let allYearsSegsPerCell = 1;   // updated each time all-years grid is built
 
 // ── State ──────────────────────────────────────────────────────────────────
@@ -925,6 +941,7 @@ const STORY_STEPS = [
 
   // 6: Switch to 2025 speech — peace + conflict topics, build animation
   () => {
+    hideHopeChart();
     const SPEECH_2025 = 'netanyahu-unga-2025';
     setStoryYearActive(SPEECH_2025);
     state.activeTopics.clear();
@@ -941,22 +958,355 @@ const STORY_STEPS = [
     animateCellBuild(container);
   },
 
-  // 7: Transition to all-years, clear topics
+  // 7: Hope line chart — show decline across all years
   () => {
     cancelCellBuild();
+    setStoryYearActive(null);
+    state.activeTopics.clear();
+    if (!state.allYears) selectAllYears();
+    showHopeChart(false);
+  },
+
+  // 8: Overlay Iran line on the hope chart
+  () => {
+    cancelCellBuild();
+    setStoryYearActive(null);
+    state.activeTopics.clear();
+    if (!state.allYears) selectAllYears();
+    showHopeChart(true);
+  },
+
+  // 9: Transition to all-years, clear topics
+  () => {
+    cancelCellBuild();
+    hideHopeChart();
     setStoryYearActive(null);
     state.activeTopics.clear();
     selectAllYears();
   },
 
-  // 8: All years, all topics
+  // 10: Hide chart, all years all topics
   () => {
+    hideHopeChart();
     ALL_TOPICS.forEach(t => activateTopic(t.label));
   },
 
-  // 9: CTA — no vis change, just the button
+  // 11: CTA — no vis change, just the button
   () => {},
 ];
+
+// Compute per-year segment counts for a topic, keyed to HOPE_DATA years
+function computeTopicYearData(topicLabel) {
+  const topic = ALL_TOPICS.find(t => t.label === topicLabel);
+  if (!topic) return HOPE_DATA.map(d => ({ year: d.year, count: 0 }));
+  const countByYear = new Map();
+  SPEECHES.forEach(speech => {
+    const year = parseInt(speech.date.slice(0, 4));
+    const segs = segmentsCache.get(speech.id) || [];
+    countByYear.set(year, segs.filter(seg =>
+      topic.terms.some(term => seg.keywords.includes(term))
+    ).length);
+  });
+  return HOPE_DATA.map(d => ({ year: d.year, count: countByYear.get(d.year) || 0 }));
+}
+
+// Catmull-Rom → cubic bezier smooth path (tension 0–1, lower = straighter)
+function smoothPath(pts, tension = 0.4) {
+  if (pts.length < 2) return '';
+  const n = pts.length;
+  const clamp = i => Math.max(0, Math.min(n - 1, i));
+  let d = `M ${pts[0].x.toFixed(2)},${pts[0].y.toFixed(2)}`;
+  for (let i = 0; i < n - 1; i++) {
+    const p0 = pts[clamp(i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[clamp(i + 2)];
+    const cp1x = p1.x + (p2.x - p0.x) / 6 * tension;
+    const cp1y = p1.y + (p2.y - p0.y) / 6 * tension;
+    const cp2x = p2.x - (p3.x - p1.x) / 6 * tension;
+    const cp2y = p2.y - (p3.y - p1.y) / 6 * tension;
+    d += ` C ${cp1x.toFixed(2)},${cp1y.toFixed(2)} ${cp2x.toFixed(2)},${cp2y.toFixed(2)} ${p2.x.toFixed(2)},${p2.y.toFixed(2)}`;
+  }
+  return d;
+}
+
+// Smoothly reposition the hope line between two sets of y-coordinates
+function morphHopeLine(el, fromPts, toPts, baseline, ms, onComplete) {
+  const hopeLine = el.querySelector('.hope-line');
+  const hopeArea = el.querySelector('.hope-area');
+  if (!hopeLine) { onComplete?.(); return; }
+
+  const ease = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+  const x0   = fromPts[0].x.toFixed(2);
+  const xN   = fromPts[fromPts.length - 1].x.toFixed(2);
+  const t0   = performance.now();
+
+  (function frame(now) {
+    const p   = ease(Math.min((now - t0) / ms, 1));
+    const pts = fromPts.map((fp, i) => ({ ...fp, y: fp.y + (toPts[i].y - fp.y) * p }));
+    const d   = smoothPath(pts);
+    hopeLine.setAttribute('d', d);
+    if (hopeArea) hopeArea.setAttribute('d', `${d} L ${xN},${baseline} L ${x0},${baseline} Z`);
+    el.querySelectorAll('.hope-dot').forEach((dot, i) => dot.setAttribute('cy', pts[i].y.toFixed(2)));
+    p < 1 ? requestAnimationFrame(frame) : onComplete?.();
+  })(t0);
+}
+
+function showHopeChart(withIran = false, _direct = false) {
+  const el        = document.getElementById('hopeChart');
+  const container = document.getElementById('gridContainer');
+
+  // Capture transition state BEFORE we mutate visibility
+  const wasShowing = !el.hidden && !!el.querySelector('.hope-line');
+  const hadIran    = !el.hidden && !!el.querySelector('.iran-line');
+  const prevHopePoints = el._hopePoints || null;
+
+  container.style.opacity = '0';
+  el.hidden = false;
+
+  // Fixed viewBox — SVG scales to container via CSS width:100%
+  const VW = 800;
+  const VH = 310;
+  const PAD = { top: 100, right: 50, bottom: 10, left: 50 };
+  const chartW = VW - PAD.left - PAD.right;
+  const chartH = VH - PAD.top  - PAD.bottom;
+  const xStep   = chartW / (HOPE_DATA.length - 1);
+
+  // Shared y-scale so both lines are proportional to each other
+  const hopeMax  = Math.max(...HOPE_DATA.map(d => d.count));
+  const iranData = withIran ? computeTopicYearData('Iran') : null;
+  const iranMax  = iranData ? Math.max(...iranData.map(d => d.count)) : 0;
+  const sharedMax = Math.max(hopeMax, iranMax);
+
+  const yScale = v => chartH - (v / sharedMax) * chartH;
+
+  const hopePoints = HOPE_DATA.map((d, i) => ({
+    x: PAD.left + i * xStep,
+    y: PAD.top  + yScale(d.count),
+    ...d,
+  }));
+  el._hopePoints = hopePoints;
+  const iranPoints = iranData ? iranData.map((d, i) => ({
+    x: PAD.left + i * xStep,
+    y: PAD.top  + yScale(d.count),
+    ...d,
+  })) : null;
+
+  const hopePathD = smoothPath(hopePoints);
+  const iranPathD = iranPoints ? smoothPath(iranPoints) : null;
+  const pathLen   = VW * 4;
+  const baseline  = PAD.top + chartH;
+
+  // Smart transition: morph existing hope line instead of rebuilding from scratch
+  if (!_direct && wasShowing && prevHopePoints) {
+    if (withIran && !hadIran) {
+      // Step 7→8: fade annotations, morph hope down to shared-scale positions, then rebuild with Iran
+      el.querySelectorAll('.ann-el, .ann-label, .ann-count')
+        .forEach(n => { n.style.transition = 'opacity 0.3s ease'; n.style.opacity = '0'; });
+      morphHopeLine(el, prevHopePoints, hopePoints, baseline, 650,
+        () => showHopeChart(withIran, true));
+      return;
+    }
+    if (!withIran && hadIran) {
+      // Step 8→7: fade Iran elements, then morph hope back up, then rebuild without Iran
+      el.querySelectorAll('.iran-line, .iran-area, .iran-dot, .line-label--iran, .ann-el, .ann-label, .ann-count')
+        .forEach(n => { n.style.transition = 'opacity 0.3s ease'; n.style.opacity = '0'; });
+      setTimeout(() => morphHopeLine(el, prevHopePoints, hopePoints, baseline, 550,
+        () => showHopeChart(withIran, true)), 300);
+      return;
+    }
+  }
+
+
+  // Annotation helpers
+  const ANN_LINE = 52;
+
+  // Above-point annotation: big count + narrative label + dashed stub
+  function annotation(pt, narrative, color, anchor = 'middle') {
+    const ly = pt.y - ANN_LINE;
+    return `
+      <line x1="${pt.x}" y1="${pt.y - 7}" x2="${pt.x}" y2="${ly + 4}"
+        stroke="${color}" stroke-width="1" stroke-dasharray="3 4" stroke-linecap="round"
+        opacity="0" class="ann-el"/>
+      <text x="${pt.x}" y="${ly - 4}" text-anchor="${anchor}"
+        style="fill:${color}" class="ann-label" opacity="0">${narrative}</text>
+      <text x="${pt.x}" y="${ly - 22}" text-anchor="${anchor}"
+        style="fill:${color}" class="ann-count" opacity="0">${pt.count}×</text>`;
+  }
+
+  // Below-baseline annotation for zero points
+  function zeroAnnotation(pt, narrative, color) {
+    return `
+      <circle cx="${pt.x}" cy="${pt.y}" r="5" fill="none"
+        stroke="${color}" stroke-width="1.5" opacity="0" class="ann-el"/>
+      <text x="${pt.x}" y="${(pt.y + 22).toFixed(2)}" text-anchor="middle"
+        style="fill:${color}" class="ann-label" opacity="0">${narrative}</text>`;
+  }
+
+  // Key story points
+  const hope2016  = hopePoints.find(p => p.year === 2016);
+  const hope2020  = hopePoints.find(p => p.year === 2020);
+  const iranPeak  = iranPoints ? iranPoints.reduce((a, b) => b.count > a.count ? b : a) : null;
+
+  // Visible dots for each data point
+  function dots(pts, color, cls) {
+    return pts.map(p =>
+      `<circle cx="${p.x.toFixed(2)}" cy="${p.y.toFixed(2)}" r="3.5"
+        fill="${color}" class="${cls}" opacity="0"/>`
+    ).join('');
+  }
+
+  // Invisible wider hit-area columns (full chart height) for easy hovering
+  function hitAreas(pts) {
+    return pts.map((p, i) => {
+      const half = (i === 0 ? 0 : (pts[i].x - pts[i - 1].x) / 2);
+      const x = p.x - half;
+      const w = half + (i === pts.length - 1 ? 0 : (pts[i + 1].x - pts[i].x) / 2);
+      return `<rect x="${x.toFixed(2)}" y="${PAD.top}" width="${w.toFixed(2)}" height="${chartH}"
+        fill="transparent" data-i="${i}" class="chart-hit"/>`;
+    }).join('');
+  }
+
+  const lastHope = hopePoints[hopePoints.length - 1];
+  const lastIran = iranPoints ? iranPoints[iranPoints.length - 1] : null;
+
+  el.innerHTML = `<svg viewBox="0 0 ${VW} ${VH}" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="hopeAreaGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#b0aaee" stop-opacity="0.12"/>
+        <stop offset="100%" stop-color="#b0aaee" stop-opacity="0"/>
+      </linearGradient>
+      ${iranPathD ? `<linearGradient id="iranAreaGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#c42820" stop-opacity="0.10"/>
+        <stop offset="100%" stop-color="#c42820" stop-opacity="0"/>
+      </linearGradient>` : ''}
+    </defs>
+    <path d="${hopePathD} L ${lastHope.x.toFixed(2)},${baseline} L ${hopePoints[0].x.toFixed(2)},${baseline} Z"
+      fill="url(#hopeAreaGrad)"/>
+    <path d="${hopePathD}" fill="none" stroke="#b0aaee" stroke-width="2"
+      stroke-linejoin="round"
+      stroke-dasharray="${pathLen}" stroke-dashoffset="${pathLen}" class="hope-line"/>
+    ${dots(hopePoints, '#b0aaee', 'hope-dot')}
+    ${!withIran
+      ? `${annotation(hope2016, 'last peak', '#b0aaee')}
+         ${zeroAnnotation(hope2020, 'vanishes', 'rgba(176,170,238,0.5)')}`
+      : `${annotation(hope2016, 'last peak', '#b0aaee')}
+         <text x="${(lastHope.x + 8).toFixed(2)}" y="${lastHope.y.toFixed(2)}"
+           dominant-baseline="middle" class="line-label line-label--hope" opacity="0">hope</text>`}
+    ${iranPathD ? `
+    <path d="${iranPathD} L ${lastIran.x.toFixed(2)},${baseline} L ${iranPoints[0].x.toFixed(2)},${baseline} Z"
+      fill="url(#iranAreaGrad)" opacity="0" class="iran-area"/>
+    <path d="${iranPathD}" fill="none" stroke="#c42820" stroke-width="2"
+      stroke-linejoin="round"
+      stroke-dasharray="${pathLen}" stroke-dashoffset="${pathLen}" class="iran-line"/>
+    ${dots(iranPoints, '#c42820', 'iran-dot')}
+    ${annotation(iranPeak, 'iran peaks', '#c42820')}
+    <text x="${(lastIran.x + 8).toFixed(2)}" y="${lastIran.y.toFixed(2)}"
+      dominant-baseline="middle" class="line-label line-label--iran" opacity="0">iran</text>
+    ` : ''}
+    ${hitAreas(hopePoints)}
+  </svg>`;
+
+  // Tooltip div (HTML overlay inside #hopeChart)
+  const tip = document.createElement('div');
+  tip.className = 'chart-tip';
+  tip.hidden = true;
+  el.appendChild(tip);
+
+  // Wire up hover interactions on hit areas
+  const svg     = el.querySelector('svg');
+  const tipDots = el.querySelectorAll('.hope-dot, .iran-dot');
+
+  el.querySelectorAll('.chart-hit').forEach(rect => {
+    const i = parseInt(rect.dataset.i);
+    const hp = hopePoints[i];
+    const ip = iranPoints ? iranPoints[i] : null;
+
+    rect.addEventListener('mouseenter', () => {
+      // Highlight dots at this column
+      tipDots.forEach(d => d.classList.remove('chart-dot--active'));
+      el.querySelectorAll(`.hope-dot:nth-of-type(${i + 1}), .iran-dot:nth-of-type(${i + 1})`);
+      // Build tooltip content
+      tip.innerHTML = `<span class="chart-tip-year">${hp.year}</span>` +
+        `<span class="chart-tip-row" style="color:#b0aaee">hope — ${hp.count}×</span>` +
+        (ip ? `<span class="chart-tip-row" style="color:#c42820">iran — ${ip.count}×</span>` : '');
+      tip.hidden = false;
+    });
+
+    rect.addEventListener('mousemove', () => {
+      const chartRect = el.getBoundingClientRect();
+      const svgRect   = svg.getBoundingClientRect();
+      // map viewBox x to screen x for dot position
+      const scaleX    = svgRect.width  / VW;
+      const scaleY    = svgRect.height / VH;
+      const dotScreenX = svgRect.left + hp.x * scaleX - chartRect.left;
+      const dotScreenY = svgRect.top  + hp.y * scaleY - chartRect.top;
+      tip.style.left = `${dotScreenX - tip.offsetWidth / 2}px`;
+      tip.style.top  = `${dotScreenY - tip.offsetHeight - 14}px`;
+    });
+
+    rect.addEventListener('mouseleave', () => {
+      tip.hidden = true;
+    });
+  });
+
+  svg.addEventListener('mouseleave', () => { tip.hidden = true; });
+
+  requestAnimationFrame(() => {
+    const hopeLine = el.querySelector('.hope-line');
+    const iranLine = el.querySelector('.iran-line');
+
+    if (_direct) {
+      // Post-morph rebuild: hope already in position, reveal immediately
+      hopeLine.style.strokeDashoffset = '0';
+      hopeLine.style.transition = 'none';
+      el.querySelectorAll('.hope-dot').forEach(d => { d.style.opacity = '1'; });
+      if (iranLine) {
+        // Animate only the Iran line drawing in
+        setTimeout(() => {
+          iranLine.style.strokeDashoffset = '0';
+          const iranArea = el.querySelector('.iran-area');
+          if (iranArea) iranArea.style.opacity = '1';
+          el.querySelectorAll('.iran-dot').forEach(d => { d.style.opacity = '1'; });
+        }, 80);
+        setTimeout(() => {
+          el.querySelectorAll('.line-label, .ann-el, .ann-label, .ann-count')
+            .forEach(n => { n.style.opacity = '1'; });
+        }, 1000);
+      } else {
+        setTimeout(() => {
+          el.querySelectorAll('.ann-el, .ann-label, .ann-count').forEach(n => { n.style.opacity = '1'; });
+        }, 200);
+      }
+    } else {
+      // Fresh build: animate hope line drawing in
+      hopeLine.style.strokeDashoffset = '0';
+      if (iranLine) {
+        setTimeout(() => {
+          iranLine.style.strokeDashoffset = '0';
+          const iranArea = el.querySelector('.iran-area');
+          if (iranArea) iranArea.style.opacity = '1';
+          el.querySelectorAll('.iran-dot').forEach(d => { d.style.opacity = '1'; });
+        }, 800);
+        setTimeout(() => {
+          el.querySelectorAll('.line-label').forEach(n => { n.style.opacity = '1'; });
+        }, 1800);
+      } else {
+        setTimeout(() => {
+          el.querySelectorAll('.ann-el, .ann-label, .ann-count').forEach(n => { n.style.opacity = '1'; });
+        }, 1100);
+      }
+      // Fade in hope dots after line draws
+      setTimeout(() => {
+        el.querySelectorAll('.hope-dot').forEach(d => { d.style.opacity = '1'; });
+      }, 1200);
+    }
+  });
+}
+
+function hideHopeChart() {
+  const el = document.getElementById('hopeChart');
+  el.hidden = true;
+  el.innerHTML = '';
+  document.getElementById('gridContainer').style.opacity = '';
+}
 
 function buildOverlayHtml(text) {
   const COLORS = ['#5868c0', '#b0aaee', '#f9bc29', '#e07830', '#e04020', '#c42820'];
@@ -1173,6 +1523,7 @@ function initScrollytelling() {
 }
 
 function revealExplorer() {
+  hideHopeChart();
   explorerRevealing = true;
 
   // Disable scroll-snap so the browser doesn't snap back to step 0

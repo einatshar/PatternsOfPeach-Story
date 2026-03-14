@@ -571,7 +571,7 @@ body.view-all .cell {
   border: 1px solid transparent;
   border-radius: 2px;
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.2s, border-color 0.2s, opacity 0.3s ease;
   white-space: nowrap;
   flex: 1 1 0;
   min-width: 0;
@@ -950,12 +950,12 @@ body.view-all #story-vis .year-btn {
   font-style: italic;
 }
 
-/* Step 8: paragraph stays centered; legend pins to bottom-left */
-[data-step="8"] {
+/* Step 9: paragraph stays centered; legend pins to bottom-left */
+[data-step="10"] {
   position: relative;
 }
 
-[data-step="8"] .story-legend {
+[data-step="10"] .story-legend {
   position: absolute;
   bottom: 60px;
   left: 48px;
@@ -1017,11 +1017,117 @@ em[class^="kw-"] {
 }
 
 em.kw-peace  { background: #5868c0; }
+em.kw-hope   { background: #b0aaee; }
 em.kw-war    { background: #e07830; }
 em.kw-terror { background: #e04020; }
 em.kw-iran   { background: #c42820; }
 
-/* ── CTA (step 9) ───────────────────────────────────────── */
+/* ── Hope line chart (step 8) ───────────────────────────── */
+
+#hopeChart {
+  position: absolute;
+  inset: 0;
+  align-items: flex-end;
+  justify-content: center;
+  background: var(--bg);
+  z-index: 4;
+  padding: 0 24px 6px;
+  box-sizing: border-box;
+}
+
+#hopeChart:not([hidden]) {
+  display: flex;
+}
+
+.chart-tip {
+  position: absolute;
+  pointer-events: none;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.chart-tip-year {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #888;
+  letter-spacing: 0.06em;
+}
+
+.chart-tip-row {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.hope-dot,
+.iran-dot {
+  transition: opacity 0.3s ease, r 0.15s ease;
+}
+
+.chart-hit {
+  cursor: crosshair;
+}
+
+#hopeChart svg {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  display: block;
+}
+
+.hope-line,
+.iran-line {
+  transition: stroke-dashoffset 1.2s ease;
+}
+
+.iran-area {
+  transition: opacity 0.6s ease;
+}
+
+.line-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  transition: opacity 0.5s ease;
+}
+
+.line-label--hope { fill: #b0aaee; }
+.line-label--iran  { fill: #c42820; }
+
+.chart-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  fill: #444;
+}
+
+.ann-el,
+.ann-label,
+.ann-count {
+  transition: opacity 0.5s ease;
+}
+
+.ann-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: #b0aaee;
+  letter-spacing: 0.08em;
+}
+
+.ann-count {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 300;
+  fill: rgba(176, 170, 238, 0.9);
+}
+
+/* ── CTA (step 10) ──────────────────────────────────────── */
 
 .step-cta {
   font-size: 24px;
