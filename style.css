@@ -887,8 +887,18 @@ body {
 /* Year selector: visible but non-interactive during story */
 #story-vis .year-selector {
   pointer-events: none;
-  opacity: 0.35;
   transition: opacity 0.3s ease;
+}
+
+/* Dim non-selected years in story single-year view */
+#story-vis .year-btn:not(.active) {
+  opacity: 0.35;
+}
+
+/* All-years step: all labels full white, none dimmed */
+body.view-all #story-vis .year-btn {
+  opacity: 1;
+  color: #ffffff;
 }
 
 /* ── Scroll steps panel ─────────────────────────────────── */
@@ -1049,18 +1059,21 @@ em.kw-iran   { background: #c42820; }
   padding: 12px 22px;
   background: transparent;
   border: 1px solid #383838;
+  border-radius: 4px;
   color: var(--text-primary);
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.08em;
   cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
+  transition: color 0.2s, border-color 0.2s, background 0.2s, text-shadow 0.2s;
   text-transform: uppercase;
 }
 
 .explorer-btn:hover {
-  border-color: #888;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.04);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
 /* ── Random word highlights in step 1 overlay ───────────── */
