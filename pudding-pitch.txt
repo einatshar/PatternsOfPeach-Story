@@ -1,0 +1,32 @@
+THE PUDDING — PITCH FORM
+========================
+
+
+1. WHAT IS YOUR STORY ABOUT?
+-----------------------------
+Every year, Israel's Prime Minister takes the podium at the United Nations and delivers a speech that the world is supposed to hear. This project compresses 16 years of those speeches — every word Netanyahu said at the UN between 2009 and 2025 — into a single visual archive. It asks: what does a leader actually talk about, year after year, when the microphone is on and the whole world is watching? The answer, tracked through the language of hope, peace, war, and Iran, reveals a rhetorical shift that mirrors the trajectory of the region itself.
+
+
+2. CAN YOU SUMMARIZE IN ONE SENTENCE THE SINGLE POINT YOU'RE MAKING?
+----------------------------------------------------------------------
+Over 16 years at the UN podium, Netanyahu's language transformed from a leader invoking hope and peace into one consumed almost entirely by Iran and conflict — a shift you can see, year by year, in the words themselves.
+
+
+3. WHY IS IT EXCITING TO YOU?
+------------------------------
+I'm an Israeli designer. I grew up with these speeches as background noise — the annual UN address is a cultural event in Israel, covered live, debated for days. I've heard Netanyahu speak my entire adult life. But I never actually read the speeches side by side. When I finally did — all of them, at once, reduced to their patterns — something clicked that years of news coverage hadn't given me. The words are the data. And the data tells a story that feels both obvious in retrospect and genuinely surprising to see spelled out. As someone living in the middle of this, with family, with stakes, with an inherited complicated relationship to this political figure, I wanted to make something that cuts through the noise and just shows what's actually there.
+
+
+4. WHAT MAKES THIS STORY INTERESTING AND SETS IT APART FROM OTHERS?
+--------------------------------------------------------------------
+The "aha" moment is the hope chart. You watch the word "hope" rise through the early speeches, peak in 2016, then flatline to near-zero by 2020 — and it stays there. Then you layer in "Iran", and you see it was always bigger, always more present, even in the years when hope was supposedly at its height. The trade wasn't sudden. It was gradual, measurable, and visible. Most political analysis tells you that a shift happened. This shows you when, and lets you feel the shape of it. The piece is also unusual in that it's built entirely from primary sources — the speeches themselves, word by word — with no interpretation layered on top. The pattern emerges from the data. The reader does the concluding.
+
+
+5. WHAT DATA DO YOU HAVE? WHAT IS IT TELLING YOU?
+--------------------------------------------------
+16 UN General Assembly speeches by Benjamin Netanyahu, spanning 2009–2025, fully transcribed. Each speech is segmented into three-word fragments and tagged against topic categories: Peace, Hope, Defense, War, Terror, Iran. Key findings: Hope mentions peaked at 11 in 2016 and fell to 0–1 from 2020 onward. Iran mentions have consistently outpaced hope even at hope's peak — and grew sharply after 2015 (the Iran nuclear deal year). In the 2023 speech, delivered weeks before the October 7th massacre, peace still had a presence. By 2025, deep into the war, it had nearly disappeared. The data shows not just what topics dominate, but the precise year each shift happened.
+
+
+6. WHAT MAKES THIS ESSAY A VISUAL ESSAY?
+-----------------------------------------
+The first thing I'd draw on a whiteboard is a barcode. Each speech becomes a column of thin horizontal cells — one per three-word fragment. Color a cell when Netanyahu says "peace". Color another when he says "Iran". Now stack 16 years of barcodes side by side. You don't need labels. The pattern is immediate: early columns are balanced, later ones are almost entirely dark red. The visual form is the argument. Text alone can say "Iran mentions increased" — but seeing the red slowly overtake the column, year by year, makes it land differently. The piece also moves: readers scroll through the story as it builds from a single speech, to topics lighting up, to the full 16-year archive revealing itself. The motion is the narrative.

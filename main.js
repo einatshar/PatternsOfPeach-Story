@@ -123,6 +123,29 @@ function buildAllSegments() {
 
 // ── Year selector ──────────────────────────────────────────────────────────
 
+function isMobile() { return window.innerWidth <= 800; }
+
+function closeDrawer() {
+  const pane = document.getElementById('speechPane');
+  pane.classList.remove('drawer-open');
+  pane.classList.remove('drawer-peek');
+  document.body.classList.remove('drawer-open');
+}
+
+function expandDrawer() {
+  const pane = document.getElementById('speechPane');
+  pane.classList.add('drawer-open');
+  pane.classList.remove('drawer-peek');
+  document.body.classList.add('drawer-open');
+}
+
+function peekDrawer() {
+  const pane = document.getElementById('speechPane');
+  pane.classList.add('drawer-peek');
+  pane.classList.remove('drawer-open');
+  document.body.classList.remove('drawer-open');
+}
+
 function renderYearSelector() {
   const container = document.getElementById('yearSelector');
   // Append oldest first → displays left-to-right, matching the grid column order
@@ -154,7 +177,7 @@ function selectAllYears() {
 
   document.body.classList.add('view-all');
   document.querySelectorAll('.year-btn').forEach(btn => btn.classList.remove('active'));
-  setPaneCollapsed(true);
+  if (isMobile()) closeDrawer(); else setPaneCollapsed(true);
 
   renderGrid();
 }
@@ -168,9 +191,25 @@ function selectYear(speechId) {
   document.querySelectorAll('.year-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.id === speechId);
   });
-  if (!state.paneUserCollapsed) setPaneCollapsed(false);
 
-  renderGrid();
+  if (isMobile()) {
+    peekDrawer();
+    renderGrid();
+    renderSpeechPane();
+    syncTopicButtons();
+  } else {
+    const paneOpening = !state.paneUserCollapsed;
+    if (paneOpening) {
+      setPaneCollapsed(false);
+      // Pre-fade the current grid so the CSS reflow from removing view-all is invisible,
+      // then rebuild after the pane transition finishes (0.28s).
+      const container = document.getElementById('gridContainer');
+      container.style.opacity = '0';
+      setTimeout(() => renderGrid(), 310);
+    } else {
+      renderGrid();
+    }
+  }
 }
 
 // ── Layout computation ─────────────────────────────────────────────────────
@@ -294,18 +333,34 @@ function buildAllYearsGrid(container) {
       cell.dataset.cellIndex = ci;
       cell.style.height      = `${cellH}px`;
 
-      attachCellTooltip(cell, firstSeg, segs, segsPerCell);
       cell.addEventListener('click', () => {
-        state.selectedSpeechId = speech.id;
-        renderSpeechPane();
-        syncTopicButtons();
-        scrollPaneToSegment(firstSeg.index);
+        if (isMobile()) {
+          selectYear(speech.id);
+        } else {
+          state.selectedSpeechId = speech.id;
+          renderSpeechPane();
+          syncTopicButtons();
+          scrollPaneToSegment(firstSeg.index);
+        }
       });
 
       cellsEl.appendChild(cell);
     }
 
     colEl.appendChild(cellsEl);
+
+    // Hover: highlight column cells + matching year label
+    colEl.addEventListener('mouseenter', () => {
+      colEl.classList.add('col-hover');
+      const btn = document.querySelector(`.year-btn[data-id="${speech.id}"]`);
+      if (btn) btn.classList.add('col-hover');
+    });
+    colEl.addEventListener('mouseleave', () => {
+      colEl.classList.remove('col-hover');
+      const btn = document.querySelector(`.year-btn[data-id="${speech.id}"]`);
+      if (btn) btn.classList.remove('col-hover');
+    });
+
     container.appendChild(colEl);
   });
 }
@@ -1505,6 +1560,24 @@ function initScrollytelling() {
   const btn = document.getElementById('enterExplorer');
   if (btn) btn.addEventListener('click', revealExplorer);
 
+  // Mobile drawer backdrop — tap to close
+  document.getElementById('drawerBackdrop')?.addEventListener('click', closeDrawer);
+
+  // Mobile drawer handle + pane header — tap to toggle peek ↔ open
+  function onDrawerHeaderTap(e) {
+    if (!isMobile()) return;
+    // Don't intercept nav button clicks inside the header
+    if (e.target.closest('.pane-nav, .nav-btn')) return;
+    const pane = document.getElementById('speechPane');
+    if (pane.classList.contains('drawer-open')) {
+      peekDrawer();
+    } else if (pane.classList.contains('drawer-peek')) {
+      expandDrawer();
+    }
+  }
+  document.getElementById('drawerHandle')?.addEventListener('click', onDrawerHeaderTap);
+  document.querySelector('.pane-header')?.addEventListener('click', onDrawerHeaderTap);
+
   // Back to story button
   const backBtn = document.getElementById('backToStory');
   if (backBtn) backBtn.addEventListener('click', () => {
@@ -1542,12 +1615,20 @@ function revealExplorer() {
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
 
+    // Set up state without triggering premature renderGrid calls
     state.activeTopics.clear();
-    selectAllYears();
-    ALL_TOPICS.forEach(t => activateTopic(t.label));
-    setPaneCollapsed(true);
+    ALL_TOPICS.forEach(t => state.activeTopics.add(t.label));
+    state.lastSpeechId     = state.selectedSpeechId;
+    state.allYears         = true;
+    state.selectedSpeechId = null;
+    activeSegmentIndex     = null;
+    document.body.classList.add('view-all');
+    document.querySelectorAll('.year-btn').forEach(btn => btn.classList.remove('active'));
+    if (isMobile()) closeDrawer(); else setPaneCollapsed(true);
+    syncTopicButtons();
 
     explorerRevealing = false;
+    // Single render after layout reflows
     setTimeout(() => renderGrid(), 80);
   }, 480);
 }

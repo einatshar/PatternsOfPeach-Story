@@ -75,6 +75,15 @@
           <div id="speechTextOverlay"></div>
           <!-- Hope line chart for step 8 -->
           <div id="hopeChart" hidden></div>
+          <!-- Mobile all-years legend -->
+          <div id="allYearsLegend" aria-hidden="true">
+            <span class="ayl-item"><span class="ayl-dot" style="background:#5868c0"></span>Peace</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#b0aaee"></span>Hope</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#f9bc29"></span>Defense</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#e07830"></span>War</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#e04020"></span>Terror</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#c42820"></span>Iran</span>
+          </div>
         </main>
         <div class="year-selector" id="yearSelector"></div>
       </div>
@@ -172,6 +181,7 @@
 
     <!-- ─── SPEECH PANE (explorer mode only) ─── -->
     <aside class="speech-pane" id="speechPane">
+      <div class="drawer-handle" id="drawerHandle" aria-hidden="true"></div>
       <div class="pane-header">
         <button class="pane-toggle" id="paneToggle" aria-label="Toggle reading pane">›</button>
         <span class="pane-label">Reading</span>
@@ -188,6 +198,9 @@
     </aside>
 
   </div><!-- #contentRow -->
+
+  <!-- Mobile drawer backdrop -->
+  <div id="drawerBackdrop"></div>
 
   <!-- TOOLTIP -->
   <div class="tooltip" id="tooltip" dir="ltr" aria-hidden="true"></div>
