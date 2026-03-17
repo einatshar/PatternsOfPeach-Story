@@ -127,23 +127,14 @@ function isMobile() { return window.innerWidth <= 800; }
 
 function closeDrawer() {
   const pane = document.getElementById('speechPane');
-  pane.classList.remove('drawer-open');
-  pane.classList.remove('drawer-peek');
-  document.body.classList.remove('drawer-open');
+  pane.classList.remove('pane-overlay-open');
+  document.body.classList.remove('pane-overlay-open');
 }
 
-function expandDrawer() {
+function openPaneOverlay() {
   const pane = document.getElementById('speechPane');
-  pane.classList.add('drawer-open');
-  pane.classList.remove('drawer-peek');
-  document.body.classList.add('drawer-open');
-}
-
-function peekDrawer() {
-  const pane = document.getElementById('speechPane');
-  pane.classList.add('drawer-peek');
-  pane.classList.remove('drawer-open');
-  document.body.classList.remove('drawer-open');
+  pane.classList.add('pane-overlay-open');
+  document.body.classList.add('pane-overlay-open');
 }
 
 function renderYearSelector() {
@@ -156,6 +147,7 @@ function renderYearSelector() {
     btn.className = 'year-btn';
     btn.dataset.id = speech.id;
     btn.textContent = speech.date.slice(0, 4);
+    btn.dataset.short = "'" + speech.date.slice(2, 4);
     btn.addEventListener('click', () => selectYear(speech.id));
     container.appendChild(btn);
   });
@@ -193,7 +185,7 @@ function selectYear(speechId) {
   });
 
   if (isMobile()) {
-    peekDrawer();
+    closeDrawer(); // ensure pane is closed when switching years
     renderGrid();
     renderSpeechPane();
     syncTopicButtons();
@@ -1560,23 +1552,22 @@ function initScrollytelling() {
   const btn = document.getElementById('enterExplorer');
   if (btn) btn.addEventListener('click', revealExplorer);
 
-  // Mobile drawer backdrop — tap to close
+  // Mobile backdrop — tap to close pane overlay
   document.getElementById('drawerBackdrop')?.addEventListener('click', closeDrawer);
 
-  // Mobile drawer handle + pane header — tap to toggle peek ↔ open
-  function onDrawerHeaderTap(e) {
+  // Mobile burger button — open reading pane as overlay
+  document.getElementById('readerBtn')?.addEventListener('click', () => {
+    renderSpeechPane();
+    syncTopicButtons();
+    openPaneOverlay();
+  });
+
+  // Pane header tap on mobile — close the overlay
+  document.querySelector('.pane-header')?.addEventListener('click', (e) => {
     if (!isMobile()) return;
-    // Don't intercept nav button clicks inside the header
     if (e.target.closest('.pane-nav, .nav-btn')) return;
-    const pane = document.getElementById('speechPane');
-    if (pane.classList.contains('drawer-open')) {
-      peekDrawer();
-    } else if (pane.classList.contains('drawer-peek')) {
-      expandDrawer();
-    }
-  }
-  document.getElementById('drawerHandle')?.addEventListener('click', onDrawerHeaderTap);
-  document.querySelector('.pane-header')?.addEventListener('click', onDrawerHeaderTap);
+    closeDrawer();
+  });
 
   // Back to story button
   const backBtn = document.getElementById('backToStory');

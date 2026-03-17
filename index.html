@@ -39,6 +39,7 @@
         <span class="title-label">Patterns of Peace</span>
         <span class="title-sub">A visual archive of Netanyahu's UN speeches</span>
       </div>
+      <button class="reader-fab" id="readerBtn" aria-label="Open reading pane">☰</button>
     </div>
     <div class="controls">
       <div class="keyword-input-group">
@@ -75,8 +76,8 @@
           <div id="speechTextOverlay"></div>
           <!-- Hope line chart for step 8 -->
           <div id="hopeChart" hidden></div>
-          <!-- Mobile all-years legend -->
-          <div id="allYearsLegend" aria-hidden="true">
+          <!-- Explorer all-years legend (mobile only) -->
+          <div id="explorerLegend" aria-hidden="true">
             <span class="ayl-item"><span class="ayl-dot" style="background:#5868c0"></span>Peace</span>
             <span class="ayl-item"><span class="ayl-dot" style="background:#b0aaee"></span>Hope</span>
             <span class="ayl-item"><span class="ayl-dot" style="background:#f9bc29"></span>Defense</span>
@@ -156,14 +157,14 @@
         <div class="step" data-step="10">
           <div class="step-content">
             <p>Each column is a year. The pattern of light reveals what Netanyahu chose to emphasize — year after year, speech after speech.</p>
-            <ul class="story-legend">
-              <li><span class="legend-dot" style="background:#5868c0"></span>Peace</li>
-              <li><span class="legend-dot" style="background:#b0aaee"></span>Hope</li>
-              <li><span class="legend-dot" style="background:#f9bc29"></span>Defense</li>
-              <li><span class="legend-dot" style="background:#e07830"></span>War</li>
-              <li><span class="legend-dot" style="background:#e04020"></span>Terror</li>
-              <li><span class="legend-dot" style="background:#c42820"></span>Iran</li>
-            </ul>
+          </div>
+          <div id="allYearsLegend" aria-hidden="true">
+            <span class="ayl-item"><span class="ayl-dot" style="background:#5868c0"></span>Peace</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#b0aaee"></span>Hope</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#f9bc29"></span>Defense</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#e07830"></span>War</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#e04020"></span>Terror</span>
+            <span class="ayl-item"><span class="ayl-dot" style="background:#c42820"></span>Iran</span>
           </div>
         </div>
 
@@ -191,6 +192,7 @@
           <button class="nav-btn" id="nextSeg" title="Next segment">↓</button>
         </div>
         <span class="pane-speech-title" id="paneSpeechTitle"></span>
+        <button class="pane-close-btn" id="paneCloseBtn" aria-label="Close reading pane">×</button>
       </div>
       <div class="pane-body" id="paneBody">
         <div class="pane-text" id="paneText" dir="ltr"></div>
