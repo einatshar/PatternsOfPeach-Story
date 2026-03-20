@@ -1581,6 +1581,9 @@ body.explorer-mode.view-all #speechPane {
   * { cursor: auto !important; }
   #custom-cursor { display: none !important; }
 
+  /* ── Text overlay: CSS animation disabled — driven by rAF in JS ── */
+  .overlay-text { animation: none; }
+
   /* ── Hope chart: edge-to-edge, aligned with year selector ── */
   #hopeChart {
     padding: 0 0 6px;

@@ -914,6 +914,7 @@ let currentStoryStep    = -1;
 let cellBuildTimers     = [];
 let explorerRevealing   = false; // blocks observer during reveal transition
 let pendingGridRebuild  = null;  // cancellable renderGrid setTimeout id
+let overlayScrollRaf    = null;  // rAF id for mobile text-overlay scroll
 
 const SPEECH_ID = 'netanyahu-unga-2023';
 
@@ -1399,9 +1400,30 @@ function showSpeechTextOverlay(speechId) {
   const block = buildOverlayHtml(speech.text) + '<br><br>';
   overlay.innerHTML = `<div class="overlay-text">${block.repeat(4)}</div>`;
   requestAnimationFrame(() => overlay.classList.add('visible'));
+
+  // iOS Safari pauses CSS animations inside sticky containers — drive scroll via rAF
+  if (isMobile()) {
+    cancelAnimationFrame(overlayScrollRaf);
+    const textEl = overlay.querySelector('.overlay-text');
+    // Wait a frame for layout so scrollHeight is correct
+    requestAnimationFrame(() => {
+      const halfH = textEl.scrollHeight / 2;
+      const DURATION = 55000;
+      let startTs = null;
+      const tick = (ts) => {
+        if (!startTs) startTs = ts;
+        const progress = ((ts - startTs) % DURATION) / DURATION;
+        textEl.style.transform = `translateY(${-(progress * halfH).toFixed(1)}px)`;
+        overlayScrollRaf = requestAnimationFrame(tick);
+      };
+      overlayScrollRaf = requestAnimationFrame(tick);
+    });
+  }
 }
 
 function hideSpeechTextOverlay() {
+  cancelAnimationFrame(overlayScrollRaf);
+  overlayScrollRaf = null;
   const overlay = document.getElementById('speechTextOverlay');
   if (!overlay) return;
   overlay.classList.remove('visible');
@@ -1571,30 +1593,48 @@ function initScrollytelling() {
 
   steps.forEach(step => observer.observe(step));
 
-  // On mobile, IntersectionObserver can misbehave with the sticky-vis overlay
-  // layout. Use a scroll listener as the authoritative step detector instead.
+  // On mobile, iOS Safari's getBoundingClientRect() returns wrong values during
+  // scroll when a sticky sibling exists. Precompute document-relative positions
+  // at init (scroll=0, no sticky offset yet) and use scrollY math instead.
   if (isMobile()) {
     const allSteps = [...steps];
-    let rafPending = false;
-    window.addEventListener('scroll', () => {
-      if (rafPending || explorerRevealing) return;
-      rafPending = true;
-      requestAnimationFrame(() => {
-        rafPending = false;
-        const mid = window.innerHeight / 2;
+
+    // Delay one frame so layout settles before measuring
+    requestAnimationFrame(() => {
+      const stepDocs = allSteps.map(el => ({
+        el,
+        docTop: el.getBoundingClientRect().top + window.scrollY,
+        height: el.offsetHeight,
+      }));
+
+      const checkStep = () => {
+        if (explorerRevealing) return;
+        const scrollMid = window.scrollY + window.innerHeight / 2;
         let bestEl = null, bestDist = Infinity;
-        allSteps.forEach(el => {
-          const r = el.getBoundingClientRect();
-          const stepCenter = r.top + r.height / 2;
-          const dist = Math.abs(stepCenter - mid);
+        stepDocs.forEach(({ el, docTop, height }) => {
+          const stepCenter = docTop + height / 2;
+          const dist = Math.abs(stepCenter - scrollMid);
           if (dist < bestDist) { bestDist = dist; bestEl = el; }
         });
         if (bestEl) {
           const n = parseInt(bestEl.dataset.step, 10);
           goToStep(prefersReduced && n === 2 ? 3 : n);
         }
-      });
-    }, { passive: true });
+      };
+
+      // Fire on scroll (passive) and on touchend (covers iOS momentum gaps)
+      let rafPending = false;
+      const onScroll = () => {
+        if (rafPending) return;
+        rafPending = true;
+        requestAnimationFrame(() => { rafPending = false; checkStep(); });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('touchend', () => setTimeout(checkStep, 80), { passive: true });
+
+      // Run once immediately to set initial step
+      checkStep();
+    });
   }
 
   // Segment demo nav (step 2)
