@@ -137,6 +137,26 @@ function openPaneOverlay() {
   document.body.classList.add('pane-overlay-open');
 }
 
+function initSwipeNavigation() {
+  const stage = document.getElementById('archiveStage');
+  if (!stage) return;
+  const sorted = [...SPEECHES].sort((a, b) => new Date(a.date) - new Date(b.date));
+  let touchStartX = 0;
+
+  stage.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+
+  stage.addEventListener('touchend', e => {
+    if (!isMobile() || !state.selectedSpeechId || state.allYears) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) < 50) return; // too short
+    const idx = sorted.findIndex(s => s.id === state.selectedSpeechId);
+    const next = dx < 0 ? sorted[idx + 1] : sorted[idx - 1];
+    if (next) selectYear(next.id);
+  }, { passive: true });
+}
+
 function renderYearSelector() {
   const container = document.getElementById('yearSelector');
   // Append oldest first → displays left-to-right, matching the grid column order
@@ -238,15 +258,17 @@ function renderGrid() {
     requestAnimationFrame(() => { container.style.opacity = '1'; });
   };
 
+  clearTimeout(pendingGridRebuild);
   if (container.children.length > 0) {
     container.style.opacity = '0';
-    setTimeout(rebuild, 150);
+    pendingGridRebuild = setTimeout(rebuild, 150);
   } else {
     rebuild();
   }
 }
 
 function buildSingleYearGrid(container) {
+  document.body.classList.remove('view-all');
   const segments = segmentsCache.get(state.selectedSpeechId);
   if (!segments || segments.length === 0) return;
 
@@ -287,6 +309,7 @@ function buildSingleYearGrid(container) {
 }
 
 function buildAllYearsGrid(container) {
+  document.body.classList.add('view-all');
   const sortedSpeeches = [...SPEECHES].sort((a, b) => new Date(a.date) - new Date(b.date));
   const maxCount   = Math.max(...Array.from(segmentsCache.values()).map(s => s.length));
   const stage = document.getElementById('archiveStage');
@@ -887,9 +910,10 @@ function setupPaneNav() {
 
 // ── Scrollytelling ─────────────────────────────────────────────────────────
 
-let currentStoryStep  = -1;
-let cellBuildTimers   = [];
-let explorerRevealing = false; // blocks observer during reveal transition
+let currentStoryStep    = -1;
+let cellBuildTimers     = [];
+let explorerRevealing   = false; // blocks observer during reveal transition
+let pendingGridRebuild  = null;  // cancellable renderGrid setTimeout id
 
 const SPEECH_ID = 'netanyahu-unga-2023';
 
@@ -925,6 +949,7 @@ const STORY_STEPS = [
 
   // 2: Words transform into cells — crossfade text → barcode
   () => {
+    clearTimeout(pendingGridRebuild);
     hideStoryTooltip();
     state.activeTopics.clear();
     state.selectedSpeechId = SPEECH_ID;
@@ -965,6 +990,7 @@ const STORY_STEPS = [
 
   // 5: All topics on one speech (2023)
   () => {
+    clearTimeout(pendingGridRebuild);
     setStoryYearActive(SPEECH_ID);
     const container = document.getElementById('gridContainer');
 
@@ -988,6 +1014,7 @@ const STORY_STEPS = [
 
   // 6: Switch to 2025 speech — peace + conflict topics, build animation
   () => {
+    clearTimeout(pendingGridRebuild);
     hideHopeChart();
     const SPEECH_2025 = 'netanyahu-unga-2025';
     setStoryYearActive(SPEECH_2025);
@@ -1522,6 +1549,8 @@ function initScrollytelling() {
   const ratios = new Map();
   steps.forEach(step => ratios.set(step, 0));
 
+  const thresholds = Array.from({ length: 21 }, (_, i) => i * 0.05);
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       ratios.set(entry.target, entry.intersectionRatio);
@@ -1538,9 +1567,35 @@ function initScrollytelling() {
       const n = parseInt(bestEl.dataset.step, 10);
       goToStep(prefersReduced && n === 2 ? 3 : n);
     }
-  }, { threshold: [0, 0.25, 0.5, 0.75, 1.0] });
+  }, { threshold: thresholds });
 
   steps.forEach(step => observer.observe(step));
+
+  // On mobile, IntersectionObserver can misbehave with the sticky-vis overlay
+  // layout. Use a scroll listener as the authoritative step detector instead.
+  if (isMobile()) {
+    const allSteps = [...steps];
+    let rafPending = false;
+    window.addEventListener('scroll', () => {
+      if (rafPending || explorerRevealing) return;
+      rafPending = true;
+      requestAnimationFrame(() => {
+        rafPending = false;
+        const mid = window.innerHeight / 2;
+        let bestEl = null, bestDist = Infinity;
+        allSteps.forEach(el => {
+          const r = el.getBoundingClientRect();
+          const stepCenter = r.top + r.height / 2;
+          const dist = Math.abs(stepCenter - mid);
+          if (dist < bestDist) { bestDist = dist; bestEl = el; }
+        });
+        if (bestEl) {
+          const n = parseInt(bestEl.dataset.step, 10);
+          goToStep(prefersReduced && n === 2 ? 3 : n);
+        }
+      });
+    }, { passive: true });
+  }
 
   // Segment demo nav (step 2)
   const segNavPrev = document.getElementById('segNavPrev');
@@ -1745,6 +1800,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Start in scrollytelling story mode
   initScrollytelling();
+  initSwipeNavigation();
 
   // Keyboard navigation (explorer mode only)
   const sortedSpeeches = [...SPEECHES].sort((a, b) => new Date(a.date) - new Date(b.date));

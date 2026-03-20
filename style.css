@@ -1577,6 +1577,26 @@ body.explorer-mode.view-all #speechPane {
     line-height: 1;
   }
 
+  /* ── Custom cursor — hide on touch devices ──────────────── */
+  * { cursor: auto !important; }
+  #custom-cursor { display: none !important; }
+
+  /* ── Hope chart: edge-to-edge, aligned with year selector ── */
+  #hopeChart {
+    padding: 0 0 6px;
+  }
+
+  /* ── Explorer: constrain to viewport height ─────────────── */
+  body.explorer-mode {
+    height: 100svh;
+    overflow: hidden;
+  }
+
+  body.explorer-mode #story-vis {
+    min-height: 0;
+    overflow: hidden;
+  }
+
   /* Story legend hidden on mobile — explorer legend covers that use case */
   #allYearsLegend {
     display: none;
