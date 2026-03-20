@@ -1405,10 +1405,10 @@ function showSpeechTextOverlay(speechId) {
   if (isMobile()) {
     cancelAnimationFrame(overlayScrollRaf);
     const textEl = overlay.querySelector('.overlay-text');
-    // Wait a frame for layout so scrollHeight is correct
-    requestAnimationFrame(() => {
-      const halfH = textEl.scrollHeight / 2;
-      const DURATION = 55000;
+    // Wait for layout so scrollHeight is populated
+    setTimeout(() => {
+      const halfH = textEl.scrollHeight / 2 || window.innerHeight * 4;
+      const DURATION = 120000; // 2 min — feels right on a narrow screen
       let startTs = null;
       const tick = (ts) => {
         if (!startTs) startTs = ts;
@@ -1417,7 +1417,7 @@ function showSpeechTextOverlay(speechId) {
         overlayScrollRaf = requestAnimationFrame(tick);
       };
       overlayScrollRaf = requestAnimationFrame(tick);
-    });
+    }, 50);
   }
 }
 
@@ -1593,18 +1593,29 @@ function initScrollytelling() {
 
   steps.forEach(step => observer.observe(step));
 
-  // On mobile, iOS Safari's getBoundingClientRect() returns wrong values during
-  // scroll when a sticky sibling exists. Precompute document-relative positions
-  // at init (scroll=0, no sticky offset yet) and use scrollY math instead.
+  // On mobile, iOS Safari mis-reports getBoundingClientRect() for elements
+  // near sticky siblings, and may defer svh-unit margin resolution.
+  // Use offsetTop traversal (layout-relative, not viewport-relative) instead,
+  // and wait for layout to fully settle before measuring.
   if (isMobile()) {
     const allSteps = [...steps];
 
-    // Delay one frame so layout settles before measuring
-    requestAnimationFrame(() => {
+    // Walk offsetParent chain to get true document-top, unaffected by sticky
+    const getDocTop = (el) => {
+      let top = 0, node = el;
+      while (node && node !== document.documentElement) {
+        top += node.offsetTop;
+        node = node.offsetParent;
+      }
+      return top;
+    };
+
+    // Measure after layout settles (setTimeout > rAF — ensures svh resolves)
+    setTimeout(() => {
       const stepDocs = allSteps.map(el => ({
         el,
-        docTop: el.getBoundingClientRect().top + window.scrollY,
-        height: el.offsetHeight,
+        docTop: getDocTop(el),
+        height: el.offsetHeight || window.innerHeight,
       }));
 
       const checkStep = () => {
@@ -1622,7 +1633,7 @@ function initScrollytelling() {
         }
       };
 
-      // Fire on scroll (passive) and on touchend (covers iOS momentum gaps)
+      // Fire on scroll (passive) and on touchend (covers iOS momentum scroll gaps)
       let rafPending = false;
       const onScroll = () => {
         if (rafPending) return;
@@ -1632,9 +1643,9 @@ function initScrollytelling() {
       window.addEventListener('scroll', onScroll, { passive: true });
       window.addEventListener('touchend', () => setTimeout(checkStep, 80), { passive: true });
 
-      // Run once immediately to set initial step
+      // Run once to set initial step
       checkStep();
-    });
+    }, 300);
   }
 
   // Segment demo nav (step 2)
