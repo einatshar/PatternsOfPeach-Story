@@ -965,9 +965,10 @@ const STORY_STEPS = [
       cell.style.animation = 'none';
       cell.style.opacity   = '0';
     });
-    // Fade out text, then animate cells in; show story tooltip once complete
+    // Fade out text overlay (desktop), then animate cells in
     hideSpeechTextOverlay();
-    setTimeout(() => animateCellBuild(container, () => showStoryTooltip(container)), 350);
+    const cellDelay = isMobile() ? 0 : 350;
+    setTimeout(() => animateCellBuild(container, () => showStoryTooltip(container)), cellDelay);
   },
 
   // 3: Illuminate שלום
@@ -1588,7 +1589,7 @@ function initScrollytelling() {
     // On mobile the scroll listener is authoritative — observer only toggles CSS
     if (!isMobile() && bestEl && bestRatio > 0 && !explorerRevealing) {
       const n = parseInt(bestEl.dataset.step, 10);
-      goToStep(prefersReduced && n === 2 ? 3 : n);
+      goToStep(prefersReduced && n === 2 ? 3 : n); // skip anim only on desktop
     }
   }, { threshold: thresholds });
 
@@ -1610,7 +1611,9 @@ function initScrollytelling() {
       const H = document.getElementById('coverScreen').offsetHeight || window.innerHeight;
       const n = Math.max(0, Math.min(stepsArr.length - 1, Math.round(scrollY / H)));
       const stepN = parseInt(stepsArr[n]?.dataset.step ?? n, 10);
-      goToStep(prefersReduced && stepN === 2 ? 3 : stepN);
+      // Never skip step 2 on mobile — it builds the grid; prefersReduced
+      // skipping only made sense for the desktop text-overlay animation.
+      goToStep(stepN);
     };
 
     // Poll every 100ms — bypasses all iOS Safari scroll-event quirks entirely
