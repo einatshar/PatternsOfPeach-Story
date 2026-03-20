@@ -301,6 +301,10 @@ body {
   display: none;
 }
 
+.reader-fab {
+  display: none;
+}
+
 .pane-toggle {
   flex-shrink: 0;
   width: 18px;
