@@ -1605,26 +1605,26 @@ function initScrollytelling() {
     const stepsArr = [...steps]; // DOM order: step 0 (cover), 1, 2 … 11
 
     const checkStep = () => {
-      if (explorerRevealing) return;
-      // Use coverScreen height as the step-height unit — it has no sticky
-      // ancestors or negative margins so offsetHeight is always accurate.
+      if (explorerRevealing || document.body.classList.contains('explorer-mode')) return;
+      const scrollY = window.pageYOffset ?? window.scrollY ?? 0;
       const H = document.getElementById('coverScreen').offsetHeight || window.innerHeight;
-      const n = Math.max(0, Math.min(stepsArr.length - 1, Math.round(window.scrollY / H)));
+      const n = Math.max(0, Math.min(stepsArr.length - 1, Math.round(scrollY / H)));
       const stepN = parseInt(stepsArr[n]?.dataset.step ?? n, 10);
       goToStep(prefersReduced && stepN === 2 ? 3 : stepN);
     };
 
-    let rafPending = false;
-    const onScroll = () => {
-      if (rafPending) return;
-      rafPending = true;
-      requestAnimationFrame(() => { rafPending = false; checkStep(); });
+    // Poll every 100ms — bypasses all iOS Safari scroll-event quirks entirely
+    let pollTimer = null;
+    const startPoll = () => {
+      if (pollTimer) return;
+      pollTimer = setInterval(checkStep, 100);
     };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    // touchend fires after iOS momentum scroll settles
-    window.addEventListener('touchend', () => setTimeout(checkStep, 80), { passive: true });
-    // Initial check
-    setTimeout(checkStep, 100);
+    const stopPoll = () => { clearInterval(pollTimer); pollTimer = null; };
+
+    startPoll();
+    // Stop polling when entering explorer (explorer has its own navigation)
+    document.getElementById('enterExplorer')
+      ?.addEventListener('click', stopPoll);
   }
 
   // Segment demo nav (step 2)
