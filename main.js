@@ -1585,7 +1585,8 @@ function initScrollytelling() {
       if (ratio > bestRatio) { bestRatio = ratio; bestEl = el; }
     });
 
-    if (bestEl && bestRatio > 0 && !explorerRevealing) {
+    // On mobile the scroll listener is authoritative — observer only toggles CSS
+    if (!isMobile() && bestEl && bestRatio > 0 && !explorerRevealing) {
       const n = parseInt(bestEl.dataset.step, 10);
       goToStep(prefersReduced && n === 2 ? 3 : n);
     }
