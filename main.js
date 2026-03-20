@@ -944,7 +944,7 @@ const STORY_STEPS = [
     hideStoryTooltip();
     state.activeTopics.clear();
     document.getElementById('gridContainer').innerHTML = '';
-    showSpeechTextOverlay(SPEECH_ID);
+    if (!isMobile()) showSpeechTextOverlay(SPEECH_ID);
     setStoryYearActive(SPEECH_ID);
   },
 
