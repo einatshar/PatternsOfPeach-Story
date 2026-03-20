@@ -1593,59 +1593,37 @@ function initScrollytelling() {
 
   steps.forEach(step => observer.observe(step));
 
-  // On mobile, iOS Safari mis-reports getBoundingClientRect() for elements
-  // near sticky siblings, and may defer svh-unit margin resolution.
-  // Use offsetTop traversal (layout-relative, not viewport-relative) instead,
-  // and wait for layout to fully settle before measuring.
+  // On mobile the layout uses margin-top:-100svh to overlay steps on the vis.
+  // Both getBoundingClientRect() and offsetTop are unreliable on iOS Safari
+  // for elements inside flex containers with negative svh-unit margins.
+  // Avoid all DOM position queries: derive the active step purely from scrollY.
+  //
+  // Structure: cover (step 0) is ~H px tall; story steps 1-11 each ~H px tall
+  // starting right after the cover. So active step ≈ round(scrollY / H).
   if (isMobile()) {
-    const allSteps = [...steps];
+    const stepsArr = [...steps]; // DOM order: step 0 (cover), 1, 2 … 11
 
-    // Walk offsetParent chain to get true document-top, unaffected by sticky
-    const getDocTop = (el) => {
-      let top = 0, node = el;
-      while (node && node !== document.documentElement) {
-        top += node.offsetTop;
-        node = node.offsetParent;
-      }
-      return top;
+    const checkStep = () => {
+      if (explorerRevealing) return;
+      // Use coverScreen height as the step-height unit — it has no sticky
+      // ancestors or negative margins so offsetHeight is always accurate.
+      const H = document.getElementById('coverScreen').offsetHeight || window.innerHeight;
+      const n = Math.max(0, Math.min(stepsArr.length - 1, Math.round(window.scrollY / H)));
+      const stepN = parseInt(stepsArr[n]?.dataset.step ?? n, 10);
+      goToStep(prefersReduced && stepN === 2 ? 3 : stepN);
     };
 
-    // Measure after layout settles (setTimeout > rAF — ensures svh resolves)
-    setTimeout(() => {
-      const stepDocs = allSteps.map(el => ({
-        el,
-        docTop: getDocTop(el),
-        height: el.offsetHeight || window.innerHeight,
-      }));
-
-      const checkStep = () => {
-        if (explorerRevealing) return;
-        const scrollMid = window.scrollY + window.innerHeight / 2;
-        let bestEl = null, bestDist = Infinity;
-        stepDocs.forEach(({ el, docTop, height }) => {
-          const stepCenter = docTop + height / 2;
-          const dist = Math.abs(stepCenter - scrollMid);
-          if (dist < bestDist) { bestDist = dist; bestEl = el; }
-        });
-        if (bestEl) {
-          const n = parseInt(bestEl.dataset.step, 10);
-          goToStep(prefersReduced && n === 2 ? 3 : n);
-        }
-      };
-
-      // Fire on scroll (passive) and on touchend (covers iOS momentum scroll gaps)
-      let rafPending = false;
-      const onScroll = () => {
-        if (rafPending) return;
-        rafPending = true;
-        requestAnimationFrame(() => { rafPending = false; checkStep(); });
-      };
-      window.addEventListener('scroll', onScroll, { passive: true });
-      window.addEventListener('touchend', () => setTimeout(checkStep, 80), { passive: true });
-
-      // Run once to set initial step
-      checkStep();
-    }, 300);
+    let rafPending = false;
+    const onScroll = () => {
+      if (rafPending) return;
+      rafPending = true;
+      requestAnimationFrame(() => { rafPending = false; checkStep(); });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    // touchend fires after iOS momentum scroll settles
+    window.addEventListener('touchend', () => setTimeout(checkStep, 80), { passive: true });
+    // Initial check
+    setTimeout(checkStep, 100);
   }
 
   // Segment demo nav (step 2)
